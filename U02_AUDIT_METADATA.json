@@ -1,0 +1,67 @@
+{
+  "project": "KITCHEN_ROBOT",
+  "project_version": "2.8.1",
+  "execution_unit": "U02",
+  "master_stages": [
+    "03",
+    "04",
+    "05"
+  ],
+  "audit": {
+    "status": "PASSED",
+    "technical_lock": "LOCKED",
+    "business_rule_lock": "NOT_APPLICABLE"
+  },
+  "validation": {
+    "pytest": "PASSED",
+    "migration_readiness": "PASSED",
+    "self_check": "PENDING_FINAL_ARTIFACT_CHECK"
+  },
+  "implemented": {
+    "runtime_foundation": true,
+    "flask_boundary": true,
+    "wsgi_entrypoint": true,
+    "runtime_configuration": true,
+    "pythonanywhere_start_script": true,
+    "timeframe_guard": true,
+    "sub_daily_warning": true,
+    "custom_range_warning": true
+  },
+  "timeframe_policy": {
+    "standard_timeframes": [
+      "M1",
+      "M5",
+      "M15",
+      "H1",
+      "H4",
+      "D1",
+      "D7"
+    ],
+    "sub_daily_behavior": "VALID_WITH_WARNING",
+    "daily_or_higher_behavior": "VALID_WITHOUT_SUB_DAILY_WARNING",
+    "custom_range_supported": true,
+    "custom_range_format": "DD-MM-YYYY HH:MM",
+    "custom_range_below_daily": "VALID_WITH_WARNING",
+    "custom_range_daily_or_higher": "VALID_WITHOUT_SUB_DAILY_WARNING",
+    "warning_is_error": false,
+    "technical_validation_only": true,
+    "scanner_analysis": false
+  },
+  "explicitly_not_implemented": {
+    "market_data_provider": true,
+    "live_market_data": true,
+    "candle_ingestion": true,
+    "scanner_intelligence": true,
+    "total_usdt_analysis": true,
+    "btc_analysis": true,
+    "btcd_analysis": true,
+    "total2_analysis": true,
+    "total3_analysis": true,
+    "others_d_analysis": true,
+    "strong_movers": true,
+    "market_summary": true,
+    "trading_logic": true,
+    "order_execution": true
+  },
+  "generated_at_utc": "2026-09-09 21:54:00 UTC"
+}

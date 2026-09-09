@@ -1,0 +1,42 @@
+{
+  "project": "KITCHEN_ROBOT",
+  "version": "2.8.1",
+  "execution_unit": "U02",
+  "consolidated_master_stages": [
+    "03",
+    "04",
+    "05"
+  ],
+  "status": "LOCKED",
+  "audit_status": "PASSED",
+  "technical_lock": "LOCKED",
+  "business_rule_lock": "NOT_APPLICABLE",
+  "migration_ready": true,
+  "generated_at_utc": "2026-09-09 21:54:00 UTC",
+  "inventory_policy": {
+    "hash_algorithm": "SHA-256",
+    "manifest_excluded_from_inventory": true,
+    "sha256_file_excluded_from_inventory": true
+  },
+  "file_count": 79,
+  "scope": {
+    "runtime": true,
+    "flask_wsgi": true,
+    "migration_foundation": true,
+    "timeframe_guard": true,
+    "range_guard": true,
+    "sub_daily_warning": true,
+    "custom_range_warning": true,
+    "market_data": false,
+    "scanner": false,
+    "scanner_intelligence": false,
+    "trading": false
+  },
+  "timeframe_policy": {
+    "sub_daily": "VALID_WITH_WARNING",
+    "daily_or_higher": "VALID_WITHOUT_SUB_DAILY_WARNING",
+    "custom_range": "SUPPORTED",
+    "custom_range_below_daily": "VALID_WITH_WARNING",
+    "warning_is_error": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "project": "KITCHEN_ASSISTANT",
+  "version": "2.8",
+  "execution_unit": "U03",
+  "stage": "DATA_CAPTURE_FOUNDATION",
+  "status": "LOCKED",
+  "audit_status": "PASSED",
+  "technical_lock": "LOCKED",
+  "business_rule_lock": "NOT_APPLICABLE",
+  "generated_at_utc": "2026-09-09 22:03:43 UTC",
+  "inventory_policy": {
+    "hash_algorithm": "SHA-256",
+    "manifest_excluded_from_inventory": true,
+    "sha256_file_excluded_from_inventory": true
+  },
+  "file_count": 95,
+  "scope": {
+    "data_foundation": true,
+    "real_market_data_provider": false,
+    "live_market_data": false,
+    "scanner": false,
+    "trading": false,
+    "order_execution": false
+  }
+}

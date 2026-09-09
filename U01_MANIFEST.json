@@ -1,0 +1,28 @@
+{
+  "project": "KITCHEN_ROBOT",
+  "version": "2.7.0-dev",
+  "execution_unit": "U01",
+  "consolidated_master_stages": [
+    "01",
+    "02"
+  ],
+  "status": "LOCKED",
+  "audit_status": "PASSED",
+  "technical_lock": "LOCKED",
+  "business_rule_lock": "NOT_APPLICABLE",
+  "generated_at_utc": "2026-09-09 21:47:06 UTC",
+  "inventory_policy": {
+    "hash_algorithm": "SHA-256",
+    "manifest_excluded_from_inventory": true,
+    "sha256_file_excluded_from_inventory": true
+  },
+  "file_count": 66,
+  "scope": {
+    "bootstrap": true,
+    "architecture": true,
+    "configuration_boundary": true,
+    "scanner": false,
+    "market_data": false,
+    "trading": false
+  }
+}

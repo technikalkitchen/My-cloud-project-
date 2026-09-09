@@ -1,0 +1,32 @@
+{
+  "project": "KITCHEN_ASSISTANT",
+  "project_version": "2.8",
+  "execution_unit": "U03",
+  "stage": "DATA_CAPTURE_FOUNDATION",
+  "audit": {
+    "status": "PASSED",
+    "technical_lock": "LOCKED",
+    "business_rule_lock": "NOT_APPLICABLE"
+  },
+  "validation": {
+    "u02_lock_verification": "PASSED",
+    "pytest": "PASSED",
+    "data_foundation_self_check": "PASSED"
+  },
+  "scope": {
+    "canonical_candle_model": true,
+    "ohlcv_validation": true,
+    "chronological_validation": true,
+    "normalization": true,
+    "provider_independent_capture_contract": true,
+    "jsonl_storage_foundation": true
+  },
+  "explicitly_not_implemented": {
+    "real_market_data_provider": true,
+    "live_market_data": true,
+    "scanner_intelligence": true,
+    "trading_strategy": true,
+    "order_execution": true
+  },
+  "generated_at_utc": "2026-09-09 22:03:43 UTC"
+}

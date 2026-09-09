@@ -1,0 +1,266 @@
+[
+  {
+    "file": ".git/FETCH_HEAD",
+    "sha256": "f186c7749d9a2a16345047bdeb8d5f399b6c0a6c39528eef10eea90a0e0b3eea"
+  },
+  {
+    "file": ".git/HEAD",
+    "sha256": "28d25bf82af4c0e2b72f50959b2beb859e3e60b9630a5e8c603dad4ddb2b6e80"
+  },
+  {
+    "file": ".git/config",
+    "sha256": "2a487c953914b8202deb317b0b0c3414c32d5b58e073a6b7bf8931ad558c21da"
+  },
+  {
+    "file": ".git/description",
+    "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee"
+  },
+  {
+    "file": ".git/hooks/applypatch-msg.sample",
+    "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7"
+  },
+  {
+    "file": ".git/hooks/commit-msg.sample",
+    "sha256": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437"
+  },
+  {
+    "file": ".git/hooks/fsmonitor-watchman.sample",
+    "sha256": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0"
+  },
+  {
+    "file": ".git/hooks/post-checkout",
+    "sha256": "8d606e58cce98604696a4abcf3ae1ebde6f9f31ac72bb0d44e2444cc39f26030"
+  },
+  {
+    "file": ".git/hooks/post-commit",
+    "sha256": "f3eb4d1f62924c09d481a0563a84b158c66eb2feb3431cfdb3e6760aab4d661d"
+  },
+  {
+    "file": ".git/hooks/post-merge",
+    "sha256": "cecb594e8fa65831654fc95e96db9f1249e09c52810c6fbb2b428280aac22158"
+  },
+  {
+    "file": ".git/hooks/post-update.sample",
+    "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5"
+  },
+  {
+    "file": ".git/hooks/pre-applypatch.sample",
+    "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475"
+  },
+  {
+    "file": ".git/hooks/pre-commit.sample",
+    "sha256": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b"
+  },
+  {
+    "file": ".git/hooks/pre-merge-commit.sample",
+    "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53"
+  },
+  {
+    "file": ".git/hooks/pre-push",
+    "sha256": "a52d0510d0f8c75e27852156ec6f7791f0d8ed65fc58fcc368dd1de0a60a1d74"
+  },
+  {
+    "file": ".git/hooks/pre-push.sample",
+    "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a"
+  },
+  {
+    "file": ".git/hooks/pre-rebase.sample",
+    "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3"
+  },
+  {
+    "file": ".git/hooks/pre-receive.sample",
+    "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989"
+  },
+  {
+    "file": ".git/hooks/prepare-commit-msg.sample",
+    "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619"
+  },
+  {
+    "file": ".git/hooks/push-to-checkout.sample",
+    "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f"
+  },
+  {
+    "file": ".git/hooks/sendemail-validate.sample",
+    "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92"
+  },
+  {
+    "file": ".git/hooks/update.sample",
+    "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106"
+  },
+  {
+    "file": ".git/index",
+    "sha256": "08adae93825da374685baaf57a0966951343e8e24cf724bd7ae19068bbb6bf14"
+  },
+  {
+    "file": ".git/info/exclude",
+    "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1"
+  },
+  {
+    "file": ".git/kilo",
+    "sha256": "1ae8041548c4579121135d686fd19c5b4c34990e5063523d10970f2a3063f628"
+  },
+  {
+    "file": ".git/logs/HEAD",
+    "sha256": "39016ba5fcc5040572df5ca886e392c7dcf42734deb472f85a7dfa5284c67d9d"
+  },
+  {
+    "file": ".git/logs/refs/heads/main",
+    "sha256": "39016ba5fcc5040572df5ca886e392c7dcf42734deb472f85a7dfa5284c67d9d"
+  },
+  {
+    "file": ".git/logs/refs/remotes/origin/HEAD",
+    "sha256": "6ba112e4693803868b357728ac35879a055867ae49818ed62102be6df4767f79"
+  },
+  {
+    "file": ".git/objects/pack/pack-4e28a2b0d72b48eb29ab6fd223da5a4dd724d518.idx",
+    "sha256": "db894f91c3baea5b62d78a0d77ec67c12cfd2258d8a6c72681d225bc33fafc7a"
+  },
+  {
+    "file": ".git/objects/pack/pack-4e28a2b0d72b48eb29ab6fd223da5a4dd724d518.pack",
+    "sha256": "2b2fb2ba74df9a232af99549bcdf0ddfb3ab62cbc4c6fe2795dab471a278fa65"
+  },
+  {
+    "file": ".git/objects/pack/pack-4e28a2b0d72b48eb29ab6fd223da5a4dd724d518.rev",
+    "sha256": "e9172eb6af161c6600025b95922036d77e6a8d7abb6ffbc20d050d086f91169a"
+  },
+  {
+    "file": ".git/packed-refs",
+    "sha256": "1280f76ffbe9c4d9316741619875dc8c2ee3d422f16f31899ddf99c91cdeed93"
+  },
+  {
+    "file": ".git/refs/heads/main",
+    "sha256": "40b7e2da0a8769d92567845250f2e3c24649a19b2d4092fd0cfc1db779513fdd"
+  },
+  {
+    "file": ".git/refs/remotes/origin/HEAD",
+    "sha256": "2bb6a24aa0fc6c484100f5d51a29bbad841cd2c755f5d93faa204e5dbb4eb2b4"
+  },
+  {
+    "file": ".pytest_cache/.gitignore",
+    "sha256": "3ed731b65d06150c138e2dadb0be0697550888a6b47eb8c45ecc9adba8b8e9bd"
+  },
+  {
+    "file": ".pytest_cache/CACHEDIR.TAG",
+    "sha256": "37dc88ef9a0abeddbe81053a6dd8fdfb13afb613045ea1eb4a5c815a74a3bde4"
+  },
+  {
+    "file": ".pytest_cache/README.md",
+    "sha256": "73fd6fccdd802c419a6b2d983d6c3173b7da97558ac4b589edec2dfe443db9ad"
+  },
+  {
+    "file": ".pytest_cache/v/cache/nodeids",
+    "sha256": "189ad70dacf7684aca27dc12d836f197888686b27cf9521f17959435439d45ee"
+  },
+  {
+    "file": "KILO_ANALYSIS.md",
+    "sha256": "cd46d9d446635aa5a86411362ce1f508e9fe22970ee943d5b8737ab45e464238"
+  },
+  {
+    "file": "KILO_MIGRATION_AUDIT.md",
+    "sha256": "9ffc21b947da65ac9818a180ca84e53c3f82c90af5c30c37d38ae38324298091"
+  },
+  {
+    "file": "Kitchen Assistant v3.1.4.ipynb",
+    "sha256": "9fa206071eda7eb744243137d80fec6f51cd4cf410ff781383492b0021e5455f"
+  },
+  {
+    "file": "README.md",
+    "sha256": "fef893b197677251c2c85b1ca92392b91eda0456fdebbc19336f68514f3ca4a5"
+  },
+  {
+    "file": "SCANNER_MASTER_ROADMAP.md",
+    "sha256": "f5574ec59315eb3ab97a041ff982843266c7c2671a71c706b55b92ea6bd38396"
+  },
+  {
+    "file": "U01_AUDIT_METADATA.json",
+    "sha256": "dc8a6ac674c3e59643c5f001367ca845a875313bfaca381d073b73be1a09ba5d"
+  },
+  {
+    "file": "app/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "app/__pycache__/__init__.cpython-314.pyc",
+    "sha256": "6fd40ccb29c84b3be266f41ab951a5ad84e71a012f3d06a574bf82b2f79d8b46"
+  },
+  {
+    "file": "app/api/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "app/config/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "app/config/__pycache__/__init__.cpython-314.pyc",
+    "sha256": "e6715df83c9ac774b962e3b1378e353b5974c40ffa8fb79d82faf3742fa0bc35"
+  },
+  {
+    "file": "app/config/__pycache__/settings.cpython-314.pyc",
+    "sha256": "71983ef0010d60f3c13094692cc8a1b385a2b266f4ccd528a0ec10f4641d3ece"
+  },
+  {
+    "file": "app/config/settings.py",
+    "sha256": "dda6bf398e7a6042a7349b403f686e1e4241221ce7877f6a325df390c2e7142a"
+  },
+  {
+    "file": "app/core/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "app/core/__pycache__/__init__.cpython-314.pyc",
+    "sha256": "c5ec50af122626798e5af0a7efe048fdd4f285af92a3b647b4a7891b6beaf336"
+  },
+  {
+    "file": "app/core/__pycache__/version.cpython-314.pyc",
+    "sha256": "8d60218f326ae1af5c2ee041749afe4b62341f90d7da37bd25152b86ce4b2dcf"
+  },
+  {
+    "file": "app/core/version.py",
+    "sha256": "89fe21df0125eb9e760c1f0e38c8284f5fa44b1c846bd973a8b5d43f847ee638"
+  },
+  {
+    "file": "app/data/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "app/journal/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "app/market/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "app/orderbook/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "app/scanner/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "app/trading/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "config/.env.example",
+    "sha256": "910bb6f1465800bbcb3fb8938b07304250761684fd9754f77bc86322a8065699"
+  },
+  {
+    "file": "ledgers/U01_LEDGER.md",
+    "sha256": "29571f32c4204ce2196254940815cdb40db9fafa28b2ae29a5c00213c8272f9f"
+  },
+  {
+    "file": "requirements.txt",
+    "sha256": "9db10e06e59f5c4aa47b067bff5563aae75f66967b41a3811337bc181d6564a6"
+  },
+  {
+    "file": "tests/__pycache__/test_u01.cpython-314-pytest-8.4.2.pyc",
+    "sha256": "85f99497d43098a0f6eabf2d0a991545cc7a3d0b007195538a96d1e1a8d27bb5"
+  },
+  {
+    "file": "tests/test_u01.py",
+    "sha256": "e3bd18280593481d920766e3e7ac99b7a4c77e32a73614ac8a2627f7bf9bbd3c"
+  }
+]
