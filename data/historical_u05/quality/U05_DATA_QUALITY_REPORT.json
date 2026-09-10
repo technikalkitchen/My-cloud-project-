@@ -1,0 +1,15 @@
+{
+  "project": "KITCHEN_ASSISTANT",
+  "version": "3.1",
+  "execution_unit": "U05",
+  "stage": "HISTORICAL_MULTI_SYMBOL_CAPTURE",
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT",
+    "XRPUSDT",
+    "ADAUSDT"
+  ],
+  "validation": "PASSED",
+  "generated_at_utc": "2026-09-10 20:34:33 UTC"
+}

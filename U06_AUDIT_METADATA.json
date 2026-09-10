@@ -1,0 +1,40 @@
+{
+  "project": "KITCHEN_ASSISTANT",
+  "version": "3.1",
+  "execution_unit": "U06",
+  "stage": "U05_HISTORICAL_DATA_QUALITY_GATE",
+  "audit": {
+    "status": "PASSED",
+    "technical_lock": "LOCKED",
+    "business_rule_lock": "NOT_APPLICABLE"
+  },
+  "gate": {
+    "name": "U05_HISTORICAL_DATA_QUALITY",
+    "control_artifacts": [
+      "DATASET_INDEX.json",
+      "U05_SHA256.json",
+      "U05_CAPTURE_MANIFEST.json",
+      "U05_DATA_QUALITY_REPORT.json"
+    ],
+    "sha256_control": "PASSED",
+    "per_symbol_schema": "PASSED",
+    "record_count": "PASSED",
+    "symbol_coverage": "PASSED",
+    "volume_contract": "PASSED",
+    "safety_locks": "PASSED",
+    "total_series_excluded": "PASSED",
+    "coinbase_timestamp_gaps_tolerated": "PASSED"
+  },
+  "prerequisite": {
+    "u05": "LOCKED",
+    "u04": "LOCKED",
+    "u03": "LOCKED",
+    "u02": "LOCKED",
+    "u01": "LOCKED"
+  },
+  "source_integrity": {
+    "source_data_modified": false,
+    "read_only": true
+  },
+  "generated_at_utc": "2026-09-10 17:40:00 UTC"
+}

@@ -1,0 +1,15 @@
+{
+  "data/historical_u05/raw/BTCUSDT_1m.json": "4cc97baa74babc6dd1731672bc0bfc64d112be373cae9173b67cd474e4fd1e4b",
+  "data/historical_u05/normalized/BTCUSDT_1m.jsonl": "65a20e40cb4c6b7e44fafed376ba4fe537cda9365b9b3f10a8eb98f1713f6965",
+  "data/historical_u05/raw/ETHUSDT_1m.json": "266cdaa1753b017c77101bba81df21054214bb6549ce941850d57d94b91e6003",
+  "data/historical_u05/normalized/ETHUSDT_1m.jsonl": "360855200e08ce66b096935fed99b38cff2f7b7f4697629b77bc5aa91a070abb",
+  "data/historical_u05/raw/SOLUSDT_1m.json": "aa43ff187409de67e9948c75c21251169511ad8ea237e6c6cf837ebfc12fe096",
+  "data/historical_u05/normalized/SOLUSDT_1m.jsonl": "be6ae240c77ab72d08645e3c5097594ba0db7f173da992c5c05da9e73a9968db",
+  "data/historical_u05/raw/XRPUSDT_1m.json": "e84edb8cf9db571f9e9060b86132f2f8b80bd50226427516f7ce64117a1a0067",
+  "data/historical_u05/normalized/XRPUSDT_1m.jsonl": "d37d3f86d758275e8b772c8be44fbffeb05af305e8d22b9637447ddb89cc607a",
+  "data/historical_u05/raw/ADAUSDT_1m.json": "4bda20b893d0e9d7dfc5b7551801e0dca6de8aa83c6be3b9101dee6fe5b01e40",
+  "data/historical_u05/normalized/ADAUSDT_1m.jsonl": "a8d81d588c698842e4b063abb7dbe7a01f9cd80fec2a027361a5b5b80e2782f4",
+  "data/historical_u05/DATASET_INDEX.json": "910cccf6cc35ef2387ebf06e6db94b564b953b513dea0dee3dbe5228965c401b",
+  "data/historical_u05/manifests/U05_CAPTURE_MANIFEST.json": "286374e0d947d33a8b7327460b7896521c52263e7336d493e77f1d866acc20b1",
+  "data/historical_u05/quality/U05_DATA_QUALITY_REPORT.json": "d53342d508f8d47984e0ff34564d4bc37f0b646225ba1c99a17ac24709bfddd8"
+}

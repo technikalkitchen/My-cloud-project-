@@ -1,0 +1,30 @@
+{
+  "project": "KITCHEN_ASSISTANT",
+  "version": "3.1",
+  "execution_unit": "U06",
+  "generated_at_utc": "2026-09-10 20:35:12 UTC",
+  "hash_algorithm": "SHA-256",
+  "file_count": 5,
+  "files": [
+    {
+      "file": "U06_AUDIT_METADATA.json",
+      "sha256": "6f2c46593e7a95962c74f2510b6c7157a38a4b938cee2a8e019f3bac3d470a9e"
+    },
+    {
+      "file": "U06_MANIFEST.json",
+      "sha256": "186bfa1d9c97ffada6904935b17b6c3512dda14828c177b42d3170b1089f8f25"
+    },
+    {
+      "file": "data/historical_u05/quality/U06_DATA_QUALITY_REPORT.json",
+      "sha256": "71fa87042cb806b52425a874a86c3f12300117dc689a00f71fc1ac6abc889c82"
+    },
+    {
+      "file": "data/historical_u05/quality/U06_DATA_QUALITY_SUMMARY.txt",
+      "sha256": "f5f9289dddce96abd30466378bc0e99225ccc9e7b49de5ec55e11ac1f294bfb5"
+    },
+    {
+      "file": "ledgers/U06_LEDGER.md",
+      "sha256": "4f9b2835223af53d1854f0f4897cc4d46f2c18c708b6df0f868ed08c4d1cd635"
+    }
+  ]
+}

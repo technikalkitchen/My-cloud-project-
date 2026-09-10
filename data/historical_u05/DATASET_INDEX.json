@@ -1,0 +1,22 @@
+{
+  "project": "KITCHEN_ASSISTANT",
+  "version": "3.1",
+  "execution_unit": "U05",
+  "stage": "HISTORICAL_MULTI_SYMBOL_CAPTURE",
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT",
+    "XRPUSDT",
+    "ADAUSDT"
+  ],
+  "interval": "1m",
+  "candles_per_symbol": 100,
+  "total_candles": 500,
+  "selected_provider": "BINANCE_SPOT_PUBLIC",
+  "provider_priority": [
+    "BINANCE_SPOT_PUBLIC",
+    "COINBASE_EXCHANGE_PUBLIC"
+  ],
+  "generated_at_utc": "2026-09-10 20:34:33 UTC"
+}

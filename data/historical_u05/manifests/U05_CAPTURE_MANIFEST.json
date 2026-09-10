@@ -1,0 +1,47 @@
+{
+  "project": "KITCHEN_ASSISTANT",
+  "version": "3.1",
+  "execution_unit": "U05",
+  "stage": "HISTORICAL_MULTI_SYMBOL_CAPTURE",
+  "capture_mode": "MULTI_SYMBOL_PRIORITY",
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT",
+    "XRPUSDT",
+    "ADAUSDT"
+  ],
+  "interval": "1m",
+  "candles_per_symbol": 100,
+  "provider_priority": [
+    "BINANCE_SPOT_PUBLIC",
+    "COINBASE_EXCHANGE_PUBLIC"
+  ],
+  "selected_provider": "BINANCE_SPOT_PUBLIC",
+  "results": {
+    "BTCUSDT": {
+      "provider": "BINANCE_SPOT_PUBLIC",
+      "records": 100
+    },
+    "ETHUSDT": {
+      "provider": "BINANCE_SPOT_PUBLIC",
+      "records": 100
+    },
+    "SOLUSDT": {
+      "provider": "BINANCE_SPOT_PUBLIC",
+      "records": 100
+    },
+    "XRPUSDT": {
+      "provider": "BINANCE_SPOT_PUBLIC",
+      "records": 100
+    },
+    "ADAUSDT": {
+      "provider": "BINANCE_SPOT_PUBLIC",
+      "records": 100
+    }
+  },
+  "trading_enabled": false,
+  "orders_enabled": false,
+  "strategy_enabled": false,
+  "generated_at_utc": "2026-09-10 20:34:33 UTC"
+}

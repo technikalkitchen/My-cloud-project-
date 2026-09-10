@@ -1,0 +1,47 @@
+{
+  "project": "KITCHEN_ASSISTANT",
+  "version": "3.1",
+  "execution_unit": "U06",
+  "stage": "U05_HISTORICAL_DATA_QUALITY_GATE",
+  "status": "LOCKED",
+  "audit_status": "PASSED",
+  "technical_lock": "LOCKED",
+  "business_rule_lock": "NOT_APPLICABLE",
+  "generated_at_utc": "2026-09-10 17:40:00 UTC",
+  "inventory_policy": {
+    "hash_algorithm": "SHA-256",
+    "manifest_excluded_from_inventory": true,
+    "sha256_file_excluded_from_inventory": true
+  },
+  "prerequisite": {
+    "u05": "LOCKED",
+    "u04": "LOCKED",
+    "u03": "LOCKED",
+    "u02": "LOCKED",
+    "u01": "LOCKED"
+  },
+  "gate": {
+    "name": "U05_HISTORICAL_DATA_QUALITY",
+    "control_artifacts": [
+      "DATASET_INDEX.json",
+      "U05_SHA256.json",
+      "U05_CAPTURE_MANIFEST.json",
+      "U05_DATA_QUALITY_REPORT.json"
+    ],
+    "scope": "Validation of U05 captured historical data integrity and schema conformance"
+  },
+  "outputs": [
+    "data/historical_u05/quality/U06_DATA_QUALITY_REPORT.json",
+    "data/historical_u05/quality/U06_DATA_QUALITY_SUMMARY.txt",
+    "ledgers/U06_LEDGER.md"
+  },
+  "excluded": {
+    "TOTAL": true,
+    "TOTAL2": true,
+    "TOTAL3": true,
+    "inflow_usd": true,
+    "outflow_usd": true,
+    "netflow_usd": true
+  },
+  "file_count": 4
+}

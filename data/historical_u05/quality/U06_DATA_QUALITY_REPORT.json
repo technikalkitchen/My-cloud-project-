@@ -1,0 +1,122 @@
+{
+  "project": "KITCHEN_ASSISTANT",
+  "version": "3.1",
+  "execution_unit": "U06",
+  "gate": "U05_HISTORICAL_DATA_QUALITY",
+  "validation_status": "PASS",
+  "technical_lock": true,
+  "source_data_modified": false,
+  "controlled_symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT",
+    "XRPUSDT",
+    "ADAUSDT"
+  ],
+  "controlled_symbol_count": 5,
+  "expected_records_per_symbol": 100,
+  "expected_total_records": 500,
+  "actual_total_records": 500,
+  "hard_total_problems": 0,
+  "u05_schema": {
+    "volume_field": "volume_base",
+    "volume_source_field": "volume_source",
+    "volume_counting_rule_field": "volume_counting_rule",
+    "double_counting_field": "volume_double_counting",
+    "buyer_seller_field": "buyer_seller_not_double_counted"
+  },
+  "control_artifacts": {
+    "DATASET_INDEX.json": true,
+    "U05_SHA256.json": true,
+    "U05_CAPTURE_MANIFEST.json": true,
+    "U05_DATA_QUALITY_REPORT.json": true
+  },
+  "sha256": {
+    "available": true,
+    "valid": true,
+    "mismatched": [],
+    "missing": []
+  },
+  "global_validation": {
+    "record_count": true,
+    "symbol_coverage": true,
+    "source_data_modified": true
+  },
+  "safety": {
+    "trading_disabled": true,
+    "orders_disabled": true,
+    "strategy_disabled": true,
+    "total_series_excluded": true,
+    "real_provider_volume": true,
+    "double_counting_disabled": true,
+    "buyer_seller_not_double_counted": true
+  },
+  "symbol_reports": [
+    {
+      "symbol": "BTCUSDT",
+      "file": "data/historical_u05/normalized/BTCUSDT_1m.jsonl",
+      "exists": true,
+      "records": 100,
+      "timestamp_unit": "milliseconds",
+      "problems": [],
+      "problem_count": 0,
+      "status": "PASS",
+      "provider": null,
+      "schema": "U05_CANONICAL",
+      "hard_problem_count": 0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "file": "data/historical_u05/normalized/ETHUSDT_1m.jsonl",
+      "exists": true,
+      "records": 100,
+      "timestamp_unit": "milliseconds",
+      "problems": [],
+      "problem_count": 0,
+      "status": "PASS",
+      "provider": null,
+      "schema": "U05_CANONICAL",
+      "hard_problem_count": 0
+    },
+    {
+      "symbol": "SOLUSDT",
+      "file": "data/historical_u05/normalized/SOLUSDT_1m.jsonl",
+      "exists": true,
+      "records": 100,
+      "timestamp_unit": "milliseconds",
+      "problems": [],
+      "problem_count": 0,
+      "status": "PASS",
+      "provider": null,
+      "schema": "U05_CANONICAL",
+      "hard_problem_count": 0
+    },
+    {
+      "symbol": "XRPUSDT",
+      "file": "data/historical_u05/normalized/XRPUSDT_1m.jsonl",
+      "exists": true,
+      "records": 100,
+      "timestamp_unit": "milliseconds",
+      "problems": [],
+      "problem_count": 0,
+      "status": "PASS",
+      "provider": null,
+      "schema": "U05_CANONICAL",
+      "hard_problem_count": 0
+    },
+    {
+      "symbol": "ADAUSDT",
+      "file": "data/historical_u05/normalized/ADAUSDT_1m.jsonl",
+      "exists": true,
+      "records": 100,
+      "timestamp_unit": "milliseconds",
+      "problems": [],
+      "problem_count": 0,
+      "status": "PASS",
+      "provider": null,
+      "schema": "U05_CANONICAL",
+      "hard_problem_count": 0
+    }
+  ],
+  "generated_at_utc": "2026-09-10 20:34:42 UTC"
+}
