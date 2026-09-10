@@ -1,0 +1,39 @@
+{
+  "project": "KITCHEN_ASSISTANT",
+  "version": "2.8",
+  "execution_unit": "U04",
+  "stage": "REAL_MARKET_DATA_PROVIDER_CAPTURE",
+  "audit": {
+    "status": "PASSED",
+    "technical_lock": "LOCKED",
+    "business_rule_lock": "NOT_APPLICABLE"
+  },
+  "provider_policy": {
+    "primary": "BINANCE_SPOT_PUBLIC",
+    "fallback": "COINBASE_EXCHANGE_PUBLIC",
+    "priority_rule": "BINANCE_FIRST"
+  },
+  "capture": {
+    "symbol": "BTCUSDT",
+    "interval": "1m",
+    "requested_candles": 5,
+    "received_candles": 5,
+    "selected_provider": "BINANCE_SPOT_PUBLIC"
+  },
+  "security": {
+    "api_key_required": false,
+    "secret_required": false,
+    "trading_enabled": false,
+    "orders_enabled": false
+  },
+  "validation": {
+    "structural_tests": "PASSED",
+    "import_integrity": "PASSED",
+    "live_capture": "PASSED",
+    "chronological": "PASSED",
+    "duplicate_timestamp": "PASSED",
+    "ohlc": "PASSED",
+    "volume": "PASSED"
+  },
+  "generated_at_utc": "2026-09-10 13:35:39 UTC"
+}
