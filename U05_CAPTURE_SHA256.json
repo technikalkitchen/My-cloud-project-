@@ -1,0 +1,35 @@
+{
+  "project": "KITCHEN_ASSISTANT",
+  "version": "3.1",
+  "execution_unit": "U05",
+  "stage": "HISTORICAL_MULTI_SYMBOL_CAPTURE",
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT",
+    "XRPUSDT",
+    "ADAUSDT"
+  ],
+  "captures": {
+    "BTCUSDT": {
+      "raw_sha256": "4cc97baa74babc6dd1731672bc0bfc64d112be373cae9173b67cd474e4fd1e4b",
+      "normalized_sha256": "65a20e40cb4c6b7e44fafed376ba4fe537cda9365b9b3f10a8eb98f1713f6965"
+    },
+    "ETHUSDT": {
+      "raw_sha256": "266cdaa1753b017c77101bba81df21054214bb6549ce941850d57d94b91e6003",
+      "normalized_sha256": "360855200e08ce66b096935fed99b38cff2f7b7f4697629b77bc5aa91a070abb"
+    },
+    "SOLUSDT": {
+      "raw_sha256": "aa43ff187409de67e9948c75c21251169511ad8ea237e6c6cf837ebfc12fe096",
+      "normalized_sha256": "be6ae240c77ab72d08645e3c5097594ba0db7f173da992c5c05da9e73a9968db"
+    },
+    "XRPUSDT": {
+      "raw_sha256": "e84edb8cf9db571f9e9060b86132f2f8b80bd50226427516f7ce64117a1a0067",
+      "normalized_sha256": "d37d3f86d758275e8b772c8be44fbffeb05af305e8d22b9637447ddb89cc607a"
+    },
+    "ADAUSDT": {
+      "raw_sha256": "4bda20b893d0e9d7dfc5b7551801e0dca6de8aa83c6be3b9101dee6fe5b01e40",
+      "normalized_sha256": "a8d81d588c698842e4b063abb7dbe7a01f9cd80fec2a027361a5b5b80e2782f4"
+    }
+  }
+}

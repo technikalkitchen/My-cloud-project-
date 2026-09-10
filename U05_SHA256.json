@@ -1,0 +1,330 @@
+{
+  "project": "KITCHEN_ASSISTANT",
+  "version": "3.1",
+  "execution_unit": "U05",
+  "generated_at_utc": "2026-09-10 16:11:17 UTC",
+  "hash_algorithm": "SHA-256",
+  "file_count": 80,
+  "files": [
+    {
+      "file": "KILO_ANALYSIS.md",
+      "sha256": "cd46d9d446635aa5a86411362ce1f508e9fe22970ee943d5b8737ab45e464238"
+    },
+    {
+      "file": "KILO_MIGRATION_AUDIT.md",
+      "sha256": "9ffc21b947da65ac9818a180ca84e53c3f82c90af5c30c37d38ae38324298091"
+    },
+    {
+      "file": "Kitchen Assistant v3.1.4.ipynb",
+      "sha256": "9fa206071eda7eb744243137d80fec6f51cd4cf410ff781383492b0021e5455f"
+    },
+    {
+      "file": "README.md",
+      "sha256": "fef893b197677251c2c85b1ca92392b91eda0456fdebbc19336f68514f3ca4a5"
+    },
+    {
+      "file": "SCANNER_MASTER_ROADMAP.md",
+      "sha256": "f5574ec59315eb3ab97a041ff982843266c7c2671a71c706b55b92ea6bd38396"
+    },
+    {
+      "file": "U01_AUDIT_METADATA.json",
+      "sha256": "dc8a6ac674c3e59643c5f001367ca845a875313bfaca381d073b73be1a09ba5d"
+    },
+    {
+      "file": "U01_MANIFEST.json",
+      "sha256": "2b115848218fab5f9bcc885f51c6498cac21112c52174108f8929ca666aff5d3"
+    },
+    {
+      "file": "U01_SHA256.json",
+      "sha256": "7e9f96ca0c314e4321d79c5ec3aa17cc0fcb32cac26132b542145cf5e9241b67"
+    },
+    {
+      "file": "U02_AUDIT_METADATA.json",
+      "sha256": "fc5b138d0956f75e53d5d17df7fec52856ccf0ddf74ad747b3b7d84acfd1b17f"
+    },
+    {
+      "file": "U02_MANIFEST.json",
+      "sha256": "f93e4fffe5fa6c91ab7032b2497baed0861e9df76ee33c692c4dc58a8b09316e"
+    },
+    {
+      "file": "U02_SHA256.json",
+      "sha256": "70d9723daacb4769dab92d711ca6af754f7654dc9b90dcd90576f301dfffadc7"
+    },
+    {
+      "file": "U03_AUDIT_METADATA.json",
+      "sha256": "60ace325c1adc02cd92083319dfbeb301e8f21ca0bfab8950f6b843cab13f1de"
+    },
+    {
+      "file": "U03_MANIFEST.json",
+      "sha256": "41feaabd7597f24fadbd3473361f3b5ae74d1a7260e2959ca07a9a9939c2243d"
+    },
+    {
+      "file": "U03_SHA256.json",
+      "sha256": "02c614de2533b5fca960933204ec5e328751592a0f00a91002423dacc4bad21b"
+    },
+    {
+      "file": "U04_AUDIT_METADATA.json",
+      "sha256": "bb7aea854b695740a0897a975e338b20fd8575965771ea20a7bdd90858f83691"
+    },
+    {
+      "file": "U04_CAPTURE_SHA256.json",
+      "sha256": "56ea57bcc21887a85be475ec7eb5e514f3ff2d981369e6229cf61b2fdfd9df1a"
+    },
+    {
+      "file": "U04_PROVIDER_MANIFEST.json",
+      "sha256": "b16804929a7bcb922e083c4956f06ab329185ac3d4388739f1be06254d0aa511"
+    },
+    {
+      "file": "U04_SHA256.json",
+      "sha256": "237ae7616439a3a4030936e02de23047bbefb56135c4a2fd62f596162c63f5cf"
+    },
+    {
+      "file": "U05_AUDIT_METADATA.json",
+      "sha256": "8cd5c21417fc11bc82d5315bd4eebb737fe601dc8087bdd8cff2f4890be5d8a8"
+    },
+    {
+      "file": "U05_CAPTURE_SHA256.json",
+      "sha256": "59b5e7b6111884fdb10e3df0cbadf74629aedb9af34a65264060512356483b7b"
+    },
+    {
+      "file": "app/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "app/api/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "app/api/app.py",
+      "sha256": "46254dac57828da5357db81c395e6bf5aceae7e1d3a3c62a016ee05e90079055"
+    },
+    {
+      "file": "app/config/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "app/config/market_data.py",
+      "sha256": "848486e9b0a0d0f890cd97f8398e3e543beed607ceb57e5b468bacd90bf79adc"
+    },
+    {
+      "file": "app/config/runtime.py",
+      "sha256": "e1686a5138bf335147477977dc1466a8c9564366ebdc64a76f56677ea085fe99"
+    },
+    {
+      "file": "app/config/settings.py",
+      "sha256": "dda6bf398e7a6042a7349b403f686e1e4241221ce7877f6a325df390c2e7142a"
+    },
+    {
+      "file": "app/core/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "app/core/version.py",
+      "sha256": "89fe21df0125eb9e760c1f0e38c8284f5fa44b1c846bd973a8b5d43f847ee638"
+    },
+    {
+      "file": "app/data/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "app/data/capture/base.py",
+      "sha256": "abc99dc057b3f1b6c65404b500bd6a858c6012f23e668fce5c5439ede36704de"
+    },
+    {
+      "file": "app/data/capture/binance.py",
+      "sha256": "6f29b786d6059d24c53b8f7a3aa4f17f9cee6c90c106bf94213e5587a2237713"
+    },
+    {
+      "file": "app/data/capture/coinbase.py",
+      "sha256": "1caa6e898e25ba6256a047970010321e12af0e37ce94661224f4b071c382df58"
+    },
+    {
+      "file": "app/data/capture/market_data.py",
+      "sha256": "435fcc595b772855d3e5be8c35f7dc5ddb775163df12688db3ce821efadf71c0"
+    },
+    {
+      "file": "app/data/capture/router.py",
+      "sha256": "0d381c887310d47e626fa17c7017acc964406179f505ee5a41f63d11bd033999"
+    },
+    {
+      "file": "app/data/capture/storage.py",
+      "sha256": "254c65ce53524ff0ef22a898f4faf5d917c27b4421e2c70e2a1978c747912a0c"
+    },
+    {
+      "file": "app/data/models/candle.py",
+      "sha256": "bba1bcbf2dbd4c2ef5655cf065cd1465aa9f962a29078f7a11ce40e015adf8b1"
+    },
+    {
+      "file": "app/data/validation/candles.py",
+      "sha256": "2b93de1ba4007051c6ff1f97dda3c660b52a7346c6e50ca9d6216c20a756fd5e"
+    },
+    {
+      "file": "app/data/validation/normalize.py",
+      "sha256": "649a46f13ddcde453db5266ebd1d24693c3109d49c29688bd2acb20838511f8d"
+    },
+    {
+      "file": "app/journal/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "app/market/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "app/orderbook/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "app/scanner/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "app/trading/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "config/.env.example",
+      "sha256": "910bb6f1465800bbcb3fb8938b07304250761684fd9754f77bc86322a8065699"
+    },
+    {
+      "file": "data/historical_u05/manifests/ADAUSDT_MANIFEST.json",
+      "sha256": "9c408ba2516b3467d19a7a1a256c3e47f8b487bd16a680e0cc6acb7d3915df9d"
+    },
+    {
+      "file": "data/historical_u05/manifests/BTCUSDT_MANIFEST.json",
+      "sha256": "c9f728af1fa287f08dd3cc0da7ce5b50bf72987d039fbda01aee215c48b4af69"
+    },
+    {
+      "file": "data/historical_u05/manifests/ETHUSDT_MANIFEST.json",
+      "sha256": "f20c18f9c5001ff8e094a06c40fe78d964f08467e76d9f3ae9a126f6a0190d69"
+    },
+    {
+      "file": "data/historical_u05/manifests/SOLUSDT_MANIFEST.json",
+      "sha256": "1b88c25ff715e610431c499399f1fe8dac82e2786054fd8687d957b5ba08ff20"
+    },
+    {
+      "file": "data/historical_u05/manifests/XRPUSDT_MANIFEST.json",
+      "sha256": "9e8ea0c656ae4cc44c175f32f117b1aa3e796818b645b6b5d121cdd760e6ee7c"
+    },
+    {
+      "file": "data/historical_u05/normalized/ADAUSDT_1m.jsonl",
+      "sha256": "a8d81d588c698842e4b063abb7dbe7a01f9cd80fec2a027361a5b5b80e2782f4"
+    },
+    {
+      "file": "data/historical_u05/normalized/BTCUSDT_1m.jsonl",
+      "sha256": "65a20e40cb4c6b7e44fafed376ba4fe537cda9365b9b3f10a8eb98f1713f6965"
+    },
+    {
+      "file": "data/historical_u05/normalized/ETHUSDT_1m.jsonl",
+      "sha256": "360855200e08ce66b096935fed99b38cff2f7b7f4697629b77bc5aa91a070abb"
+    },
+    {
+      "file": "data/historical_u05/normalized/SOLUSDT_1m.jsonl",
+      "sha256": "be6ae240c77ab72d08645e3c5097594ba0db7f173da992c5c05da9e73a9968db"
+    },
+    {
+      "file": "data/historical_u05/normalized/XRPUSDT_1m.jsonl",
+      "sha256": "d37d3f86d758275e8b772c8be44fbffeb05af305e8d22b9637447ddb89cc607a"
+    },
+    {
+      "file": "data/historical_u05/quality/ADAUSDT_QUALITY.json",
+      "sha256": "a994b2006415d92256475817177cfb350ed0d76ea356c8f0edd2f11407936d98"
+    },
+    {
+      "file": "data/historical_u05/quality/BTCUSDT_QUALITY.json",
+      "sha256": "5487be1de3c6883cd8a20b1f25e0b69f8698817b8d34a3c90836bb2816bcd152"
+    },
+    {
+      "file": "data/historical_u05/quality/ETHUSDT_QUALITY.json",
+      "sha256": "3ba9b489433999dd9000036ede5bb32772e72d0a99fd44649a3809dd2467ed92"
+    },
+    {
+      "file": "data/historical_u05/quality/SOLUSDT_QUALITY.json",
+      "sha256": "75e6a9e3d2a84acc6f704cad8252be959520d70b8be0357908ca54662426bad9"
+    },
+    {
+      "file": "data/historical_u05/quality/XRPUSDT_QUALITY.json",
+      "sha256": "d1bc0eeebf05c8faf9a0a760453d71ec5e8cc7a1e21bb0efe72fc12938ad3121"
+    },
+    {
+      "file": "data/historical_u05/raw/ADAUSDT_1m.json",
+      "sha256": "4bda20b893d0e9d7dfc5b7551801e0dca6de8aa83c6be3b9101dee6fe5b01e40"
+    },
+    {
+      "file": "data/historical_u05/raw/BTCUSDT_1m.json",
+      "sha256": "4cc97baa74babc6dd1731672bc0bfc64d112be373cae9173b67cd474e4fd1e4b"
+    },
+    {
+      "file": "data/historical_u05/raw/ETHUSDT_1m.json",
+      "sha256": "266cdaa1753b017c77101bba81df21054214bb6549ce941850d57d94b91e6003"
+    },
+    {
+      "file": "data/historical_u05/raw/SOLUSDT_1m.json",
+      "sha256": "aa43ff187409de67e9948c75c21251169511ad8ea237e6c6cf837ebfc12fe096"
+    },
+    {
+      "file": "data/historical_u05/raw/XRPUSDT_1m.json",
+      "sha256": "e84edb8cf9db571f9e9060b86132f2f8b80bd50226427516f7ce64117a1a0067"
+    },
+    {
+      "file": "data/normalized/BTCUSDT_1m_u04.jsonl",
+      "sha256": "4766bd0b5a694587cbbe7aac9a1309965263fd31530b0ca0fd05deea1070c905"
+    },
+    {
+      "file": "data/raw/BTCUSDT_1m_u04.json",
+      "sha256": "e0b6ad92f6d9c26817729e0f3fc5d0cdfbcd7e33c90f98b7aad8798bd398926d"
+    },
+    {
+      "file": "ledgers/U01_LEDGER.md",
+      "sha256": "29571f32c4204ce2196254940815cdb40db9fafa28b2ae29a5c00213c8272f9f"
+    },
+    {
+      "file": "ledgers/U02_LEDGER.md",
+      "sha256": "863ebaefbaa1d4a566526302b08623e32989c2958dc285b89caa228f1a21032f"
+    },
+    {
+      "file": "ledgers/U03_LEDGER.md",
+      "sha256": "95e58a3fe0190d8a964e721513084967b7d20ef4e327f6e81b05de8ee666ef16"
+    },
+    {
+      "file": "ledgers/U04_LEDGER.md",
+      "sha256": "bf1ef808af1f2b526e51f411573a46afacff3c7d7d54a312801696f95e61e88c"
+    },
+    {
+      "file": "ledgers/U05_LEDGER.md",
+      "sha256": "0be799f36a1c760f0ede3de4997d514d51a554c18a4f33ac15656119ab272aec"
+    },
+    {
+      "file": "requirements.txt",
+      "sha256": "98b122315a68b6c80b7c335fa33dea4f6d86bb4cf068d0df2a89b320625dbb31"
+    },
+    {
+      "file": "scripts/start_wsgi.sh",
+      "sha256": "3f7b865f384d6d9ba8e5906468a5f93af86c3879e57d3f64bfc699b08a6d379a"
+    },
+    {
+      "file": "tests/data/test_u03.py",
+      "sha256": "6a9ecdfa161434bde09276e7774126a548a3a2747fbc342f76984353618b3c4c"
+    },
+    {
+      "file": "tests/data/test_u04.py",
+      "sha256": "b9436fd44622525feb9e19ee7350f4d8596b4dcb4c42e0b39ad5f392c4ab1861"
+    },
+    {
+      "file": "tests/data/test_u05.py",
+      "sha256": "703d75637178f7175356626b9aca96bf3633e3044be9f19fcf55bd6821fb9a8f"
+    },
+    {
+      "file": "tests/test_u01.py",
+      "sha256": "e3bd18280593481d920766e3e7ac99b7a4c77e32a73614ac8a2627f7bf9bbd3c"
+    },
+    {
+      "file": "tests/test_u02.py",
+      "sha256": "1eb7809b41e9057b09f978586aa4c037f56d53d5431964a31a90404a8f98ad2c"
+    },
+    {
+      "file": "wsgi.py",
+      "sha256": "500d5ff978133a524ef77a86f2f7a4eabdec435e327a75f389de651ced0e172a"
+    }
+  ]
+}

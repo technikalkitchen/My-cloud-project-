@@ -1,0 +1,50 @@
+{
+  "project": "KITCHEN_ASSISTANT",
+  "version": "3.1",
+  "execution_unit": "U05",
+  "stage": "HISTORICAL_MULTI_SYMBOL_CAPTURE",
+  "status": "LOCKED",
+  "audit_status": "PASSED",
+  "technical_lock": "LOCKED",
+  "business_rule_lock": "NOT_APPLICABLE",
+  "generated_at_utc": "2026-09-10 16:11:17 UTC",
+  "inventory_policy": {
+    "hash_algorithm": "SHA-256",
+    "manifest_excluded_from_inventory": true,
+    "sha256_file_excluded_from_inventory": true
+  },
+  "prerequisite": {
+    "u04": "LOCKED",
+    "u03": "LOCKED",
+    "u02": "LOCKED",
+    "u01": "LOCKED"
+  },
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT",
+    "XRPUSDT",
+    "ADAUSDT"
+  ],
+  "scope": {
+    "multi_symbol_capture": true,
+    "rolling_volume_calculation": true,
+    "coinbase_backward_pagination": true,
+    "exact_usd_quote_volume": true,
+    "historical_dataset": true,
+    "real_market_data_provider": true,
+    "live_market_data": false,
+    "scanner": false,
+    "trading": false,
+    "order_execution": false
+  },
+  "excluded": {
+    "TOTAL": true,
+    "TOTAL2": true,
+    "TOTAL3": true,
+    "inflow_usd": true,
+    "outflow_usd": true,
+    "netflow_usd": true
+  },
+  "file_count": 42
+}

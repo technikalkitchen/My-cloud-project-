@@ -1,0 +1,63 @@
+{
+  "project": "KITCHEN_ASSISTANT",
+  "version": "3.1",
+  "execution_unit": "U05",
+  "stage": "HISTORICAL_MULTI_SYMBOL_CAPTURE",
+  "audit": {
+    "status": "PASSED",
+    "technical_lock": "LOCKED",
+    "business_rule_lock": "NOT_APPLICABLE"
+  },
+  "provider_policy": {
+    "primary": "BINANCE_SPOT_PUBLIC",
+    "fallback": "COINBASE_EXCHANGE_PUBLIC",
+    "priority_rule": "BINANCE_FIRST"
+  },
+  "capture": {
+    "symbols": [
+      "BTCUSDT",
+      "ETHUSDT",
+      "SOLUSDT",
+      "XRPUSDT",
+      "ADAUSDT"
+    ],
+    "interval": "1m",
+    "requested_candles_per_symbol": 100,
+    "received_candles_per_symbol": 100,
+    "selected_provider": "BINANCE_SPOT_PUBLIC",
+    "rolling_duration_minutes": 60,
+    "rolling_range_mode": "ROLLING_END_AT_NOW"
+  },
+  "security": {
+    "api_key_required": false,
+    "secret_required": false,
+    "trading_enabled": false,
+    "orders_enabled": false,
+    "strategy_enabled": false
+  },
+  "validation": {
+    "structural_tests": "PASSED",
+    "import_integrity": "PASSED",
+    "safety_locks": "PASSED",
+    "multi_symbol_capture": "PASSED",
+    "chronological": "PASSED",
+    "duplicate_timestamp": "PASSED",
+    "ohlc_bounds": "PASSED",
+    "volume_contract": "PASSED",
+    "rolling_volume": "PASSED",
+    "exact_usd_quote_volume": "PASSED",
+    "no_fabricated_data": "PASSED",
+    "total_series_excluded": "PASSED"
+  },
+  "volume_contract": {
+    "definition": "TOTAL_TRADED_BASE_ASSET_VOLUME",
+    "each_trade_counted_once": true,
+    "buyer_and_seller_not_double_counted": true,
+    "provider_supplied": true,
+    "fabricated": false,
+    "interpolation": false,
+    "market_cap_derived": false,
+    "close_times_volume": false
+  },
+  "generated_at_utc": "2026-09-10 16:11:17 UTC"
+}
