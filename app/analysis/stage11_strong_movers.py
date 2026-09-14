@@ -552,9 +552,18 @@ def run_strong_movers(
         config = StrongMoversConfig()
 
     errors: List[str] = []
-    ranking_version = get_ranking_version(valid_assets)
+    ranking = dynamic_rank_assets(valid_assets)
+    ranking_version = ranking.get("ranking_version", "")
+    top125 = ranking.get("top125", [])
 
-    candidates = build_candidate_universe(valid_assets)
+    candidates: List[Dict[str, Any]] = []
+    for asset in top125:
+        rank = asset.get("calculated_rank")
+        if rank is None:
+            continue
+        r: int = int(rank)
+        if 11 <= r <= 125:
+            candidates.append(asset)
 
     if not candidates:
         return StrongMoversOutput(

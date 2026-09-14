@@ -102,7 +102,7 @@ def test_fallback_direction_invalid_bybit_to_lower():
     assert "lower priority" in reason.lower()
 
 
-def test_fallback_direction_invalid_bitget_to_lower():
+def test_fallback_direction_invalid_okx_to_bybit():
     valid, reason = validate_fallback_direction("OKX", "Bybit")
     assert valid is False
 
