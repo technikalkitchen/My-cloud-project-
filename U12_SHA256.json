@@ -1,0 +1,50 @@
+{
+  "project": "KITCHEN ASSISTANT",
+  "version": "3.1",
+  "execution_unit": "U12",
+  "generated_at_utc": "2026-09-14 21:30:17 UTC",
+  "hash_algorithm": "SHA-256",
+  "file_count": 10,
+  "files": [
+    {
+      "file": "U12_AUDIT_METADATA.json",
+      "sha256": "b2910375670e371ebdefcc013aeabcf68d82dc0a5d4c8ac6a1c9c1161378f16b"
+    },
+    {
+      "file": "U12_MANIFEST.json",
+      "sha256": "2576b884c52dc4e3e2b5fb0eb666981cf7d4637fa2aa1053e82133f9fffff193"
+    },
+    {
+      "file": "ledgers/U12_LEDGER.md",
+      "sha256": "826d38d1bed3ab7a8ef005e9545238da94bc5dad888f926d9d39e8de88d6b147"
+    },
+    {
+      "file": "app/analysis/stage12_top3.py",
+      "sha256": "4a4dbb612fdee87a1a500a580808956199a1f0476970be23641422b4a8b11ea0"
+    },
+    {
+      "file": "tests/unit/test_u12_unit_1_contract.py",
+      "sha256": "fa9398305762a250371b1306231500540028ac428eb6602e9fca4fa590c99aaa"
+    },
+    {
+      "file": "tests/unit/test_u12_unit_2_evaluation.py",
+      "sha256": "b4051939a294eeb279d13053f7efdd504c4c1d1bc97f1a4352ba8f9ccc0e4161"
+    },
+    {
+      "file": "tests/unit/test_u12_unit_3_exchange.py",
+      "sha256": "a4ff8c119aa3879a1a249f1d9fdc84c6f584a721431056626636ba6875cd64f6"
+    },
+    {
+      "file": "tests/unit/test_u12_unit_4_output.py",
+      "sha256": "a8a771503f7af0a7663ac988581faa94d6b254fc61d1c01aabb361ac7cbf4738"
+    },
+    {
+      "file": "tests/unit/test_u12_unit_5_integration.py",
+      "sha256": "931ffccf0373068570bbad96c82101ffd66d100fe1354b40ec79b563ec96f7b7"
+    },
+    {
+      "file": "tests/unit/test_u12_unit_6_regression.py",
+      "sha256": "92c0d306152ec9077472af47dddb958403cfc54dd68ece4f7adde82fc9a0cb97"
+    }
+  ]
+}
