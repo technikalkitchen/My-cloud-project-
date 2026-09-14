@@ -1,0 +1,58 @@
+{
+  "project": "KITCHEN ASSISTANT V3.1",
+  "execution_unit": "U11",
+  "stage": "Stage 11 — Strong Movers",
+  "timestamp_utc": "2026-09-14 17:30:00 UTC",
+  "status": "VERIFIED",
+  "verified_by": "Kilo Stage 11 execution protocol",
+  "units_implemented": [
+    "Unit 11.1 — Stage Contract + Candidate Universe",
+    "Unit 11.2 — Strong Movement + Reliability Evaluation",
+    "Unit 11.3 — Exchange Selection + Fallback Cohesion",
+    "Unit 11.4 — Five Strong Movers Output",
+    "Unit 11.5 — Top-3 Preparation / Integration Contract",
+    "Unit 11.6 — Full Integration + Regression"
+  ],
+  "test_results": {
+    "stage_11_tests": 94,
+    "stage_11_passed": 94,
+    "stage_11_failed": 0,
+    "total_regression": 1025,
+    "total_passed": 1025,
+    "total_failed": 0
+  },
+  "regression_results": {
+    "u065": "PASS",
+    "stage10": "PASS",
+    "stage7": "PASS",
+    "stage8": "PASS",
+    "stage9": "PASS"
+  },
+  "integration_status": "VERIFIED",
+  "real_data_smoke_status": "N/A (synthetic tests only)",
+  "verified_files": [
+    "app/analysis/stage11_strong_movers.py",
+    "tests/unit/test_u11_unit_1_contract.py",
+    "tests/unit/test_u11_unit_2_evaluation.py",
+    "tests/unit/test_u11_unit_3_exchange.py",
+    "tests/unit/test_u11_unit_4_output.py",
+    "tests/unit/test_u11_unit_5_integration.py",
+    "tests/unit/test_u11_unit_6_regression.py"
+  ],
+  "source_integrity": {
+    "u06_5_modified": false,
+    "stage7_modified": false,
+    "stage8_modified": false,
+    "stage9_modified": false,
+    "stage10_modified": false,
+    "stage11_new_files": true
+  },
+  "trading_safety": {
+    "trading_signal_produced": false,
+    "entry_signal": false,
+    "exit_signal": false,
+    "buy_recommendation": false,
+    "sell_recommendation": false,
+    "scanner_warning_present": true
+  }
+}

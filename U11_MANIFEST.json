@@ -1,0 +1,18 @@
+{
+  "project": "KITCHEN ASSISTANT V3.1",
+  "execution_unit": "U11",
+  "stage": "Stage 11 — Strong Movers",
+  "manifest_version": "1.0",
+  "files": [
+    "app/analysis/stage11_strong_movers.py",
+    "tests/unit/test_u11_unit_1_contract.py",
+    "tests/unit/test_u11_unit_2_evaluation.py",
+    "tests/unit/test_u11_unit_3_exchange.py",
+    "tests/unit/test_u11_unit_4_output.py",
+    "tests/unit/test_u11_unit_5_integration.py",
+    "tests/unit/test_u11_unit_6_regression.py",
+    "ledgers/U11_LEDGER.md"
+  ],
+  "total_files": 8,
+  "description": "Stage 11 Strong Movers — verified checkpoint"
+}
