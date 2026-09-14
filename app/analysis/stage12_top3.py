@@ -35,12 +35,8 @@ from app.analysis.stage10_usdt import UsdtPairResult
 from app.analysis.stage10_btc import BtcPairResult
 from app.analysis.stage11_strong_movers import (
     SCANNER_WARNING,
-    STRONG_MOVERS_HEADER,
-    StrongMoverResult,
-    StrongMoversOutput,
     StrongMoversConfig,
     run_strong_movers,
-    prepare_for_top3,
 )
 from app.market.ranking import dynamic_rank_assets
 
