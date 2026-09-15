@@ -1,0 +1,21 @@
+{
+  "project": "KITCHEN_ASSISTANT",
+  "version": "3.1",
+  "execution_unit": "U05",
+  "symbol": "SOLUSDT",
+  "checks": {
+    "record_count": 100,
+    "expected_count": 100,
+    "chronological": "PASSED",
+    "no_duplicates": "PASSED",
+    "safety_locks": "PASSED",
+    "volume_contract": "PASSED",
+    "ohlc_bounds": "PASSED",
+    "exact_usd_volume": "PASSED",
+    "no_total_series": "PASSED"
+  },
+  "overall_status": "PASSED",
+  "raw_sha256": "aa43ff187409de67e9948c75c21251169511ad8ea237e6c6cf837ebfc12fe096",
+  "normalized_sha256": "be6ae240c77ab72d08645e3c5097594ba0db7f173da992c5c05da9e73a9968db",
+  "generated_at_utc": "2026-09-10 16:11:17 UTC"
+}

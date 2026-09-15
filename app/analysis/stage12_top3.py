@@ -436,6 +436,18 @@ def _format_volume_top3(volume: Optional[float]) -> str:
     return f"{volume:.0f} USDT"
 
 
+def _btc_source_label(
+    actual_exchange: str,
+    fallback_used: bool,
+    fallback_exchange: Optional[str],
+) -> str:
+    if fallback_used and fallback_exchange:
+        return f"Fallback from: {fallback_exchange}"
+    if actual_exchange:
+        return f"Source: {actual_exchange}"
+    return ""
+
+
 def build_top3_result(
     candidate: Top3Candidate,
     position: int,
@@ -632,7 +644,11 @@ def run_top3(
                 btc_fallback_exchange=btc_result.fallback_exchange,
                 btc_available=True,
                 btc_valid=btc_result.valid,
-                btc_source=candidate.btc_source,
+                btc_source=_btc_source_label(
+                    btc_result.actual_exchange,
+                    btc_result.fallback_used,
+                    btc_result.fallback_exchange,
+                ),
                 movement_score=0.0,
                 reliability_score=0.0,
                 total_score=0.0,

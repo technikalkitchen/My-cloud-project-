@@ -1,0 +1,21 @@
+{
+  "project": "KITCHEN_ASSISTANT",
+  "version": "3.1",
+  "execution_unit": "U05",
+  "symbol": "BTCUSDT",
+  "checks": {
+    "record_count": 100,
+    "expected_count": 100,
+    "chronological": "PASSED",
+    "no_duplicates": "PASSED",
+    "safety_locks": "PASSED",
+    "volume_contract": "PASSED",
+    "ohlc_bounds": "PASSED",
+    "exact_usd_volume": "PASSED",
+    "no_total_series": "PASSED"
+  },
+  "overall_status": "PASSED",
+  "raw_sha256": "4cc97baa74babc6dd1731672bc0bfc64d112be373cae9173b67cd474e4fd1e4b",
+  "normalized_sha256": "65a20e40cb4c6b7e44fafed376ba4fe537cda9365b9b3f10a8eb98f1713f6965",
+  "generated_at_utc": "2026-09-10 16:11:17 UTC"
+}

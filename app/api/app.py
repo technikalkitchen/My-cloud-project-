@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from datetime import datetime
 
 from app.core.version import (
@@ -6,6 +6,7 @@ from app.core.version import (
     PROJECT_VERSION,
     EXECUTION_UNIT,
 )
+from app.bot.config import BOT_TOKEN
 
 
 # ============================================================
@@ -218,6 +219,37 @@ def create_app():
             "service": PROJECT_NAME,
             "version": PROJECT_VERSION,
             "status": "running",
+        })
+
+    @app.get("/bot/status")
+    def bot_status():
+        return jsonify({
+            "configured": bool(BOT_TOKEN),
+            "status": "ready" if BOT_TOKEN else "no_token",
+        })
+
+    @app.post("/bot/webhook")
+    def bot_webhook():
+        from app.bot.runner import BotRunner
+        runner = BotRunner()
+        update = request.get_json(silent=True) or {}
+        message = update.get("message", {}) or {}
+        text = message.get("text", "") or ""
+        chat_id = (message.get("chat", {}) or {}).get("id")
+        if not text:
+            return jsonify({"ok": False, "error": "no text"}), 400
+        if text.startswith("/"):
+            parts = text.split(maxsplit=1)
+            command = parts[0]
+            args = parts[1:] if len(parts) > 1 else []
+        else:
+            command = text
+            args = []
+        response = runner.handle_command(command, args)
+        return jsonify({
+            "ok": True,
+            "chat_id": chat_id,
+            "response": response,
         })
 
     return app

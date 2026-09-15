@@ -20,7 +20,7 @@
     },
     {
       "file": "app/analysis/stage12_top3.py",
-      "sha256": "60c7a7f8b4d07a2cfe74340c448fdae85b314231969a5907c32af06c56df0f0d"
+      "sha256": "14b8276b317f3a35fa7a4c64ba7a762a6151c7fddba97bfe8b25aaefb66ee2ef"
     },
     {
       "file": "tests/unit/test_u12_unit_1_contract.py",

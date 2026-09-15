@@ -1,0 +1,21 @@
+{
+  "project": "KITCHEN_ASSISTANT",
+  "version": "3.1",
+  "execution_unit": "U05",
+  "symbol": "ETHUSDT",
+  "checks": {
+    "record_count": 100,
+    "expected_count": 100,
+    "chronological": "PASSED",
+    "no_duplicates": "PASSED",
+    "safety_locks": "PASSED",
+    "volume_contract": "PASSED",
+    "ohlc_bounds": "PASSED",
+    "exact_usd_volume": "PASSED",
+    "no_total_series": "PASSED"
+  },
+  "overall_status": "PASSED",
+  "raw_sha256": "266cdaa1753b017c77101bba81df21054214bb6549ce941850d57d94b91e6003",
+  "normalized_sha256": "360855200e08ce66b096935fed99b38cff2f7b7f4697629b77bc5aa91a070abb",
+  "generated_at_utc": "2026-09-10 16:11:17 UTC"
+}

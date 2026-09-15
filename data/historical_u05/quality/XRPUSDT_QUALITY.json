@@ -1,0 +1,21 @@
+{
+  "project": "KITCHEN_ASSISTANT",
+  "version": "3.1",
+  "execution_unit": "U05",
+  "symbol": "XRPUSDT",
+  "checks": {
+    "record_count": 100,
+    "expected_count": 100,
+    "chronological": "PASSED",
+    "no_duplicates": "PASSED",
+    "safety_locks": "PASSED",
+    "volume_contract": "PASSED",
+    "ohlc_bounds": "PASSED",
+    "exact_usd_volume": "PASSED",
+    "no_total_series": "PASSED"
+  },
+  "overall_status": "PASSED",
+  "raw_sha256": "e84edb8cf9db571f9e9060b86132f2f8b80bd50226427516f7ce64117a1a0067",
+  "normalized_sha256": "d37d3f86d758275e8b772c8be44fbffeb05af305e8d22b9637447ddb89cc607a",
+  "generated_at_utc": "2026-09-10 16:11:17 UTC"
+}
