@@ -139,7 +139,7 @@ Branch: v4
 
 محیط:  
 • PythonAnywhere فعال  
-• Python Version: پیشنهاد 3.11 (تأیید نهایی در Stage A1)  
+• Python Version: 3.12 (تأیید نهایی در Stage A1)  
 • Package Management: pyproject.toml
 
 فضای ذخیره‌سازی:  
@@ -244,8 +244,8 @@ MANIFEST = وضعیت رسمی
 CURRENT_STATE.md = وضعیت زنده  
 Roadmap = وضعیت برنامه
 
-۶. Python Version:  
-پیشنهاد 3.11، تأیید نهایی در Stage A1.
+۶. Python Version:
+     3.12 (تأییدشده در Stage A1).
 
 ۷. Ledger:  
 نتیجه + خطاهای مهم + اصلاحات + محدودیت‌ها.  
