@@ -96,18 +96,14 @@ No additional logic or unnecessary imports.
 
 ```text
 app/config/stage_a1_config.py
-
 ```
 
-Allowed content is limited to configuration placeholders, including:
+Allowed content is limited to a single project-level constant.
+No runtime logic. No environment placeholder. No secret handling.
 
 ```python
 PYTHON_VERSION_TARGET = "3.11"
-ENV_PLACEHOLDER: dict = {}
-
 ```
-
-No runtime logic.
 
 ### Tests
 
