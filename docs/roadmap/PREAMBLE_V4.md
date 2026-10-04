@@ -230,7 +230,7 @@ Stage-محور → tests/stages/STAGE_XX/
 ۳. Git Commit:  
 یک Commit نهایی بعد از تأیید Stage.  
 فرمت پیام Commit:  
-"Stage A1: project structure + branch"  
+"Stage A1: project skeleton"  
 "Stage A2: logging foundation"  
 "Stage B1: data engine core"  
 Kilo قبل از تأیید، Commit نهایی نمی‌زند.
