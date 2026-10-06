@@ -1,0 +1,36 @@
+{
+  "project": "Kitchen Assistant Bot",
+  "version": "V4",
+  "stage": "A1",
+  "execution_unit": "STAGE_A1",
+  "algorithm": "sha256",
+  "generated_at": "2026-10-05T00:00:00Z",
+  "excluded": [
+    ".git/",
+    ".pytest_cache/",
+    "__pycache__/",
+    ".venv/",
+    "venv/",
+    ".env",
+    "*.pyc",
+    "logs/runtime/",
+    "data/runtime/",
+    "docs/stages/STAGE_A1/CURRENT_STATE.md",
+    "docs/stages/STAGE_A1/SHA256.json"
+  ],
+  "file_count": 12,
+  "files": {
+    "app/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "app/analysis/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "app/api/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "app/bot/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "app/config/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "app/config/stage_a1_config.py": "42be58a67dcea98ff02dcc66ae514884218413f0945578e796d023cc9428e8da",
+    "app/core/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "app/core/stage_a1_version.py": "d3ff807490677d8c5150224014b41aa4487e66831aeab9de5a2fdf43a0660462",
+    "app/data/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "app/market/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/stages/STAGE_A1/LEDGER.md": "778e81298310f0d795bfcf2f038777142e23fb4f0eb7eaa772e4fa948ae541cb",
+    "docs/stages/STAGE_A1/MANIFEST.json": "af397c47cf4bf5c16452b225adb8129f1eb0c4b2ee29373e09250542d4e84a33"
+  }
+}

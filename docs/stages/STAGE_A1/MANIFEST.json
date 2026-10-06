@@ -1,0 +1,71 @@
+{
+  "project": "Kitchen Assistant Bot",
+  "version": "V4",
+  "stage": "A1",
+  "execution_unit": "STAGE_A1",
+  "status": "PASSED",
+  "python_target": "3.12",
+  "scope": [
+    ".gitignore",
+    "README.md",
+    "pyproject.toml",
+    "conftest.py",
+    "app/__init__.py",
+    "app/config/__init__.py",
+    "app/core/__init__.py",
+    "app/data/__init__.py",
+    "app/market/__init__.py",
+    "app/analysis/__init__.py",
+    "app/bot/__init__.py",
+    "app/api/__init__.py",
+    "app/core/stage_a1_version.py",
+    "app/config/stage_a1_config.py",
+    "scripts/.gitkeep",
+    "data/.gitkeep",
+    "logs/.gitkeep",
+    "docs/stages/STAGE_A1/CURRENT_STATE.md",
+    "docs/stages/STAGE_A1/LEDGER.md",
+    "docs/stages/STAGE_A1/MANIFEST.json",
+    "docs/stages/STAGE_A1/SHA256.json"
+  ],
+  "doc_alignment": [
+    "docs/roadmap/payloads/STAGE_A1_PAYLOAD.md",
+    "docs/roadmap/ROADMAP_A.md",
+    "docs/roadmap/PREAMBLE_V4.md",
+    "docs/roadmap/KILO_MASTER_PROMPT_V4.md"
+  ],
+  "artifacts": [
+    {"path": "app/core/stage_a1_version.py", "type": "source", "required": true},
+    {"path": "app/config/stage_a1_config.py", "type": "source", "required": true},
+    {"path": "conftest.py", "type": "source", "required": true},
+    {"path": "tests/stages/STAGE_A1/test_stage_a1_structure.py", "type": "test", "required": true}
+  ],
+  "stage_artifacts": [
+    {"path": "docs/stages/STAGE_A1/CURRENT_STATE.md", "type": "state", "required": true, "in_sha256": false},
+    {"path": "docs/stages/STAGE_A1/LEDGER.md", "type": "ledger", "required": true, "in_sha256": true},
+    {"path": "docs/stages/STAGE_A1/MANIFEST.json", "type": "manifest", "required": true, "in_sha256": true},
+    {"path": "docs/stages/STAGE_A1/SHA256.json", "type": "integrity", "required": true, "in_sha256": false}
+  ],
+  "tests": [
+    "test_01_structure_exists",
+    "test_02_init_files_present",
+    "test_03_version_identity",
+    "test_04_pyproject_valid",
+    "test_05_gitignore",
+    "test_06_readme",
+    "test_07_conftest",
+    "test_08_gitkeep",
+    "test_09_no_forbidden_folders",
+    "test_10_stage_folder_exists",
+    "test_11_config_imports",
+    "test_12_no_external_imports",
+    "test_13_no_runtime_logic"
+  ],
+  "test_command": "pytest tests/stages/STAGE_A1/test_stage_a1_structure.py -v",
+  "test_result": {"collected": 35, "passed": 35, "failed": 0, "skipped": 0},
+  "generated_at": "2026-10-05T00:00:00Z",
+  "completed_at": "2026-10-05T00:00:00Z",
+  "file_count": 21,
+  "branch": "v4",
+  "commit": null
+}

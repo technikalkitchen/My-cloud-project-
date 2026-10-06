@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+.env.*
+
+# IDE
+.idea/
+.vscode/
+
+# Runtime data (با .gitkeep نگه داشته می‌شوند)
+data/*
+!data/.gitkeep
+logs/*
+!logs/.gitkeep
+logs/runtime/
+data/runtime/
+scripts/*
+!scripts/.gitkeep
