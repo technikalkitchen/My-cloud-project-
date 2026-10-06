@@ -501,5 +501,63 @@ kitchen-assistant-bot/
 • app/orderbook/ (فاز Order Book)
 
 ═══════════════════════════════════════════════════════════  
+# 14. REPORT COMPLETENESS RULE
+
+### 14.1 Repo State
+- current branch;
+- `git status --short`;
+- latest commit hash and message;
+- `git diff main..<branch> --stat`.
+
+### 14.2 Scope Evidence
+- complete list of created/modified files and folders;
+- explicit confirmation that no out-of-scope changes were made;
+- explicit results for forbidden paths/items.
+
+### 14.3 Alignment Evidence
+- searches/checks for stale, forbidden, or conflicting values;
+- clear distinction between active/current repository state and historical/legacy records;
+- exact relevant configuration/document values where needed.
+
+### 14.4 Test Evidence
+- exact command executed;
+- collected/passed/failed/skipped results;
+- relevant warnings or deviations.
+
+### 14.5 Artifact Evidence
+- confirmation of all required Stage artifacts;
+- MANIFEST consistency;
+- SHA256 consistency where applicable.
+
+### 14.6 Commit Evidence
+- status of the final Stage commit where applicable;
+- confirmation that `main` was not modified.
+
+### 14.7 Anomaly Disclosure
+- any legacy, historical, deleted, archived, or otherwise non-current reference that could be mistaken for an active repository item must be explicitly identified and clarified.
+
+The report must distinguish active repository state from historical records.
+
+The report must not use ambiguous statements such as:
+- `EXISTS`
+- `PRESENT`
+- `FOUND`
+
+without identifying whether the item is:
+- currently present in the working tree;
+- tracked by Git;
+- historical only;
+- deleted;
+- or otherwise non-current.
+
+Summary-only completion reports are prohibited.
+
+The completion report must be self-contained enough that a reviewer can determine what was actually completed, tested, verified, and changed without relying on inference.
+
+If mandatory report evidence is missing, the implementation may not be reported as fully `PASSED`; the reporting result is incomplete/failed even if the implementation itself succeeded.
+
+The rule must remain token-efficient and must not require unnecessary narrative.
+═══════════════════════════════════════════════════════════
+
 پایان PREAMBLE_V4 — نسخه ۱ (LOCKED)  
 ═══════════════════════════════════════════════════════════
