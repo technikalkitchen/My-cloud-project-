@@ -178,8 +178,8 @@ Those actions belong to Preparation, which is outside A1.
 
 ## 8. TECHNICAL CONSTRAINTS
 
--   Python target: `3.11`
--   `pyproject.toml` must declare `requires-python = ">=3.11"`.
+-   Python target: `3.12`
+-   `pyproject.toml` must declare `requires-python = ">=3.12"`.
 -   No runtime/environment loading.
 -   No secret handling.
 -   No exchange/network access.
@@ -278,7 +278,7 @@ Stop and report `BLOCKED` if:
 -   A required file is not clearly defined.
 -   A requirement conflicts with PREAMBLE_V4 or the approved Roadmap.
 -   An architectural decision is required.
--   Python 3.11 execution cannot be established.
+-   Python 3.12 execution cannot be established.
 -   Required repository access is unavailable.
 -   A required test cannot be executed or validly verified.
 -   Continuing would require an out-of-Scope file/folder.

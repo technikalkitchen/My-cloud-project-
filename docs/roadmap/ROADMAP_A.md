@@ -203,7 +203,7 @@ Stage A1 فقط دو کار انجام می‌دهد:
       name = "kitchen-assistant-bot"
       version = "4.0.0"
       description = "Kitchen Assistant Telegram Bot"
-      requires-python = ">=3.11"
+      requires-python = ">=3.12"
       dependencies = []
 
       [project.optional-dependencies]
@@ -255,8 +255,7 @@ Stage A1 فقط دو کار انجام می‌دهد:
       در این فایل وجود ندارد.
       """
 
-      PYTHON_VERSION_TARGET = "3.11"
-      ENV_PLACEHOLDER: dict = {}
+      PYTHON_VERSION_TARGET = "3.12"
 
     نقش: نقطه شروع config — فقط placeholder.
 
@@ -316,8 +315,8 @@ Stage A1 فقط دو کار انجام می‌دهد:
   test_04_pyproject_valid
     بررسی:
       • pyproject.toml موجود است.
-      • قابل parse است (با tomllib در Python 3.11).
-      • requires-python == ">=3.11"
+      • قابل parse است (با tomllib در Python 3.12).
+      • requires-python == ">=3.12"
       • بخش [tool.pytest.ini_options] موجود است.
 
   test_05_gitignore_present
@@ -351,7 +350,7 @@ Stage A1 فقط دو کار انجام می‌دهد:
 
   test_11_config_imports
     بررسی: app/config/stage_a1_config.py قابل import است.
-           متغیر PYTHON_VERSION_TARGET == "3.11".
+           متغیر PYTHON_VERSION_TARGET == "3.12".
 
   test_12_no_external_imports
     بررسی: هیچ‌کدام از فایل‌های Stage A1 نباید این
@@ -448,7 +447,7 @@ Stage A1 زمانی PASSED می‌شود که:
      فرمت پیام Commit:
        "Stage A1: project skeleton"
   ۶. Kilo روی main هیچ تغییری نمی‌دهد.
-  ۷. Python Version نهایی این پروژه: **3.11**
+  ۷. Python Version نهایی این پروژه: **3.12**
      این تصمیم در همین Stage A1 ثبت و قفل می‌شود.
 
 ───────────────────────────────────────────────────────────

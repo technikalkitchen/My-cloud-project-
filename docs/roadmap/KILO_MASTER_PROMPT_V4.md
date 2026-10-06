@@ -212,7 +212,7 @@ docs/stages/STAGE_XX/
 
 Rules:
 
--   `CURRENT_STATE.md` is the live execution state.
+-   `CURRENT_STATE.md` is the live execution state. It must be maintained as a minimalist live checklist. It must not contain long paragraphs or detailed reporting. It must be updated after each major action or meaningful execution step so that the Stage can be resumed reliably with minimal token usage. This is a permanent operating rule.
 -   `LEDGER.md` is concise and records the Stage history.
 -   `MANIFEST.json` is the official Stage manifest.
 -   `SHA256.json` records required integrity hashes.
@@ -333,3 +333,33 @@ Rules:
 -   Do not claim work that was not performed.
 -   Do not alter this Final Response Contract.
 -   This section is fixed for all V4 Stages.
+
+----------
+
+# 14. REPORT COMPLETENESS
+
+## 14.1 Permanent Rule
+
+Kilo must follow the permanent **Report Completeness Rule** when producing every future Stage completion report.
+
+The authoritative source for this rule is:
+
+**PREAMBLE_V4 Section 14 — REPORT COMPLETENESS RULE**
+
+## 14.2 Required Distinctions
+
+The completion report must explicitly preserve the distinction between:
+
+- implementation success;
+- verification evidence;
+- repository state;
+- current vs historical records;
+- and reporting completeness.
+
+## 14.3 Deference
+
+PREAMBLE_V4 Section 14 remains the authoritative source for the rule.
+
+Do not weaken, remove, bypass, or reinterpret the rule.
+
+This rule applies to every future Stage unless a future Owner-authorized governance amendment explicitly changes it.
