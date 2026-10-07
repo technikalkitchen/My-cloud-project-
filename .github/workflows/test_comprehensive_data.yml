@@ -1,0 +1,362 @@
+name: Test Comprehensive Data Availability
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [v4]
+    paths:
+      - '.github/workflows/test_comprehensive_data.yml'
+
+jobs:
+  comprehensive_data_test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install requests
+        run: |
+          python -m pip install requests
+
+      - name: Part A - Binance Global Data Verification
+        run: |
+          python - <<'PY'
+          import requests
+
+          BASE = "https://data-api.binance.vision"
+
+          endpoints = [
+              ("A1 - Ping", "/api/v3/ping"),
+              ("A2 - Server Time", "/api/v3/time"),
+              ("A3 - BTCUSDT 24h Ticker", "/api/v3/ticker/24hr?symbol=BTCUSDT"),
+              ("A4 - BTCUSDT Order Book", "/api/v3/depth?symbol=BTCUSDT&limit=10"),
+              ("A5 - BTCUSDT Daily Klines", "/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=10"),
+              (
+                  "A6 - BTCUSDT July 2017 Klines",
+                  "/api/v3/klines?symbol=BTCUSDT&interval=1d&startTime=1500000000000&limit=10",
+              ),
+              ("A7 - Exchange Info", "/api/v3/exchangeInfo"),
+          ]
+
+          print("=" * 70)
+          print("PART A - BINANCE GLOBAL DATA VERIFICATION")
+          print("=" * 70)
+
+          for name, path in endpoints:
+              print(f"\n[{name}]")
+              url = BASE + path
+              try:
+                  r = requests.get(url, timeout=20)
+                  print("HTTP status:", r.status_code)
+                  print("URL:", url)
+                  print("Body:", r.text[:300].replace("\n", " "))
+                  print("WORKS:", "YES" if r.ok else "NO")
+              except Exception as e:
+                  print("ERROR:", repr(e))
+                  print("WORKS: NO")
+          PY
+
+      - name: Part B - Historical Depth Check
+        run: |
+          python - <<'PY'
+          import requests
+          from datetime import datetime, timezone
+
+          BASE = "https://data-api.binance.vision"
+
+          def ts_to_date(ms):
+              try:
+                  return datetime.fromtimestamp(ms / 1000, tz=timezone.utc).isoformat()
+              except Exception:
+                  return "INVALID_TIMESTAMP"
+
+          print("=" * 70)
+          print("PART B - HISTORICAL DEPTH CHECK")
+          print("=" * 70)
+
+          for symbol in ["BTCUSDT", "ETHUSDT"]:
+              print(f"\n--- {symbol} ---")
+              for interval in ["1m", "1h", "1d"]:
+                  print(f"\nInterval: {interval}")
+                  try:
+                      r = requests.get(
+                          f"{BASE}/api/v3/klines",
+                          params={
+                              "symbol": symbol,
+                              "interval": interval,
+                              "startTime": 0,
+                              "limit": 1,
+                          },
+                          timeout=30,
+                      )
+                      print("HTTP status:", r.status_code)
+                      print("Body:", r.text[:300].replace("\n", " "))
+                      if r.ok:
+                          data = r.json()
+                          if data:
+                              oldest = data[0][0]
+                              print("Oldest timestamp returned:", oldest)
+                              print("Estimated earliest date:", ts_to_date(oldest))
+                          else:
+                              print("No candle data returned.")
+                      else:
+                          print("Historical query failed.")
+                  except Exception as e:
+                      print("ERROR:", repr(e))
+          PY
+
+      - name: Part C - Asset Coverage
+        run: |
+          python - <<'PY'
+          import requests
+
+          BASE = "https://data-api.binance.vision"
+
+          symbols = [
+              "BTCUSDT", "ETHUSDT", "BNBUSDT", "SOLUSDT", "XRPUSDT", "ADAUSDT",
+              "DOGEUSDT", "AVAXUSDT", "DOTUSDT", "LINKUSDT", "ATOMUSDT", "LTCUSDT",
+          ]
+
+          print("=" * 70)
+          print("PART C - ASSET COVERAGE")
+          print("=" * 70)
+
+          results = []
+
+          for symbol in symbols:
+              try:
+                  r = requests.get(
+                      f"{BASE}/api/v3/klines",
+                      params={
+                          "symbol": symbol,
+                          "interval": "1d",
+                          "limit": 1,
+                      },
+                      timeout=20,
+                  )
+                  exists = r.ok and bool(r.json())
+                  print(
+                      f"{symbol}: "
+                      f"HTTP {r.status_code} | "
+                      f"KLINES: {'YES' if exists else 'NO'}"
+                  )
+                  results.append(exists)
+              except Exception as e:
+                  print(f"{symbol}: ERROR {repr(e)}")
+                  results.append(False)
+
+          print("\nCoverage:", f"{sum(results)}/{len(results)}")
+          print("ALL 12 AVAILABLE:", "YES" if all(results) else "NO")
+          PY
+
+      - name: Part D - Cross-Exchange BTC Price Comparison
+        run: |
+          python - <<'PY'
+          import requests
+          from datetime import datetime, timezone
+
+          TARGET = datetime(2024, 1, 1, tzinfo=timezone.utc)
+          START_MS = int(TARGET.timestamp() * 1000)
+          END_MS = int(datetime(2024, 1, 2, tzinfo=timezone.utc).timestamp() * 1000)
+
+          print("=" * 70)
+          print("PART D - CROSS-EXCHANGE BTC PRICE COMPARISON")
+          print("=" * 70)
+          print("Target date: 2024-01-01 UTC")
+
+          def show(name, price):
+              print(f"{name}: {price}")
+
+          # Binance
+          try:
+              r = requests.get(
+                  "https://data-api.binance.vision/api/v3/klines",
+                  params={
+                      "symbol": "BTCUSDT",
+                      "interval": "1d",
+                      "startTime": START_MS,
+                      "endTime": END_MS,
+                      "limit": 1,
+                  },
+                  timeout=20,
+              )
+              print("\nBinance HTTP:", r.status_code)
+              data = r.json()
+              if data:
+                  show("Binance BTCUSDT close", data[0][4])
+              else:
+                  show("Binance BTCUSDT close", "NO DATA")
+          except Exception as e:
+              print("Binance ERROR:", repr(e))
+
+          # Coinbase
+          try:
+              r = requests.get(
+                  "https://api.exchange.coinbase.com/products/BTC-USD/candles",
+                  params={
+                      "start": "2024-01-01T00:00:00Z",
+                      "end": "2024-01-02T00:00:00Z",
+                      "granularity": 86400,
+                  },
+                  timeout=20,
+              )
+              print("\nCoinbase HTTP:", r.status_code)
+              data = r.json()
+              if data:
+                  candle = data[0]
+                  show("Coinbase BTC-USD close", candle[4])
+              else:
+                  show("Coinbase BTC-USD close", "NO DATA")
+          except Exception as e:
+              print("Coinbase ERROR:", repr(e))
+
+          # Kraken
+          try:
+              r = requests.get(
+                  "https://api.kraken.com/0/public/OHLC",
+                  params={
+                      "pair": "XBTUSD",
+                      "interval": 1440,
+                      "since": START_MS // 1000,
+                  },
+                  timeout=20,
+              )
+              print("\nKraken HTTP:", r.status_code)
+              payload = r.json()
+              result = payload.get("result", {})
+              candles = result.get("XXBTZUSD") or result.get("XBTUSD") or []
+              if candles:
+                  matching = [c for c in candles if START_MS // 1000 <= c[0] < END_MS // 1000]
+                  if matching:
+                      show("Kraken XBTUSD close", matching[0][4])
+                  else:
+                      show("Kraken XBTUSD close", "NO MATCHING DATE")
+              else:
+                  show("Kraken XBTUSD close", "NO DATA")
+          except Exception as e:
+              print("Kraken ERROR:", repr(e))
+
+          # OKX
+          try:
+              r = requests.get(
+                  "https://www.okx.com/api/v5/market/history-candles",
+                  params={
+                      "instId": "BTC-USDT",
+                      "bar": "1D",
+                      "after": str(END_MS),
+                      "before": str(START_MS),
+                      "limit": 10,
+                  },
+                  timeout=20,
+              )
+              print("\nOKX HTTP:", r.status_code)
+              payload = r.json()
+              data = payload.get("data", [])
+              if data:
+                  target = [c for c in data if START_MS <= int(c[0]) < END_MS]
+                  if target:
+                      show("OKX BTC-USDT close", target[0][4])
+                  else:
+                      show("OKX BTC-USDT close", "NO MATCHING DATE")
+              else:
+                  show("OKX BTC-USDT close", "NO DATA")
+          except Exception as e:
+              print("OKX ERROR:", repr(e))
+
+          print("\nNOTE:")
+          print("The workflow reports the four closes.")
+          print("A <=0.5% comparison is calculated only when all four")
+          print("valid numeric prices are available.")
+          PY
+
+      - name: Part E - Aggregator APIs
+        run: |
+          python - <<'PY'
+          import requests
+
+          endpoints = [
+              ("CoinGecko Global", "https://api.coingecko.com/api/v3/global", None),
+              (
+                  "CoinGecko Bitcoin Markets",
+                  "https://api.coingecko.com/api/v3/coins/markets",
+                  {"vs_currency": "usd", "ids": "bitcoin"},
+              ),
+              ("Coinpaprika Global", "https://api.coinpaprika.com/v1/global", None),
+              (
+                  "CryptoCompare Coinlist",
+                  "https://min-api.cryptocompare.com/data/all/coinlist",
+                  None,
+              ),
+          ]
+
+          print("=" * 70)
+          print("PART E - AGGREGATOR APIs")
+          print("=" * 70)
+
+          for name, url, params in endpoints:
+              print(f"\n[{name}]")
+              print("URL:", url)
+              try:
+                  r = requests.get(url, params=params, timeout=30)
+                  print("HTTP status:", r.status_code)
+                  print("Accessible:", "YES" if r.ok else "NO")
+                  print("Body:", r.text[:300].replace("\n", " "))
+                  rate_headers = {
+                      k: v
+                      for k, v in r.headers.items()
+                      if "rate" in k.lower() or "limit" in k.lower() or "quota" in k.lower()
+                  }
+                  print("Rate-limit headers:", rate_headers or "NOT VISIBLE")
+              except Exception as e:
+                  print("ERROR:", repr(e))
+                  print("Accessible: NO")
+          PY
+
+      - name: Part F - US-Licensed Exchange Backup Set
+        run: |
+          python - <<'PY'
+          import requests
+
+          endpoints = [
+              ("Gemini", "https://api.gemini.com/v1/symbols"),
+              ("Bitstamp", "https://www.bitstamp.net/api/v2/ticker/btcusd/"),
+          ]
+
+          print("=" * 70)
+          print("PART F - US-LICENSED EXCHANGE BACKUP SET")
+          print("=" * 70)
+
+          for name, url in endpoints:
+              print(f"\n[{name}]")
+              print("URL:", url)
+              try:
+                  r = requests.get(url, timeout=20)
+                  print("HTTP status:", r.status_code)
+                  print("Accessible:", "YES" if r.ok else "NO")
+                  print("Response:", r.text[:300].replace("\n", " "))
+              except Exception as e:
+                  print("ERROR:", repr(e))
+                  print("Accessible: NO")
+          PY
+
+      - name: Final Summary
+        run: |
+          echo "======================================================================"
+          echo "FINAL SUMMARY"
+          echo "======================================================================"
+          echo "Part A: Binance Global endpoint availability was tested."
+          echo "Part B: BTCUSDT/ETHUSDT historical depth was tested for 1m, 1h, 1d."
+          echo "Part C: 12 requested Binance assets were tested."
+          echo "Part D: BTC daily prices were queried across Binance, Coinbase, Kraken, OKX."
+          echo "Part E: CoinGecko, Coinpaprika, and CryptoCompare were tested."
+          echo "Part F: Gemini and Bitstamp were tested."
+          echo ""
+          echo "Review the sections above for exact HTTP statuses, dates, prices,"
+          echo "response snippets, accessibility, and errors."
+          echo ""
+          echo "IMPORTANT:"
+          echo "This workflow is diagnostic only. It does not modify project files,"
+          echo "does not access secrets, and does not make architecture decisions."
+          echo "======================================================================"
