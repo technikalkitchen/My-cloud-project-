@@ -1,0 +1,97 @@
+name: Test External API Access
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [v4]
+    paths:
+      - '.github/workflows/test_external_api.yml'
+
+jobs:
+  test_api:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Print environment
+        run: |
+          python --version
+          pip --version
+
+      - name: Install requests
+        run: |
+          pip install requests
+
+      - name: Install aiohttp
+        run: |
+          pip install aiohttp
+
+      - name: Test DNS resolution
+        run: |
+          python - <<'PY'
+          import socket
+          hosts = [
+              "api.binance.com",
+              "api.coinbase.com",
+              "api.kraken.com",
+          ]
+          for host in hosts:
+              try:
+                  addresses = socket.getaddrinfo(host, 443)
+                  ips = sorted({item[4][0] for item in addresses})
+                  print(f"{host} DNS: SUCCESS")
+                  print(f"{host} addresses: {ips}")
+              except Exception as e:
+                  print(f"{host} DNS ERROR: {repr(e)}")
+          PY
+
+      - name: Test Binance
+        run: |
+          python - <<'PY'
+          import requests
+          try:
+              r = requests.get(
+                  "https://api.binance.com/api/v3/ping",
+                  timeout=10,
+              )
+              print("Binance status:", r.status_code)
+              print("Binance body:", r.text[:200])
+          except Exception as e:
+              print("Binance error:", repr(e))
+          PY
+
+      - name: Test Coinbase
+        run: |
+          python - <<'PY'
+          import requests
+          try:
+              r = requests.get(
+                  "https://api.coinbase.com/v2/time",
+                  timeout=10,
+              )
+              print("Coinbase status:", r.status_code)
+              print("Coinbase body:", r.text[:200])
+          except Exception as e:
+              print("Coinbase error:", repr(e))
+          PY
+
+      - name: Test Kraken
+        run: |
+          python - <<'PY'
+          import requests
+          try:
+              r = requests.get(
+                  "https://api.kraken.com/0/public/Time",
+                  timeout=10,
+              )
+              print("Kraken status:", r.status_code)
+              print("Kraken body:", r.text[:200])
+          except Exception as e:
+              print("Kraken error:", repr(e))
+          PY
