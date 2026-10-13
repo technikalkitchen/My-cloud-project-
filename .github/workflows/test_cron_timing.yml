@@ -1,0 +1,14 @@
+name: Cron Timing Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  log_time:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log UTC times
+        run: |
+          echo "workflow_started_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          echo "github_run_id=${{ github.run_id }}"
+          echo "github_actor=${{ github.actor }}"
