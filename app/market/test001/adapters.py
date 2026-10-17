@@ -150,7 +150,7 @@ class OKXAdapter(BaseAdapter):
 
     def candles(self, market: str, timeframe: str, start_ms: int, end_ms: int) -> list[tuple[int, float | None]]:
         # OKX uses uppercase H/D/W/M for these intervals and caps requests at 300 rows.
-        api_bar = {"5m": "5m", "1h": "1H"}[timeframe]
+        api_bar = {"5m": "5m", "1h": "1Hutc"}[timeframe]
         data = self._get("/api/v5/market/history-candles", {"instId": market, "bar": api_bar, "after": str(end_ms), "limit": "300"})
         if data.get("code") != "0":
             raise AdapterError(f"okx: API code={data.get('code')} msg={data.get('msg')}")
@@ -161,7 +161,7 @@ class OKXAdapter(BaseAdapter):
         return sorted((x for x in rows if start_ms <= x[0] <= end_ms), key=lambda x: x[0])
 
     def _last_probe(self, market: str, timeframe: str) -> int | None:
-        api_bar = {"5m": "5m", "1h": "1H"}[timeframe]
+        api_bar = {"5m": "5m", "1h": "1Hutc"}[timeframe]
         data = self._get("/api/v5/market/candles", {"instId": market, "bar": api_bar, "limit": "1"})
         if data.get("code") != "0":
             raise AdapterError(f"okx: API code={data.get('code')} msg={data.get('msg')}")
