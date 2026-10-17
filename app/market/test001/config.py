@@ -17,7 +17,7 @@ class ExchangeConfig:
 
 
 EXCHANGE_CONFIGS = {
-    "binance": ExchangeConfig("binance", "https://api.binance.com"),
+    "binance": ExchangeConfig("binance", "https://data-api.binance.vision"),
     "okx": ExchangeConfig("okx", "https://www.okx.com"),
     "bitstamp": ExchangeConfig("bitstamp", "https://www.bitstamp.net"),
     "coinbase": ExchangeConfig("coinbase", "https://api.exchange.coinbase.com"),
