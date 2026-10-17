@@ -1,0 +1,379 @@
+{
+  "assets": [
+    {
+      "symbol": "BTC"
+    },
+    {
+      "symbol": "ETH"
+    },
+    {
+      "symbol": "USDT"
+    },
+    {
+      "symbol": "BNB"
+    },
+    {
+      "symbol": "SOL"
+    },
+    {
+      "symbol": "USDC"
+    },
+    {
+      "symbol": "XRP"
+    },
+    {
+      "symbol": "DOGE"
+    },
+    {
+      "symbol": "ADA"
+    },
+    {
+      "symbol": "TRX"
+    },
+    {
+      "symbol": "AVAX"
+    },
+    {
+      "symbol": "LINK"
+    },
+    {
+      "symbol": "TON"
+    },
+    {
+      "symbol": "SHIB"
+    },
+    {
+      "symbol": "DOT"
+    },
+    {
+      "symbol": "BCH"
+    },
+    {
+      "symbol": "LTC"
+    },
+    {
+      "symbol": "NEAR"
+    },
+    {
+      "symbol": "UNI"
+    },
+    {
+      "symbol": "APT"
+    },
+    {
+      "symbol": "ICP"
+    },
+    {
+      "symbol": "ARB"
+    },
+    {
+      "symbol": "OP"
+    },
+    {
+      "symbol": "FIL"
+    },
+    {
+      "symbol": "SUI"
+    },
+    {
+      "symbol": "INJ"
+    },
+    {
+      "symbol": "ATOM"
+    },
+    {
+      "symbol": "IMX"
+    },
+    {
+      "symbol": "STX"
+    },
+    {
+      "symbol": "HBAR"
+    },
+    {
+      "symbol": "MKR"
+    },
+    {
+      "symbol": "THETA"
+    },
+    {
+      "symbol": "ALGO"
+    },
+    {
+      "symbol": "SAND"
+    },
+    {
+      "symbol": "MANA"
+    },
+    {
+      "symbol": "AXS"
+    },
+    {
+      "symbol": "EGLD"
+    },
+    {
+      "symbol": "FLOW"
+    },
+    {
+      "symbol": "XTZ"
+    },
+    {
+      "symbol": "AAVE"
+    },
+    {
+      "symbol": "EOS"
+    },
+    {
+      "symbol": "KAVA"
+    },
+    {
+      "symbol": "CHZ"
+    },
+    {
+      "symbol": "NEO"
+    },
+    {
+      "symbol": "IOTA"
+    },
+    {
+      "symbol": "XLM"
+    },
+    {
+      "symbol": "ETC"
+    },
+    {
+      "symbol": "QNT"
+    },
+    {
+      "symbol": "KAS"
+    },
+    {
+      "symbol": "RUNE"
+    },
+    {
+      "symbol": "CRV"
+    },
+    {
+      "symbol": "SNX"
+    },
+    {
+      "symbol": "MASK"
+    },
+    {
+      "symbol": "GMT"
+    },
+    {
+      "symbol": "ENS"
+    },
+    {
+      "symbol": "1INCH"
+    },
+    {
+      "symbol": "COMP"
+    },
+    {
+      "symbol": "ZEC"
+    },
+    {
+      "symbol": "DASH"
+    },
+    {
+      "symbol": "KSM"
+    },
+    {
+      "symbol": "ZIL"
+    },
+    {
+      "symbol": "BAT"
+    },
+    {
+      "symbol": "ZRX"
+    },
+    {
+      "symbol": "ANKR"
+    },
+    {
+      "symbol": "LRC"
+    },
+    {
+      "symbol": "CELO"
+    },
+    {
+      "symbol": "ICX"
+    },
+    {
+      "symbol": "ONT"
+    },
+    {
+      "symbol": "RVN"
+    },
+    {
+      "symbol": "SC"
+    },
+    {
+      "symbol": "DGB"
+    },
+    {
+      "symbol": "NANO"
+    },
+    {
+      "symbol": "WAXP"
+    },
+    {
+      "symbol": "STORJ"
+    },
+    {
+      "symbol": "BAND"
+    },
+    {
+      "symbol": "CVC"
+    },
+    {
+      "symbol": "GNO"
+    },
+    {
+      "symbol": "BAL"
+    },
+    {
+      "symbol": "YFI"
+    },
+    {
+      "symbol": "SUSHI"
+    },
+    {
+      "symbol": "UMA"
+    },
+    {
+      "symbol": "KNC"
+    },
+    {
+      "symbol": "ROSE"
+    },
+    {
+      "symbol": "CTSI"
+    },
+    {
+      "symbol": "API3"
+    },
+    {
+      "symbol": "MTL"
+    },
+    {
+      "symbol": "DENT"
+    },
+    {
+      "symbol": "HOT"
+    },
+    {
+      "symbol": "COTI"
+    },
+    {
+      "symbol": "PHA"
+    },
+    {
+      "symbol": "ALICE"
+    },
+    {
+      "symbol": "AUDIO"
+    },
+    {
+      "symbol": "AR"
+    },
+    {
+      "symbol": "JASMY"
+    },
+    {
+      "symbol": "LDO"
+    },
+    {
+      "symbol": "TIA"
+    },
+    {
+      "symbol": "SEI"
+    },
+    {
+      "symbol": "PEPE"
+    },
+    {
+      "symbol": "WIF"
+    },
+    {
+      "symbol": "BONK"
+    },
+    {
+      "symbol": "FLOKI"
+    },
+    {
+      "symbol": "ORDI"
+    },
+    {
+      "symbol": "PAXG"
+    },
+    {
+      "symbol": "XAUT"
+    },
+    {
+      "symbol": "RPL"
+    },
+    {
+      "symbol": "CFX"
+    },
+    {
+      "symbol": "ASTR"
+    },
+    {
+      "symbol": "GLMR"
+    },
+    {
+      "symbol": "MOVR"
+    },
+    {
+      "symbol": "SDN"
+    },
+    {
+      "symbol": "ACA"
+    },
+    {
+      "symbol": "KAR"
+    },
+    {
+      "symbol": "XPRT"
+    },
+    {
+      "symbol": "AKT"
+    },
+    {
+      "symbol": "OSMO"
+    },
+    {
+      "symbol": "JUNO"
+    },
+    {
+      "symbol": "SCRT"
+    },
+    {
+      "symbol": "NMR"
+    },
+    {
+      "symbol": "FTM"
+    },
+    {
+      "symbol": "RNDR"
+    },
+    {
+      "symbol": "TAO"
+    },
+    {
+      "symbol": "APE"
+    },
+    {
+      "symbol": "DYDX"
+    },
+    {
+      "symbol": "JUP"
+    },
+    {
+      "symbol": "PYTH"
+    }
+  ]
+}
