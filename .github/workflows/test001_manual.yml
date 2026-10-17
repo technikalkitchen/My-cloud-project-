@@ -1,0 +1,69 @@
+name: TEST001 Manual Run
+
+on:
+  workflow_dispatch:
+    inputs:
+      exchanges:
+        description: 'Comma-separated exchanges'
+        required: true
+        default: 'binance,okx,bitstamp,coinbase,crypto_com'
+        type: string
+      timeframes:
+        description: 'Comma-separated timeframes'
+        required: true
+        default: '5m,1h'
+        type: string
+      limit_assets:
+        description: 'Optional asset limit (0 = all 125)'
+        required: true
+        default: '0'
+        type: string
+      stop_on_exchange_error:
+        description: 'Stop after an exchange market-list error'
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+jobs:
+  test001:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependency
+        run: python -m pip install --upgrade pip requests
+
+      - name: Run TEST001
+        env:
+          EXCHANGES: ${{ inputs.exchanges }}
+          TIMEFRAMES: ${{ inputs.timeframes }}
+          LIMIT_ASSETS: ${{ inputs.limit_assets }}
+          STOP_ON_EXCHANGE_ERROR: ${{ inputs.stop_on_exchange_error }}
+        run: |
+          args=(--exchanges "$EXCHANGES" --timeframes "$TIMEFRAMES" --output data/test001/results.json)
+          if [[ "$LIMIT_ASSETS" != "0" ]]; then
+            args+=(--limit-assets "$LIMIT_ASSETS")
+          fi
+          if [[ "$STOP_ON_EXCHANGE_ERROR" == "true" ]]; then
+            args+=(--stop-on-exchange-error)
+          fi
+          python scripts/test001.py "${args[@]}"
+
+      - name: Upload TEST001 results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test001-results
+          path: data/test001/results.json
+          if-no-files-found: warn
+          retention-days: 14
