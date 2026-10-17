@@ -18,10 +18,8 @@ from .config import (
     USER_AGENT,
 )
 
-
 class AdapterError(RuntimeError):
     """A request failed or an exchange returned an unusable response."""
-
 
 class BaseAdapter:
     name = "base"
@@ -202,7 +200,6 @@ class BaseAdapter:
 
         return rows[-1][0] if rows else None
 
-
 class BinanceAdapter(BaseAdapter):
     name = "binance"
 
@@ -285,7 +282,6 @@ class BinanceAdapter(BaseAdapter):
             return self._utc_ms(data[-1][0])
 
         return None
-
 
 class OKXAdapter(BaseAdapter):
     name = "okx"
@@ -380,7 +376,6 @@ class OKXAdapter(BaseAdapter):
         rows = data.get("data", [])
         return self._utc_ms(rows[0][0]) if rows else None
 
-
 class BitstampAdapter(BaseAdapter):
     name = "bitstamp"
 
@@ -438,7 +433,6 @@ class BitstampAdapter(BaseAdapter):
             key=lambda row: row[0],
         )
 
-
 class CoinbaseAdapter(BaseAdapter):
     name = "coinbase"
 
@@ -490,7 +484,6 @@ class CoinbaseAdapter(BaseAdapter):
             key=lambda row: row[0],
         )
 
-
 class CryptoComAdapter(BaseAdapter):
     name = "crypto_com"
 
@@ -530,8 +523,6 @@ class CryptoComAdapter(BaseAdapter):
             if not isinstance(item, dict):
                 continue
 
-            # Public instrument metadata can expose these fields in
-            # different combinations; normalize case before filtering.
             inst_type = str(
                 item.get("inst_type")
                 or item.get("instrument_type")
@@ -565,15 +556,11 @@ class CryptoComAdapter(BaseAdapter):
             ).strip().upper()
 
             base = str(
-                item.get("base_currency")
-                or item.get("base")
-                or ""
+                item.get("base_ccy") or item.get("base") or ""
             ).strip().upper()
 
             quote = str(
-                item.get("quote_currency")
-                or item.get("quote")
-                or ""
+                item.get("quote_ccy") or item.get("quote") or ""
             ).strip().upper()
 
             if base and quote:
@@ -613,6 +600,7 @@ class CryptoComAdapter(BaseAdapter):
                 "timeframe": timeframe,
                 "start_ts": start_ms,
                 "end_ts": end_ms,
+                "count": "100",
             },
         )
 
@@ -641,7 +629,6 @@ class CryptoComAdapter(BaseAdapter):
             key=lambda row: row[0],
         )
 
-
 ADAPTERS = {
     "binance": BinanceAdapter,
     "okx": OKXAdapter,
@@ -649,7 +636,6 @@ ADAPTERS = {
     "coinbase": CoinbaseAdapter,
     "crypto_com": CryptoComAdapter,
 }
-
 
 def make_adapter(name: str) -> BaseAdapter:
     try:
