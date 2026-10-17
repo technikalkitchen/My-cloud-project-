@@ -18,7 +18,7 @@ def utc_now() -> str:
     return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
 
-def load_universe(path: str | Path = DEFAULT_UNIVERSE) -> list[dict[str, str]]:
+def load_universe(path: str | Path = DEFAULT_UNIVERSE) -> list[dict[str, str | None]]:
     """Load assets from either a JSON list or an object with an `assets` list."""
     source = Path(path)
     try:
@@ -29,15 +29,16 @@ def load_universe(path: str | Path = DEFAULT_UNIVERSE) -> list[dict[str, str]]:
     if not isinstance(assets, list):
         raise ValueError("Universe must be a list or an object containing an 'assets' list")
 
-    result: list[dict[str, str]] = []
+    result: list[dict[str, str | None]] = []
     seen: set[str] = set()
     for item in assets:
         if not isinstance(item, dict):
             raise ValueError("Each universe item must be an object")
         symbol = str(item.get("symbol", "")).strip().upper()
-        coin_id = str(item.get("coingecko_id", item.get("coinGeckoId", ""))).strip()
-        if not symbol or not coin_id:
-            raise ValueError("Each asset needs non-empty 'symbol' and 'coingecko_id'")
+        if not symbol:
+            raise ValueError("Each asset needs a non-empty 'symbol'")
+        raw_coin_id = item.get("coingecko_id", "")
+        coin_id = str(raw_coin_id).strip() or None if raw_coin_id is not None else None
         if symbol in seen:
             raise ValueError(f"Duplicate asset symbol in universe: {symbol}")
         seen.add(symbol)
@@ -139,7 +140,7 @@ def run_test001(
                     for timeframe in tf_names:
                         try:
                             candle_result = adapter.inspect_market(market, timeframe)
-                        except Exception as exc:  # keep one bad pair from hiding the rest of the run
+                        except Exception as exc:
                             candle_result = {"status": "ERROR", "first": None, "last": None, "error": str(exc)[:300]}
                         pair_result["timeframes"][timeframe] = candle_result
                         if candle_result["status"] == "ERROR":
