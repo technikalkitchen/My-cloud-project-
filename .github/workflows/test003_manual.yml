@@ -1,0 +1,22 @@
+name: TEST003 Origin Check
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test003:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependency
+        run: python -m pip install --upgrade pip requests
+
+      - name: Run Origin Check
+        run: python scripts/test003_origin.py
