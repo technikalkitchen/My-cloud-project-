@@ -1,0 +1,118 @@
+name: Test crypto2 with old dplyr
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.3.0'
+
+      - name: Install old dplyr 1.0.10
+        run: |
+          R -e "install.packages('https://cran.r-project.org/src/contrib/Archive/dplyr/dplyr_1.0.10.tar.gz', repos=NULL, type='source')"
+
+      - name: Verify dplyr version
+        run: |
+          R -e "library(dplyr); cat('dplyr version:', as.character(packageVersion('dplyr')), '\n')"
+
+      - name: Install crypto2
+        run: |
+          R -e "install.packages('crypto2', repos='https://cloud.r-project.org')"
+
+      - name: Verify crypto2 version
+        run: |
+          R -e "library(crypto2); cat('crypto2 version:', as.character(packageVersion('crypto2')), '\n')"
+
+      - name: Test BTC with full structured output
+        run: |
+          R -e "
+          library(crypto2)
+          options(digits=22)
+          cat('===========================================\n')
+          cat('=== BTC Test: 2019-01-01 to 2019-01-03 ===\n')
+          cat('===========================================\n')
+          result <- tryCatch(
+            crypto_history(coin_list='btc', start_date='20190101', end_date='20190103'),
+            error = function(e) { cat('ERROR:', e\$message, '\n'); NULL }
+          )
+          if (!is.null(result)) {
+            cat('\n--- STRUCTURE (str) ---\n')
+            str(result)
+            cat('\n--- HEAD (first 6 rows) ---\n')
+            print(head(result))
+            cat('\n--- TAIL (last 6 rows) ---\n')
+            print(tail(result))
+            cat('\n--- SUPPLY with 22 digits ---\n')
+            if ('circulating_supply' %in% colnames(result)) {
+              print(result[, c('timestamp', 'circulating_supply')])
+            } else {
+              cat('circulating_supply column NOT FOUND\n')
+              cat('Available columns:', paste(colnames(result), collapse=', '), '\n')
+            }
+            cat('\n=== BTC: SUCCESS ===\n')
+          } else {
+            cat('\n=== BTC: FAILED ===\n')
+          }
+          "
+
+      - name: Test LINK with full structured output
+        run: |
+          R -e "
+          library(crypto2)
+          options(digits=22)
+          cat('===========================================\n')
+          cat('=== LINK Test: 2019-01-01 to 2019-01-03 ===\n')
+          cat('===========================================\n')
+          result <- tryCatch(
+            crypto_history(coin_list='link', start_date='20190101', end_date='20190103'),
+            error = function(e) { cat('ERROR:', e\$message, '\n'); NULL }
+          )
+          if (!is.null(result)) {
+            cat('\n--- HEAD ---\n')
+            print(head(result))
+            cat('\n--- SUPPLY with 22 digits ---\n')
+            if ('circulating_supply' %in% colnames(result)) {
+              print(result[, c('timestamp', 'circulating_supply')])
+            } else {
+              cat('circulating_supply column NOT FOUND\n')
+              cat('Available columns:', paste(colnames(result), collapse=', '), '\n')
+            }
+            cat('\n=== LINK: SUCCESS ===\n')
+          } else {
+            cat('\n=== LINK: FAILED ===\n')
+          }
+          "
+
+      - name: Test USDT with full structured output
+        run: |
+          R -e "
+          library(crypto2)
+          options(digits=22)
+          cat('===========================================\n')
+          cat('=== USDT Test: 2019-01-01 to 2019-01-03 ===\n')
+          cat('===========================================\n')
+          result <- tryCatch(
+            crypto_history(coin_list='usdt', start_date='20190101', end_date='20190103'),
+            error = function(e) { cat('ERROR:', e\$message, '\n'); NULL }
+          )
+          if (!is.null(result)) {
+            cat('\n--- HEAD ---\n')
+            print(head(result))
+            cat('\n--- SUPPLY with 22 digits ---\n')
+            if ('circulating_supply' %in% colnames(result)) {
+              print(result[, c('timestamp', 'circulating_supply')])
+            } else {
+              cat('circulating_supply column NOT FOUND\n')
+              cat('Available columns:', paste(colnames(result), collapse=', '), '\n')
+            }
+            cat('\n=== USDT: SUCCESS ===\n')
+          } else {
+            cat('\n=== USDT: FAILED ===\n')
+          }
+          "
