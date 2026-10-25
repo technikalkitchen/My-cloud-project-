@@ -1,0 +1,180 @@
+name: Combined Supply Sources Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  cmc_internal:
+    name: CMC Internal API (Keyless Attempt)
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Test CMC internal endpoints
+        run: |
+          python <<'PY'
+          import requests
+          import time
+
+          tokens = {
+              "BTC": 1,
+              "ETH": 1027,
+              "LINK": 1975,
+              "USDT": 825,
+              "UNI": 7083,
+          }
+
+          time_start = 1577836800
+          time_end = 1578009600
+
+          headers = {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+              "Accept": "application/json, text/plain, */*",
+              "Accept-Language": "en-US,en;q=0.9",
+              "Referer": "https://coinmarketcap.com/",
+              "Origin": "https://coinmarketcap.com",
+          }
+
+          endpoints = [
+              "https://api.coinmarketcap.com/data-api/v3/cryptocurrency/historical",
+              "https://api.coinmarketcap.com/data-api/v3.1/cryptocurrency/historical",
+          ]
+
+          for symbol, cmc_id in tokens.items():
+              print(f"\n=== {symbol} (ID={cmc_id}) ===")
+              got_data = False
+              for endpoint in endpoints:
+                  params = {
+                      "id": str(cmc_id),
+                      "convertId": "2781",
+                      "timeStart": str(time_start),
+                      "timeEnd": str(time_end),
+                      "interval": "1d",
+                  }
+                  try:
+                      r = requests.get(endpoint, params=params, headers=headers, timeout=20)
+                      label = endpoint.split("/v")[1].split("/")[0] if "/v" in endpoint else endpoint
+                      print(f"  endpoint v{label}: HTTP {r.status_code}")
+                      if r.status_code == 200:
+                          data = r.json()
+                          status = data.get("status", {})
+                          if status.get("error_code") == "0":
+                              quotes = data.get("data", {}).get("quotes", [])
+                              print(f"    quotes returned: {len(quotes)}")
+                              for q in quotes[:2]:
+                                  circ = q.get("quote", {}).get("circulatingSupply")
+                                  ts = q.get("time")
+                                  print(f"    {ts}: circ={circ}")
+                              got_data = True
+                              break
+                          else:
+                              print(f"    error_code: {status.get('error_code')}")
+                              print(f"    error_message: {status.get('error_message', '')[:100]}")
+                      else:
+                          print(f"    body preview: {r.text[:150]}")
+                  except Exception as e:
+                      print(f"    ERROR: {type(e).__name__}: {e}")
+                  time.sleep(1)
+
+              if not got_data:
+                  print(f"  >>> {symbol}: NO DATA from any endpoint")
+
+          print("\n=== Done ===")
+          PY
+
+  cmc_scraper_pkg:
+    name: coinmarketcap-scraper Package
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Try install package
+        run: |
+          pip install coinmarketcap-scraper 2>&1 | tail -8 || echo "PACKAGE INSTALL FAILED"
+
+      - name: Test package
+        run: |
+          python <<'PY'
+          try:
+              import coinmarketcap_scraper
+              print("SUCCESS: package imported")
+              attrs = [a for a in dir(coinmarketcap_scraper) if not a.startswith('_')]
+              print(f"Attributes: {attrs}")
+          except ImportError as e:
+              print(f"IMPORT FAILED: {e}")
+          except Exception as e:
+              print(f"OTHER ERROR: {type(e).__name__}: {e}")
+          PY
+
+  defillama:
+    name: DefiLlama Stablecoins
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Test DefiLlama
+        run: |
+          python <<'PY'
+          import requests
+          import datetime
+
+          print("=== DefiLlama Stablecoins List ===")
+          usdt_id = None
+          try:
+              r = requests.get("https://stablecoins.llama.fi/stablecoins", timeout=30)
+              data = r.json()
+              pegged = data.get("peggedAssets", [])
+              print(f"Total stablecoins: {len(pegged)}")
+              for coin in pegged:
+                  if coin.get("symbol") in ["USDT", "USDC", "DAI", "BUSD"]:
+                      circ = coin.get("circulating", {}).get("peggedUSD")
+                      print(f"  {coin['symbol']}: id={coin['id']}, circulating={circ}")
+                      if coin["symbol"] == "USDT":
+                          usdt_id = coin["id"]
+          except Exception as e:
+              print(f"  ERROR: {type(e).__name__}: {e}")
+
+          print("\n=== USDT Historical Supply ===")
+          if usdt_id:
+              try:
+                  r2 = requests.get(f"https://stablecoins.llama.fi/stablecoin/{usdt_id}", timeout=30)
+                  hist = r2.json()
+                  tokens = hist.get("tokens", [])
+                  print(f"Data points: {len(tokens)}")
+                  if tokens:
+                      tokens_sorted = sorted(tokens, key=lambda x: x.get("date", 0))
+                      samples = [
+                          tokens_sorted[0],
+                          tokens_sorted[len(tokens_sorted)//2],
+                          tokens_sorted[-1]
+                      ]
+                      for t in samples:
+                          ts = t.get("date")
+                          circ = t.get("circulating", {}).get("peggedUSD")
+                          dt = datetime.datetime.fromtimestamp(ts).strftime("%Y-%m-%d") if ts else "?"
+                          print(f"  {dt}: circ={circ}")
+              except Exception as e:
+                  print(f"  ERROR: {type(e).__name__}: {e}")
+          else:
+              print("  USDT ID not found")
+
+          print("\n=== Done ===")
+          PY
