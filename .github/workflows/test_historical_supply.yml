@@ -1,0 +1,94 @@
+name: Test Historical Supply via Public RPC
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Test historical totalSupply via public Ethereum RPC
+        run: |
+          python <<'PY'
+          import requests
+          import time
+
+          RPCS = [
+              "https://eth.llamarpc.com",
+              "https://rpc.ankr.com/eth",
+              "https://ethereum.publicnode.com",
+              "https://1rpc.io/eth",
+          ]
+
+          tokens = {
+              "LINK":  {"addr": "0x514910771AF9Ca656af840dff83E8264EcF986CA", "decimals": 18},
+              "UNI":   {"addr": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984", "decimals": 18},
+              "USDT":  {"addr": "0xdAC17F958D2ee523a2206206994597C13D831ec7", "decimals": 6},
+              "MATIC": {"addr": "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0", "decimals": 18},
+          }
+
+          blocks = {
+              "2020-01-01": 9193266,
+              "2021-01-01": 11565020,
+              "2024-01-01": 18908800,
+          }
+
+          selector = "0x18160ddd"
+
+          def rpc_call(method, params):
+              for url in RPCS:
+                  try:
+                      payload = {"jsonrpc": "2.0", "method": method, "params": params, "id": 1}
+                      r = requests.post(url, json=payload, timeout=20)
+                      data = r.json()
+                      if "result" in data and data["result"]:
+                          return data["result"], url
+                  except Exception:
+                      continue
+              return None, None
+
+          for symbol, info in tokens.items():
+              print(f"\n=== {symbol} ({info['addr']}) ===")
+              values = []
+              for date, block in blocks.items():
+                  result, rpc_used = rpc_call(
+                      "eth_call",
+                      [{"to": info["addr"], "data": selector}, hex(block)]
+                  )
+                  if result and result != "0x":
+                      raw = int(result, 16)
+                      human = raw / (10 ** info["decimals"])
+                      values.append(human)
+                      host = rpc_used.split("//")[1].split("/")[0] if rpc_used else "?"
+                      print(f"  {date} (block {block}): {human:,.2f}  [via {host}]")
+                  else:
+                      print(f"  {date} (block {block}): NO DATA")
+                  time.sleep(1)
+
+              if len(values) >= 2:
+                  if len(set(values)) == 1:
+                      print(f"  >>> FIXED across blocks: {values[0]:,.2f}")
+                  else:
+                      print(f"  >>> VARIES across blocks: min={min(values):,.2f}, max={max(values):,.2f}")
+
+          print("\n=== BTC reference (via CoinMetrics) ===")
+          try:
+              url = "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=SplyCur&frequency=1d&start_time=2020-01-01&end_time=2020-01-02"
+              r = requests.get(url, timeout=15)
+              data = r.json()
+              if data.get("data"):
+                  print(f"  BTC 2020-01-01: {data['data'][0]['SplyCur']}")
+          except Exception as e:
+              print(f"  BTC: {e}")
+
+          print("\n=== Done ===")
+          PY
