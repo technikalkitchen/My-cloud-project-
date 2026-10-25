@@ -1,0 +1,191 @@
+name: CMC Internal API Extended Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  extended_test:
+    name: CMC Internal Extended
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Full structure inspection
+        run: |
+          python <<'PY'
+          import requests
+          import json
+
+          headers = {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+              "Accept": "application/json, text/plain, */*",
+              "Accept-Language": "en-US,en;q=0.9",
+              "Referer": "https://coinmarketcap.com/",
+              "Origin": "https://coinmarketcap.com",
+          }
+
+          print("=== FULL RESPONSE STRUCTURE (LINK) ===")
+          params = {
+              "id": "1975",
+              "convertId": "2781",
+              "timeStart": "1577836800",
+              "timeEnd": "1578009600",
+              "interval": "1d",
+          }
+          r = requests.get(
+              "https://api.coinmarketcap.com/data-api/v3/cryptocurrency/historical",
+              params=params,
+              headers=headers,
+              timeout=20,
+          )
+          print(f"HTTP: {r.status_code}")
+          data = r.json()
+
+          def show_keys(obj, prefix="", depth=0, max_depth=3):
+              if depth > max_depth:
+                  return
+              if isinstance(obj, dict):
+                  for k, v in obj.items():
+                      vtype = type(v).__name__
+                      preview = str(v)[:80] if not isinstance(v, (dict, list)) else ""
+                      print(f"{prefix}{k}: {vtype} {preview}")
+                      show_keys(v, prefix + "  ", depth + 1, max_depth)
+              elif isinstance(obj, list) and obj:
+                  print(f"{prefix}[list of {len(obj)}]")
+                  show_keys(obj[0], prefix + "  ", depth + 1, max_depth)
+
+          show_keys(data, "", 0, 3)
+          print("\n=== RAW FIRST QUOTE ===")
+          quotes = data.get("data", {}).get("quotes", [])
+          if quotes:
+              print(json.dumps(quotes[0], indent=2)[:800])
+          PY
+
+      - name: 15 assets x 3 dates
+        run: |
+          python <<'PY'
+          import requests
+          import time
+
+          headers = {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+              "Accept": "application/json, text/plain, */*",
+              "Accept-Language": "en-US,en;q=0.9",
+              "Referer": "https://coinmarketcap.com/",
+              "Origin": "https://coinmarketcap.com",
+          }
+
+          tokens = {
+              "BTC":    1,
+              "ETH":    1027,
+              "LINK":   1975,
+              "UNI":    7083,
+              "MATIC":  3890,
+              "POL":    28321,
+              "USDT":   825,
+              "USDC":   3408,
+              "DAI":    4943,
+              "AAVE":   7278,
+              "MKR":    1518,
+              "CRV":    6538,
+              "SNX":    2586,
+              "COMP":   5692,
+              "SUSHI":  6758,
+          }
+
+          dates = {
+              "2017-08-01": (1501545600, 1501632000),
+              "2020-01-01": (1577836800, 1578009600),
+              "2024-01-01": (1704067200, 1704240000),
+          }
+
+          def fetch(cmc_id, start, end):
+              params = {
+                  "id": str(cmc_id),
+                  "convertId": "2781",
+                  "timeStart": str(start),
+                  "timeEnd": str(end),
+                  "interval": "1d",
+              }
+              try:
+                  r = requests.get(
+                      "https://api.coinmarketcap.com/data-api/v3/cryptocurrency/historical",
+                      params=params, headers=headers, timeout=20
+                  )
+                  if r.status_code != 200:
+                      return f"HTTP {r.status_code}", None
+                  data = r.json()
+                  status = data.get("status", {})
+                  if status.get("error_code") != "0":
+                      return f"err {status.get('error_code')}", None
+                  quotes = data.get("data", {}).get("quotes", [])
+                  if not quotes:
+                      return "no quotes", None
+                  circ = quotes[0].get("quote", {}).get("circulatingSupply")
+                  return "OK", circ
+              except Exception as e:
+                  return f"{type(e).__name__}", None
+
+          print(f"{'Symbol':<8} {'2017-08-01':<20} {'2020-01-01':<25} {'2024-01-01':<25}")
+          print("-" * 80)
+          for symbol, cmc_id in tokens.items():
+              row = [f"{symbol:<8}"]
+              for date, (start, end) in dates.items():
+                  status, circ = fetch(cmc_id, start, end)
+                  if circ is not None:
+                      try:
+                          row.append(f"{float(circ):,.0f}".ljust(25 if date != "2017-08-01" else 20))
+                      except:
+                          row.append(f"{circ}".ljust(25 if date != "2017-08-01" else 20))
+                  else:
+                      row.append(status.ljust(25 if date != "2017-08-01" else 20))
+                  time.sleep(0.8)
+              print(" ".join(row))
+          PY
+
+      - name: Rate limit probe
+        run: |
+          python <<'PY'
+          import requests
+          import time
+
+          headers = {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+              "Accept": "application/json, text/plain, */*",
+              "Referer": "https://coinmarketcap.com/",
+              "Origin": "https://coinmarketcap.com",
+          }
+
+          print("=== RATE LIMIT PROBE (10 rapid requests) ===")
+          params = {
+              "id": "1",
+              "convertId": "2781",
+              "timeStart": "1577836800",
+              "timeEnd": "1578009600",
+              "interval": "1d",
+          }
+
+          start = time.time()
+          for i in range(10):
+              try:
+                  r = requests.get(
+                      "https://api.coinmarketcap.com/data-api/v3/cryptocurrency/historical",
+                      params=params, headers=headers, timeout=15
+                  )
+                  print(f"  req {i+1}: HTTP {r.status_code} ({time.time()-start:.1f}s)")
+                  if r.status_code == 429:
+                      print(f"  >>> RATE LIMITED after {i+1} requests")
+                      break
+              except Exception as e:
+                  print(f"  req {i+1}: {type(e).__name__}")
+              time.sleep(0.3)
+
+          print(f"\nTotal elapsed: {time.time()-start:.1f}s")
+          PY
