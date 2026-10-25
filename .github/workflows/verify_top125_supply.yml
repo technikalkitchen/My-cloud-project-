@@ -1,0 +1,285 @@
+name: Verify Top 125 Supply Coverage
+
+on:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Fetch Top 125 from CoinGecko
+        run: |
+          python <<'PY'
+          import requests
+          import json
+          import time
+
+          print("=== Fetching Top 125 from CoinGecko ===")
+          url = "https://api.coingecko.com/api/v3/coins/markets"
+          params = {
+              "vs_currency": "usd",
+              "order": "market_cap_desc",
+              "per_page": 150,
+              "page": 1,
+              "sparkline": "false",
+          }
+
+          for attempt in range(3):
+              try:
+                  r = requests.get(url, params=params, timeout=30)
+                  print(f"  attempt {attempt+1}: HTTP {r.status_code}")
+                  if r.status_code == 200:
+                      data = r.json()
+                      top = data[:125]
+                      coins = []
+                      for coin in top:
+                          coins.append({
+                              "symbol": coin.get("symbol", "").upper(),
+                              "name": coin.get("name", ""),
+                              "coingecko_id": coin.get("id"),
+                              "rank": coin.get("market_cap_rank"),
+                          })
+                      with open("top125.json", "w") as f:
+                          json.dump(coins, f, indent=2)
+                      print(f"  Saved {len(coins)} coins")
+                      break
+                  elif r.status_code == 429:
+                      print(f"  Rate limited, waiting 60s...")
+                      time.sleep(60)
+              except Exception as e:
+                  print(f"  ERROR: {type(e).__name__}: {e}")
+                  time.sleep(10)
+          PY
+
+      - name: Map to CMC IDs
+        run: |
+          python <<'PY'
+          import requests
+          import json
+          import time
+
+          with open("top125.json") as f:
+              top125 = json.load(f)
+
+          headers = {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+              "Accept": "application/json, text/plain, */*",
+              "Referer": "https://coinmarketcap.com/",
+              "Origin": "https://coinmarketcap.com",
+          }
+
+          print("=== Fetching CMC top 200 for ID mapping ===")
+          cmc_map = {}
+          for start in [1, 101]:
+              params = {
+                  "start": str(start),
+                  "limit": "100",
+                  "sortBy": "market_cap",
+                  "sortType": "desc",
+                  "convert": "USD",
+                  "cryptoType": "all",
+                  "tagType": "all",
+              }
+              try:
+                  r = requests.get(
+                      "https://api.coinmarketcap.com/data-api/v3/cryptocurrency/listing",
+                      params=params, headers=headers, timeout=20
+                  )
+                  if r.status_code == 200:
+                      data = r.json()
+                      listings = data.get("data", {}).get("cryptoCurrencyList", [])
+                      for coin in listings:
+                          symbol = coin.get("symbol", "").upper()
+                          cid = coin.get("id")
+                          if symbol and cid and symbol not in cmc_map:
+                              cmc_map[symbol] = cid
+                      print(f"  start={start}: {len(listings)} coins mapped")
+              except Exception as e:
+                  print(f"  ERROR: {type(e).__name__}: {e}")
+              time.sleep(1)
+
+          print(f"\nCMC map size: {len(cmc_map)}")
+
+          unmapped = []
+          for coin in top125:
+              symbol = coin["symbol"]
+              if symbol in cmc_map:
+                  coin["cmc_id"] = cmc_map[symbol]
+              else:
+                  coin["cmc_id"] = None
+                  unmapped.append(symbol)
+
+          with open("top125_mapped.json", "w") as f:
+              json.dump(top125, f, indent=2)
+
+          print(f"Mapped: {125 - len(unmapped)} / 125")
+          if unmapped:
+              print(f"Unmapped symbols: {', '.join(unmapped[:20])}")
+          PY
+
+      - name: Test 8 checkpoints per asset
+        run: |
+          python <<'PY'
+          import requests
+          import json
+          import time
+
+          with open("top125_mapped.json") as f:
+              coins = json.load(f)
+
+          headers = {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+              "Accept": "application/json, text/plain, */*",
+              "Referer": "https://coinmarketcap.com/",
+              "Origin": "https://coinmarketcap.com",
+          }
+
+          checkpoints = [
+              ("2017-01-01", 1483228800, 1483315200),
+              ("2018-01-01", 1514764800, 1514851200),
+              ("2019-01-01", 1546300800, 1546387200),
+              ("2020-01-01", 1577836800, 1577923200),
+              ("2021-01-01", 1609459200, 1609545600),
+              ("2022-01-01", 1640995200, 1641081600),
+              ("2023-01-01", 1672531200, 1672617600),
+              ("2024-01-01", 1704067200, 1704153600),
+          ]
+
+          def query(cmc_id, start, end):
+              params = {
+                  "id": str(cmc_id),
+                  "convertId": "2781",
+                  "timeStart": str(start),
+                  "timeEnd": str(end),
+                  "interval": "1d",
+              }
+              try:
+                  r = requests.get(
+                      "https://api.coinmarketcap.com/data-api/v3/cryptocurrency/historical",
+                      params=params, headers=headers, timeout=15
+                  )
+                  if r.status_code != 200:
+                      return None, None, None
+                  data = r.json()
+                  if data.get("status", {}).get("error_code") != "0":
+                      return None, None, None
+                  quotes = data.get("data", {}).get("quotes", [])
+                  if not quotes:
+                      return None, None, None
+                  quote = quotes[0].get("quote", {})
+                  circ = quote.get("circulatingSupply")
+                  price = quote.get("close")
+                  return circ, price, True
+              except Exception:
+                  return None, None, None
+
+          results = []
+          total = len(coins)
+
+          for idx, coin in enumerate(coins):
+              symbol = coin["symbol"]
+              cmc_id = coin.get("cmc_id")
+              entry = {
+                  "symbol": symbol,
+                  "rank": coin.get("rank"),
+                  "cmc_id": cmc_id,
+                  "checkpoints": {},
+                  "available_from": None,
+                  "coverage": "UNAVAILABLE",
+                  "issues": [],
+              }
+
+              if not cmc_id:
+                  entry["issues"].append("no_cmc_id")
+                  entry["coverage"] = "UNAVAILABLE"
+                  results.append(entry)
+                  print(f"{symbol:<10} NO_CMS_ID")
+                  continue
+
+              first_data = None
+              for label, start, end in checkpoints:
+                  circ, price, ok = query(cmc_id, start, end)
+                  if ok:
+                      cp = {"circ": circ, "price": price}
+                      entry["checkpoints"][label] = cp
+
+                      if circ is not None and circ > 0:
+                          if first_data is None:
+                              first_data = label
+                      elif circ == 0:
+                          if price is not None and price > 0:
+                              entry["issues"].append(f"zero_supply_{label}")
+                          else:
+                              entry["issues"].append(f"no_data_{label}")
+
+                  time.sleep(0.3)
+
+              if first_data:
+                  entry["available_from"] = first_data
+                  total_ok = sum(1 for cp in entry["checkpoints"].values() if cp.get("circ") and cp["circ"] > 0)
+                  if total_ok == 8:
+                      entry["coverage"] = "FULL"
+                  else:
+                      entry["coverage"] = "PARTIAL"
+              else:
+                  entry["coverage"] = "UNAVAILABLE"
+
+              results.append(entry)
+
+              status = entry["available_from"] or "NONE"
+              print(f"{symbol:<10} from={status:<12} coverage={entry['coverage']:<12} issues={len(entry['issues'])}")
+
+              if (idx + 1) % 25 == 0:
+                  print(f"  --- {idx+1}/{total} done ---")
+
+          with open("verification_results.json", "w") as f:
+              json.dump(results, f, indent=2)
+
+          print("\n=== Summary ===")
+          full = sum(1 for r in results if r["coverage"] == "FULL")
+          partial = sum(1 for r in results if r["coverage"] == "PARTIAL")
+          unavailable = sum(1 for r in results if r["coverage"] == "UNAVAILABLE")
+
+          print(f"FULL:        {full} / {total}")
+          print(f"PARTIAL:     {partial} / {total}")
+          print(f"UNAVAILABLE: {unavailable} / {total}")
+
+          from collections import Counter
+          years = Counter()
+          for r in results:
+              if r["available_from"]:
+                  years[r["available_from"][:4]] += 1
+
+          print("\nBy earliest year:")
+          for y in sorted(years.keys()):
+              print(f"  {y}: {years[y]}")
+
+          print("\n--- UNAVAILABLE assets ---")
+          for r in results:
+              if r["coverage"] == "UNAVAILABLE":
+                  print(f"  {r['symbol']:<10} rank={r['rank']} issues={r['issues'][:3]}")
+
+          print("\n--- PARTIAL assets (with issues) ---")
+          for r in results:
+              if r["coverage"] == "PARTIAL" and r["issues"]:
+                  print(f"  {r['symbol']:<10} from={r['available_from']} issues={r['issues'][:3]}")
+          PY
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: top125-verification
+          path: |
+            top125.json
+            top125_mapped.json
+            verification_results.json
+          retention-days: 30
