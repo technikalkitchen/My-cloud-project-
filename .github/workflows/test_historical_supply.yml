@@ -23,9 +23,11 @@ jobs:
           import time
 
           RPCS = [
+              "https://cloudflare-eth.com",
               "https://eth.llamarpc.com",
               "https://rpc.ankr.com/eth",
               "https://ethereum.publicnode.com",
+              "https://eth.drpc.org",
               "https://1rpc.io/eth",
           ]
 
@@ -45,50 +47,59 @@ jobs:
           selector = "0x18160ddd"
 
           def rpc_call(method, params):
+              last_error = "no RPC tried"
               for url in RPCS:
                   try:
                       payload = {"jsonrpc": "2.0", "method": method, "params": params, "id": 1}
-                      r = requests.post(url, json=payload, timeout=20)
+                      r = requests.post(url, json=payload, timeout=15)
+                      if r.status_code != 200:
+                          last_error = f"HTTP {r.status_code}"
+                          continue
                       data = r.json()
-                      if "result" in data and data["result"]:
-                          return data["result"], url
-                  except Exception:
+                      if "error" in data:
+                          last_error = f"API error: {data['error']}"
+                          continue
+                      result = data.get("result")
+                      if isinstance(result, str) and result.startswith("0x") and len(result) > 2:
+                          return result, url
+                      last_error = f"bad result: {type(result).__name__}"
+                  except Exception as e:
+                      last_error = f"{type(e).__name__}: {str(e)[:60]}"
                       continue
-              return None, None
+              return None, last_error
+
+          print("=== RPC Connectivity Test ===")
+          block_hex, info = rpc_call("eth_blockNumber", [])
+          if block_hex:
+              print(f"OK: current block = {int(block_hex, 16):,}")
+          else:
+              print(f"FAILED: {info}")
 
           for symbol, info in tokens.items():
-              print(f"\n=== {symbol} ({info['addr']}) ===")
+              print(f"\n=== {symbol} ===")
               values = []
               for date, block in blocks.items():
-                  result, rpc_used = rpc_call(
+                  result, rpc_or_err = rpc_call(
                       "eth_call",
                       [{"to": info["addr"], "data": selector}, hex(block)]
                   )
-                  if result and result != "0x":
-                      raw = int(result, 16)
-                      human = raw / (10 ** info["decimals"])
-                      values.append(human)
-                      host = rpc_used.split("//")[1].split("/")[0] if rpc_used else "?"
-                      print(f"  {date} (block {block}): {human:,.2f}  [via {host}]")
+                  if result:
+                      try:
+                          raw = int(result, 16)
+                          human = raw / (10 ** info["decimals"])
+                          values.append(human)
+                          host = rpc_or_err.split("//")[1].split("/")[0]
+                          print(f"  {date}: {human:,.2f}  [{host}]")
+                      except Exception as e:
+                          print(f"  {date}: parse error: {e}")
                   else:
-                      print(f"  {date} (block {block}): NO DATA")
-                  time.sleep(1)
+                      print(f"  {date}: NO DATA ({rpc_or_err})")
+                  time.sleep(0.5)
 
-              if len(values) >= 2:
-                  if len(set(values)) == 1:
-                      print(f"  >>> FIXED across blocks: {values[0]:,.2f}")
-                  else:
-                      print(f"  >>> VARIES across blocks: min={min(values):,.2f}, max={max(values):,.2f}")
-
-          print("\n=== BTC reference (via CoinMetrics) ===")
-          try:
-              url = "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=SplyCur&frequency=1d&start_time=2020-01-01&end_time=2020-01-02"
-              r = requests.get(url, timeout=15)
-              data = r.json()
-              if data.get("data"):
-                  print(f"  BTC 2020-01-01: {data['data'][0]['SplyCur']}")
-          except Exception as e:
-              print(f"  BTC: {e}")
+              if len(values) >= 2 and len(set(values)) == 1:
+                  print(f"  >>> FIXED across blocks")
+              elif len(values) >= 2:
+                  print(f"  >>> VARIES (min={min(values):,.2f}, max={max(values):,.2f})")
 
           print("\n=== Done ===")
           PY
