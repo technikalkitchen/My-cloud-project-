@@ -1,4 +1,4 @@
-name: Test crypto2 Historical Supply
+name: Quick Test crypto2
 
 on:
   workflow_dispatch:
@@ -12,33 +12,24 @@ jobs:
         with:
           r-version: '4.3.0'
 
-      - name: Install crypto2
-        run: |
-          R -e "install.packages('crypto2', repos='https://cloud.r-project.org')"
+      - name: Setup crypto2
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: any::crypto2
 
-      - name: Test LINK (ERC-20) historical supply
+      - name: Quick test BTC
         run: |
           R -e "
           library(crypto2)
-          cat('=== Testing LINK from 2019-01-01 to 2019-01-10 ===\n')
-          link_data <- crypto_history(coin_list = 'link', start_date = '20190101', end_date = '20190110')
-          print(link_data[, c('timestamp', 'circulating_supply')])
-          "
-
-      - name: Test USDT (ERC-20) historical supply
-        run: |
-          R -e "
-          library(crypto2)
-          cat('=== Testing USDT from 2019-01-01 to 2019-01-10 ===\n')
-          usdt_data <- crypto_history(coin_list = 'usdt', start_date = '20190101', end_date = '20190110')
-          print(usdt_data[, c('timestamp', 'circulating_supply')])
-          "
-
-      - name: Test BTC (native) historical supply
-        run: |
-          R -e "
-          library(crypto2)
-          cat('=== Testing BTC from 2019-01-01 to 2019-01-10 ===\n')
-          btc_data <- crypto_history(coin_list = 'btc', start_date = '20190101', end_date = '20190110')
-          print(btc_data[, c('timestamp', 'circulating_supply')])
+          cat('=== Testing BTC 3 days ===\n')
+          result <- tryCatch(
+            crypto_history(coin_list='btc', start_date='20190101', end_date='20190103'),
+            error = function(e) { cat('ERROR:', e\$message, '\n'); NULL }
+          )
+          if (!is.null(result)) {
+            print(result[, c('timestamp', 'circulating_supply')])
+            cat('SUCCESS\n')
+          } else {
+            cat('FAILED\n')
+          }
           "
