@@ -1,0 +1,199 @@
+name: Verify 125 List and Fill Gaps
+
+on:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Run verification
+        run: |
+          python <<'PY'
+          import requests
+          import json
+          import time
+          from datetime import datetime
+
+          print("=" * 70)
+          print("STEP 1: Fetch Top 125 from CoinGecko")
+          print("=" * 70)
+
+          coins = []
+          for attempt in range(3):
+              try:
+                  r = requests.get(
+                      "https://api.coingecko.com/api/v3/coins/markets",
+                      params={"vs_currency":"usd","order":"market_cap_desc","per_page":150,"page":1,"sparkline":"false"},
+                      timeout=30
+                  )
+                  if r.status_code == 200:
+                      coins = r.json()[:125]
+                      print(f"OK: {len(coins)} coins fetched")
+                      break
+                  elif r.status_code == 429:
+                      print("Rate limited, waiting 60s...")
+                      time.sleep(60)
+              except Exception as e:
+                  print(f"retry {attempt+1}: {e}")
+                  time.sleep(15)
+
+          print("\n" + "=" * 70)
+          print("STEP 2: Fetch detailed info for each coin (rate limited)")
+          print("=" * 70)
+
+          def fetch_detail(cg_id):
+              for attempt in range(3):
+                  try:
+                      r = requests.get(
+                          f"https://api.coingecko.com/api/v3/coins/{cg_id}",
+                          params={"localization":"false","tickers":"false","community_data":"false","developer_data":"false"},
+                          timeout=20
+                      )
+                      if r.status_code == 200:
+                          return r.json()
+                      elif r.status_code == 429:
+                          time.sleep(60)
+                          continue
+                      else:
+                          return None
+                  except Exception:
+                      time.sleep(5)
+              return None
+
+          results = []
+          for idx, coin in enumerate(coins):
+              cg_id = coin.get("id")
+              symbol = coin.get("symbol","").upper()
+              name = coin.get("name","")
+              market_cap = coin.get("market_cap") or 0
+              volume = coin.get("total_volume") or 0
+              rank = coin.get("market_cap_rank")
+
+              detail = fetch_detail(cg_id)
+              categories = []
+              genesis = None
+              if detail:
+                  cats = detail.get("categories", [])
+                  categories = [c for c in cats if c][:3]
+                  genesis = detail.get("genesis_date")
+
+              flags = []
+              if market_cap < 50_000_000:
+                  flags.append(f"low_mcap({market_cap/1e6:.0f}M)")
+              if volume < 1_000_000:
+                  flags.append(f"low_vol({volume/1e6:.1f}M)")
+              if categories and all("meme" in c.lower() for c in categories):
+                  flags.append("meme_only")
+              if not categories:
+                  flags.append("no_category")
+
+              results.append({
+                  "symbol": symbol, "name": name, "cg_id": cg_id,
+                  "rank": rank, "market_cap": market_cap, "volume": volume,
+                  "categories": categories, "genesis": genesis,
+                  "flags": flags, "suspicious": len(flags) > 0,
+              })
+
+              print(f"{idx+1:>3}. {symbol:<10} {name[:18]:<20} mcap=${market_cap/1e6:>7.0f}M vol=${volume/1e6:>5.1f}M {flags}")
+
+              time.sleep(3)
+
+          print("\n" + "=" * 70)
+          print("STEP 3: Retry CoinGecko for 40 UNAVAILABLE")
+          print("=" * 70)
+
+          UNAVAILABLE = [
+              "FIGR_HELOC","HYPE","WBT","RAIN","CC","ENA","BTW","USYC","USDY","M",
+              "ONDO","PUMP","EURSAFO","ASTER","WLFI","U","SKY","MORPHO","HTX",
+              "BFUSD","VVV","JUP","PI","LIT","USTB","AKE","ZRO","PEARL","ETHFI",
+              "NIGHT","BDX","JAAA","EUTBL","币安人生","GRASS","STABLE","PENGU",
+              "TRUMP","HASH","DRV"
+          ]
+
+          def try_hist(cg_id):
+              for attempt in range(3):
+                  try:
+                      r = requests.get(
+                          f"https://api.coingecko.com/api/v3/coins/{cg_id}/market_chart",
+                          params={"vs_currency":"usd","days":"max"},
+                          timeout=25
+                      )
+                      if r.status_code == 200:
+                          prices = r.json().get("prices", [])
+                          if prices:
+                              ts = prices[0][0]
+                              return datetime.utcfromtimestamp(ts/1000).strftime("%Y-%m-%d")
+                          return None
+                      elif r.status_code == 429:
+                          time.sleep(60)
+                          continue
+                      else:
+                          return None
+                  except Exception:
+                      time.sleep(5)
+              return None
+
+          hist = {}
+          for sym in UNAVAILABLE:
+              cg_id = next((r["cg_id"] for r in results if r["symbol"] == sym), None)
+              if not cg_id:
+                  hist[sym] = {"status": "NO_CG_ID", "earliest": None}
+                  print(f"{sym:<12} NO_CG_ID")
+                  continue
+              earliest = try_hist(cg_id)
+              hist[sym] = {"status": "FILLED" if earliest else "NONE", "earliest": earliest}
+              print(f"{sym:<12} {cg_id:<28} {earliest or 'NONE'}")
+              time.sleep(3)
+
+          print("\n" + "=" * 70)
+          print("SUMMARY")
+          print("=" * 70)
+
+          suspicious = [r for r in results if r["suspicious"]]
+          print(f"\nTotal: {len(results)}")
+          print(f"Suspicious: {len(suspicious)}")
+
+          if suspicious:
+              print("\n--- Suspicious assets ---")
+              for r in suspicious:
+                  print(f"  {r['symbol']:<10} mcap=${r['market_cap']/1e6:.1f}M flags={r['flags']}")
+
+          filled = sum(1 for r in hist.values() if r["status"] == "FILLED")
+          still = sum(1 for r in hist.values() if r["status"] == "NONE")
+          no_id = sum(1 for r in hist.values() if r["status"] == "NO_CG_ID")
+          print(f"\n--- Historical retry ---")
+          print(f"Filled: {filled}")
+          print(f"Still none: {still}")
+          print(f"No CG ID: {no_id}")
+
+          print("\n--- Filled via retry ---")
+          for sym, r in hist.items():
+              if r["status"] == "FILLED":
+                  print(f"  {sym:<12} from {r['earliest']}")
+
+          with open("verify_125.json", "w") as f:
+              json.dump(results, f, indent=2, ensure_ascii=False)
+          with open("coingecko_retry.json", "w") as f:
+              json.dump(hist, f, indent=2, ensure_ascii=False)
+
+          print("\n=== Done ===")
+          PY
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: verify-125-results
+          path: |
+            verify_125.json
+            coingecko_retry.json
+          retention-days: 30
