@@ -1,0 +1,243 @@
+name: Final Supply Harvest 125
+
+on:
+  workflow_dispatch:
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Harvest Data
+        run: |
+          python <<'PY'
+          import requests
+          import json
+          import time
+          from datetime import datetime
+
+          # لیست دقیق ۱۲۵ دارایی که از CMC استخراج کردی
+          assets = [
+              {"rank": 1, "symbol": "BTC", "cmc_id": 1},
+              {"rank": 2, "symbol": "ETH", "cmc_id": 1027},
+              {"rank": 3, "symbol": "USDT", "cmc_id": 825},
+              {"rank": 4, "symbol": "BNB", "cmc_id": 1839},
+              {"rank": 5, "symbol": "XRP", "cmc_id": 52},
+              {"rank": 6, "symbol": "USDC", "cmc_id": 3408},
+              {"rank": 7, "symbol": "SOL", "cmc_id": 5426},
+              {"rank": 8, "symbol": "TRX", "cmc_id": 1958},
+              {"rank": 9, "symbol": "ZEC", "cmc_id": 1437},
+              {"rank": 10, "symbol": "HYPE", "cmc_id": 32196},
+              {"rank": 11, "symbol": "DOGE", "cmc_id": 74},
+              {"rank": 12, "symbol": "XMR", "cmc_id": 328},
+              {"rank": 13, "symbol": "LINK", "cmc_id": 1975},
+              {"rank": 14, "symbol": "LEO", "cmc_id": 3957},
+              {"rank": 15, "symbol": "ADA", "cmc_id": 2010},
+              {"rank": 16, "symbol": "NEAR", "cmc_id": 6535},
+              {"rank": 17, "symbol": "XLM", "cmc_id": 512},
+              {"rank": 18, "symbol": "BCH", "cmc_id": 1831},
+              {"rank": 19, "symbol": "USDe", "cmc_id": 29470},
+              {"rank": 20, "symbol": "DAI", "cmc_id": 4943},
+              {"rank": 21, "symbol": "UNI", "cmc_id": 7083},
+              {"rank": 22, "symbol": "LTC", "cmc_id": 2},
+              {"rank": 23, "symbol": "CC", "cmc_id": 37263},
+              {"rank": 24, "symbol": "AVAX", "cmc_id": 5805},
+              {"rank": 25, "symbol": "USD1", "cmc_id": 36148},
+              {"rank": 26, "symbol": "SUI", "cmc_id": 20947},
+              {"rank": 27, "symbol": "GRAM", "cmc_id": 11419},
+              {"rank": 28, "symbol": "HBAR", "cmc_id": 4642},
+              {"rank": 29, "symbol": "USDG", "cmc_id": 33793},
+              {"rank": 30, "symbol": "PYUSD", "cmc_id": 27772},
+              {"rank": 31, "symbol": "TAO", "cmc_id": 22974},
+              {"rank": 32, "symbol": "XAUT", "cmc_id": 5176},
+              {"rank": 33, "symbol": "SHIB", "cmc_id": 5994},
+              {"rank": 34, "symbol": "ENA", "cmc_id": 30171},
+              {"rank": 35, "symbol": "CRO", "cmc_id": 3635},
+              {"rank": 36, "symbol": "QNT", "cmc_id": 3155},
+              {"rank": 37, "symbol": "RLUSD", "cmc_id": 34387},
+              {"rank": 38, "symbol": "OKB", "cmc_id": 3897},
+              {"rank": 39, "symbol": "M", "cmc_id": 35491},
+              {"rank": 40, "symbol": "AAVE", "cmc_id": 7278},
+              {"rank": 41, "symbol": "ONDO", "cmc_id": 21159},
+              {"rank": 42, "symbol": "PUMP", "cmc_id": 36507},
+              {"rank": 43, "symbol": "ASTER", "cmc_id": 36341},
+              {"rank": 44, "symbol": "PEPE", "cmc_id": 24478},
+              {"rank": 45, "symbol": "PAXG", "cmc_id": 4705},
+              {"rank": 46, "symbol": "USDD", "cmc_id": 19891},
+              {"rank": 47, "symbol": "DOT", "cmc_id": 6636},
+              {"rank": 48, "symbol": "WLFI", "cmc_id": 33251},
+              {"rank": 49, "symbol": "MNT", "cmc_id": 27075},
+              {"rank": 50, "symbol": "WLD", "cmc_id": 13502},
+              {"rank": 51, "symbol": "U", "cmc_id": 39120},
+              {"rank": 52, "symbol": "SKY", "cmc_id": 33038},
+              {"rank": 53, "symbol": "ICP", "cmc_id": 8916},
+              {"rank": 54, "symbol": "BGB", "cmc_id": 11092},
+              {"rank": 55, "symbol": "VVV", "cmc_id": 35509},
+              {"rank": 56, "symbol": "ETC", "cmc_id": 1321},
+              {"rank": 57, "symbol": "ARB", "cmc_id": 11841},
+              {"rank": 58, "symbol": "JST", "cmc_id": 5488},
+              {"rank": 59, "symbol": "MORPHO", "cmc_id": 34104},
+              {"rank": 60, "symbol": "KCS", "cmc_id": 2087},
+              {"rank": 61, "symbol": "GT", "cmc_id": 4269},
+              {"rank": 62, "symbol": "KAS", "cmc_id": 20396},
+              {"rank": 63, "symbol": "POL", "cmc_id": 28321},
+              {"rank": 64, "symbol": "ALGO", "cmc_id": 4030},
+              {"rank": 65, "symbol": "JUP", "cmc_id": 29210},
+              {"rank": 66, "symbol": "RENDER", "cmc_id": 5690},
+              {"rank": 67, "symbol": "ATOM", "cmc_id": 3794},
+              {"rank": 68, "symbol": "PI", "cmc_id": 35697},
+              {"rank": 69, "symbol": "AERO", "cmc_id": 29270},
+              {"rank": 70, "symbol": "INJ", "cmc_id": 7226},
+              {"rank": 71, "symbol": "LIT", "cmc_id": 39125},
+              {"rank": 72, "symbol": "FIL", "cmc_id": 2280},
+              {"rank": 73, "symbol": "XDC", "cmc_id": 2634},
+              {"rank": 74, "symbol": "ZRO", "cmc_id": 26997},
+              {"rank": 75, "symbol": "CAKE", "cmc_id": 7186},
+              {"rank": 76, "symbol": "DASH", "cmc_id": 131},
+              {"rank": 77, "symbol": "NIGHT", "cmc_id": 39064},
+              {"rank": 78, "symbol": "APT", "cmc_id": 21794},
+              {"rank": 79, "symbol": "ETHFI", "cmc_id": 29814},
+              {"rank": 80, "symbol": "PYTH", "cmc_id": 28177},
+              {"rank": 81, "symbol": "VET", "cmc_id": 3077},
+              {"rank": 82, "symbol": "STX", "cmc_id": 4847},
+              {"rank": 83, "symbol": "CRV", "cmc_id": 6538},
+              {"rank": 84, "symbol": "FLR", "cmc_id": 7950},
+              {"rank": 85, "symbol": "TIA", "cmc_id": 22861},
+              {"rank": 86, "symbol": "NEXO", "cmc_id": 2694},
+              {"rank": 87, "symbol": "币安人生", "cmc_id": 38590},
+              {"rank": 88, "symbol": "RAY", "cmc_id": 8526},
+              {"rank": 89, "symbol": "TUSD", "cmc_id": 2563},
+              {"rank": 90, "symbol": "STABLE", "cmc_id": 38892},
+              {"rank": 91, "symbol": "TRUMP", "cmc_id": 35336},
+              {"rank": 92, "symbol": "PENGU", "cmc_id": 34466},
+              {"rank": 93, "symbol": "EURC", "cmc_id": 20641},
+              {"rank": 94, "symbol": "FET", "cmc_id": 3773},
+              {"rank": 95, "symbol": "VIRTUAL", "cmc_id": 29420},
+              {"rank": 96, "symbol": "SEI", "cmc_id": 23149},
+              {"rank": 97, "symbol": "SPX", "cmc_id": 33203},
+              {"rank": 98, "symbol": "XPL", "cmc_id": 37535},
+              {"rank": 99, "symbol": "STRK", "cmc_id": 22691},
+              {"rank": 100, "symbol": "BTT", "cmc_id": 16086},
+              {"rank": 101, "symbol": "BSV", "cmc_id": 3602},
+              {"rank": 102, "symbol": "PENDLE", "cmc_id": 9481},
+              {"rank": 103, "symbol": "FF", "cmc_id": 39273},
+              {"rank": 104, "symbol": "PIEVERSE", "cmc_id": 38543},
+              {"rank": 105, "symbol": "XTZ", "cmc_id": 2011},
+              {"rank": 106, "symbol": "SUN", "cmc_id": 10529},
+              {"rank": 107, "symbol": "LDO", "cmc_id": 8000},
+              {"rank": 108, "symbol": "FDUSD", "cmc_id": 26081},
+              {"rank": 109, "symbol": "GNO", "cmc_id": 1659},
+              {"rank": 110, "symbol": "KITE", "cmc_id": 39275},
+              {"rank": 111, "symbol": "IMX", "cmc_id": 10603},
+              {"rank": 112, "symbol": "BONK", "cmc_id": 23095},
+              {"rank": 113, "symbol": "MON", "cmc_id": 38320},
+              {"rank": 114, "symbol": "OP", "cmc_id": 11840},
+              {"rank": 115, "symbol": "CFX", "cmc_id": 7334},
+              {"rank": 116, "symbol": "DCR", "cmc_id": 1168},
+              {"rank": 117, "symbol": "CVX", "cmc_id": 9903},
+              {"rank": 118, "symbol": "LUNC", "cmc_id": 4172},
+              {"rank": 119, "symbol": "GRT", "cmc_id": 6719},
+              {"rank": 120, "symbol": "KMNO", "cmc_id": 32415},
+              {"rank": 121, "symbol": "JTO", "cmc_id": 28541},
+              {"rank": 122, "symbol": "NFT", "cmc_id": 39003},
+              {"rank": 123, "symbol": "KAIA", "cmc_id": 32880},
+              {"rank": 124, "symbol": "AR", "cmc_id": 5632},
+              {"rank": 125, "symbol": "ENS", "cmc_id": 13855}
+          ]
+
+          headers = {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+              "Accept": "application/json",
+              "Referer": "https://coinmarketcap.com/",
+          }
+
+          # تاریخ‌های استراتژیک برای پیدا کردن اولین تاریخ عرضه
+          checkpoints = [
+              ("2017-01-01", 1483228800, 1483315200),
+              ("2018-01-01", 1514764800, 1514851200),
+              ("2019-01-01", 1546300800, 1546387200),
+              ("2020-01-01", 1577836800, 1577923200),
+              ("2021-01-01", 1609459200, 1609545600),
+              ("2022-01-01", 1640995200, 1641081600),
+              ("2023-01-01", 1672531200, 1672617600),
+              ("2024-01-01", 1704067200, 1704153600),
+              ("2024-07-01", 1719792000, 1719878400),
+              ("2025-01-01", 1735689600, 1735776000),
+              ("2025-07-01", 1751328000, 1751414400),
+              ("2026-01-01", 1767225600, 1767312000)
+          ]
+
+          def query_cmc(cmc_id, start, end):
+              params = {"id": str(cmc_id), "convertId": "2781", "timeStart": str(start), "timeEnd": str(end), "interval": "1d"}
+              try:
+                  r = requests.get("https://api.coinmarketcap.com/data-api/v3/cryptocurrency/historical", params=params, headers=headers, timeout=15)
+                  if r.status_code == 200:
+                      data = r.json()
+                      if data.get("status", {}).get("error_code") == "0":
+                          quotes = data.get("data", {}).get("quotes", [])
+                          if quotes:
+                              circ = quotes[0].get("quote", {}).get("circulatingSupply")
+                              if circ and circ > 0:
+                                  return circ
+              except Exception:
+                  pass
+              return None
+
+          results = []
+          print(f"Starting harvest for {len(assets)} assets...\n")
+
+          for idx, asset in enumerate(assets):
+              sym = asset["symbol"]
+              cmc_id = asset["cmc_id"]
+              
+              found_date = None
+              found_supply = None
+
+              for label, start, end in checkpoints:
+                  circ = query_cmc(cmc_id, start, end)
+                  if circ is not None:
+                      found_date = label
+                      found_supply = circ
+                      break
+                  time.sleep(0.4) # جلوگیری از بلاک شدن
+              
+              if found_date:
+                  print(f"[{idx+1}/125] {sym:<10} FOUND at {found_date}")
+                  results.append({
+                      "symbol": sym,
+                      "cmc_id": cmc_id,
+                      "status": "FILLED",
+                      "available_from": found_date,
+                      "first_supply": found_supply
+                  })
+              else:
+                  print(f"[{idx+1}/125] {sym:<10} NO_DATA (Even with ID)")
+                  results.append({
+                      "symbol": sym,
+                      "cmc_id": cmc_id,
+                      "status": "NO_DATA"
+                  })
+
+          with open("final_125_supply.json", "w") as f:
+              json.dump(results, f, indent=2, ensure_ascii=False)
+
+          print("\n" + "=" * 50)
+          filled = sum(1 for r in results if r["status"] == "FILLED")
+          print(f"FINAL RESULT: {filled} / 125 assets successfully harvested.")
+
+          PY
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: final-125-supply-results
+          path: final_125_supply.json
+          retention-days: 30
