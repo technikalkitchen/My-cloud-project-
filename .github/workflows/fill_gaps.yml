@@ -1,0 +1,206 @@
+name: Fill Supply Gaps
+
+on:
+  workflow_dispatch:
+
+jobs:
+  fill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Run gap filling
+        run: |
+          python <<'PY'
+          import requests
+          import json
+          import time
+          from datetime import datetime
+
+          TARGETS = [
+              "FIGR_HELOC","HYPE","USDS","WBT","RAIN","CC","USD1","USDG",
+              "ENA","BTW","RLUSD","USYC","USDY","BUIDL","M","ONDO","PUMP",
+              "USDF","EURSAFO","ASTER","WLFI","U","SKY","MORPHO","HTX",
+              "BFUSD","USDGO","VVV","JUP","PI","OUSD","LIT","USTB","AKE",
+              "ZRO","GHO","PEARL","ETHFI","NIGHT","BDX","JAAA","USD0",
+              "EUTBL","币安人生","GRASS","YLDS","A7A5","STABLE","PENGU",
+              "TRUMP","HASH","REUSD","DRV"
+          ]
+
+          STABLES = {
+              "USDS","USD1","USDG","RLUSD","USDY","BUIDL","USDF","EURSAFO",
+              "BFUSD","USDGO","OUSD","USTB","USD0","EUTBL","YLDS","A7A5",
+              "GHO","REUSD","USYC","USDE","PYUSD","USDD","EURC","TUSD",
+              "PAXG","XAUT","FDUSD","DAI","USDC","USDT","BUSD"
+          }
+
+          print("=" * 70)
+          print("STEP 1: Fetch Top 125 from CoinGecko")
+          print("=" * 70)
+          cg_map = {}
+          for attempt in range(3):
+              try:
+                  r = requests.get(
+                      "https://api.coingecko.com/api/v3/coins/markets",
+                      params={"vs_currency":"usd","order":"market_cap_desc","per_page":150,"page":1},
+                      timeout=30
+                  )
+                  if r.status_code == 200:
+                      for coin in r.json()[:125]:
+                          sym = coin.get("symbol","").upper()
+                          cg_map[sym] = coin.get("id")
+                      print(f"OK: {len(cg_map)} CoinGecko IDs")
+                      break
+                  elif r.status_code == 429:
+                      print(f"Rate limited, waiting 60s...")
+                      time.sleep(60)
+              except Exception as e:
+                  print(f"retry {attempt+1}: {e}")
+                  time.sleep(10)
+
+          print("\n" + "=" * 70)
+          print("STEP 2: Fetch DefiLlama stablecoins list")
+          print("=" * 70)
+          dl_list = {}
+          try:
+              r = requests.get("https://stablecoins.llama.fi/stablecoins", timeout=30)
+              data = r.json()
+              for coin in data.get("peggedAssets", []):
+                  sym = coin.get("symbol","").upper()
+                  if sym:
+                      dl_list[sym] = coin.get("id")
+              print(f"OK: {len(dl_list)} stablecoins in DefiLlama")
+          except Exception as e:
+              print(f"ERROR: {e}")
+
+          print("\n" + "=" * 70)
+          print("STEP 3: Testing 53 UNAVAILABLE assets")
+          print("=" * 70)
+          print(f"{'Symbol':<12} {'CG_ID':<10} {'CG_DATE':<12} {'DL_ID':<8} {'DL_DATE':<12} {'BEST':<8}")
+          print("-" * 80)
+
+          results = {}
+
+          def try_coingecko(sym, cg_id):
+              try:
+                  r = requests.get(
+                      f"https://api.coingecko.com/api/v3/coins/{cg_id}/market_chart",
+                      params={"vs_currency":"usd","days":"max"},
+                      timeout=25
+                  )
+                  if r.status_code == 200:
+                      data = r.json()
+                      prices = data.get("prices", [])
+                      if prices:
+                          first_ts = prices[0][0]
+                          first_dt = datetime.utcfromtimestamp(first_ts/1000).strftime("%Y-%m-%d")
+                          return first_dt
+                  elif r.status_code == 429:
+                      time.sleep(30)
+              except Exception:
+                  pass
+              return None
+
+          def try_defillama(sym, dl_id):
+              try:
+                  r = requests.get(
+                      f"https://stablecoins.llama.fi/stablecoin/{dl_id}",
+                      timeout=25
+                  )
+                  if r.status_code == 200:
+                      data = r.json()
+                      tokens = data.get("tokens", [])
+                      if tokens:
+                          tokens_sorted = sorted(tokens, key=lambda x: x.get("date", 0))
+                          first_ts = tokens_sorted[0].get("date")
+                          if first_ts:
+                              first_dt = datetime.utcfromtimestamp(first_ts).strftime("%Y-%m-%d")
+                              return first_dt
+              except Exception:
+                  pass
+              return None
+
+          for idx, sym in enumerate(TARGETS):
+              cg_id = cg_map.get(sym)
+              dl_id = dl_list.get(sym) if sym in STABLES else None
+
+              cg_date = None
+              dl_date = None
+
+              if cg_id:
+                  cg_date = try_coingecko(sym, cg_id)
+                  time.sleep(0.5)
+
+              if dl_id:
+                  dl_date = try_defillama(sym, dl_id)
+                  time.sleep(0.3)
+
+              best = None
+              if cg_date and dl_date:
+                  best = min(cg_date, dl_date)
+              elif cg_date:
+                  best = cg_date
+              elif dl_date:
+                  best = dl_date
+
+              results[sym] = {
+                  "cg_id": cg_id,
+                  "cg_earliest": cg_date,
+                  "dl_id": dl_id,
+                  "dl_earliest": dl_date,
+                  "best_earliest": best,
+                  "status": "OK" if best else "STILL_UNAVAILABLE"
+              }
+
+              cg_str = (cg_date or "-")[:10]
+              dl_str = (dl_date or "-")[:10]
+              best_str = (best or "NONE")[:10]
+              cg_id_str = (cg_id or "-")[:9]
+              dl_id_str = str(dl_id) if dl_id else "-"
+
+              print(f"{sym:<12} {cg_id_str:<10} {cg_str:<12} {dl_id_str:<8} {dl_str:<12} {best_str:<8}")
+
+              if (idx + 1) % 10 == 0:
+                  print(f"  --- {idx+1}/{len(TARGETS)} ---")
+
+          with open("fill_gaps_results.json", "w") as f:
+              json.dump(results, f, indent=2, ensure_ascii=False)
+
+          print("\n" + "=" * 70)
+          print("SUMMARY")
+          print("=" * 70)
+          ok = sum(1 for r in results.values() if r["status"] == "OK")
+          still = sum(1 for r in results.values() if r["status"] == "STILL_UNAVAILABLE")
+          print(f"Filled via CoinGecko/DefiLlama: {ok}")
+          print(f"Still UNAVAILABLE:              {still}")
+
+          print("\n--- Filled assets ---")
+          for sym, r in results.items():
+              if r["status"] == "OK":
+                  sources = []
+                  if r["cg_earliest"]:
+                      sources.append(f"CG:{r['cg_earliest'][:10]}")
+                  if r["dl_earliest"]:
+                      sources.append(f"DL:{r['dl_earliest'][:10]}")
+                  print(f"  {sym:<12} {' | '.join(sources)}")
+
+          print("\n--- Still UNAVAILABLE ---")
+          for sym, r in results.items():
+              if r["status"] == "STILL_UNAVAILABLE":
+                  print(f"  {sym}")
+
+          PY
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: fill-gaps-results
+          path: fill_gaps_results.json
+          retention-days: 30
