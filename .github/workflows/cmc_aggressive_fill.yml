@@ -1,0 +1,118 @@
+name: CMC Aggressive Fill (29 Targets)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  aggressive_fill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Run aggressive fill
+        run: |
+          python <<'PY'
+          import requests
+          import json
+          import time
+
+          # The 29 remaining assets
+          TARGETS = [
+              "FIGR_HELOC","WBT","RAIN","CC","BTW","USYC","M","PUMP","EURSAFO",
+              "ASTER","WLFI","U","SKY","HTX","BFUSD","VVV","PI","LIT","USTB",
+              "AKE","PEARL","NIGHT","BDX","JAAA","EUTBL","币安人生","STABLE",
+              "TRUMP","HASH"
+          ]
+
+          headers = {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+              "Accept": "application/json",
+              "Referer": "https://coinmarketcap.com/",
+          }
+
+          # تاریخ‌های بیشتر برای پیدا کردن تاریخ عرضه توکن‌های جدید
+          checkpoints = [
+              ("2024-01-01", 1704067200, 1704153600),
+              ("2024-06-01", 1717200000, 1717286400),
+              ("2025-01-01", 1735689600, 1735776000),
+              ("2025-04-01", 1743465600, 1743552000),
+              ("2025-07-01", 1751328000, 1751414400),
+              ("2025-10-01", 1759276800, 1759363200),
+          ]
+
+          def search_cmc_id(symbol):
+              try:
+                  url = f"https://api.coinmarketcap.com/data-api/v3/search?keyword={symbol}&limit=1"
+                  r = requests.get(url, headers=headers, timeout=10)
+                  if r.status_code == 200:
+                      data = r.json()
+                      cryptos = data.get("data", {}).get("cryptoCurrencyList", [])
+                      if cryptos:
+                          return cryptos[0].get("id")
+              except Exception:
+                  pass
+              return None
+
+          def query_cmc(cmc_id, start, end):
+              params = {"id": str(cmc_id), "convertId": "2781", "timeStart": str(start), "timeEnd": str(end), "interval": "1d"}
+              try:
+                  r = requests.get("https://api.coinmarketcap.com/data-api/v3/cryptocurrency/historical", params=params, headers=headers, timeout=15)
+                  if r.status_code == 200:
+                      data = r.json()
+                      if data.get("status", {}).get("error_code") == "0":
+                          quotes = data.get("data", {}).get("quotes", [])
+                          if quotes:
+                              circ = quotes[0].get("quote", {}).get("circulatingSupply")
+                              if circ and circ > 0:
+                                  return circ
+              except Exception:
+                  pass
+              return None
+
+          results = {}
+          for idx, sym in enumerate(TARGETS):
+              print(f"[{idx+1}/29] Processing {sym}...")
+              
+              # 1. Search for ID first
+              cmc_id = search_cmc_id(sym)
+              if not cmc_id:
+                  print(f"  {sym}: NO_CMC_ID found via search")
+                  results[sym] = {"status": "NO_CMC_ID"}
+                  continue
+
+              # 2. Query historical dates
+              found = False
+              for label, start, end in checkpoints:
+                  circ = query_cmc(cmc_id, start, end)
+                  if circ is not None:
+                      print(f"  SUCCESS: {sym} (ID={cmc_id}) from {label} (supply={circ:,.0f})")
+                      results[sym] = {"status": "FILLED", "date": label, "supply": circ}
+                      found = True
+                      break
+                  time.sleep(0.4)
+              
+              if not found:
+                  print(f"  FAILED: {sym} (ID={cmc_id}) - no data in dates")
+                  results[sym] = {"status": "NO_DATA", "cmc_id": cmc_id}
+
+          with open("aggressive_fill_29.json", "w") as f:
+              json.dump(results, f, indent=2, ensure_ascii=False)
+
+          print("\n" + "=" * 50)
+          filled = sum(1 for r in results.values() if r["status"] == "FILLED")
+          print(f"FINAL: Filled {filled} / 29")
+          PY
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: aggressive-fill-results
+          path: aggressive_fill_29.json
+          retention-days: 30
