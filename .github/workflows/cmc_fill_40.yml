@@ -1,0 +1,130 @@
+name: Fill 40 UNAVAILABLE via CMC
+
+on:
+  workflow_dispatch:
+
+jobs:
+  fill_cmc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Run CMC fill
+        run: |
+          python <<'PY'
+          import requests
+          import json
+          import time
+          from datetime import datetime
+
+          # The 40 UNAVAILABLE assets
+          TARGETS = [
+              "FIGR_HELOC","HYPE","WBT","RAIN","CC","ENA","BTW","USYC","USDY","M",
+              "ONDO","PUMP","EURSAFO","ASTER","WLFI","U","SKY","MORPHO","HTX",
+              "BFUSD","VVV","JUP","PI","LIT","USTB","AKE","ZRO","PEARL","ETHFI",
+              "NIGHT","BDX","JAAA","EUTBL","币安人生","GRASS","STABLE","PENGU",
+              "TRUMP","HASH","DRV"
+          ]
+
+          headers = {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+              "Accept": "application/json",
+              "Referer": "https://coinmarketcap.com/",
+          }
+
+          print("=" * 70)
+          print("STEP 1: Build CMC ID mapping from Top 500")
+          print("=" * 70)
+          cmc_map = {}
+          for start in [1, 101, 201, 301, 401]:
+              params = {"start": str(start), "limit": "100", "sortBy": "market_cap", "sortType": "desc", "convert": "USD", "cryptoType": "all", "tagType": "all"}
+              try:
+                  r = requests.get("https://api.coinmarketcap.com/data-api/v3/cryptocurrency/listing", params=params, headers=headers, timeout=20)
+                  if r.status_code == 200:
+                      for coin in r.json().get("data", {}).get("cryptoCurrencyList", []):
+                          sym = coin.get("symbol", "").upper()
+                          cid = coin.get("id")
+                          if sym and cid and sym not in cmc_map:
+                              cmc_map[sym] = cid
+              except Exception:
+                  pass
+              time.sleep(1)
+          print(f"OK: mapped {len(cmc_map)} symbols from CMC Top 500")
+
+          print("\n" + "=" * 70)
+          print("STEP 2: Fetch historical supply for 40 targets")
+          print("=" * 70)
+
+          checkpoints = [
+              ("2020-01-01", 1577836800, 1577923200),
+              ("2021-01-01", 1609459200, 1609545600),
+              ("2022-01-01", 1640995200, 1641081600),
+              ("2023-01-01", 1672531200, 1672617600),
+              ("2024-01-01", 1704067200, 1704153600),
+              ("2025-01-01", 1735689600, 1735776000),
+          ]
+
+          def query_cmc(cmc_id, start, end):
+              params = {"id": str(cmc_id), "convertId": "2781", "timeStart": str(start), "timeEnd": str(end), "interval": "1d"}
+              try:
+                  r = requests.get("https://api.coinmarketcap.com/data-api/v3/cryptocurrency/historical", params=params, headers=headers, timeout=15)
+                  if r.status_code == 200:
+                      data = r.json()
+                      if data.get("status", {}).get("error_code") == "0":
+                          quotes = data.get("data", {}).get("quotes", [])
+                          if quotes:
+                              circ = quotes[0].get("quote", {}).get("circulatingSupply")
+                              if circ and circ > 0:
+                                  return circ
+              except Exception:
+                  pass
+              return None
+
+          results = {}
+          for idx, sym in enumerate(TARGETS):
+              cmc_id = cmc_map.get(sym)
+              if not cmc_id:
+                  print(f"{sym:<12} NO_CMC_ID")
+                  results[sym] = {"status": "NO_CMC_ID"}
+                  continue
+              
+              first_date = None
+              first_supply = None
+              for label, start, end in checkpoints:
+                  circ = query_cmc(cmc_id, start, end)
+                  if circ is not None:
+                      first_date = label
+                      first_supply = circ
+                      break
+                  time.sleep(0.5)
+              
+              if first_date:
+                  print(f"{sym:<12} CMC_ID={cmc_id:<8} FOUND at {first_date} (supply={first_supply:,.0f})")
+                  results[sym] = {"status": "FILLED", "date": first_date, "supply": first_supply}
+              else:
+                  print(f"{sym:<12} CMC_ID={cmc_id:<8} NO_DATA")
+                  results[sym] = {"status": "NO_DATA"}
+
+          with open("cmc_fill_40.json", "w") as f:
+              json.dump(results, f, indent=2, ensure_ascii=False)
+
+          print("\n" + "=" * 70)
+          print("SUMMARY")
+          print("=" * 70)
+          filled = sum(1 for r in results.values() if r["status"] == "FILLED")
+          print(f"Filled via CMC: {filled} / {len(TARGETS)}")
+          PY
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cmc-fill-40-results
+          path: cmc_fill_40.json
+          retention-days: 30
