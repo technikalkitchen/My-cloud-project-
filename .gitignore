@@ -30,4 +30,8 @@ logs/*
 logs/runtime/
 data/runtime/
 scripts/*
-!scripts/.gitkeep
+!scripts/.gitkeepall_json.txt
+all_logs.txt
+run_ids.txt
+summary.txt
+results/
