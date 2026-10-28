@@ -1,0 +1,184 @@
+📌 چک‌پوینت موقت — ۲۸ اکتبر ۲۰۲۶، ۱۹:۵۸ عصر
+
+---
+
+🎯 خلاصه یک‌خطی
+
+جلسه امروز: بازسازی ساختار پوشه‌ها + کشف قطعی محدودیت‌های ۵ صرافی از طریق تست مستقیم API.
+
+---
+
+✅ کارهای انجام‌شده امروز
+
+بخش ۱ — بازسازی ساختار Git (۷ commit)
+
+Commit کار
+9da9410 انتقال ۴ فایل به _temp، ساخت B_items/B_legacy
+c130aa8 ساخت ۲۶ فایل خالی B_items
+2f4936a انتقال ۴ فایل از _temp به B_items (حذف _temp)
+3bc8a05 پر کردن Item_04_Migration_Map.md
+975d702 ساخت ۱۹ فایل Legacy + MAP.md
++ MAP.md v1.1 حذف ستون وضعیت، افزودن دامنه مسئولیت
++ B_Items_List.md v2.0 ۶۱ آیتم، ستون فایل موجود
+
+ساختار نهایی:
+
+```
+docs/
+├── B_items/     ← ۳۰ فایل (۲۶ خالی + Item_03, 04, 05, 06_Part1, 15)
+├── B_legacy/    ← ۲۰ فایل (۱۹ خالی + B_Items_List)
+├── MAP.md       ← v1.1 (کامل)
+├── roadmap/     ← دست نخورده
+└── stages/      ← دست نخورده
+```
+
+بخش ۲ — تست‌های تشخیصی (مسیر اصلی امروز)
+
+از ۱۸ workflow دانلودشده + ۳۶ فایل، با jq و curl مستقیم:
+
+تست‌های صرافی (مستقیم از API)
+
+· Binance, OKX, Bitstamp, Coinbase, Crypto.com — همه تست شدند
+· مستقیم از Codespace، همین امروز (نه از تست ۱۱ روز پیش)
+
+تست‌های Supply
+
+· از final_125_supply.json + verification_results.json + coverage_matrix.tsv
+
+---
+
+🏆 جدول طلایی — کشف نهایی امروز
+
+پوشش 5m تاریخی (تست مستقیم API)
+
+صرافی 5m از جفت وضعیت
+Binance 2017-08-17 USDT ✅
+OKX 2018-01-11 USDT ✅
+Bitstamp 2017-01-01 USD → USDT ✅
+Coinbase 2017-01-01 USD → USDT ✅
+Crypto.com 2021 (5m) / 2020 (1h) USDT/USD ⚠️ استثنا
+
+این جدول، قلب B-14 است.
+
+---
+
+🔴 محدودیت‌های کشف‌شده (L-01 تا L-14) — برای B-14
+
+# محدودیت
+L-01 ۵ صرافی نهایی (نه ۸)
+L-02 مبدأ ۲۰۱۷ (نه ۲۰۱۱)
+L-03 مبدأ هر صرافی متفاوت: Binance 2017-08-17، OKX 2018-01-11، Bitstamp/Coinbase 2017-01-01
+L-04 Bitstamp/Coinbase جفت USD (نه USDT) → Item_05 Fiat Conversion
+L-05 Crypto.com استثنا: 5m از ۲۰۲۱، 1h از ۲۰۲۰
+L-06 Bitstamp فقط ۴ دارایی از ۱۲۵ (BTC, ETH, USDC, XRP)
+L-07 Crypto.com در TEST001 صفر دارایی USDT → OHLCV USDT عملاً صفر
+L-08 OKX از ۲۰۱۸ (نه ۲۰۱۷)
+L-09 ۱۶ دارایی orphan: TON, MKR, EOS, KAS, ICX, NANO, STORJ, BAL, DENT, SDN, ACA, KAR, XPRT, AKT, JUNO, SCRT
+L-10 Binance تنها صرافی با پوشش کامل ۱۲۵
+L-11 ۱۱۸/۱۲۵ ساپلای FILLED، ۷ UNAVAILABLE (SPX, XPL, FF, PIEVERSE, KITE, MON, NFT)
+L-12 CMC: 10 req در 3.3s OK، پوشش ۲۰۱۷ فقط BTC/ETH/USDT
+L-13 CoinGecko: ۳۸/۱۲۵ دارایی
+L-14 asset_id از CMC (نه CoinGecko)
+
+---
+
+🔴 باگ‌های کشف‌شده در تست‌های قبلی
+
+# باگ کشف‌شده در
+BUG-01 تست Crypto.com پارامترهای اشتباه داشت → نتیجه قدیمی معتبر نیست تست مستقیم امروز
+BUG-02 TEST001 برای Crypto.com «NOT_LISTED» گفت، ولی Data Extractor «۶۹ دارایی» گفت — تناقض مقایسه منابع
+BUG-03 TEST001 نهایی فقط crypto_com رو تست کرد، نه ۵ صرافی run 39073819201
+BUG-04 ادعای «مبدأ ۲۰۱۷» برای Bitstamp/Coinbase گمراه‌کننده بود — جفت USD، نه USDT تحلیل ماتریس
+
+---
+
+📊 تناقض‌های باقی‌مانده (C-01 تا C-09)
+
+# موضوع وضعیت
+C-01 مسیر پوشه (docs/legacy vs docs/B_legacy) ✅ حل شد → B_legacy
+C-02 CMC Internal API vs CoinGecko ✅ حل شد → CMC اصلی
+C-03 CryptoDataDownload ✅ حذف
+C-04 Amendment B-01 PROPOSED ⏳ نیازمند LOCK
+C-05 Dual-Binance مکانیزم ⏳ O-5 باز
+C-06 ۷۰٪ پوشش Binance ⏳ ثبت شد
+C-07 B-01 جدید vs قبلی ✅ حل شد (Amendment دارد = MAP)
+C-08 asset_id منبع ✅ حل شد (CMC)
+C-09 POLTRACK به عنوان منبع ششم ⏳ باز
+C-10 TEST001 باگ (فقط crypto_com) ⏳ ثبت شد
+
+---
+
+🎯 وضعیت آیتم‌ها
+
+آیتم فایل وضعیت محتوا
+۰۱ Exchanges خالی ⏳ نیازمند بازنویسی (از B01 + ۵ محدودیت جدید)
+۰۲ Aggregators خالی ⏳ نیازمند بازنویسی کامل
+۰۳ Universe ✅ کامل ✅ LOCKED
+۰۴ Migration Map ✅ کامل ✅ LOCKED
+۰۵ Canonical Pairs ✅ کامل ✅ LOCKED (۵ بهبود در Part 1)
+۰۶ Timeframes Part 1 ✅ Part 1 🟡 PROPOSED
+۰۹ Rate Limit (B-14) خالی 🎯 کار بعدی
+۱۵ Supply 🟡 پیش‌نویس ⏳ نیازمند تکمیل
+بقیه خالی ⏳
+
+---
+
+❓ پاسخ سوال تو — تست‌های باقی‌مانده
+
+🔴 تست‌هایی که هنوز لازمه
+
+# تست چرا
+T-01 تحلیل ۱۳۸ خطای run 39052463360 برای فهم محدودیت‌های واقعی
+T-02 1h و 1d برای هر ۵ صرافی فقط 5m تست شد
+T-03 Dual-Binance (Global vs US) آیا دو endpoint جدا هستند؟
+T-04 ۱۶ دارایی orphan آیا واقعاً در هیچ صرافی نیستن یا فقط USDT ندارن؟
+T-05 Pagination OKX برای عمق واقعی (تا 2018؟) تست فقط «وجود» رو چک کرد
+
+ولی هیچ‌کدام از این‌ها بلوکه‌کننده نیستن. B-14 رو می‌شه با داده فعلی نوشت و T-01 تا T-05 رو در Stage B اضافه کرد.
+
+🟢 نیاز فوری به تست جدید ندارم
+
+---
+
+🎯 برنامه جلسه بعدی (ساعت ۲۳:۰۰-۲۴:۰۰)
+
+اولویت ۱ — نوشتن Item_09_Rate_Limit.md (B-14)
+
+محتوای پیشنهادی:
+
+· جدول طلایی ۵ صرافی (5m، 1h، 1d، جفت)
+· L-01 تا L-14
+· T-01 تا T-05 (تست‌های معلق)
+· Rate Limit واقعی هر صرافی
+· مکانیزم backoff و retry
+· Per-user limit در Telegram
+
+اولویت ۲ — اگر وقت بود
+
+· Item_01_Exchanges.md (بازنویسی با B01 + ۵ محدودیت جدید)
+· یا Item_02_Aggregators.md (بازنویسی رویکرد Supply)
+
+---
+
+💎 طلایی‌ترین دستاورد امروز
+
+جدول ۵×۳ (صرافی × TF × جفت) که با تست مستقیم از API به دست آمد — نه از تست ۱۱ روز پیش، نه از حافظه ایجنت.
+
+این جدول، مرجع قطعی B-14 است و همه آیتم‌های Package B به آن وابسته‌اند.
+
+---
+
+📁 فایل‌های روی Codespace (نباید پاک شوند)
+
+```
+results/                       ← ۱۸ JSON + ۱۸ لاگ (۱.۲ مگابایت)
+coverage_matrix.tsv            ← ماتریس ۱۲۵×۵ (طلایی)
+test_real_check.txt            ← تست ۵ صرافی
+okx_cc_test.txt                ← تست OKX/Crypto.com
+5m_since_2017.tsv              ← ماتریس ۱۵×۵
+critical_summary.txt           ← (اگر ساخته شد)
+```
+
+---
+
+خسته نباشی شف. جلسه امروز واقعاً پرثمر بود. ساعت ۲۳:۰۰ منتظرتم. 🎗️
