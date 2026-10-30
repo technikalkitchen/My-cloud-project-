@@ -1,0 +1,28 @@
+=== Sanity: OKX reachable? ===
+{
+  "code": "0",
+  "msg": ""
+}
+
+=== Sanity: Crypto.com reachable? ===
+0
+
+=== OKX: 5m data existence ===
+coinbefore_2018before_2020before_2022before_2024
+BTCNOYESYESYES
+ETHNOYESYESYES
+XRPNOYESYESYES
+LTCNOYESYESYES
+BCHNOYESYESYES
+SOLNONOYESYES
+ARBNONONOYES
+
+=== Crypto.com: 5m data existence ===
+coin2019202120232025
+BTCNOYESYESYES
+ETHNOYESYESYES
+XRPNOYESYESYES
+LTCNOYESYESYES
+BCHNOYESYESYES
+SOLNONOYESYES
+ARBNONONOYES

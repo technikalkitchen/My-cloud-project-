@@ -1,0 +1,6 @@
+=== BINANCE KLINES — non-BTC asset ===
+Endpoint: https://api.binance.com/api/v3/klines?symbol=SOLUSDT&interval=5m&limit=1000
+
+req 1: HTTP 200 | weight_1m=2 | delta=?
+req 2: HTTP 200 | weight_1m=4 | delta=2
+req 3: HTTP 200 | weight_1m=6 | delta=2

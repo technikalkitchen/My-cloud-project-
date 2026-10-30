@@ -1,0 +1,51 @@
+===== results/test001_manual/run_39050926831/test001-results/results.json =====
+{"type":"object","keys":["assets","assets_requested","errors","exchanges_requested","finished_at_utc","generated_at_utc","run_id","status","timeframes_checked"]}
+
+===== results/test001_manual/run_39070141142/test001-results/results.json =====
+{"type":"object","keys":["assets","assets_requested","errors","exchanges_requested","finished_at_utc","generated_at_utc","run_id","status","timeframes_checked"]}
+
+===== results/test001_manual/run_39073819201/test001-results/results.json =====
+{"type":"object","keys":["assets","assets_requested","errors","exchanges_requested","finished_at_utc","generated_at_utc","run_id","status","timeframes_checked"]}
+
+===== results/test001_manual/run_39052224713/test001-results/results.json =====
+{"type":"object","keys":["assets","assets_requested","errors","exchanges_requested","finished_at_utc","generated_at_utc","run_id","status","timeframes_checked"]}
+
+===== results/test001_manual/run_39052463360/test001-results/results.json =====
+{"type":"object","keys":["assets","assets_requested","errors","exchanges_requested","finished_at_utc","generated_at_utc","run_id","status","timeframes_checked"]}
+
+===== results/fill_gaps/run_40332035054/fill-gaps-results/fill_gaps_results.json =====
+{"type":"object","keys":["A7A5","AKE","ASTER","BDX","BFUSD","BTW","BUIDL","CC","DRV","ENA","ETHFI","EURSAFO","EUTBL","FIGR_HELOC","GHO","GRASS","HASH","HTX","HYPE","JAAA","JUP","LIT","M","MORPHO","NIGHT","ONDO","OUSD","PEARL","PENGU","PI","PUMP","RAIN","REUSD","RLUSD","SKY","STABLE","TRUMP","U","USD0","USD1","USDF","USDG","USDGO","USDS","USDY","USTB","USYC","VVV","WBT","WLFI","YLDS","ZRO","币安人生"]}
+
+===== results/run_40351779336/final-125-supply-results/final_125_supply.json =====
+{"type":"array","len":125,"first":{"symbol":"BTC","cmc_id":1,"status":"FILLED","available_from":"2017-01-01","first_supply":16077337},"last":{"symbol":"ENS","cmc_id":13855,"status":"FILLED","available_from":"2022-01-01","first_supply":20244862.09}}
+
+===== results/cmc_fill_40/run_40347826878/cmc-fill-40-results/cmc_fill_40.json =====
+{"type":"object","keys":["AKE","ASTER","BDX","BFUSD","BTW","CC","DRV","ENA","ETHFI","EURSAFO","EUTBL","FIGR_HELOC","GRASS","HASH","HTX","HYPE","JAAA","JUP","LIT","M","MORPHO","NIGHT","ONDO","PEARL","PENGU","PI","PUMP","RAIN","SKY","STABLE","TRUMP","U","USDY","USTB","USYC","VVV","WBT","WLFI","ZRO","币安人生"]}
+
+===== results/final_supply_harvest/run_40351779336/final-125-supply-results/final_125_supply.json =====
+{"type":"array","len":125,"first":{"symbol":"BTC","cmc_id":1,"status":"FILLED","available_from":"2017-01-01","first_supply":16077337},"last":{"symbol":"ENS","cmc_id":13855,"status":"FILLED","available_from":"2022-01-01","first_supply":20244862.09}}
+
+===== results/cmc_earliest_dates/run_40238238190/earliest-dates/cmc_ids.json =====
+{"type":"object","keys":["0G","1INCH","2Z","A","AAVE","ADA","AERO","AIOZ","AKT","ALGO","APE","APT","AR","ARB","ASTER","ATH","ATOM","AVAX","AWE","AXS","B","BAT","BCH","BEAM","BGB","BNB","BONK","BSV","BTC","BTT","CAKE","CAP","CASHCAT","CC","CFX","CHIP","CHZ","COMP","CRO","CRV","CVX","DAI","DASH","DCR","DEEP","DEXE","DOG","DOGE","DOT","DYDX","EDGE","EGLD","EIGEN","ENA","ENS","ETC","ETH","ETHFI","EURC","FARTCOIN","FDUSD","FET","FF","FIL","FLOKI","FLR","FLUID","FUN","GALA","GENIUS","GEOD","GLM","GMX","GNO","GOMINING","GRAM","GRASS","GRT","GT","H","HBAR","HYPE","ICP","IMX","INJ","IOTA","IRYS","JASMY","JST","JTO","JUP","KAIA","KAS","KCS","KITE","KMNO","LDO","LEO","LINK","LIT","LTC","LUNC","M","MANA","MET","MNT","MON","MORPHO","MX","NEAR","NEO","NEXO","NFT","NIGHT","OKB","ONDO","OP","ORCA","PAXG","PEAQ","PENDLE","PENGU","PEPE","PI","PIEVERSE","PLUME","POL","PONS","PROM","PUMP","PYTH","PYUSD","QNT","QTUM","RAY","RENDER","RLUSD","RSR","RUNE","S","SAND","SEI","SENT","SFP","SHIB","SKY","SOL","SOON","SPX","STABLE","STRK","STX","SUI","SUN","SUPER","SYRUP","TAO","TEL","THETA","TIA","TRAC","TRUMP","TRX","TUSD","TWT","U","UNI","USD1","USDC","USDD","USDG","USDT","USDe","USELESS","VET","VIRTUAL","VSN","VVV","WAL","WEMIX","WIF","WLD","WLFI","XAUt","XCN","XDC","XEC","XLM","XMR","XPL","XRP","XTZ","ZAMA","ZBCN","ZEC","ZEN","ZK","ZRO","ZRX","币安人生"]}
+
+===== results/cmc_earliest_dates/run_40238238190/earliest-dates/earliest_dates.json =====
+{"type":"object","keys":["0G","1INCH","2Z","A","AAVE","ADA","AERO","AIOZ","AKT","ALGO","APE","APT","AR","ARB","ASTER","ATH","ATOM","AVAX","AWE","AXS","B","BAT","BCH","BEAM","BGB","BNB","BONK","BSV","BTC","BTT","CAKE","CAP","CASHCAT","CC","CFX","CHIP","CHZ","COMP","CRO","CRV","CVX","DAI","DASH","DCR","DEEP","DEXE","DOG","DOGE","DOT","DYDX","EDGE","EGLD","EIGEN","ENA","ENS","ETC","ETH","ETHFI","EURC","FARTCOIN","FDUSD","FET","FF","FIL","FLOKI","FLR","FLUID","FUN","GALA","GENIUS","GEOD","GLM","GMX","GNO","GOMINING","GRAM","GRASS","GRT","GT","H","HBAR","HYPE","ICP","IMX","INJ","IOTA","IRYS","JASMY","JST","JTO","JUP","KAIA","KAS","KCS","KITE","KMNO","LDO","LEO","LINK","LIT","LTC","LUNC","M","MANA","MET","MNT","MON","MORPHO","MX","NEAR","NEO","NEXO","NFT","NIGHT","OKB","ONDO","OP","ORCA","PAXG","PEAQ","PENDLE","PENGU","PEPE","PI","PIEVERSE","PLUME","POL","PONS","PROM","PUMP","PYTH","PYUSD","QNT","QTUM","RAY","RENDER","RLUSD","RSR","RUNE","S","SAND","SEI","SENT","SFP","SHIB","SKY","SOL","SOON","SPX","STABLE","STRK","STX","SUI","SUN","SUPER","SYRUP","TAO","TEL","THETA","TIA","TRAC","TRUMP","TRX","TUSD","TWT","U","UNI","USD1","USDC","USDD","USDG","USDT","USDe","USELESS","VET","VIRTUAL","VSN","VVV","WAL","WEMIX","WIF","WLD","WLFI","XAUt","XCN","XDC","XEC","XLM","XMR","XPL","XRP","XTZ","ZAMA","ZBCN","ZEC","ZEN","ZK","ZRO","ZRX","币安人生"]}
+
+===== results/verify_and_fill/run_40335328998/verify-125-results/coingecko_retry.json =====
+{"type":"object","keys":["AKE","ASTER","BDX","BFUSD","BTW","CC","DRV","ENA","ETHFI","EURSAFO","EUTBL","FIGR_HELOC","GRASS","HASH","HTX","HYPE","JAAA","JUP","LIT","M","MORPHO","NIGHT","ONDO","PEARL","PENGU","PI","PUMP","RAIN","SKY","STABLE","TRUMP","U","USDY","USTB","USYC","VVV","WBT","WLFI","ZRO","币安人生"]}
+
+===== results/verify_and_fill/run_40335328998/verify-125-results/verify_125.json =====
+{"type":"array","len":125,"first":{"symbol":"BTC","name":"Bitcoin","cg_id":"bitcoin","rank":1,"market_cap":1598199831356,"volume":23116410562,"categories":["Smart Contract Platform","Layer 1 (L1)","FTX Holdings"],"genesis":"2009-01-03","flags":[],"suspicious":false},"last":{"symbol":"KAU","name":"Kinesis Gold","cg_id":"kinesis-gold","rank":125,"market_cap":352155514,"volume":203614,"categories":["Tokenized Assets","Tokenized Gold","Ethereum Ecosystem"],"genesis":null,"flags":["low_vol(0.2M)"],"suspicious":true}}
+
+===== results/cmc_aggressive_fill/run_40350363383/aggressive-fill-results/aggressive_fill_29.json =====
+{"type":"object","keys":["AKE","ASTER","BDX","BFUSD","BTW","CC","EURSAFO","EUTBL","FIGR_HELOC","HASH","HTX","JAAA","LIT","M","NIGHT","PEARL","PI","PUMP","RAIN","SKY","STABLE","TRUMP","U","USTB","USYC","VVV","WBT","WLFI","币安人生"]}
+
+===== results/verify_top125_supply/run_40239205961/top125-verification/verification_results.json =====
+{"type":"array","len":125,"first":{"symbol":"BTC","rank":1,"cmc_id":1,"checkpoints":{"2017-01-01":{"circ":16077337,"price":998.325012207},"2018-01-01":{"circ":16776437,"price":13657.2001953125},"2019-01-01":{"circ":17457600,"price":3843.51996727},"2020-01-01":{"circ":18135787,"price":7200.17439274},"2021-01-01":{"circ":18587825,"price":29374.15188907},"2022-01-01":{"circ":18917268,"price":47686.8115091782},"2023-01-01":{"circ":19249581,"price":16625.0805507091},"2024-01-01":{"circ":19587012,"price":44167.3302140774}},"available_from":"2017-01-01","coverage":"FULL","issues":[]},"last":{"symbol":"SEI","rank":125,"cmc_id":23149,"checkpoints":{"2024-01-01":{"circ":2300000000,"price":0.7101424991}},"available_from":"2024-01-01","coverage":"PARTIAL","issues":[]}}
+
+===== results/verify_top125_supply/run_40239205961/top125-verification/top125_mapped.json =====
+{"type":"array","len":125,"first":{"symbol":"BTC","name":"Bitcoin","coingecko_id":"bitcoin","rank":1,"cmc_id":1},"last":{"symbol":"SEI","name":"Sei","coingecko_id":"sei-network","rank":125,"cmc_id":23149}}
+
+===== results/verify_top125_supply/run_40239205961/top125-verification/top125.json =====
+{"type":"array","len":125,"first":{"symbol":"BTC","name":"Bitcoin","coingecko_id":"bitcoin","rank":1},"last":{"symbol":"SEI","name":"Sei","coingecko_id":"sei-network","rank":125}}
+

@@ -1,0 +1,17 @@
+=== BINANCE KLINES WEIGHT TEST ===
+Start UTC: 2026-10-29T22:06:49Z
+
+Endpoint: https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=5m&limit=1
+
+req 1: HTTP 200 | weight_1m=2 | delta=?
+req 2: HTTP 200 | weight_1m=4 | delta=2
+req 3: HTTP 200 | weight_1m=6 | delta=2
+req 4: HTTP 200 | weight_1m=8 | delta=2
+req 5: HTTP 200 | weight_1m=10 | delta=2
+req 6: HTTP 200 | weight_1m=12 | delta=2
+req 7: HTTP 200 | weight_1m=14 | delta=2
+req 8: HTTP 200 | weight_1m=16 | delta=2
+req 9: HTTP 200 | weight_1m=2 | delta=-14
+req 10: HTTP 200 | weight_1m=4 | delta=2
+
+End UTC: 2026-10-29T22:07:02Z

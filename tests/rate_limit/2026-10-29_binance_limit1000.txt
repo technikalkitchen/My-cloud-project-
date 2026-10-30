@@ -1,0 +1,10 @@
+=== BINANCE KLINES WEIGHT — limit=1000 ===
+Start UTC: 2026-10-29T22:08:06Z
+
+Endpoint: https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=5m&limit=1000
+
+req 1: HTTP 200 | weight_1m=2 | delta=?
+req 2: HTTP 200 | weight_1m=4 | delta=2
+req 3: HTTP 200 | weight_1m=6 | delta=2
+
+End UTC: 2026-10-29T22:08:13Z

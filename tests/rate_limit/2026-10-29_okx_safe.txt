@@ -1,0 +1,6 @@
+=== OKX KLINES SAFE TEST ===
+Endpoint: https://www.okx.com/api/v5/market/candles?instId=BTC-USDT&bar=5m&limit=1
+
+req 1: HTTP 200 | okx_code=0 | data_rows=1
+req 2: HTTP 200 | okx_code=0 | data_rows=1
+req 3: HTTP 200 | okx_code=0 | data_rows=1
