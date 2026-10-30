@@ -1,0 +1,56 @@
+=== SAFE TEST — Bitstamp / Coinbase / Crypto.com ===
+Start UTC: 2026-10-30T14:26:51Z
+
+--- bitstamp ---
+URL: https://www.bitstamp.net/api/v2/ohlc/btcusd/?step=300&limit=1
+req 1: HTTP 200 | bytes=172
+req 2: HTTP 200 | bytes=172
+req 3: HTTP 200 | bytes=172
+
+--- coinbase ---
+URL: https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=300
+req 1: HTTP 200 | bytes=20904
+req 2: HTTP 200 | bytes=20904
+req 3: HTTP 200 | bytes=20904
+
+--- cryptocom BTC_USDT ---
+HTTP 200
+response:
+{
+  "id" : -1,
+  "method" : "public/get-candlestick",
+  "code" : 0,
+  "result" : {
+    "interval" : "M5",
+    "data" : [ {
+      "o" : "76751.72",
+      "h" : "76915.49",
+      "l" : "76717.02",
+      "c" : "76769.62",
+      "v" : "6.97836",
+      "t" : 1793370300000
+    } ],
+    "instrument_name" : "BTC_USDT"
+  }
+}
+--- cryptocom BTC_USD ---
+HTTP 200
+response:
+{
+  "id" : -1,
+  "method" : "public/get-candlestick",
+  "code" : 0,
+  "result" : {
+    "interval" : "M5",
+    "data" : [ {
+      "o" : "76627.33",
+      "h" : "76795.30",
+      "l" : "76594.31",
+      "c" : "76594.31",
+      "v" : "12.73043",
+      "t" : 1793370300000
+    } ],
+    "instrument_name" : "BTC_USD"
+  }
+}
+End UTC: 2026-10-30T14:27:28Z
