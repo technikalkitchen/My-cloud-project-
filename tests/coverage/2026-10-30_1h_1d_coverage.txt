@@ -1,0 +1,21 @@
+=== Checking 1h and 1d coverage (Oldest Data) ===
+
+Binance:
+ 1h: 1502942400000
+ 1d: 1502928000000
+
+OKX:
+ 1h: 1793376000000
+ 1d: 1793376000000
+
+Coinbase:
+ 1h: 1483228800
+ 1d: 1483228800
+
+Bitstamp:
+ 1h: 1483228800
+ 1d: 1483228800
+
+Crypto.com:
+ 1h: None
+ 1d: None
