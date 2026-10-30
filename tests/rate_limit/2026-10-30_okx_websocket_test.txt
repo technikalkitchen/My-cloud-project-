@@ -1,0 +1,22 @@
+[0.0s] Listening 30s...
+[0.8s] CONNECTED
+[0.8s] SUBSCRIBE SENT: ['BTC-USDT', 'ETH-USDT', 'SOL-USDT']
+[0.8s] EVENT notice ?
+[1.1s] EVENT error ?
+[1.1s] SUBSCRIBE ERROR: {'event': 'error', 'msg': "Subscribe failed, wrong URL or channel:candle5m,instId:BTC-USDT doesn't exist. Please use the correct URL, channel and parameters referring to API document.", 'code': '60018', 'connId': 'b97737cc'}
+[1.1s] EVENT error ?
+[1.1s] SUBSCRIBE ERROR: {'event': 'error', 'msg': "Subscribe failed, wrong URL or channel:candle5m,instId:ETH-USDT doesn't exist. Please use the correct URL, channel and parameters referring to API document.", 'code': '60018', 'connId': 'b97737cc'}
+[1.1s] EVENT error ?
+[1.1s] SUBSCRIBE ERROR: {'event': 'error', 'msg': "Subscribe failed, wrong URL or channel:candle5m,instId:SOL-USDT doesn't exist. Please use the correct URL, channel and parameters referring to API document.", 'code': '60018', 'connId': 'b97737cc'}
+[30.2s] CLOSED code=None reason=None
+
+=== SUMMARY after 30s ===
+Connected: True
+  BTC-USDT: subscribed=False, messages=0
+  ETH-USDT: subscribed=False, messages=0
+  SOL-USDT: subscribed=False, messages=0
+
+INTERPRETATION:
+  connected=True + all subscribed=True + all messages>0 = SUCCESS
+  connected=False = WebSocket blocked from Codespace
+  subscribed=False = Subscribe rejected by OKX

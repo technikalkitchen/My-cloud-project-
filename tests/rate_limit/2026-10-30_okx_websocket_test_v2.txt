@@ -1,0 +1,18 @@
+[0.0s] Listening 30s...
+[0.7s] CONNECTED to business endpoint
+[0.7s] SUBSCRIBE SENT: ['BTC-USDT', 'ETH-USDT', 'SOL-USDT']
+[0.7s] EVENT notice instId=? ch=?
+[1.0s] FIRST BTC-USDT: ts=1793372100000 o=77168.6 h=77272.6 l=77094.5 c=77215.8 v=62.86339242 confirm=0
+[1.0s] EVENT subscribe instId=BTC-USDT ch=candle5m
+[1.0s] FIRST ETH-USDT: ts=1793372100000 o=2235.81 h=2238.91 l=2234.00 c=2237.49 v=463.986311 confirm=0
+[1.0s] EVENT subscribe instId=ETH-USDT ch=candle5m
+[1.0s] FIRST SOL-USDT: ts=1793372100000 o=94.65 h=94.86 l=94.33 c=94.55 v=6192.292624 confirm=0
+[1.0s] EVENT subscribe instId=SOL-USDT ch=candle5m
+[30.2s] CLOSED code=None reason=None
+
+=== SUMMARY after 30s ===
+Connected: True
+  BTC-USDT: subscribed=True, messages=34
+  ETH-USDT: subscribed=True, messages=27
+  SOL-USDT: subscribed=True, messages=21
+Errors: 0
