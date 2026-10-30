@@ -1,0 +1,12 @@
+Testing 89 pairs for OKX history (HTTP)...
+Target: 5 req/s (delay 200ms)
+  ... 25/89 processed
+  ... 50/89 processed
+  ... 75/89 processed
+
+=== SUMMARY ===
+Total pairs: 89
+Success: 89
+Errors: 0
+Total time: 43.8s
+Effective rate: 2.0 req/s
