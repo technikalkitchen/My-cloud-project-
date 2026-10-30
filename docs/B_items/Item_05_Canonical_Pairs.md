@@ -1,3 +1,52 @@
+Item_05_Pending_Amendments.md
+
+تاریخ: ۳۰ اکتبر ۲۰۲۶
+وضعیت: PENDING — در انتظار Amendment واحد پس از تست‌ها
+ارجاع: Item_05_Canonical_Pairs.md (v1.0)
+
+---
+
+تغییر ۱ — چهار دسته به جای سه دسته
+
+نوع مثال وزن
+Direct_USDT BTC/USDT 1.0
+Direct_BTC ETH/BTC 1.0 (بدون تغییر — قوانین جدا)
+Direct_USD_Converted BTC/USD در Coinbase ~0.98
+Implied (استیبل‌کوین) BTC/USDC ~0.9
+Implied (فیات دیگر) BTC/JPY ~0.85
+
+نام قدیمی Converted_fiat حذف می‌شود و با Direct_USD_Converted جایگزین می‌شود.
+
+---
+
+تغییر ۲ — ترتیب اولویت صریح
+
+برای تولید XXX/USDT از داده یک صرافی:
+
+۱. اگر XXX/USDT موجود → Direct_USDT
+۲. اگر XXX/BTC و BTC/USDT موجود → Direct_BTC (طبق قوانین جدا — دست نمی‌زنیم)
+۳. اگر XXX/USD موجود → Direct_USD_Converted
+۴. اگر XXX/USDC یا XXX/DAI موجود (و ۱ تا ۳ نبودند) → Implied استیبل
+۵. اگر XXX/JPY یا EUR یا TRY موجود (و ۱ تا ۴ نبودند) → Implied فیات دیگر
+
+قاعده صریح: اگر USDT هست، هرگز به USDC نمی‌رویم. اگر USD هست، هرگز به USDC نمی‌رویم. USDC فقط زمانی که USDT و BTC و USD هر سه نباشند.
+
+---
+
+تغییر ۳ — دامنه فعلی
+
+نسخه فعلی فقط کریپتو-محور است: کریپتو به USDT، کریپتو به BTC، کریپتو به USD. فیات به فیات (EUR/USD، EUR/CHF، JPY/CNY) در دامنه نیست. اگر در آینده نیاز شد، به عنوان قابلیت جداگانه طراحی می‌شود.
+
+---
+
+تغییر ۴ — Market Cap به USDT
+
+همه Market Capها به USDT نمایش داده می‌شوند. mockup از USD به USDT تغییر می‌کند. تبدیل به USD فقط در UI (اگر کاربر خواست) با نرخ لحظه‌ای انجام می‌شود.
+
+---
+
+پایان Item_05_Pending_Amendments.md
+
 # آیتم ۰۵ — جفت‌های استاندارد (Canonical Pairs)
 ## بخش ۱: قواعد پایه، واحدهای مظنه و تبدیل ارز فیات
 
