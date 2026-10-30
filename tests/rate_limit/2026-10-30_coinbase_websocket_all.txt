@@ -1,0 +1,13 @@
+Total pairs: 103
+[0.0s] Listening 60s...
+[0.5s] CONNECTED
+[0.5s] SUBSCRIBE SENT: 103 pairs
+[1.2s] SUBSCRIPTIONS CONFIRMED
+[60.1s] CLOSED code=None
+
+=== SUMMARY ===
+Connected: True
+Total pairs: 103
+With messages: 103/103
+Total messages (60s): 9659
+Errors: 0
