@@ -111,6 +111,8 @@ status TEXT بستگی به record_type دارد
 telegram_message_id TEXT شناسه پیام تلگرام؛ می‌تواند NULL باشد
 retry_count INTEGER تعداد تلاش‌های تحویل
 next_attempt_at TIMESTAMP زمان مجاز تلاش بعدی؛ می‌تواند NULL باشد
+lease_until TIMESTAMP زمان انقضای مجوز ارسال برای Chunk (برای Parent مقدار NULL)
+fencing_token INTEGER شمارنده محافظ برای جلوگیری از تداخل ارسال‌کننده‌ها (برای Parent مقدار NULL)
 created_at TIMESTAMP زمان ایجاد رکورد
 updated_at TIMESTAMP زمان آخرین به‌روزرسانی
 
