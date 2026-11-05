@@ -1,107 +1,116 @@
+فهرست جامع تست‌ها — سه پارت
 
-TEST_MAP.md — نقشه و فهرست تست‌های واقعی پروژه
-
-تاریخ: ۳۰ اکتبر ۲۰۲۶
-ساعت: ۱۹:۳۸ عصر
-وضعیت: مرجع اصلی تست‌ها (OBSERVED)
-ارجاع: Item_09 (نسخه v7.2)
-
-TEST_MAP.md — نقشه و فهرست تست‌های واقعی پروژه
-
-تاریخ: ۳۰ اکتبر ۲۰۲۶
-وضعیت: مرجع اصلی تست‌ها (OBSERVED)
-ارجاع: Item_09 (نسخه v7.2)
+بررسی TEST_MAP: تست‌مپ فقط ۱۳ فایل از ~۴۰ فایل را پوشش می‌دهد. کل دستهٔ Supply/CMC (۹ فایل + نتایج) در تست‌مپ غایب است. کل دستهٔ زیرساخت/اتصال (۷ فایل) هم غایب. کل دستهٔ TEST001/TEST003 (۶ فایل) هم غایب. پس جواب کوتاه: نه، تست‌مپ به‌روز و کامل نیست. فهرست زیر کار کامل و تمیز است.
 
 ---
 
-هدف این فایل
+A. تست‌های پوشش داده (Coverage)
 
-این سند، فهرست کامل و دقیق تمام تست‌های واقعی انجام‌شده از تاریخ ۲۸ اکتبر تا ۳۰ اکتبر است. هدف این است که تمام دستیارهای بعدی و خود ما بدانیم چه تست‌هایی، چه چیزی را کشف کرده‌اند و برای کدام آیتم در پروژه کاربرد دارند. هیچ تستی بدون ذخیره فایل خروجی انجام نشده است.
+نام مسیر وضعیت توضیح
+2026-10-28_coverage_matrix.tsv tests/coverage/ ✅💎 ماتریس ۱۲۵×۵ با وضعیت LISTED/NOT_LISTED + ۴ timestamp (Binance, OKX, Bitstamp, Coinbase). ستون Crypto.com همیشه NOT_LISTED (باگ).
+2026-10-28_5m_since_2017.tsv tests/coverage/ ✅💎 ماتریس ۱۵ دارایی × ۵ صرافی با تاریخ شروع 5m. Binance 2017-08-17، OKX 2026-10-28 (!)، Bitstamp/Coinbase 2017-01-01.
+2026-10-28_test_real_check.txt tests/coverage/ ⚠️ ۶ سناریو تست تاریخ شروع. Binance ✅، Coinbase ✅، Bitstamp ✅، اما OKX در هر دو تست ❌ (داده برنگشت).
+2026-10-28_okx_cc_test.txt tests/coverage/ ✅ تست وجود 5m در OKX و Crypto.com در بازه‌های ۲۰۱۸/۲۰۲۰/۲۰۲۲/۲۰۲۴ برای ۷ دارایی. OKX BTC: قبل ۲۰۱۸ = NO، قبل ۲۰۲۰ = YES.
+2026-10-30_1h_1d_coverage.txt tests/coverage/ ⚠️ قدیمی‌ترین timestamp 1h و 1d در ۵ صرافی. OKX باگ پارامتر داشت و داده امروز (1793376000000) را برگرداند.
 
----
+B. تست‌های Rate Limit و HTTP
 
-بخش اول — تست‌های پوشش داده (Coverage)
+نام مسیر وضعیت توضیح
+2026-10-29_header_check.txt tests/rate_limit/ ✅ بررسی هدرها. فقط Binance هدر x-mbx-used-weight-1m دارد. بقیه هیچ هدر Rate Limit ندارند.
+2026-10-29_binance_klines_weight.txt tests/rate_limit/ ✅💎 وزن endpoint کندل Binance با limit=1 (۱۰ درخواست). نتیجه قطعی: وزن هر درخواست = ۲، مستقل از limit و دارایی.
+2026-10-29_binance_limit1000.txt tests/rate_limit/ ✅ تأیید: limit=1000 هم وزن ۲ دارد.
+2026-10-29_binance_sol.txt tests/rate_limit/ ✅ تأیید: SOLUSDT هم وزن ۲ دارد. دارایی مهم نیست.
+2026-10-29_okx_safe.txt tests/rate_limit/ ✅ ۳ درخواست ایمن به OKX (limit=1). همه HTTP 200 و okx_code=0.
+2026-10-30_bitstamp_coinbase_cryptocom_safe.txt tests/rate_limit/ ✅ ۳ درخواست ایمن به Bitstamp/Coinbase/Crypto.com. Crypto.com هم BTC_USDT و هم BTC_USD را برگرداند (تعارض NOT_LISTED حل شد).
+2026-10-30_okx_history_http.txt tests/rate_limit/ ✅ ۸۹ درخواست پی‌درپی OKX. صفر خطا. نرخ مؤثر 2.0 req/s.
 
-۱. ماتریس پوشش اولیه (تایم‌فریم 5m)
+C. تست‌های WebSocket
 
-· فایل: tests/coverage/2026-10-28_coverage_matrix.tsv
-· چه چیزی تست شد: ماتریس اولیه ۱۲۵ دارایی برای ۵ صرافی.
-· نتیجه: متوجه شدیم TEST001 قدیمی باگ داشته (فقط crypto_com را کامل تست کرده بود). در این ماتریس، صرافی Coinbase فقط ۱۹ جفت نشان داد که بعداً در تست ۳۰ اکتبر اشتباه بودن آن ثابت شد.
+نام مسیر وضعیت توضیح
+2026-10-30_okx_websocket_test.txt tests/rate_limit/ ❌ ناموفق. خطای 60018 برای کانال candle5m (استفاده از public به‌جای business endpoint).
+2026-10-30_okx_websocket_test_v2.txt tests/rate_limit/ ✅ نسخه ۲ موفق. business endpoint. ۳ جفت: ۳۴/۲۷/۲۱ پیام در ۳۰ ثانیه.
+2026-10-30_okx_websocket_all.txt tests/rate_limit/ ✅💎 ۸۹ جفت در ۲ بچ (۵۰+۳۹). ۸۹/۸۹ اشتراک. ۱۳۸۵ پیام در ۶۰ ثانیه. صفر خطا.
+2026-10-30_coinbase_websocket_all.txt tests/rate_limit/ ✅💎 ۱۰۳ جفت در یک اتصال. ۱۰۳/۱۰۳ اشتراک. ۹۶۵۹ پیام در ۶۰ ثانیه. صفر خطا. کشف ۸۴ دارایی جدید.
 
-۲. بررسی عمق تاریخی 5m (از سال ۲۰۱۷)
+D. تست‌های Supply / CMC (کاملاً غایب از TEST_MAP)
 
-· فایل‌ها: tests/coverage/2026-10-28_5m_since_2017.tsv و test_real_check.txt
-· چه چیزی تست شد: پیدا کردن قدیمی‌ترین کندل 5m.
-· نتیجه: تایید شد که Binance از 2017-08-17، OKX از 2018-01-11، و Coinbase/Bitstamp از 2017-01-01 داده دارند (البته Coinbase و Bitstamp با جفت USD).
+نام مسیر وضعیت توضیح
+final_supply_harvest.yml .github/workflows/ ✅💎 harvest نهایی ۱۲۵ دارایی با CMC ID ثابت و ۱۲ checkpoint (۲۰۱۷–۲۰۲۶). خروجی: final_125_supply.json → ۱۱۸ FILLED / ۱۲۵.
+verify_top125_supply.yml .github/workflows/ ✅💎 تأیید پوشش با ۸ checkpoint. خروجی: verification_results.json + top125_mapped.json. دسته‌بندی FULL/PARTIAL/UNAVAILABLE.
+cmc_earliest_dates.yml .github/workflows/ ✅ قدیمی‌ترین تاریخ ۱۲۵ دارایی با ۸ checkpoint. خروجی: earliest_dates.json + cmc_ids.json.
+cmc_fill_40.yml .github/workflows/ ✅ پر کردن ۴۰ UNAVAILABLE با CMC Top 500 mapping، ۶ checkpoint (۲۰۲۰–۲۰۲۵). خروجی: cmc_fill_40.json.
+cmc_aggressive_fill.yml .github/workflows/ ✅ ۲۹ دارایی باقی‌مانده، checkpoint اضافی برای توکن‌های جدید (۲۰۲۴–۲۰۲۵). خروجی: aggressive_fill_29.json.
+cmc_internal_extended.yml .github/workflows/ ✅ بررسی ساختار کامل CMC internal + ۱۵ دارایی × ۳ تاریخ + probe نرخ ۱۰ درخواست.
+combined_supply_tests.yml .github/workflows/ ✅ ۳ job: CMC internal (v3 + v3.1)، پکیج coinmarketcap-scraper، DefiLlama stablecoins.
+fill_gaps.yml .github/workflows/ ✅ پر کردن ۵۳ UNAVAILABLE از CoinGecko + DefiLlama. خروجی: fill_gaps_results.json.
+verify_and_fill.yml .github/workflows/ ✅ تأیید ۱۲۵ + flag suspicious + retry CoinGecko برای ۴۰. خروجی: verify_125.json + coingecko_retry.json.
 
-۳. تست پوشش 1h و 1d
+E. تست‌های زیرساخت، اتصال و RPC (غایب از TEST_MAP)
 
-· فایل: tests/coverage/2026-10-30_1h_1d_coverage.txt
-· چه چیزی تست شد: آیا تایم‌فریم‌های 1h و 1d هم از سال ۲۰۱۷ در دسترس هستند؟
-· نتیجه: صرافی‌های Binance، Coinbase و Bitstamp داده 1h و 1d را از سال ۲۰۱۷ می‌دهند. OKX در این تست باگ پارامتر داشت (داده امروز را برگرداند) ولی چون 5m را از ۲۰۱۸ دارد، 1h و 1d قطعاً موجود است.
+نام مسیر وضعیت توضیح
+test_actions.yml .github/workflows/ ✅ پایه: تست GitHub Actions با echo.
+test_external_api.yml .github/workflows/ ✅ DNS + دسترسی به Binance/Coinbase/Kraken.
+test_comprehensive_data.yml .github/workflows/ ✅ جامع: Binance Global، عمق 1m/1h/1d، ۱۲ دارایی، مقایسه ۴ صرافی، اگریگیتورها، Gemini/Bitstamp.
+test_cron_timing.yml .github/workflows/ ✅ ثبت UTC + run_id + actor. طبق TEST_MAP: تأخیر ۳ ثانیه.
+test_historical_supply.yml .github/workflows/ ✅ totalSupply از RPC عمومی Ethereum (LINK/UNI/USDT/MATIC) در ۳ بلاک.
+test_crypto2.yml .github/workflows/ ❌ تست بسته R crypto2. ناموفق (نسخه v2 برای رفع آن ساخته شد).
+test_crypto2_v2.yml .github/workflows/ ⚠️ تلاش برای رفع با dplyr 1.0.10. خروجی برای BTC/LINK/USDT.
 
----
+F. تست‌های TEST001 و TEST003 (غایب از TEST_MAP)
 
-بخش دوم — تست‌های محدودیت نرخ (Rate Limit) و HTTP
+نام مسیر وضعیت توضیح
+test001.py scripts/ ✅ CLI entry TEST001. بررسی موجود بودن جفت‌ها + اولین/آخرین کندل.
+test001_manual.yml .github/workflows/ ✅ اجرای دستی TEST001 (۵ صرافی، TF 5m,1h).
+test003_origin.py scripts/ ✅ تست مبدأ ۲۰۱۷ برای Binance/Bitstamp/Coinbase (1d).
+test003_manual.yml .github/workflows/ ✅ اجرای دستی TEST003.
+universe.json data/test001/ ✅ ۱۲۵ دارایی (فقط symbol). همان universe تست‌ها.
+README_TEST001_stage2_2.md root 📖 راهنمای TEST001 MVP Stage 2.2.
 
-۴. بررسی هدرهای صرافی‌ها (Header Check)
+G. ساختاری و متا
 
-· فایل: tests/rate_limit/2026-10-29_header_check.txt
-· چه چیزی تست شد: بررسی اینکه کدام صرافی در پاسخ‌های HTTP خود، هدر محدودیت نرخ می‌فرستد.
-· نتیجه: تنها صرافی Binance هدر x-mbx-used-weight-1m را برمی‌گرداند (که یعنی می‌توانیم مصرف را ردیابی کنیم). بقیه صرافی‌ها هیچ هدر محدودیت نرخی نمی‌دهند.
+نام مسیر وضعیت توضیح
+test_stage_a1_structure.py tests/ ✅ تست ساختاری Stage A1: پوشه‌ها، init، importهای ممنوع، runtime tokens.
+2026-10-27_requirements.txt root ✅ فقط requests.
+2026-10-27_summary.txt results/ (احتمالی) 📖 خلاصه ۱۳ فایل JSON نتایج تست‌ها با نوع و کلیدها.
+TEST_MAP.md tests/ 📖 سند مرجع تست‌های واقعی ۲۸–۳۰ اکتبر. ناقص (فقط ۱۳ فایل).
 
-۵. وزن Kline در بایننس
+H. نتایج تست‌ها (Artifacts — از summary.txt)
 
-· فایل‌ها: tests/rate_limit/2026-10-29_binance_klines_weight.txt، binance_limit1000.txt و binance_sol.txt
-· چه چیزی تست شد: وزن هر درخواست کندل در Binance.
-· نتیجه: وزن هر درخواست دقیقاً 2 است. این وزن مستقل از دارایی (BTC یا SOL) و مستقل از limit (1 یا 1000) است.
-
-۶. تست ایمن HTTP (تک درخواست)
-
-· فایل‌ها: 2026-10-29_okx_safe.txt و 2026-10-30_bitstamp_coinbase_cryptocom_safe.txt
-· چه چیزی تست شد: تست پایداری پایه برای صرافی‌ها.
-· نتیجه: OKX، Bitstamp، Coinbase و Crypto.com همگی به درخواست‌های HTTP پاسخ می‌دهند. تعارض NOT_LISTED برای Crypto.com حل شد و ثابت شد جفت BTC_USDT در این صرافی وجود دارد.
-
-۷. تست فچ تاریخی HTTP (۸۹ درخواست پی در پی)
-
-· فایل: tests/rate_limit/2026-10-30_okx_history_http.txt
-· چه چیزی تست شد: آیا می‌توانیم ۸۹ درخواست تاریخی به OKX بفرستیم بدون بلاک شدن؟
-· نتیجه: ما ۸۹ درخواست HTTP پی در پی به OKX زدیم و حتی یک بار هم خطای 429 نگرفتیم (صفر خطا). این ثابت کرد فشار HTTP برای فچ تاریخی کاملاً مدیریت‌شدنی و امن است.
-
----
-
-بخش سوم — تست‌های WebSocket (راه‌حل خلاقانه برای داده‌های زنده)
-
-۸. تست اولیه OKX
-
-· فایل‌ها: tests/rate_limit/2026-10-30_okx_websocket_test.txt و _v2.txt
-· چه چیزی تست شد: تست اتصال WebSocket.
-· نتیجه: کشف شد که برای دریافت کندل‌ها باید از endpoint با نام business استفاده کنیم، نه public. سه جفت‌ارز با موفقیت فچ شدند.
-
-۹. تست کامل WebSocket در OKX
-
-· فایل: tests/rate_limit/2026-10-30_okx_websocket_all.txt
-· چه چیزی تست شد: اتصال همزمان همه جفت‌ارزهای OKX.
-· نتیجه: ۸۹ جفت‌ارز روی یک اتصال WebSocket سابسکرایب شدند و در ۶۰ ثانیه ۱۳۸۵ پیام با صفر خطا دریافت شد. (فشار Rate Limit صفر).
-
-۱۰. تست کامل WebSocket در Coinbase
-
-· فایل: tests/rate_limit/2026-10-30_coinbase_websocket_all.txt
-· چه چیزی تست شد: اتصال همزمان همه جفت‌ارزهای Coinbase با فرمت advanced-trade-ws.
-· نتیجه: ۱۰۳ جفت‌ارز روی یک اتصال سابسکرایب شدند و در ۶۰ ثانیه ۹۶۵۹ پیام با صفر خطا دریافت شد. (در این تست ۸۴ دارایی دیگر برای Coinbase کشف شد که در ماتریس اولیه نبودند).
-
----۱۱. تست زمان‌بند Cron-job.org
-
-· وضعیت: OBSERVED (موفق).
-· فایل: tests/rate_limit/2026-10-30_cron_timing.txt (این فایل رو باید با متن Data Extractor بسازی).
-· نتیجه: زمان‌بندی و تاخیر سیستم به درستی کار می‌کند. فاصله بین ارزیابی و اجرای اسکریپت فقط ۳ ثانیه بوده است (زمان شروع: 21:10:37Z تا اجرای اسکریپت: 21:10:40Z). این یعنی cron-job.org برای Trigger کردن Collector کاملاً قابل اعتماد است.
-
-
-جمع‌بندی برای آیتم‌ها
-
-· Item_09: داده‌های ثبت‌شده در این تست‌ها، پایه سند v7.2 خواهند بود (تمام صرافی‌ها از REPORTED به OBSERVED ارتقا پیدا می‌کنند).
-· Item_11: با اثبات کارکرد WebSocket، فشار Rate Limit در حالت Default صفر شد. درخواست‌های تاریخی هم با HTTP بدون خطا تایید شدند.
+نام مسیر توضیح
+final_125_supply.json results/run_40351779336/final-125-supply-results/ ۱۲۵ ردیف، ۱۱۸ FILLED. BTC از ۲۰۱۷-۰۱-۰۱ (16077337).
+verification_results.json results/verify_top125_supply/run_40239205961/top125-verification/ ۱۲۵ ردیف با checkpoints و coverage.
+top125.json + top125_mapped.json همان mapping CoinGecko → CMC.
+earliest_dates.json + cmc_ids.json results/cmc_earliest_dates/run_40238238190/earliest-dates/ ۱۲۵ دارایی، قدیمی‌ترین تاریخ + cmc_id.
+cmc_fill_40.json results/cmc_fill_40/run_40347826878/cmc-fill-40-results/ ۴۰ هدف.
+aggressive_fill_29.json results/cmc_aggressive_fill/run_40350363383/aggressive-fill-results/ ۲۹ هدف باقی‌مانده.
+fill_gaps_results.json results/fill_gaps/run_40332035054/fill-gaps-results/ ۵۳ دارایی با cg_id، dl_id، best_earliest.
+verify_125.json + coingecko_retry.json results/verify_and_fill/run_40335328998/verify-125-results/ ۱۲۵ + ۴۰ retry.
+results.json (TEST001) results/test001_manual/run_*/test001-results/ ۵ فایل از ۵ run مختلف TEST001.
 
 ---
 
-پایان فایل TEST_MAP.md
+جمع‌بندی: TEST_MAP چه چیزهایی را ندارد
+
+دسته تعداد فایل غایب
+Supply/CMC (D) ۹ فایل + ۸ artifact
+زیرساخت/اتصال/RPC (E) ۷ فایل
+TEST001/TEST003 (F) ۶ فایل
+ساختاری و متا (G) ۴ فایل (به‌جز خود TEST_MAP)
+کل غایب ~۲۶ فایل
+
+جمع‌بندی: تست‌های ناموفق (❌)
+
+نام دلیل
+2026-10-30_okx_websocket_test.txt خطای 60018 (کانال candle5m روی public)
+test_crypto2.yml احتمالاً ناموفق (v2 برای رفع ساخته شد)
+
+تست‌های باگ‌دار / جزئی (⚠️)
+
+نام مشکل
+2026-10-28_test_real_check.txt OKX در هر ۲ سناریو داده نداد
+2026-10-30_1h_1d_coverage.txt OKX باگ پارامتر (داده امروز را برگرداند)
+test_crypto2_v2.yml تلاش رفع، خروجی نامطمئن
+
+طلایی‌ها (💎)
+
+coverage_matrix.tsv · 5m_since_2017.tsv · binance_klines_weight.txt · okx_websocket_all.txt · coinbase_websocket_all.txt · final_supply_harvest.yml · verify_top125_supply.yml
