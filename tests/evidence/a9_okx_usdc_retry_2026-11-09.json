@@ -1,0 +1,229 @@
+{
+  "XMR": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "USDe": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "DAI": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "XAUt": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "QNT": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "M": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "U": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "USDD": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "MNT": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "BGB": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "JST": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "GT": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "KCS": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "KAS": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "XDC": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "AERO": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "CAKE": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "\u5e01\u5b89\u4eba\u751f": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "TUSD": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "NEXO": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "STABLE": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "EURC": {
+    "status": "TESTED",
+    "quote": "USDC",
+    "price_start": "2026-09-20",
+    "iterations": 1,
+    "imprecise": false
+  },
+  "PIEVERSE": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "VET": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "BTT": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "SPX": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "BSV": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "FF": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "SUN": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "GNO": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "FDUSD": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "LUNC": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "DCR": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "BEAM": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "RUNE": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "AKT": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "JASMY": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "TWT": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "TRAC": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "SYRUP": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "CAP": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "SOON": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "GOMINING": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "TEL": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  },
+  "XCN": {
+    "status": "NOT_LISTED",
+    "quote": "USDC",
+    "iterations": 1
+  }
+}
