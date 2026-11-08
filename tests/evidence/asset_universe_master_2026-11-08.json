@@ -1,0 +1,2128 @@
+{
+  "total_unique_assets": 195,
+  "by_reason_counts": {
+    "in_universe_125": 125,
+    "filled_supply": 118,
+    "migration_source": 3,
+    "migration_target": 3,
+    "survivor_known": 1,
+    "delisted_known": 3
+  },
+  "assets": {
+    "BTC": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        1
+      ]
+    },
+    "ETH": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        1027
+      ]
+    },
+    "USDT": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        825
+      ]
+    },
+    "BNB": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        1839
+      ]
+    },
+    "SOL": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        5426
+      ]
+    },
+    "USDC": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        3408
+      ]
+    },
+    "XRP": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        52
+      ]
+    },
+    "DOGE": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        74
+      ]
+    },
+    "ADA": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        2010
+      ]
+    },
+    "TRX": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        1958
+      ]
+    },
+    "AVAX": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        5805
+      ]
+    },
+    "LINK": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        1975
+      ]
+    },
+    "TON": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "SHIB": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        5994
+      ]
+    },
+    "DOT": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        6636
+      ]
+    },
+    "BCH": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        1831
+      ]
+    },
+    "LTC": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        2
+      ]
+    },
+    "NEAR": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        6535
+      ]
+    },
+    "UNI": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        7083
+      ]
+    },
+    "APT": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        21794
+      ]
+    },
+    "ICP": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        8916
+      ]
+    },
+    "ARB": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        11841
+      ]
+    },
+    "OP": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        11840
+      ]
+    },
+    "FIL": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        2280
+      ]
+    },
+    "SUI": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        20947
+      ]
+    },
+    "INJ": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        7226
+      ]
+    },
+    "ATOM": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        3794
+      ]
+    },
+    "IMX": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        10603
+      ]
+    },
+    "STX": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        4847
+      ]
+    },
+    "HBAR": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        4642
+      ]
+    },
+    "MKR": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "THETA": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "ALGO": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        4030
+      ]
+    },
+    "SAND": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "MANA": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "AXS": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "EGLD": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "FLOW": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "XTZ": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        2011
+      ]
+    },
+    "AAVE": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        7278
+      ]
+    },
+    "EOS": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "KAVA": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "CHZ": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "NEO": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "IOTA": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "XLM": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        512
+      ]
+    },
+    "ETC": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        1321
+      ]
+    },
+    "QNT": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        3155
+      ]
+    },
+    "KAS": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        20396
+      ]
+    },
+    "RUNE": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "CRV": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        6538
+      ]
+    },
+    "SNX": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "MASK": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "GMT": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "ENS": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        13855
+      ]
+    },
+    "1INCH": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "COMP": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "ZEC": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        1437
+      ]
+    },
+    "DASH": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        131
+      ]
+    },
+    "KSM": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "ZIL": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "BAT": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "ZRX": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "ANKR": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "LRC": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "CELO": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "ICX": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "ONT": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "RVN": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "SC": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "DGB": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "NANO": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "WAXP": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "STORJ": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "BAND": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "CVC": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "GNO": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        1659
+      ]
+    },
+    "BAL": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "YFI": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "SUSHI": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "UMA": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "KNC": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "ROSE": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "CTSI": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "API3": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "MTL": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "DENT": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "HOT": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "COTI": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "PHA": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "ALICE": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "AUDIO": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "AR": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        5632
+      ]
+    },
+    "JASMY": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "LDO": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        8000
+      ]
+    },
+    "TIA": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        22861
+      ]
+    },
+    "SEI": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        23149
+      ]
+    },
+    "PEPE": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        24478
+      ]
+    },
+    "WIF": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "BONK": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        23095
+      ]
+    },
+    "FLOKI": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "ORDI": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "PAXG": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        4705
+      ]
+    },
+    "XAUT": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        5176
+      ]
+    },
+    "RPL": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "CFX": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        7334
+      ]
+    },
+    "ASTR": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "GLMR": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "MOVR": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "SDN": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "ACA": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "KAR": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "XPRT": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "AKT": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "OSMO": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "JUNO": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "SCRT": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "NMR": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "FTM": {
+      "sources": [
+        "universe",
+        "discovery"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "migration_source"
+      ],
+      "cmc_ids": [
+        3375
+      ]
+    },
+    "RNDR": {
+      "sources": [
+        "universe",
+        "discovery"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "migration_source"
+      ],
+      "cmc_ids": [
+        5690
+      ]
+    },
+    "TAO": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        22974
+      ]
+    },
+    "APE": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "DYDX": {
+      "sources": [
+        "universe"
+      ],
+      "reasons": [
+        "in_universe_125"
+      ],
+      "cmc_ids": []
+    },
+    "JUP": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        29210
+      ]
+    },
+    "PYTH": {
+      "sources": [
+        "universe",
+        "supply_125"
+      ],
+      "reasons": [
+        "in_universe_125",
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        28177
+      ]
+    },
+    "HYPE": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        32196
+      ]
+    },
+    "XMR": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        328
+      ]
+    },
+    "LEO": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        3957
+      ]
+    },
+    "USDe": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        29470
+      ]
+    },
+    "DAI": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        4943
+      ]
+    },
+    "CC": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        37263
+      ]
+    },
+    "USD1": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        36148
+      ]
+    },
+    "GRAM": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        11419
+      ]
+    },
+    "USDG": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        33793
+      ]
+    },
+    "PYUSD": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        27772
+      ]
+    },
+    "ENA": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        30171
+      ]
+    },
+    "CRO": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        3635
+      ]
+    },
+    "RLUSD": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        34387
+      ]
+    },
+    "OKB": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        3897
+      ]
+    },
+    "M": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        35491
+      ]
+    },
+    "ONDO": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        21159
+      ]
+    },
+    "PUMP": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        36507
+      ]
+    },
+    "ASTER": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        36341
+      ]
+    },
+    "USDD": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        19891
+      ]
+    },
+    "WLFI": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        33251
+      ]
+    },
+    "MNT": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        27075
+      ]
+    },
+    "WLD": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        13502
+      ]
+    },
+    "U": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        39120
+      ]
+    },
+    "SKY": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        33038
+      ]
+    },
+    "BGB": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        11092
+      ]
+    },
+    "VVV": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        35509
+      ]
+    },
+    "JST": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        5488
+      ]
+    },
+    "MORPHO": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        34104
+      ]
+    },
+    "KCS": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        2087
+      ]
+    },
+    "GT": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        4269
+      ]
+    },
+    "POL": {
+      "sources": [
+        "supply_125",
+        "discovery"
+      ],
+      "reasons": [
+        "filled_supply",
+        "migration_target"
+      ],
+      "cmc_ids": [
+        28321
+      ]
+    },
+    "RENDER": {
+      "sources": [
+        "supply_125",
+        "discovery"
+      ],
+      "reasons": [
+        "filled_supply",
+        "migration_target"
+      ],
+      "cmc_ids": [
+        5690
+      ]
+    },
+    "PI": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        35697
+      ]
+    },
+    "AERO": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        29270
+      ]
+    },
+    "LIT": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        39125
+      ]
+    },
+    "XDC": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        2634
+      ]
+    },
+    "ZRO": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        26997
+      ]
+    },
+    "CAKE": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        7186
+      ]
+    },
+    "NIGHT": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        39064
+      ]
+    },
+    "ETHFI": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        29814
+      ]
+    },
+    "VET": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        3077
+      ]
+    },
+    "FLR": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        7950
+      ]
+    },
+    "NEXO": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        2694
+      ]
+    },
+    "\u5e01\u5b89\u4eba\u751f": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        38590
+      ]
+    },
+    "RAY": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        8526
+      ]
+    },
+    "TUSD": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        2563
+      ]
+    },
+    "STABLE": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        38892
+      ]
+    },
+    "TRUMP": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        35336
+      ]
+    },
+    "PENGU": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        34466
+      ]
+    },
+    "EURC": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        20641
+      ]
+    },
+    "FET": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        3773
+      ]
+    },
+    "VIRTUAL": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        29420
+      ]
+    },
+    "STRK": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        22691
+      ]
+    },
+    "BTT": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        16086
+      ]
+    },
+    "BSV": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        3602
+      ]
+    },
+    "PENDLE": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        9481
+      ]
+    },
+    "SUN": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        10529
+      ]
+    },
+    "FDUSD": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        26081
+      ]
+    },
+    "DCR": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        1168
+      ]
+    },
+    "CVX": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        9903
+      ]
+    },
+    "LUNC": {
+      "sources": [
+        "supply_125",
+        "discovery"
+      ],
+      "reasons": [
+        "filled_supply",
+        "survivor_known"
+      ],
+      "cmc_ids": [
+        4172
+      ]
+    },
+    "GRT": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        6719
+      ]
+    },
+    "KMNO": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        32415
+      ]
+    },
+    "JTO": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        28541
+      ]
+    },
+    "KAIA": {
+      "sources": [
+        "supply_125"
+      ],
+      "reasons": [
+        "filled_supply"
+      ],
+      "cmc_ids": [
+        32880
+      ]
+    },
+    "S": {
+      "sources": [
+        "discovery"
+      ],
+      "reasons": [
+        "migration_target"
+      ],
+      "cmc_ids": [
+        32684
+      ]
+    },
+    "MATIC": {
+      "sources": [
+        "discovery"
+      ],
+      "reasons": [
+        "migration_source"
+      ],
+      "cmc_ids": [
+        28321
+      ]
+    },
+    "FTT": {
+      "sources": [
+        "discovery"
+      ],
+      "reasons": [
+        "delisted_known"
+      ],
+      "cmc_ids": []
+    },
+    "LUNA": {
+      "sources": [
+        "discovery"
+      ],
+      "reasons": [
+        "delisted_known"
+      ],
+      "cmc_ids": []
+    },
+    "UST": {
+      "sources": [
+        "discovery"
+      ],
+      "reasons": [
+        "delisted_known"
+      ],
+      "cmc_ids": []
+    }
+  }
+}

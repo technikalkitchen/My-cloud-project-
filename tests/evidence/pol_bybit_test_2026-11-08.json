@@ -1,0 +1,22 @@
+{
+  "instruments_info": {
+    "launchTime": null,
+    "launchTime_fmt": null,
+    "status": "Trading",
+    "baseCoin": "POL",
+    "quoteCoin": "USDT"
+  },
+  "pol_price": {
+    "open": 0.5,
+    "close": 0.6314,
+    "ts_fmt": "2023-10-25 00:00"
+  },
+  "matic_price": {
+    "open": 0.6247,
+    "close": 0.6305,
+    "ts_fmt": "2023-10-25 00:00"
+  },
+  "interpretation": "same_asset",
+  "test_date": "2023-10-25 00:00",
+  "test_ts": 1698192000000
+}
