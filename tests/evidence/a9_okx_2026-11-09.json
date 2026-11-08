@@ -1,0 +1,1502 @@
+{
+  "BTC": {
+    "rank": 1,
+    "cmc_id": 1,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2017-10-10",
+      "ts_ms": 1507651200000
+    }
+  },
+  "ETH": {
+    "rank": 2,
+    "cmc_id": 1027,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2017-10-10",
+      "ts_ms": 1507651200000
+    }
+  },
+  "USDT": {
+    "rank": 3,
+    "cmc_id": 825,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USD",
+      "price_start": "2024-12-06",
+      "ts_ms": 1733500800000
+    }
+  },
+  "BNB": {
+    "rank": 4,
+    "cmc_id": 1839,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2022-12-20",
+      "ts_ms": 1671552000000
+    }
+  },
+  "XRP": {
+    "rank": 5,
+    "cmc_id": 52,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2018-01-10",
+      "ts_ms": 1515600000000
+    }
+  },
+  "USDC": {
+    "rank": 6,
+    "cmc_id": 3408,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2018-10-15",
+      "ts_ms": 1539619200000
+    }
+  },
+  "SOL": {
+    "rank": 7,
+    "cmc_id": 5426,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2020-09-29",
+      "ts_ms": 1601395200000
+    }
+  },
+  "TRX": {
+    "rank": 8,
+    "cmc_id": 1958,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2018-01-10",
+      "ts_ms": 1515600000000
+    }
+  },
+  "ZEC": {
+    "rank": 9,
+    "cmc_id": 1437,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2025-11-23",
+      "ts_ms": 1763913600000
+    }
+  },
+  "HYPE": {
+    "rank": 10,
+    "cmc_id": 32196,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2025-11-03",
+      "ts_ms": 1762185600000
+    }
+  },
+  "XMR": {
+    "rank": 11,
+    "cmc_id": 328,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "DOGE": {
+    "rank": 12,
+    "cmc_id": 74,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2019-07-14",
+      "ts_ms": 1563120000000
+    }
+  },
+  "LEO": {
+    "rank": 13,
+    "cmc_id": 3957,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2019-06-12",
+      "ts_ms": 1560355200000
+    }
+  },
+  "LINK": {
+    "rank": 14,
+    "cmc_id": 1975,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2018-01-10",
+      "ts_ms": 1515600000000
+    }
+  },
+  "ADA": {
+    "rank": 15,
+    "cmc_id": 2010,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2018-07-22",
+      "ts_ms": 1532275200000
+    }
+  },
+  "XLM": {
+    "rank": 16,
+    "cmc_id": 512,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2018-01-10",
+      "ts_ms": 1515600000000
+    }
+  },
+  "USDe": {
+    "rank": 17,
+    "cmc_id": 29470,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "BCH": {
+    "rank": 18,
+    "cmc_id": 1831,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2018-11-18",
+      "ts_ms": 1542556800000
+    }
+  },
+  "NEAR": {
+    "rank": 19,
+    "cmc_id": 6535,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2020-12-02",
+      "ts_ms": 1606924800000
+    }
+  },
+  "DAI": {
+    "rank": 20,
+    "cmc_id": 4943,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "UNI": {
+    "rank": 21,
+    "cmc_id": 7083,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2020-09-16",
+      "ts_ms": 1600272000000
+    }
+  },
+  "LTC": {
+    "rank": 22,
+    "cmc_id": 2,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2018-01-10",
+      "ts_ms": 1515600000000
+    }
+  },
+  "CC": {
+    "rank": 23,
+    "cmc_id": 37263,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2026-02-11",
+      "ts_ms": 1770825600000
+    }
+  },
+  "AVAX": {
+    "rank": 24,
+    "cmc_id": 5805,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2020-09-21",
+      "ts_ms": 1600704000000
+    }
+  },
+  "SUI": {
+    "rank": 25,
+    "cmc_id": 20947,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2023-05-02",
+      "ts_ms": 1683043200000
+    }
+  },
+  "USD1": {
+    "rank": 26,
+    "cmc_id": 36148,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2025-09-01",
+      "ts_ms": 1756742400000
+    }
+  },
+  "XAUt": {
+    "rank": 27,
+    "cmc_id": 5176,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "GRAM": {
+    "rank": 28,
+    "cmc_id": 11419,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2026-06-16",
+      "ts_ms": 1781625600000
+    }
+  },
+  "HBAR": {
+    "rank": 29,
+    "cmc_id": 4642,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2019-09-16",
+      "ts_ms": 1568649600000
+    }
+  },
+  "PYUSD": {
+    "rank": 30,
+    "cmc_id": 27772,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2024-10-02",
+      "ts_ms": 1727884800000
+    }
+  },
+  "USDG": {
+    "rank": 31,
+    "cmc_id": 33793,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2025-06-10",
+      "ts_ms": 1749571200000
+    }
+  },
+  "RLUSD": {
+    "rank": 32,
+    "cmc_id": 34387,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2026-04-28",
+      "ts_ms": 1777392000000
+    }
+  },
+  "TAO": {
+    "rank": 33,
+    "cmc_id": 22974,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2026-06-29",
+      "ts_ms": 1782748800000
+    }
+  },
+  "SHIB": {
+    "rank": 34,
+    "cmc_id": 5994,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2021-05-07",
+      "ts_ms": 1620403200000
+    }
+  },
+  "CRO": {
+    "rank": 35,
+    "cmc_id": 3635,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2019-06-25",
+      "ts_ms": 1561478400000
+    }
+  },
+  "QNT": {
+    "rank": 36,
+    "cmc_id": 3155,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "OKB": {
+    "rank": 37,
+    "cmc_id": 3897,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2018-03-22",
+      "ts_ms": 1521734400000
+    }
+  },
+  "PEPE": {
+    "rank": 38,
+    "cmc_id": 24478,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2023-04-30",
+      "ts_ms": 1682870400000
+    }
+  },
+  "ENA": {
+    "rank": 39,
+    "cmc_id": 30171,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2025-09-16",
+      "ts_ms": 1758038400000
+    }
+  },
+  "AAVE": {
+    "rank": 40,
+    "cmc_id": 7278,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2020-10-21",
+      "ts_ms": 1603296000000
+    }
+  },
+  "ASTER": {
+    "rank": 41,
+    "cmc_id": 36341,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2025-10-16",
+      "ts_ms": 1760630400000
+    }
+  },
+  "M": {
+    "rank": 42,
+    "cmc_id": 35491,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "PAXG": {
+    "rank": 43,
+    "cmc_id": 4705,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2025-10-14",
+      "ts_ms": 1760457600000
+    }
+  },
+  "ONDO": {
+    "rank": 44,
+    "cmc_id": 21159,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2024-07-28",
+      "ts_ms": 1722182400000
+    }
+  },
+  "PUMP": {
+    "rank": 45,
+    "cmc_id": 36507,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2025-07-17",
+      "ts_ms": 1752768000000
+    }
+  },
+  "U": {
+    "rank": 46,
+    "cmc_id": 39120,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "DOT": {
+    "rank": 47,
+    "cmc_id": 6636,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2020-08-21",
+      "ts_ms": 1598025600000
+    }
+  },
+  "USDD": {
+    "rank": 48,
+    "cmc_id": 19891,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "SKY": {
+    "rank": 49,
+    "cmc_id": 33038,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2025-09-10",
+      "ts_ms": 1757520000000
+    }
+  },
+  "MNT": {
+    "rank": 50,
+    "cmc_id": 27075,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "WLFI": {
+    "rank": 51,
+    "cmc_id": 33251,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2025-08-31",
+      "ts_ms": 1756656000000
+    }
+  },
+  "ICP": {
+    "rank": 52,
+    "cmc_id": 8916,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2021-05-10",
+      "ts_ms": 1620662400000
+    }
+  },
+  "BGB": {
+    "rank": 53,
+    "cmc_id": 11092,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "WLD": {
+    "rank": 54,
+    "cmc_id": 13502,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2023-07-23",
+      "ts_ms": 1690128000000
+    }
+  },
+  "ARB": {
+    "rank": 55,
+    "cmc_id": 11841,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2023-03-22",
+      "ts_ms": 1679500800000
+    }
+  },
+  "JST": {
+    "rank": 56,
+    "cmc_id": 5488,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "MORPHO": {
+    "rank": 57,
+    "cmc_id": 34104,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2024-11-20",
+      "ts_ms": 1732118400000
+    }
+  },
+  "ETC": {
+    "rank": 58,
+    "cmc_id": 1321,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2018-01-10",
+      "ts_ms": 1515600000000
+    }
+  },
+  "GT": {
+    "rank": 59,
+    "cmc_id": 4269,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "VVV": {
+    "rank": 60,
+    "cmc_id": 35509,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2026-09-14",
+      "ts_ms": 1789401600000
+    }
+  },
+  "KCS": {
+    "rank": 61,
+    "cmc_id": 2087,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "POL": {
+    "rank": 62,
+    "cmc_id": 28321,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2024-09-03",
+      "ts_ms": 1725379200000
+    }
+  },
+  "ALGO": {
+    "rank": 63,
+    "cmc_id": 4030,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2019-06-16",
+      "ts_ms": 1560700800000
+    }
+  },
+  "PI": {
+    "rank": 64,
+    "cmc_id": 35697,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2025-02-19",
+      "ts_ms": 1739980800000
+    }
+  },
+  "KAS": {
+    "rank": 65,
+    "cmc_id": 20396,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "INJ": {
+    "rank": 66,
+    "cmc_id": 7226,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2023-11-29",
+      "ts_ms": 1701273600000
+    }
+  },
+  "RENDER": {
+    "rank": 67,
+    "cmc_id": 5690,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2024-07-14",
+      "ts_ms": 1720972800000
+    }
+  },
+  "LIT": {
+    "rank": 68,
+    "cmc_id": 39125,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2026-01-14",
+      "ts_ms": 1768406400000
+    }
+  },
+  "JUP": {
+    "rank": 69,
+    "cmc_id": 29210,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2024-01-30",
+      "ts_ms": 1706630400000
+    }
+  },
+  "ATOM": {
+    "rank": 70,
+    "cmc_id": 3794,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2019-04-22",
+      "ts_ms": 1555948800000
+    }
+  },
+  "NIGHT": {
+    "rank": 71,
+    "cmc_id": 39064,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2025-12-08",
+      "ts_ms": 1765209600000
+    }
+  },
+  "XDC": {
+    "rank": 72,
+    "cmc_id": 2634,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "FIL": {
+    "rank": 73,
+    "cmc_id": 2280,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2020-12-02",
+      "ts_ms": 1606924800000
+    }
+  },
+  "ZRO": {
+    "rank": 74,
+    "cmc_id": 26997,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2024-06-19",
+      "ts_ms": 1718812800000
+    }
+  },
+  "AERO": {
+    "rank": 75,
+    "cmc_id": 29270,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "STX": {
+    "rank": 76,
+    "cmc_id": 4847,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2021-03-03",
+      "ts_ms": 1614787200000
+    }
+  },
+  "CAKE": {
+    "rank": 77,
+    "cmc_id": 7186,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "DASH": {
+    "rank": 78,
+    "cmc_id": 131,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2025-11-25",
+      "ts_ms": 1764086400000
+    }
+  },
+  "ETHFI": {
+    "rank": 79,
+    "cmc_id": 29814,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2024-03-17",
+      "ts_ms": 1710691200000
+    }
+  },
+  "APT": {
+    "rank": 80,
+    "cmc_id": 21794,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2022-10-18",
+      "ts_ms": 1666108800000
+    }
+  },
+  "FLR": {
+    "rank": 81,
+    "cmc_id": 7950,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2023-01-09",
+      "ts_ms": 1673280000000
+    }
+  },
+  "\u5e01\u5b89\u4eba\u751f": {
+    "rank": 82,
+    "cmc_id": 38590,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "PYTH": {
+    "rank": 83,
+    "cmc_id": 28177,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2023-11-19",
+      "ts_ms": 1700409600000
+    }
+  },
+  "TUSD": {
+    "rank": 84,
+    "cmc_id": 2563,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "RAY": {
+    "rank": 85,
+    "cmc_id": 8526,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2021-12-16",
+      "ts_ms": 1639670400000
+    }
+  },
+  "NEXO": {
+    "rank": 86,
+    "cmc_id": 2694,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "STABLE": {
+    "rank": 87,
+    "cmc_id": 38892,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "EURC": {
+    "rank": 88,
+    "cmc_id": 20641,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "PIEVERSE": {
+    "rank": 89,
+    "cmc_id": 38849,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "VET": {
+    "rank": 90,
+    "cmc_id": 3077,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "TIA": {
+    "rank": 91,
+    "cmc_id": 22861,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2023-10-31",
+      "ts_ms": 1698768000000
+    }
+  },
+  "CRV": {
+    "rank": 92,
+    "cmc_id": 6538,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2020-08-13",
+      "ts_ms": 1597334400000
+    }
+  },
+  "PENGU": {
+    "rank": 93,
+    "cmc_id": 34466,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2024-12-16",
+      "ts_ms": 1734364800000
+    }
+  },
+  "VIRTUAL": {
+    "rank": 94,
+    "cmc_id": 29420,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2025-10-27",
+      "ts_ms": 1761580800000
+    }
+  },
+  "BTT": {
+    "rank": 95,
+    "cmc_id": 16086,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "SEI": {
+    "rank": 96,
+    "cmc_id": 23149,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2025-11-13",
+      "ts_ms": 1763049600000
+    }
+  },
+  "FET": {
+    "rank": 97,
+    "cmc_id": 3773,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2023-11-23",
+      "ts_ms": 1700755200000
+    }
+  },
+  "TRUMP": {
+    "rank": 98,
+    "cmc_id": 35336,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2025-01-18",
+      "ts_ms": 1737216000000
+    }
+  },
+  "SPX": {
+    "rank": 99,
+    "cmc_id": 28081,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "BSV": {
+    "rank": 100,
+    "cmc_id": 3602,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "KITE": {
+    "rank": 101,
+    "cmc_id": 38828,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2025-11-02",
+      "ts_ms": 1762099200000
+    }
+  },
+  "FF": {
+    "rank": 102,
+    "cmc_id": 38482,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "STRK": {
+    "rank": 103,
+    "cmc_id": 22691,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2024-02-19",
+      "ts_ms": 1708358400000
+    }
+  },
+  "SUN": {
+    "rank": 104,
+    "cmc_id": 10529,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "GNO": {
+    "rank": 105,
+    "cmc_id": 1659,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "FDUSD": {
+    "rank": 106,
+    "cmc_id": 26081,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "XTZ": {
+    "rank": 107,
+    "cmc_id": 2011,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2019-03-21",
+      "ts_ms": 1553184000000
+    }
+  },
+  "PENDLE": {
+    "rank": 108,
+    "cmc_id": 9481,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2024-09-26",
+      "ts_ms": 1727366400000
+    }
+  },
+  "LDO": {
+    "rank": 109,
+    "cmc_id": 8000,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2022-09-01",
+      "ts_ms": 1662048000000
+    }
+  },
+  "XPL": {
+    "rank": 110,
+    "cmc_id": 36645,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2025-09-24",
+      "ts_ms": 1758729600000
+    }
+  },
+  "BONK": {
+    "rank": 111,
+    "cmc_id": 23095,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2024-01-07",
+      "ts_ms": 1704643200000
+    }
+  },
+  "IMX": {
+    "rank": 112,
+    "cmc_id": 10603,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2021-11-04",
+      "ts_ms": 1636041600000
+    }
+  },
+  "OP": {
+    "rank": 113,
+    "cmc_id": 11840,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2022-05-31",
+      "ts_ms": 1654012800000
+    }
+  },
+  "LUNC": {
+    "rank": 114,
+    "cmc_id": 4172,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "DCR": {
+    "rank": 115,
+    "cmc_id": 1168,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "CFX": {
+    "rank": 116,
+    "cmc_id": 7334,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2021-03-02",
+      "ts_ms": 1614700800000
+    }
+  },
+  "BEAM": {
+    "rank": 117,
+    "cmc_id": 28298,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "GRT": {
+    "rank": 118,
+    "cmc_id": 6719,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2020-12-17",
+      "ts_ms": 1608220800000
+    }
+  },
+  "AR": {
+    "rank": 119,
+    "cmc_id": 5632,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2021-12-23",
+      "ts_ms": 1640275200000
+    }
+  },
+  "FLOKI": {
+    "rank": 120,
+    "cmc_id": 10804,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2022-12-15",
+      "ts_ms": 1671120000000
+    }
+  },
+  "KAIA": {
+    "rank": 121,
+    "cmc_id": 32880,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2024-10-30",
+      "ts_ms": 1730304000000
+    }
+  },
+  "COMP": {
+    "rank": 122,
+    "cmc_id": 5692,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2020-06-28",
+      "ts_ms": 1593360000000
+    }
+  },
+  "KMNO": {
+    "rank": 123,
+    "cmc_id": 30986,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2025-05-29",
+      "ts_ms": 1748534400000
+    }
+  },
+  "MON": {
+    "rank": 124,
+    "cmc_id": 30495,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2026-03-22",
+      "ts_ms": 1774195200000
+    }
+  },
+  "NFT": {
+    "rank": 125,
+    "cmc_id": 9816,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2021-11-10",
+      "ts_ms": 1636560000000
+    }
+  },
+  "RUNE": {
+    "rank": 127,
+    "cmc_id": 4157,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "ENS": {
+    "rank": 126,
+    "cmc_id": 13855,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2021-11-08",
+      "ts_ms": 1636387200000
+    }
+  },
+  "AKT": {
+    "rank": 128,
+    "cmc_id": 7431,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "BAT": {
+    "rank": 129,
+    "cmc_id": 1697,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2020-03-02",
+      "ts_ms": 1583164800000
+    }
+  },
+  "FLUID": {
+    "rank": 130,
+    "cmc_id": 10508,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2025-03-26",
+      "ts_ms": 1743004800000
+    }
+  },
+  "ZBCN": {
+    "rank": 131,
+    "cmc_id": 30636,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2024-04-15",
+      "ts_ms": 1713196800000
+    }
+  },
+  "CVX": {
+    "rank": 132,
+    "cmc_id": 9903,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2021-11-25",
+      "ts_ms": 1637856000000
+    }
+  },
+  "JTO": {
+    "rank": 133,
+    "cmc_id": 28541,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2024-01-07",
+      "ts_ms": 1704643200000
+    }
+  },
+  "JASMY": {
+    "rank": 134,
+    "cmc_id": 8425,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "TWT": {
+    "rank": 135,
+    "cmc_id": 5964,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "TRAC": {
+    "rank": 136,
+    "cmc_id": 2467,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "MET": {
+    "rank": 137,
+    "cmc_id": 38353,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2025-10-22",
+      "ts_ms": 1761148800000
+    }
+  },
+  "ZAMA": {
+    "rank": 138,
+    "cmc_id": 39332,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2026-02-01",
+      "ts_ms": 1769961600000
+    }
+  },
+  "EIGEN": {
+    "rank": 139,
+    "cmc_id": 30494,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2024-09-30",
+      "ts_ms": 1727712000000
+    }
+  },
+  "IOTA": {
+    "rank": 140,
+    "cmc_id": 1720,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2018-01-10",
+      "ts_ms": 1515600000000
+    }
+  },
+  "SYRUP": {
+    "rank": 141,
+    "cmc_id": 33824,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "CAP": {
+    "rank": 142,
+    "cmc_id": 40531,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "WIF": {
+    "rank": 143,
+    "cmc_id": 28752,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2024-04-14",
+      "ts_ms": 1713110400000
+    }
+  },
+  "SOON": {
+    "rank": 144,
+    "cmc_id": 36542,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "GOMINING": {
+    "rank": 145,
+    "cmc_id": 10180,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "TEL": {
+    "rank": 146,
+    "cmc_id": 2394,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  },
+  "AXS": {
+    "rank": 147,
+    "cmc_id": 6783,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2021-07-26",
+      "ts_ms": 1627315200000
+    }
+  },
+  "MANA": {
+    "rank": 148,
+    "cmc_id": 1966,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2018-01-10",
+      "ts_ms": 1515600000000
+    }
+  },
+  "THETA": {
+    "rank": 149,
+    "cmc_id": 2416,
+    "okx": {
+      "status": "TESTED",
+      "quote": "USDT",
+      "price_start": "2018-01-16",
+      "ts_ms": 1516118400000
+    }
+  },
+  "XCN": {
+    "rank": 150,
+    "cmc_id": 18679,
+    "okx": {
+      "status": "NOT_LISTED",
+      "quote": null,
+      "price_start": null,
+      "ts_ms": null
+    }
+  }
+}
