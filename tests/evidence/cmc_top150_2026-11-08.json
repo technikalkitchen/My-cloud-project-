@@ -1,0 +1,1056 @@
+{
+  "fetched_at": "2026-11-08T16:23:45.155887+00:00",
+  "count": 150,
+  "assets": [
+    {
+      "symbol": "BTC",
+      "cmc_id": 1,
+      "rank": 1,
+      "market_cap": 1526705816775.2312,
+      "name": "Bitcoin"
+    },
+    {
+      "symbol": "ETH",
+      "cmc_id": 1027,
+      "rank": 2,
+      "market_cap": 273368567585.36978,
+      "name": "Ethereum"
+    },
+    {
+      "symbol": "USDT",
+      "cmc_id": 825,
+      "rank": 3,
+      "market_cap": 176778973528.85275,
+      "name": "Tether USDt"
+    },
+    {
+      "symbol": "BNB",
+      "cmc_id": 1839,
+      "rank": 4,
+      "market_cap": 91680467485.33426,
+      "name": "BNB"
+    },
+    {
+      "symbol": "XRP",
+      "cmc_id": 52,
+      "rank": 5,
+      "market_cap": 73281204212.31549,
+      "name": "XRP"
+    },
+    {
+      "symbol": "USDC",
+      "cmc_id": 3408,
+      "rank": 6,
+      "market_cap": 70414225449.13507,
+      "name": "USDC"
+    },
+    {
+      "symbol": "SOL",
+      "cmc_id": 5426,
+      "rank": 7,
+      "market_cap": 52913031851.02169,
+      "name": "Solana"
+    },
+    {
+      "symbol": "TRX",
+      "cmc_id": 1958,
+      "rank": 8,
+      "market_cap": 30430896351.48724,
+      "name": "TRON"
+    },
+    {
+      "symbol": "ZEC",
+      "cmc_id": 1437,
+      "rank": 9,
+      "market_cap": 21412033268.99287,
+      "name": "Zcash"
+    },
+    {
+      "symbol": "HYPE",
+      "cmc_id": 32196,
+      "rank": 10,
+      "market_cap": 19562858156.3652,
+      "name": "Hyperliquid"
+    },
+    {
+      "symbol": "XMR",
+      "cmc_id": 328,
+      "rank": 11,
+      "market_cap": 11442210747.900846,
+      "name": "Monero"
+    },
+    {
+      "symbol": "DOGE",
+      "cmc_id": 74,
+      "rank": 12,
+      "market_cap": 11164704254.343002,
+      "name": "Dogecoin"
+    },
+    {
+      "symbol": "LEO",
+      "cmc_id": 3957,
+      "rank": 13,
+      "market_cap": 8569770355.442364,
+      "name": "UNUS SED LEO"
+    },
+    {
+      "symbol": "LINK",
+      "cmc_id": 1975,
+      "rank": 14,
+      "market_cap": 8009008051.148562,
+      "name": "Chainlink"
+    },
+    {
+      "symbol": "ADA",
+      "cmc_id": 2010,
+      "rank": 15,
+      "market_cap": 6641631210.8410225,
+      "name": "Cardano"
+    },
+    {
+      "symbol": "XLM",
+      "cmc_id": 512,
+      "rank": 16,
+      "market_cap": 5330552298.120556,
+      "name": "Stellar"
+    },
+    {
+      "symbol": "USDe",
+      "cmc_id": 29470,
+      "rank": 17,
+      "market_cap": 4944416722.958507,
+      "name": "Ethena USDe"
+    },
+    {
+      "symbol": "BCH",
+      "cmc_id": 1831,
+      "rank": 18,
+      "market_cap": 4906167645.2483,
+      "name": "Bitcoin Cash"
+    },
+    {
+      "symbol": "NEAR",
+      "cmc_id": 6535,
+      "rank": 19,
+      "market_cap": 4834524021.743899,
+      "name": "NEAR Protocol"
+    },
+    {
+      "symbol": "DAI",
+      "cmc_id": 4943,
+      "rank": 20,
+      "market_cap": 4491508755.511935,
+      "name": "Dai"
+    },
+    {
+      "symbol": "UNI",
+      "cmc_id": 7083,
+      "rank": 21,
+      "market_cap": 4364982764.334382,
+      "name": "Uniswap"
+    },
+    {
+      "symbol": "LTC",
+      "cmc_id": 2,
+      "rank": 22,
+      "market_cap": 4023573627.9690228,
+      "name": "Litecoin"
+    },
+    {
+      "symbol": "CC",
+      "cmc_id": 37263,
+      "rank": 23,
+      "market_cap": 3715019694.6269126,
+      "name": "Canton"
+    },
+    {
+      "symbol": "AVAX",
+      "cmc_id": 5805,
+      "rank": 24,
+      "market_cap": 3661646070.434495,
+      "name": "Avalanche"
+    },
+    {
+      "symbol": "SUI",
+      "cmc_id": 20947,
+      "rank": 25,
+      "market_cap": 3512815233.8939447,
+      "name": "Sui"
+    },
+    {
+      "symbol": "USD1",
+      "cmc_id": 36148,
+      "rank": 26,
+      "market_cap": 3389139968.226199,
+      "name": "World Liberty Financial USD"
+    },
+    {
+      "symbol": "XAUt",
+      "cmc_id": 5176,
+      "rank": 27,
+      "market_cap": 3033802759.8163967,
+      "name": "Tether Gold"
+    },
+    {
+      "symbol": "GRAM",
+      "cmc_id": 11419,
+      "rank": 28,
+      "market_cap": 3020405313.8572254,
+      "name": "Gram (prev. Toncoin)"
+    },
+    {
+      "symbol": "HBAR",
+      "cmc_id": 4642,
+      "rank": 29,
+      "market_cap": 2952110484.644767,
+      "name": "Hedera"
+    },
+    {
+      "symbol": "PYUSD",
+      "cmc_id": 27772,
+      "rank": 30,
+      "market_cap": 2785386410.665446,
+      "name": "PayPal USD"
+    },
+    {
+      "symbol": "USDG",
+      "cmc_id": 33793,
+      "rank": 31,
+      "market_cap": 2711211373.511757,
+      "name": "Global Dollar"
+    },
+    {
+      "symbol": "RLUSD",
+      "cmc_id": 34387,
+      "rank": 32,
+      "market_cap": 2691221709.5123897,
+      "name": "Ripple USD"
+    },
+    {
+      "symbol": "TAO",
+      "cmc_id": 22974,
+      "rank": 33,
+      "market_cap": 2634193651.9876227,
+      "name": "Bittensor"
+    },
+    {
+      "symbol": "SHIB",
+      "cmc_id": 5994,
+      "rank": 34,
+      "market_cap": 2630988087.097471,
+      "name": "Shiba Inu"
+    },
+    {
+      "symbol": "CRO",
+      "cmc_id": 3635,
+      "rank": 35,
+      "market_cap": 2449319171.060517,
+      "name": "Cronos"
+    },
+    {
+      "symbol": "QNT",
+      "cmc_id": 3155,
+      "rank": 36,
+      "market_cap": 2409655888.7196016,
+      "name": "Quant"
+    },
+    {
+      "symbol": "OKB",
+      "cmc_id": 3897,
+      "rank": 37,
+      "market_cap": 2153405792.136971,
+      "name": "OKB"
+    },
+    {
+      "symbol": "PEPE",
+      "cmc_id": 24478,
+      "rank": 38,
+      "market_cap": 2086398443.1283948,
+      "name": "Pepe"
+    },
+    {
+      "symbol": "ENA",
+      "cmc_id": 30171,
+      "rank": 39,
+      "market_cap": 2071085115.3180637,
+      "name": "Ethena"
+    },
+    {
+      "symbol": "AAVE",
+      "cmc_id": 7278,
+      "rank": 40,
+      "market_cap": 1999927892.1310036,
+      "name": "Aave"
+    },
+    {
+      "symbol": "ASTER",
+      "cmc_id": 36341,
+      "rank": 41,
+      "market_cap": 1879864448.3835013,
+      "name": "Aster"
+    },
+    {
+      "symbol": "M",
+      "cmc_id": 35491,
+      "rank": 42,
+      "market_cap": 1837643333.4500678,
+      "name": "MemeCore"
+    },
+    {
+      "symbol": "PAXG",
+      "cmc_id": 4705,
+      "rank": 43,
+      "market_cap": 1812559890.2978644,
+      "name": "PAX Gold"
+    },
+    {
+      "symbol": "ONDO",
+      "cmc_id": 21159,
+      "rank": 44,
+      "market_cap": 1758804738.967731,
+      "name": "Ondo"
+    },
+    {
+      "symbol": "PUMP",
+      "cmc_id": 36507,
+      "rank": 45,
+      "market_cap": 1699579767.6246479,
+      "name": "Pump.fun"
+    },
+    {
+      "symbol": "U",
+      "cmc_id": 39120,
+      "rank": 46,
+      "market_cap": 1610569251.7934835,
+      "name": "United Stables"
+    },
+    {
+      "symbol": "DOT",
+      "cmc_id": 6636,
+      "rank": 47,
+      "market_cap": 1522200413.402236,
+      "name": "Polkadot"
+    },
+    {
+      "symbol": "USDD",
+      "cmc_id": 19891,
+      "rank": 48,
+      "market_cap": 1517226896.1495721,
+      "name": "USDD"
+    },
+    {
+      "symbol": "SKY",
+      "cmc_id": 33038,
+      "rank": 49,
+      "market_cap": 1501251202.2088342,
+      "name": "Sky"
+    },
+    {
+      "symbol": "MNT",
+      "cmc_id": 27075,
+      "rank": 50,
+      "market_cap": 1492723002.7025354,
+      "name": "Mantle"
+    },
+    {
+      "symbol": "WLFI",
+      "cmc_id": 33251,
+      "rank": 51,
+      "market_cap": 1488693561.929035,
+      "name": "World Liberty Financial"
+    },
+    {
+      "symbol": "ICP",
+      "cmc_id": 8916,
+      "rank": 52,
+      "market_cap": 1330041190.063727,
+      "name": "Internet Computer"
+    },
+    {
+      "symbol": "BGB",
+      "cmc_id": 11092,
+      "rank": 53,
+      "market_cap": 1219717503.512509,
+      "name": "Bitget Token"
+    },
+    {
+      "symbol": "WLD",
+      "cmc_id": 13502,
+      "rank": 54,
+      "market_cap": 1215480435.316374,
+      "name": "Worldcoin"
+    },
+    {
+      "symbol": "ARB",
+      "cmc_id": 11841,
+      "rank": 55,
+      "market_cap": 1162512244.4222128,
+      "name": "Arbitrum"
+    },
+    {
+      "symbol": "JST",
+      "cmc_id": 5488,
+      "rank": 56,
+      "market_cap": 1142814218.2329843,
+      "name": "JUST"
+    },
+    {
+      "symbol": "MORPHO",
+      "cmc_id": 34104,
+      "rank": 57,
+      "market_cap": 1118626067.1108153,
+      "name": "Morpho"
+    },
+    {
+      "symbol": "ETC",
+      "cmc_id": 1321,
+      "rank": 58,
+      "market_cap": 1087353647.8075898,
+      "name": "Ethereum Classic"
+    },
+    {
+      "symbol": "GT",
+      "cmc_id": 4269,
+      "rank": 59,
+      "market_cap": 1032963760.5775748,
+      "name": "GateToken"
+    },
+    {
+      "symbol": "VVV",
+      "cmc_id": 35509,
+      "rank": 60,
+      "market_cap": 1016205748.2224756,
+      "name": "Venice Token"
+    },
+    {
+      "symbol": "KCS",
+      "cmc_id": 2087,
+      "rank": 61,
+      "market_cap": 991506819.9941154,
+      "name": "KuCoin Token"
+    },
+    {
+      "symbol": "POL",
+      "cmc_id": 28321,
+      "rank": 62,
+      "market_cap": 957550157.9700563,
+      "name": "Polygon (prev. MATIC)"
+    },
+    {
+      "symbol": "ALGO",
+      "cmc_id": 4030,
+      "rank": 63,
+      "market_cap": 850018615.0793835,
+      "name": "Algorand"
+    },
+    {
+      "symbol": "PI",
+      "cmc_id": 35697,
+      "rank": 64,
+      "market_cap": 815754151.5524354,
+      "name": "Pi"
+    },
+    {
+      "symbol": "KAS",
+      "cmc_id": 20396,
+      "rank": 65,
+      "market_cap": 812356778.6926368,
+      "name": "Kaspa"
+    },
+    {
+      "symbol": "INJ",
+      "cmc_id": 7226,
+      "rank": 66,
+      "market_cap": 811398365.6641304,
+      "name": "Injective"
+    },
+    {
+      "symbol": "RENDER",
+      "cmc_id": 5690,
+      "rank": 67,
+      "market_cap": 810213112.1614726,
+      "name": "Render"
+    },
+    {
+      "symbol": "LIT",
+      "cmc_id": 39125,
+      "rank": 68,
+      "market_cap": 799688535.1532245,
+      "name": "Lighter"
+    },
+    {
+      "symbol": "JUP",
+      "cmc_id": 29210,
+      "rank": 69,
+      "market_cap": 794921459.8964368,
+      "name": "Jupiter"
+    },
+    {
+      "symbol": "ATOM",
+      "cmc_id": 3794,
+      "rank": 70,
+      "market_cap": 723697114.6040463,
+      "name": "Cosmos"
+    },
+    {
+      "symbol": "NIGHT",
+      "cmc_id": 39064,
+      "rank": 71,
+      "market_cap": 667546893.0485742,
+      "name": "Midnight"
+    },
+    {
+      "symbol": "XDC",
+      "cmc_id": 2634,
+      "rank": 72,
+      "market_cap": 665100099.164029,
+      "name": "XDC Network"
+    },
+    {
+      "symbol": "FIL",
+      "cmc_id": 2280,
+      "rank": 73,
+      "market_cap": 649169670.6057225,
+      "name": "Filecoin"
+    },
+    {
+      "symbol": "ZRO",
+      "cmc_id": 26997,
+      "rank": 74,
+      "market_cap": 644204954.0694126,
+      "name": "LayerZero"
+    },
+    {
+      "symbol": "AERO",
+      "cmc_id": 29270,
+      "rank": 75,
+      "market_cap": 639315574.8247424,
+      "name": "Aero"
+    },
+    {
+      "symbol": "STX",
+      "cmc_id": 4847,
+      "rank": 76,
+      "market_cap": 623019581.5644071,
+      "name": "Stacks"
+    },
+    {
+      "symbol": "CAKE",
+      "cmc_id": 7186,
+      "rank": 77,
+      "market_cap": 619458239.6013691,
+      "name": "PancakeSwap"
+    },
+    {
+      "symbol": "DASH",
+      "cmc_id": 131,
+      "rank": 78,
+      "market_cap": 611853552.8542901,
+      "name": "Dash"
+    },
+    {
+      "symbol": "ETHFI",
+      "cmc_id": 29814,
+      "rank": 79,
+      "market_cap": 569169591.171653,
+      "name": "ether.fi"
+    },
+    {
+      "symbol": "APT",
+      "cmc_id": 21794,
+      "rank": 80,
+      "market_cap": 520068547.7188148,
+      "name": "Aptos"
+    },
+    {
+      "symbol": "FLR",
+      "cmc_id": 7950,
+      "rank": 81,
+      "market_cap": 498821596.2472504,
+      "name": "Flare"
+    },
+    {
+      "symbol": "\u5e01\u5b89\u4eba\u751f",
+      "cmc_id": 38590,
+      "rank": 82,
+      "market_cap": 495292748.7737012,
+      "name": "\u5e01\u5b89\u4eba\u751f"
+    },
+    {
+      "symbol": "PYTH",
+      "cmc_id": 28177,
+      "rank": 83,
+      "market_cap": 493715996.03133637,
+      "name": "Pyth Network"
+    },
+    {
+      "symbol": "TUSD",
+      "cmc_id": 2563,
+      "rank": 84,
+      "market_cap": 493717036.20915145,
+      "name": "TrueUSD"
+    },
+    {
+      "symbol": "RAY",
+      "cmc_id": 8526,
+      "rank": 85,
+      "market_cap": 474887223.3071462,
+      "name": "Raydium"
+    },
+    {
+      "symbol": "NEXO",
+      "cmc_id": 2694,
+      "rank": 86,
+      "market_cap": 472135404.3012501,
+      "name": "Nexo"
+    },
+    {
+      "symbol": "STABLE",
+      "cmc_id": 38892,
+      "rank": 87,
+      "market_cap": 463752667.34367204,
+      "name": "Stable"
+    },
+    {
+      "symbol": "EURC",
+      "cmc_id": 20641,
+      "rank": 88,
+      "market_cap": 450773266.01103425,
+      "name": "EURC"
+    },
+    {
+      "symbol": "PIEVERSE",
+      "cmc_id": 38849,
+      "rank": 89,
+      "market_cap": 449585233.20618004,
+      "name": "Pieverse"
+    },
+    {
+      "symbol": "VET",
+      "cmc_id": 3077,
+      "rank": 90,
+      "market_cap": 446876151.9592191,
+      "name": "VeChain"
+    },
+    {
+      "symbol": "TIA",
+      "cmc_id": 22861,
+      "rank": 91,
+      "market_cap": 414632315.0938127,
+      "name": "Celestia"
+    },
+    {
+      "symbol": "CRV",
+      "cmc_id": 6538,
+      "rank": 92,
+      "market_cap": 409959117.1699755,
+      "name": "Curve DAO Token"
+    },
+    {
+      "symbol": "PENGU",
+      "cmc_id": 34466,
+      "rank": 93,
+      "market_cap": 400946723.28641737,
+      "name": "Pudgy Penguins"
+    },
+    {
+      "symbol": "VIRTUAL",
+      "cmc_id": 29420,
+      "rank": 94,
+      "market_cap": 367966305.67214537,
+      "name": "Virtuals Protocol"
+    },
+    {
+      "symbol": "BTT",
+      "cmc_id": 16086,
+      "rank": 95,
+      "market_cap": 348249624.3288098,
+      "name": "BitTorrent [New]"
+    },
+    {
+      "symbol": "SEI",
+      "cmc_id": 23149,
+      "rank": 96,
+      "market_cap": 344749032.69112647,
+      "name": "Sei"
+    },
+    {
+      "symbol": "FET",
+      "cmc_id": 3773,
+      "rank": 97,
+      "market_cap": 344197081.8457379,
+      "name": "Artificial Superintelligence Alliance"
+    },
+    {
+      "symbol": "TRUMP",
+      "cmc_id": 35336,
+      "rank": 98,
+      "market_cap": 332611885.6760716,
+      "name": "OFFICIAL TRUMP"
+    },
+    {
+      "symbol": "SPX",
+      "cmc_id": 28081,
+      "rank": 99,
+      "market_cap": 331302604.7179405,
+      "name": "SPX6900"
+    },
+    {
+      "symbol": "BSV",
+      "cmc_id": 3602,
+      "rank": 100,
+      "market_cap": 329564952.46875346,
+      "name": "Bitcoin SV"
+    },
+    {
+      "symbol": "KITE",
+      "cmc_id": 38828,
+      "rank": 101,
+      "market_cap": 312094573.0285241,
+      "name": "Kite"
+    },
+    {
+      "symbol": "FF",
+      "cmc_id": 38482,
+      "rank": 102,
+      "market_cap": 305118595.13211066,
+      "name": "Falcon Finance"
+    },
+    {
+      "symbol": "STRK",
+      "cmc_id": 22691,
+      "rank": 103,
+      "market_cap": 297924411.3173381,
+      "name": "Starknet"
+    },
+    {
+      "symbol": "SUN",
+      "cmc_id": 10529,
+      "rank": 104,
+      "market_cap": 297985960.71689093,
+      "name": "Sun [New]"
+    },
+    {
+      "symbol": "GNO",
+      "cmc_id": 1659,
+      "rank": 105,
+      "market_cap": 286552036.8031236,
+      "name": "Gnosis"
+    },
+    {
+      "symbol": "FDUSD",
+      "cmc_id": 26081,
+      "rank": 106,
+      "market_cap": 282760259.2582497,
+      "name": "First Digital USD"
+    },
+    {
+      "symbol": "XTZ",
+      "cmc_id": 2011,
+      "rank": 107,
+      "market_cap": 281924110.5185603,
+      "name": "Tezos"
+    },
+    {
+      "symbol": "PENDLE",
+      "cmc_id": 9481,
+      "rank": 108,
+      "market_cap": 279977972.861263,
+      "name": "Pendle"
+    },
+    {
+      "symbol": "LDO",
+      "cmc_id": 8000,
+      "rank": 109,
+      "market_cap": 265056659.83003873,
+      "name": "Lido DAO"
+    },
+    {
+      "symbol": "XPL",
+      "cmc_id": 36645,
+      "rank": 110,
+      "market_cap": 264362890.8223952,
+      "name": "Plasma"
+    },
+    {
+      "symbol": "BONK",
+      "cmc_id": 23095,
+      "rank": 111,
+      "market_cap": 245574876.58784628,
+      "name": "Bonk"
+    },
+    {
+      "symbol": "IMX",
+      "cmc_id": 10603,
+      "rank": 112,
+      "market_cap": 240957080.84800223,
+      "name": "Immutable"
+    },
+    {
+      "symbol": "OP",
+      "cmc_id": 11840,
+      "rank": 113,
+      "market_cap": 231600237.03044128,
+      "name": "Optimism"
+    },
+    {
+      "symbol": "LUNC",
+      "cmc_id": 4172,
+      "rank": 114,
+      "market_cap": 221004846.0968665,
+      "name": "Terra Classic"
+    },
+    {
+      "symbol": "DCR",
+      "cmc_id": 1168,
+      "rank": 115,
+      "market_cap": 219222693.5518842,
+      "name": "Decred"
+    },
+    {
+      "symbol": "CFX",
+      "cmc_id": 7334,
+      "rank": 116,
+      "market_cap": 216586040.84008884,
+      "name": "Conflux"
+    },
+    {
+      "symbol": "BEAM",
+      "cmc_id": 28298,
+      "rank": 117,
+      "market_cap": 208119130.33645952,
+      "name": "Beam"
+    },
+    {
+      "symbol": "GRT",
+      "cmc_id": 6719,
+      "rank": 118,
+      "market_cap": 205119349.87529537,
+      "name": "The Graph"
+    },
+    {
+      "symbol": "AR",
+      "cmc_id": 5632,
+      "rank": 119,
+      "market_cap": 204494208.24624553,
+      "name": "Arweave"
+    },
+    {
+      "symbol": "FLOKI",
+      "cmc_id": 10804,
+      "rank": 120,
+      "market_cap": 203387167.93863302,
+      "name": "FLOKI"
+    },
+    {
+      "symbol": "KAIA",
+      "cmc_id": 32880,
+      "rank": 121,
+      "market_cap": 201658165.54565722,
+      "name": "Kaia"
+    },
+    {
+      "symbol": "COMP",
+      "cmc_id": 5692,
+      "rank": 122,
+      "market_cap": 199643870.33001518,
+      "name": "Compound"
+    },
+    {
+      "symbol": "KMNO",
+      "cmc_id": 30986,
+      "rank": 123,
+      "market_cap": 198929483.69142795,
+      "name": "Kamino"
+    },
+    {
+      "symbol": "MON",
+      "cmc_id": 30495,
+      "rank": 124,
+      "market_cap": 193470598.95165306,
+      "name": "Monad"
+    },
+    {
+      "symbol": "NFT",
+      "cmc_id": 9816,
+      "rank": 125,
+      "market_cap": 193526798.5022893,
+      "name": "AINFT"
+    },
+    {
+      "symbol": "RUNE",
+      "cmc_id": 4157,
+      "rank": 127,
+      "market_cap": 189134324.75831857,
+      "name": "THORChain"
+    },
+    {
+      "symbol": "ENS",
+      "cmc_id": 13855,
+      "rank": 126,
+      "market_cap": 189264683.14922947,
+      "name": "Ethereum Name Service"
+    },
+    {
+      "symbol": "AKT",
+      "cmc_id": 7431,
+      "rank": 128,
+      "market_cap": 188115434.9949826,
+      "name": "Akash Network"
+    },
+    {
+      "symbol": "BAT",
+      "cmc_id": 1697,
+      "rank": 129,
+      "market_cap": 186186592.3173043,
+      "name": "Basic Attention Token"
+    },
+    {
+      "symbol": "FLUID",
+      "cmc_id": 10508,
+      "rank": 130,
+      "market_cap": 181168860.03538135,
+      "name": "Fluid"
+    },
+    {
+      "symbol": "ZBCN",
+      "cmc_id": 30636,
+      "rank": 131,
+      "market_cap": 179055244.77144825,
+      "name": "Zebec Network"
+    },
+    {
+      "symbol": "CVX",
+      "cmc_id": 9903,
+      "rank": 132,
+      "market_cap": 179128894.27819765,
+      "name": "Convex Finance"
+    },
+    {
+      "symbol": "JTO",
+      "cmc_id": 28541,
+      "rank": 133,
+      "market_cap": 177367696.4356705,
+      "name": "Jito"
+    },
+    {
+      "symbol": "JASMY",
+      "cmc_id": 8425,
+      "rank": 134,
+      "market_cap": 175589601.40346837,
+      "name": "JasmyCoin"
+    },
+    {
+      "symbol": "TWT",
+      "cmc_id": 5964,
+      "rank": 135,
+      "market_cap": 171195697.31432208,
+      "name": "Trust Wallet Token"
+    },
+    {
+      "symbol": "TRAC",
+      "cmc_id": 2467,
+      "rank": 136,
+      "market_cap": 170128486.18546847,
+      "name": "OriginTrail"
+    },
+    {
+      "symbol": "MET",
+      "cmc_id": 38353,
+      "rank": 137,
+      "market_cap": 169613090.45811802,
+      "name": "Meteora"
+    },
+    {
+      "symbol": "ZAMA",
+      "cmc_id": 39332,
+      "rank": 138,
+      "market_cap": 169505375.13545674,
+      "name": "Zama"
+    },
+    {
+      "symbol": "EIGEN",
+      "cmc_id": 30494,
+      "rank": 139,
+      "market_cap": 165920078.06257284,
+      "name": "EigenCloud"
+    },
+    {
+      "symbol": "IOTA",
+      "cmc_id": 1720,
+      "rank": 140,
+      "market_cap": 165178861.17571768,
+      "name": "IOTA"
+    },
+    {
+      "symbol": "SYRUP",
+      "cmc_id": 33824,
+      "rank": 141,
+      "market_cap": 161209790.65954208,
+      "name": "Maple Finance"
+    },
+    {
+      "symbol": "CAP",
+      "cmc_id": 40531,
+      "rank": 142,
+      "market_cap": 158564127.95001888,
+      "name": "Cap"
+    },
+    {
+      "symbol": "WIF",
+      "cmc_id": 28752,
+      "rank": 143,
+      "market_cap": 159354136.65794024,
+      "name": "dogwifhat"
+    },
+    {
+      "symbol": "SOON",
+      "cmc_id": 36542,
+      "rank": 144,
+      "market_cap": 153317204.44129524,
+      "name": "SOON"
+    },
+    {
+      "symbol": "GOMINING",
+      "cmc_id": 10180,
+      "rank": 145,
+      "market_cap": 152757706.43999583,
+      "name": "Go\u041cining"
+    },
+    {
+      "symbol": "TEL",
+      "cmc_id": 2394,
+      "rank": 146,
+      "market_cap": 146177881.88241208,
+      "name": "Telcoin"
+    },
+    {
+      "symbol": "AXS",
+      "cmc_id": 6783,
+      "rank": 147,
+      "market_cap": 143142937.70516592,
+      "name": "Axie Infinity"
+    },
+    {
+      "symbol": "MANA",
+      "cmc_id": 1966,
+      "rank": 148,
+      "market_cap": 142090854.63699117,
+      "name": "Decentraland"
+    },
+    {
+      "symbol": "THETA",
+      "cmc_id": 2416,
+      "rank": 149,
+      "market_cap": 139749128.37497506,
+      "name": "Theta Network"
+    },
+    {
+      "symbol": "XCN",
+      "cmc_id": 18679,
+      "rank": 150,
+      "market_cap": 136862333.96277016,
+      "name": "Onyxcoin"
+    }
+  ]
+}

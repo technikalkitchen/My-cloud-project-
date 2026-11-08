@@ -1,0 +1,6302 @@
+{
+  "BTC": {
+    "rank": 1,
+    "cmc_id": 1,
+    "supply_start": "2017-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2017-08-17",
+        "imprecise": false,
+        "effective_start": "2017-08-17"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": "USD",
+        "status": "TESTED",
+        "price_start": "2015-01-01",
+        "imprecise": false,
+        "effective_start": "2017-01-01"
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-07-05",
+        "imprecise": false,
+        "effective_start": "2021-07-05"
+      }
+    }
+  },
+  "ETH": {
+    "rank": 2,
+    "cmc_id": 1027,
+    "supply_start": "2017-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2017-08-17",
+        "imprecise": false,
+        "effective_start": "2017-08-17"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-07-05",
+        "imprecise": false,
+        "effective_start": "2021-07-05"
+      }
+    }
+  },
+  "USDT": {
+    "rank": 3,
+    "cmc_id": 825,
+    "supply_start": "2017-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USD",
+        "status": "TESTED",
+        "price_start": "2025-11-18",
+        "imprecise": false,
+        "effective_start": "2025-11-18"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USD",
+        "status": "TESTED",
+        "price_start": "2026-04-16",
+        "imprecise": false,
+        "effective_start": "2026-04-16"
+      }
+    }
+  },
+  "BNB": {
+    "rank": 4,
+    "cmc_id": 1839,
+    "supply_start": "2018-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2017-11-06",
+        "imprecise": false,
+        "effective_start": "2018-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2022-03-10",
+        "imprecise": false,
+        "effective_start": "2022-03-10"
+      }
+    }
+  },
+  "XRP": {
+    "rank": 5,
+    "cmc_id": 52,
+    "supply_start": "2017-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2018-05-04",
+        "imprecise": false,
+        "effective_start": "2018-05-04"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-07-20",
+        "imprecise": false,
+        "effective_start": "2021-07-20"
+      }
+    }
+  },
+  "USDC": {
+    "rank": 6,
+    "cmc_id": 3408,
+    "supply_start": "2019-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2018-12-15",
+        "imprecise": false,
+        "effective_start": "2019-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-10-22",
+        "imprecise": false,
+        "effective_start": "2021-10-22"
+      }
+    }
+  },
+  "SOL": {
+    "rank": 7,
+    "cmc_id": 5426,
+    "supply_start": "2021-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2020-08-11",
+        "imprecise": false,
+        "effective_start": "2021-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-10-21",
+        "imprecise": false,
+        "effective_start": "2021-10-21"
+      }
+    }
+  },
+  "TRX": {
+    "rank": 8,
+    "cmc_id": 1958,
+    "supply_start": "2018-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2018-06-11",
+        "imprecise": false,
+        "effective_start": "2018-06-11"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2022-02-21",
+        "imprecise": false,
+        "effective_start": "2022-02-21"
+      }
+    }
+  },
+  "ZEC": {
+    "rank": 9,
+    "cmc_id": 1437,
+    "supply_start": "2017-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2019-03-21",
+        "imprecise": false,
+        "effective_start": "2019-03-21"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-12-29",
+        "imprecise": false,
+        "effective_start": "2021-12-29"
+      }
+    }
+  },
+  "HYPE": {
+    "rank": 10,
+    "cmc_id": 32196,
+    "supply_start": "2025-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2026-09-24",
+        "imprecise": false,
+        "effective_start": "2026-09-24"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-07-11",
+        "imprecise": false,
+        "effective_start": "2025-07-11"
+      }
+    }
+  },
+  "XMR": {
+    "rank": 11,
+    "cmc_id": 328,
+    "supply_start": "2017-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2019-03-15",
+        "imprecise": false,
+        "effective_start": "2019-03-15"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "DOGE": {
+    "rank": 12,
+    "cmc_id": 74,
+    "supply_start": "2017-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2019-07-05",
+        "imprecise": false,
+        "effective_start": "2019-07-05"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-08-31",
+        "imprecise": false,
+        "effective_start": "2021-08-31"
+      }
+    }
+  },
+  "LEO": {
+    "rank": 13,
+    "cmc_id": 3957,
+    "supply_start": "2020-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "LINK": {
+    "rank": 14,
+    "cmc_id": 1975,
+    "supply_start": "2018-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2019-01-16",
+        "imprecise": false,
+        "effective_start": "2019-01-16"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-09-22",
+        "imprecise": false,
+        "effective_start": "2021-09-22"
+      }
+    }
+  },
+  "ADA": {
+    "rank": 15,
+    "cmc_id": 2010,
+    "supply_start": "2018-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2018-04-17",
+        "imprecise": false,
+        "effective_start": "2018-04-17"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-10-21",
+        "imprecise": false,
+        "effective_start": "2021-10-21"
+      }
+    }
+  },
+  "XLM": {
+    "rank": 16,
+    "cmc_id": 512,
+    "supply_start": "2017-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2018-05-31",
+        "imprecise": false,
+        "effective_start": "2018-05-31"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-09-06",
+        "imprecise": false,
+        "effective_start": "2021-09-06"
+      }
+    }
+  },
+  "USDe": {
+    "rank": 17,
+    "cmc_id": 29470,
+    "supply_start": "2024-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "BCH": {
+    "rank": 18,
+    "cmc_id": 1831,
+    "supply_start": "2018-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2019-11-28",
+        "imprecise": false,
+        "effective_start": "2019-11-28"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-10-10",
+        "imprecise": false,
+        "effective_start": "2021-10-10"
+      }
+    }
+  },
+  "NEAR": {
+    "rank": 19,
+    "cmc_id": 6535,
+    "supply_start": "2021-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2020-10-14",
+        "imprecise": false,
+        "effective_start": "2021-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2022-03-11",
+        "imprecise": false,
+        "effective_start": "2022-03-11"
+      }
+    }
+  },
+  "DAI": {
+    "rank": 20,
+    "cmc_id": 4943,
+    "supply_start": "2021-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2020-07-23",
+        "imprecise": false,
+        "effective_start": "2021-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2022-01-26",
+        "imprecise": false,
+        "effective_start": "2022-01-26"
+      }
+    }
+  },
+  "UNI": {
+    "rank": 21,
+    "cmc_id": 7083,
+    "supply_start": "2021-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2020-09-17",
+        "imprecise": false,
+        "effective_start": "2021-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-09-22",
+        "imprecise": false,
+        "effective_start": "2021-09-22"
+      }
+    }
+  },
+  "LTC": {
+    "rank": 22,
+    "cmc_id": 2,
+    "supply_start": "2017-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2017-12-13",
+        "imprecise": false,
+        "effective_start": "2017-12-13"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-08-31",
+        "imprecise": false,
+        "effective_start": "2021-08-31"
+      }
+    }
+  },
+  "CC": {
+    "rank": 23,
+    "cmc_id": 37263,
+    "supply_start": "2026-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-11-10",
+        "imprecise": false,
+        "effective_start": "2026-01-01"
+      }
+    }
+  },
+  "AVAX": {
+    "rank": 24,
+    "cmc_id": 5805,
+    "supply_start": "2021-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2020-09-22",
+        "imprecise": false,
+        "effective_start": "2021-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-11-12",
+        "imprecise": false,
+        "effective_start": "2021-11-12"
+      }
+    }
+  },
+  "SUI": {
+    "rank": 25,
+    "cmc_id": 20947,
+    "supply_start": "2024-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-05-03",
+        "imprecise": false,
+        "effective_start": "2024-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-05-03",
+        "imprecise": false,
+        "effective_start": "2024-01-01"
+      }
+    }
+  },
+  "USD1": {
+    "rank": 26,
+    "cmc_id": 36148,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-05-22",
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-07-09",
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "XAUt": {
+    "rank": 27,
+    "cmc_id": 5176,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "GRAM": {
+    "rank": 28,
+    "cmc_id": 11419,
+    "supply_start": "2022-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2026-07-02",
+        "imprecise": false,
+        "effective_start": "2026-07-02"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2022-12-21",
+        "imprecise": false,
+        "effective_start": "2022-12-21"
+      }
+    }
+  },
+  "HBAR": {
+    "rank": 29,
+    "cmc_id": 4642,
+    "supply_start": "2020-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2019-09-29",
+        "imprecise": false,
+        "effective_start": "2020-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-12-29",
+        "imprecise": false,
+        "effective_start": "2021-12-29"
+      }
+    }
+  },
+  "PYUSD": {
+    "rank": 30,
+    "cmc_id": 27772,
+    "supply_start": "2024-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-09-20",
+        "imprecise": false,
+        "effective_start": "2024-01-01"
+      }
+    }
+  },
+  "USDG": {
+    "rank": 31,
+    "cmc_id": 33793,
+    "supply_start": "2025-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "RLUSD": {
+    "rank": 32,
+    "cmc_id": 34387,
+    "supply_start": "2025-07-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2026-01-22",
+        "imprecise": false,
+        "effective_start": "2026-01-22"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-09-26",
+        "imprecise": false,
+        "effective_start": "2025-09-26"
+      }
+    }
+  },
+  "TAO": {
+    "rank": 33,
+    "cmc_id": 22974,
+    "supply_start": "2024-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-04-11",
+        "imprecise": false,
+        "effective_start": "2024-04-11"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "SHIB": {
+    "rank": 34,
+    "cmc_id": 5994,
+    "supply_start": "2022-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-05-10",
+        "imprecise": false,
+        "effective_start": "2022-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-12-06",
+        "imprecise": false,
+        "effective_start": "2022-01-01"
+      }
+    }
+  },
+  "CRO": {
+    "rank": 35,
+    "cmc_id": 3635,
+    "supply_start": "2019-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "QNT": {
+    "rank": 36,
+    "cmc_id": 3155,
+    "supply_start": "2019-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-07-29",
+        "imprecise": false,
+        "effective_start": "2021-07-29"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-10-22",
+        "imprecise": false,
+        "effective_start": "2021-10-22"
+      }
+    }
+  },
+  "OKB": {
+    "rank": 37,
+    "cmc_id": 3897,
+    "supply_start": "2020-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "PEPE": {
+    "rank": 38,
+    "cmc_id": 24478,
+    "supply_start": "2024-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-05-05",
+        "imprecise": false,
+        "effective_start": "2024-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-05-06",
+        "imprecise": false,
+        "effective_start": "2024-01-01"
+      }
+    }
+  },
+  "ENA": {
+    "rank": 39,
+    "cmc_id": 30171,
+    "supply_start": "2024-07-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-04-02",
+        "imprecise": false,
+        "effective_start": "2024-07-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-04-02",
+        "imprecise": false,
+        "effective_start": "2024-07-01"
+      }
+    }
+  },
+  "AAVE": {
+    "rank": 40,
+    "cmc_id": 7278,
+    "supply_start": "2021-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2020-10-15",
+        "imprecise": false,
+        "effective_start": "2021-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-09-23",
+        "imprecise": false,
+        "effective_start": "2021-09-23"
+      }
+    }
+  },
+  "ASTER": {
+    "rank": 41,
+    "cmc_id": 36341,
+    "supply_start": "2026-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-10-06",
+        "imprecise": false,
+        "effective_start": "2026-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-09-21",
+        "imprecise": false,
+        "effective_start": "2026-01-01"
+      }
+    }
+  },
+  "M": {
+    "rank": 42,
+    "cmc_id": 35491,
+    "supply_start": "2026-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "PAXG": {
+    "rank": 43,
+    "cmc_id": 4705,
+    "supply_start": "2020-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2020-08-28",
+        "imprecise": false,
+        "effective_start": "2020-08-28"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2022-03-15",
+        "imprecise": false,
+        "effective_start": "2022-03-15"
+      }
+    }
+  },
+  "ONDO": {
+    "rank": 44,
+    "cmc_id": 21159,
+    "supply_start": "2024-07-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-04-11",
+        "imprecise": false,
+        "effective_start": "2025-04-11"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-01-18",
+        "imprecise": false,
+        "effective_start": "2024-07-01"
+      }
+    }
+  },
+  "PUMP": {
+    "rank": 45,
+    "cmc_id": 36507,
+    "supply_start": "2026-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-09-11",
+        "imprecise": false,
+        "effective_start": "2026-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-07-14",
+        "imprecise": false,
+        "effective_start": "2026-01-01"
+      }
+    }
+  },
+  "U": {
+    "rank": 46,
+    "cmc_id": 39120,
+    "supply_start": "2026-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2026-01-13",
+        "imprecise": false,
+        "effective_start": "2026-01-13"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-09-04",
+        "imprecise": false,
+        "effective_start": "2026-01-01"
+      }
+    }
+  },
+  "DOT": {
+    "rank": 47,
+    "cmc_id": 6636,
+    "supply_start": "2021-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2020-08-18",
+        "imprecise": false,
+        "effective_start": "2021-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-08-31",
+        "imprecise": false,
+        "effective_start": "2021-08-31"
+      }
+    }
+  },
+  "USDD": {
+    "rank": 48,
+    "cmc_id": 19891,
+    "supply_start": "2023-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2022-05-26",
+        "imprecise": false,
+        "effective_start": "2023-01-01"
+      }
+    }
+  },
+  "SKY": {
+    "rank": 49,
+    "cmc_id": 33038,
+    "supply_start": "2025-07-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-09-17",
+        "imprecise": false,
+        "effective_start": "2025-09-17"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-09-04",
+        "imprecise": false,
+        "effective_start": "2025-09-04"
+      }
+    }
+  },
+  "MNT": {
+    "rank": 50,
+    "cmc_id": 27075,
+    "supply_start": "2024-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-07-17",
+        "imprecise": false,
+        "effective_start": "2024-01-01"
+      }
+    }
+  },
+  "WLFI": {
+    "rank": 51,
+    "cmc_id": 33251,
+    "supply_start": "2026-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-09-01",
+        "imprecise": false,
+        "effective_start": "2026-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-09-01",
+        "imprecise": false,
+        "effective_start": "2026-01-01"
+      }
+    }
+  },
+  "ICP": {
+    "rank": 52,
+    "cmc_id": 8916,
+    "supply_start": "2022-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-05-11",
+        "imprecise": false,
+        "effective_start": "2022-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-10-10",
+        "imprecise": false,
+        "effective_start": "2022-01-01"
+      }
+    }
+  },
+  "BGB": {
+    "rank": 53,
+    "cmc_id": 11092,
+    "supply_start": "2023-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "WLD": {
+    "rank": 54,
+    "cmc_id": 13502,
+    "supply_start": "2024-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-07-24",
+        "imprecise": false,
+        "effective_start": "2024-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-07-24",
+        "imprecise": false,
+        "effective_start": "2024-01-01"
+      }
+    }
+  },
+  "ARB": {
+    "rank": 55,
+    "cmc_id": 11841,
+    "supply_start": "2024-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-03-23",
+        "imprecise": false,
+        "effective_start": "2024-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-03-23",
+        "imprecise": false,
+        "effective_start": "2024-01-01"
+      }
+    }
+  },
+  "JST": {
+    "rank": 56,
+    "cmc_id": 5488,
+    "supply_start": "2021-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2020-08-11",
+        "imprecise": false,
+        "effective_start": "2021-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2022-02-21",
+        "imprecise": false,
+        "effective_start": "2022-02-21"
+      }
+    }
+  },
+  "MORPHO": {
+    "rank": 57,
+    "cmc_id": 34104,
+    "supply_start": "2025-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-10-03",
+        "imprecise": false,
+        "effective_start": "2025-10-03"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-11-21",
+        "imprecise": false,
+        "effective_start": "2025-01-01"
+      }
+    }
+  },
+  "ETC": {
+    "rank": 58,
+    "cmc_id": 1321,
+    "supply_start": "2017-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2018-06-12",
+        "imprecise": false,
+        "effective_start": "2018-06-12"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2022-07-28",
+        "imprecise": false,
+        "effective_start": "2022-07-28"
+      }
+    }
+  },
+  "GT": {
+    "rank": 59,
+    "cmc_id": 4269,
+    "supply_start": "2020-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "VVV": {
+    "rank": 60,
+    "cmc_id": 35509,
+    "supply_start": "2025-07-01",
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-03-21",
+        "imprecise": false,
+        "effective_start": "2025-07-01"
+      }
+    }
+  },
+  "KCS": {
+    "rank": 61,
+    "cmc_id": 2087,
+    "supply_start": "2018-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-11-30",
+        "imprecise": false,
+        "effective_start": "2023-11-30"
+      }
+    }
+  },
+  "POL": {
+    "rank": 62,
+    "cmc_id": 28321,
+    "supply_start": "2024-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-09-13",
+        "imprecise": false,
+        "effective_start": "2024-09-13"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-10-25",
+        "imprecise": false,
+        "effective_start": "2024-01-01"
+      }
+    }
+  },
+  "ALGO": {
+    "rank": 63,
+    "cmc_id": 4030,
+    "supply_start": "2020-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2019-06-22",
+        "imprecise": false,
+        "effective_start": "2020-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-11-12",
+        "imprecise": false,
+        "effective_start": "2021-11-12"
+      }
+    }
+  },
+  "PI": {
+    "rank": 64,
+    "cmc_id": 35697,
+    "supply_start": "2025-07-01",
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "KAS": {
+    "rank": 65,
+    "cmc_id": 20396,
+    "supply_start": "2023-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-09-07",
+        "imprecise": false,
+        "effective_start": "2023-09-07"
+      }
+    }
+  },
+  "INJ": {
+    "rank": 66,
+    "cmc_id": 7226,
+    "supply_start": "2021-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2020-10-21",
+        "imprecise": false,
+        "effective_start": "2021-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2022-09-16",
+        "imprecise": false,
+        "effective_start": "2022-09-16"
+      }
+    }
+  },
+  "RENDER": {
+    "rank": 67,
+    "cmc_id": 5690,
+    "supply_start": "2021-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-07-26",
+        "imprecise": false,
+        "effective_start": "2024-07-26"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-07-31",
+        "imprecise": false,
+        "effective_start": "2024-07-31"
+      }
+    }
+  },
+  "LIT": {
+    "rank": 68,
+    "cmc_id": 39125,
+    "supply_start": "2026-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-02-04",
+        "imprecise": false,
+        "effective_start": "2026-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2026-01-15",
+        "imprecise": false,
+        "effective_start": "2026-01-15"
+      }
+    }
+  },
+  "JUP": {
+    "rank": 69,
+    "cmc_id": 29210,
+    "supply_start": "2024-07-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-01-31",
+        "imprecise": false,
+        "effective_start": "2024-07-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-01-31",
+        "imprecise": false,
+        "effective_start": "2024-07-01"
+      }
+    }
+  },
+  "ATOM": {
+    "rank": 70,
+    "cmc_id": 3794,
+    "supply_start": "2020-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2019-04-29",
+        "imprecise": false,
+        "effective_start": "2020-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-11-12",
+        "imprecise": false,
+        "effective_start": "2021-11-12"
+      }
+    }
+  },
+  "NIGHT": {
+    "rank": 71,
+    "cmc_id": 39064,
+    "supply_start": "2026-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2026-03-11",
+        "imprecise": false,
+        "effective_start": "2026-03-11"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-12-09",
+        "imprecise": false,
+        "effective_start": "2026-01-01"
+      }
+    }
+  },
+  "XDC": {
+    "rank": 72,
+    "cmc_id": 2634,
+    "supply_start": "2019-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-12-30",
+        "imprecise": false,
+        "effective_start": "2021-12-30"
+      }
+    }
+  },
+  "FIL": {
+    "rank": 73,
+    "cmc_id": 2280,
+    "supply_start": "2021-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2020-10-15",
+        "imprecise": false,
+        "effective_start": "2021-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-10-21",
+        "imprecise": false,
+        "effective_start": "2021-10-21"
+      }
+    }
+  },
+  "ZRO": {
+    "rank": 74,
+    "cmc_id": 26997,
+    "supply_start": "2024-07-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-06-20",
+        "imprecise": false,
+        "effective_start": "2024-07-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-06-20",
+        "imprecise": false,
+        "effective_start": "2024-07-01"
+      }
+    }
+  },
+  "AERO": {
+    "rank": 75,
+    "cmc_id": 29270,
+    "supply_start": "2024-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2026-07-17",
+        "imprecise": false,
+        "effective_start": "2026-07-17"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-12-13",
+        "imprecise": false,
+        "effective_start": "2024-12-13"
+      }
+    }
+  },
+  "STX": {
+    "rank": 76,
+    "cmc_id": 4847,
+    "supply_start": "2021-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2019-10-25",
+        "imprecise": false,
+        "effective_start": "2021-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2022-03-17",
+        "imprecise": false,
+        "effective_start": "2022-03-17"
+      }
+    }
+  },
+  "CAKE": {
+    "rank": 77,
+    "cmc_id": 7186,
+    "supply_start": "2021-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-02-19",
+        "imprecise": false,
+        "effective_start": "2021-02-19"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-11-24",
+        "imprecise": false,
+        "effective_start": "2021-11-24"
+      }
+    }
+  },
+  "DASH": {
+    "rank": 78,
+    "cmc_id": 131,
+    "supply_start": "2017-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2019-03-28",
+        "imprecise": false,
+        "effective_start": "2019-03-28"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-10-27",
+        "imprecise": false,
+        "effective_start": "2021-10-27"
+      }
+    }
+  },
+  "ETHFI": {
+    "rank": 79,
+    "cmc_id": 29814,
+    "supply_start": "2024-07-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-03-18",
+        "imprecise": false,
+        "effective_start": "2024-07-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-03-18",
+        "imprecise": false,
+        "effective_start": "2024-07-01"
+      }
+    }
+  },
+  "APT": {
+    "rank": 80,
+    "cmc_id": 21794,
+    "supply_start": "2023-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2022-10-19",
+        "imprecise": false,
+        "effective_start": "2023-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2022-10-19",
+        "imprecise": false,
+        "effective_start": "2023-01-01"
+      }
+    }
+  },
+  "FLR": {
+    "rank": 81,
+    "cmc_id": 7950,
+    "supply_start": "2024-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-01-10",
+        "imprecise": false,
+        "effective_start": "2024-01-01"
+      }
+    }
+  },
+  "\u5e01\u5b89\u4eba\u751f": {
+    "rank": 82,
+    "cmc_id": 38590,
+    "supply_start": "2026-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "PYTH": {
+    "rank": 83,
+    "cmc_id": 28177,
+    "supply_start": "2024-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-02-02",
+        "imprecise": false,
+        "effective_start": "2024-02-02"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-11-20",
+        "imprecise": false,
+        "effective_start": "2024-01-01"
+      }
+    }
+  },
+  "TUSD": {
+    "rank": 84,
+    "cmc_id": 2563,
+    "supply_start": "2019-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2018-05-31",
+        "imprecise": false,
+        "effective_start": "2019-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-11-07",
+        "imprecise": false,
+        "effective_start": "2023-11-07"
+      }
+    }
+  },
+  "RAY": {
+    "rank": 85,
+    "cmc_id": 8526,
+    "supply_start": "2022-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-08-10",
+        "imprecise": false,
+        "effective_start": "2022-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "NEXO": {
+    "rank": 86,
+    "cmc_id": 2694,
+    "supply_start": "2019-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2022-04-29",
+        "imprecise": false,
+        "effective_start": "2022-04-29"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-12-02",
+        "imprecise": false,
+        "effective_start": "2021-12-02"
+      }
+    }
+  },
+  "STABLE": {
+    "rank": 87,
+    "cmc_id": 38892,
+    "supply_start": "2026-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-12-08",
+        "imprecise": false,
+        "effective_start": "2026-01-01"
+      }
+    }
+  },
+  "EURC": {
+    "rank": 88,
+    "cmc_id": 20641,
+    "supply_start": "2023-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "PIEVERSE": {
+    "rank": 89,
+    "cmc_id": 38849,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-11-14",
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "VET": {
+    "rank": 90,
+    "cmc_id": 3077,
+    "supply_start": "2019-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2018-07-25",
+        "imprecise": false,
+        "effective_start": "2019-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-04-14",
+        "imprecise": false,
+        "effective_start": "2025-04-14"
+      }
+    }
+  },
+  "TIA": {
+    "rank": 91,
+    "cmc_id": 22861,
+    "supply_start": "2024-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-10-31",
+        "imprecise": false,
+        "effective_start": "2024-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-10-31",
+        "imprecise": false,
+        "effective_start": "2024-01-01"
+      }
+    }
+  },
+  "CRV": {
+    "rank": 92,
+    "cmc_id": 6538,
+    "supply_start": "2021-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2020-08-15",
+        "imprecise": false,
+        "effective_start": "2021-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-10-16",
+        "imprecise": false,
+        "effective_start": "2021-10-16"
+      }
+    }
+  },
+  "PENGU": {
+    "rank": 93,
+    "cmc_id": 34466,
+    "supply_start": "2025-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-12-17",
+        "imprecise": false,
+        "effective_start": "2025-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-12-17",
+        "imprecise": false,
+        "effective_start": "2025-01-01"
+      }
+    }
+  },
+  "VIRTUAL": {
+    "rank": 94,
+    "cmc_id": 29420,
+    "supply_start": "2024-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-04-11",
+        "imprecise": false,
+        "effective_start": "2025-04-11"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-11-20",
+        "imprecise": false,
+        "effective_start": "2024-11-20"
+      }
+    }
+  },
+  "BTT": {
+    "rank": 95,
+    "cmc_id": 16086,
+    "supply_start": "2023-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2019-01-31",
+        "imprecise": false,
+        "effective_start": "2023-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2022-02-21",
+        "imprecise": false,
+        "effective_start": "2023-01-01"
+      }
+    }
+  },
+  "SEI": {
+    "rank": 96,
+    "cmc_id": 23149,
+    "supply_start": "2024-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-08-15",
+        "imprecise": false,
+        "effective_start": "2024-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-08-15",
+        "imprecise": false,
+        "effective_start": "2024-01-01"
+      }
+    }
+  },
+  "FET": {
+    "rank": 97,
+    "cmc_id": 3773,
+    "supply_start": "2020-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2019-02-28",
+        "imprecise": false,
+        "effective_start": "2020-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-10-03",
+        "imprecise": false,
+        "effective_start": "2023-10-03"
+      }
+    }
+  },
+  "TRUMP": {
+    "rank": 98,
+    "cmc_id": 35336,
+    "supply_start": "2025-07-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-01-19",
+        "imprecise": false,
+        "effective_start": "2025-07-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-01-18",
+        "imprecise": false,
+        "effective_start": "2025-07-01"
+      }
+    }
+  },
+  "SPX": {
+    "rank": 99,
+    "cmc_id": 28081,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-11-21",
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "BSV": {
+    "rank": 100,
+    "cmc_id": 3602,
+    "supply_start": "2019-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "KITE": {
+    "rank": 101,
+    "cmc_id": 38828,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-11-03",
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "FF": {
+    "rank": 102,
+    "cmc_id": 38482,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-09-29",
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-09-29",
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "STRK": {
+    "rank": 103,
+    "cmc_id": 22691,
+    "supply_start": "2024-07-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-02-20",
+        "imprecise": false,
+        "effective_start": "2024-07-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-02-20",
+        "imprecise": false,
+        "effective_start": "2024-07-01"
+      }
+    }
+  },
+  "SUN": {
+    "rank": 104,
+    "cmc_id": 10529,
+    "supply_start": "2022-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2020-09-21",
+        "imprecise": false,
+        "effective_start": "2022-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2022-02-21",
+        "imprecise": false,
+        "effective_start": "2022-02-21"
+      }
+    }
+  },
+  "GNO": {
+    "rank": 105,
+    "cmc_id": 1659,
+    "supply_start": "2018-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-08-30",
+        "imprecise": false,
+        "effective_start": "2021-08-30"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "FDUSD": {
+    "rank": 106,
+    "cmc_id": 26081,
+    "supply_start": "2024-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-07-26",
+        "imprecise": false,
+        "effective_start": "2024-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "XTZ": {
+    "rank": 107,
+    "cmc_id": 2011,
+    "supply_start": "2019-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2019-09-24",
+        "imprecise": false,
+        "effective_start": "2019-09-24"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-10-10",
+        "imprecise": false,
+        "effective_start": "2021-10-10"
+      }
+    }
+  },
+  "PENDLE": {
+    "rank": 108,
+    "cmc_id": 9481,
+    "supply_start": "2022-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-07-03",
+        "imprecise": false,
+        "effective_start": "2023-07-03"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-07-03",
+        "imprecise": false,
+        "effective_start": "2023-07-03"
+      }
+    }
+  },
+  "LDO": {
+    "rank": 109,
+    "cmc_id": 8000,
+    "supply_start": "2022-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2022-05-09",
+        "imprecise": false,
+        "effective_start": "2022-05-09"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-12-03",
+        "imprecise": false,
+        "effective_start": "2022-01-01"
+      }
+    }
+  },
+  "XPL": {
+    "rank": 110,
+    "cmc_id": 36645,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-09-25",
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-09-25",
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "BONK": {
+    "rank": 111,
+    "cmc_id": 23095,
+    "supply_start": "2024-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-12-15",
+        "imprecise": false,
+        "effective_start": "2024-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-01-04",
+        "imprecise": false,
+        "effective_start": "2024-01-01"
+      }
+    }
+  },
+  "IMX": {
+    "rank": 112,
+    "cmc_id": 10603,
+    "supply_start": "2022-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2022-01-10",
+        "imprecise": false,
+        "effective_start": "2022-01-10"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-11-05",
+        "imprecise": false,
+        "effective_start": "2022-01-01"
+      }
+    }
+  },
+  "OP": {
+    "rank": 113,
+    "cmc_id": 11840,
+    "supply_start": "2023-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2022-06-01",
+        "imprecise": false,
+        "effective_start": "2023-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2022-05-31",
+        "imprecise": false,
+        "effective_start": "2023-01-01"
+      }
+    }
+  },
+  "LUNC": {
+    "rank": 114,
+    "cmc_id": 4172,
+    "supply_start": "2020-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2022-09-09",
+        "imprecise": false,
+        "effective_start": "2022-09-09"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-10-27",
+        "imprecise": false,
+        "effective_start": "2021-10-27"
+      }
+    }
+  },
+  "DCR": {
+    "rank": 115,
+    "cmc_id": 1168,
+    "supply_start": "2017-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2020-07-30",
+        "imprecise": false,
+        "effective_start": "2020-07-30"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-12-16",
+        "imprecise": false,
+        "effective_start": "2021-12-16"
+      }
+    }
+  },
+  "CFX": {
+    "rank": 116,
+    "cmc_id": 7334,
+    "supply_start": "2022-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-03-29",
+        "imprecise": false,
+        "effective_start": "2022-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "BEAM": {
+    "rank": 117,
+    "cmc_id": 28298,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2019-09-21",
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-10-26",
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "GRT": {
+    "rank": 118,
+    "cmc_id": 6719,
+    "supply_start": "2021-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2020-12-17",
+        "imprecise": false,
+        "effective_start": "2021-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-10-22",
+        "imprecise": false,
+        "effective_start": "2021-10-22"
+      }
+    }
+  },
+  "AR": {
+    "rank": 119,
+    "cmc_id": 5632,
+    "supply_start": "2021-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-05-14",
+        "imprecise": false,
+        "effective_start": "2021-05-14"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2022-08-05",
+        "imprecise": false,
+        "effective_start": "2022-08-05"
+      }
+    }
+  },
+  "FLOKI": {
+    "rank": 120,
+    "cmc_id": 10804,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-05-05",
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2022-07-26",
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "KAIA": {
+    "rank": 121,
+    "cmc_id": 32880,
+    "supply_start": "2024-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-10-31",
+        "imprecise": false,
+        "effective_start": "2024-10-31"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-11-01",
+        "imprecise": false,
+        "effective_start": "2024-11-01"
+      }
+    }
+  },
+  "COMP": {
+    "rank": 122,
+    "cmc_id": 5692,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2020-06-25",
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-09-23",
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "KMNO": {
+    "rank": 123,
+    "cmc_id": 30986,
+    "supply_start": "2025-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-05-06",
+        "imprecise": false,
+        "effective_start": "2025-05-06"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-04-30",
+        "imprecise": false,
+        "effective_start": "2025-01-01"
+      }
+    }
+  },
+  "MON": {
+    "rank": 124,
+    "cmc_id": 30495,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-11-24",
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "NFT": {
+    "rank": 125,
+    "cmc_id": 9816,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2022-02-21",
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "RUNE": {
+    "rank": 127,
+    "cmc_id": 4157,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2020-09-04",
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-12-21",
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "ENS": {
+    "rank": 126,
+    "cmc_id": 13855,
+    "supply_start": "2022-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-11-10",
+        "imprecise": false,
+        "effective_start": "2022-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-11-09",
+        "imprecise": false,
+        "effective_start": "2022-01-01"
+      }
+    }
+  },
+  "AKT": {
+    "rank": 128,
+    "cmc_id": 7431,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "BAT": {
+    "rank": 129,
+    "cmc_id": 1697,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2019-03-04",
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-10-19",
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "FLUID": {
+    "rank": 130,
+    "cmc_id": 10508,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-12-18",
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "ZBCN": {
+    "rank": 131,
+    "cmc_id": 30636,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "CVX": {
+    "rank": 132,
+    "cmc_id": 9903,
+    "supply_start": "2022-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-12-23",
+        "imprecise": false,
+        "effective_start": "2022-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "JTO": {
+    "rank": 133,
+    "cmc_id": 28541,
+    "supply_start": "2024-01-01",
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-12-07",
+        "imprecise": false,
+        "effective_start": "2024-01-01"
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2023-12-07",
+        "imprecise": false,
+        "effective_start": "2024-01-01"
+      }
+    }
+  },
+  "JASMY": {
+    "rank": 134,
+    "cmc_id": 8425,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-11-22",
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-11-24",
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "TWT": {
+    "rank": 135,
+    "cmc_id": 5964,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-01-27",
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2022-11-17",
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "TRAC": {
+    "rank": 136,
+    "cmc_id": 2467,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "MET": {
+    "rank": 137,
+    "cmc_id": 38353,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-11-13",
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-10-23",
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "ZAMA": {
+    "rank": 138,
+    "cmc_id": 39332,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2026-02-02",
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2026-02-02",
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "EIGEN": {
+    "rank": 139,
+    "cmc_id": 30494,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-10-01",
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-10-01",
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "IOTA": {
+    "rank": 140,
+    "cmc_id": 1720,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2018-05-31",
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "SYRUP": {
+    "rank": 141,
+    "cmc_id": 33824,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2025-05-06",
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "CAP": {
+    "rank": 142,
+    "cmc_id": 40531,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2026-06-26",
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "WIF": {
+    "rank": 143,
+    "cmc_id": 28752,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-03-05",
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2024-04-29",
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "SOON": {
+    "rank": 144,
+    "cmc_id": 36542,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "GOMINING": {
+    "rank": 145,
+    "cmc_id": 10180,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "TEL": {
+    "rank": 146,
+    "cmc_id": 2394,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-12-01",
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "AXS": {
+    "rank": 147,
+    "cmc_id": 6783,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2020-11-04",
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-09-30",
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "MANA": {
+    "rank": 148,
+    "cmc_id": 1966,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2020-08-06",
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-09-30",
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "THETA": {
+    "rank": 149,
+    "cmc_id": 2416,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2019-04-10",
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": "USDT",
+        "status": "TESTED",
+        "price_start": "2021-12-16",
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  },
+  "XCN": {
+    "rank": 150,
+    "cmc_id": 18679,
+    "supply_start": null,
+    "exchanges": {
+      "Binance": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "OKX": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Coinbase": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bitstamp": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      },
+      "Bybit": {
+        "quote": null,
+        "status": "NOT_FOUND",
+        "price_start": null,
+        "imprecise": false,
+        "effective_start": null
+      }
+    }
+  }
+}
