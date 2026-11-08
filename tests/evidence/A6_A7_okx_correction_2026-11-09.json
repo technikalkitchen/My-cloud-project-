@@ -1,0 +1,130 @@
+{
+  "corrected_at": "2026-11-08T21:36:15.298249+00:00",
+  "reason": "OKX walk-back correction for A6_A7 bug (after=2017 returned empty)",
+  "source_discovery_file": "tests/evidence/A6_A7_discovery_2026-11-08.json (unchanged)",
+  "assets": {
+    "MATIC": {
+      "quotes_tested": [
+        "USDT",
+        "USD",
+        "USDC"
+      ],
+      "USDT": {
+        "status": "NOT_LISTED",
+        "quote": "USDT",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "quote": "USD",
+        "iterations": 1
+      },
+      "USDC": {
+        "status": "NOT_LISTED",
+        "quote": "USDC",
+        "iterations": 1
+      },
+      "best": null
+    },
+    "POL": {
+      "quotes_tested": [
+        "USDT"
+      ],
+      "USDT": {
+        "status": "TESTED",
+        "quote": "USDT",
+        "oldest": "2024-09-03",
+        "oldest_ms": 1725379200000,
+        "iterations": 3,
+        "imprecise": false
+      },
+      "best": {
+        "quote": "USDT",
+        "oldest": "2024-09-03",
+        "oldest_ms": 1725379200000
+      }
+    },
+    "RNDR": {
+      "quotes_tested": [
+        "USDT",
+        "USD",
+        "USDC"
+      ],
+      "USDT": {
+        "status": "NOT_LISTED",
+        "quote": "USDT",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "quote": "USD",
+        "iterations": 1
+      },
+      "USDC": {
+        "status": "NOT_LISTED",
+        "quote": "USDC",
+        "iterations": 1
+      },
+      "best": null
+    },
+    "RENDER": {
+      "quotes_tested": [
+        "USDT"
+      ],
+      "USDT": {
+        "status": "TESTED",
+        "quote": "USDT",
+        "oldest": "2024-07-14",
+        "oldest_ms": 1720972800000,
+        "iterations": 3,
+        "imprecise": false
+      },
+      "best": {
+        "quote": "USDT",
+        "oldest": "2024-07-14",
+        "oldest_ms": 1720972800000
+      }
+    },
+    "FTM": {
+      "quotes_tested": [
+        "USDT",
+        "USD",
+        "USDC"
+      ],
+      "USDT": {
+        "status": "NOT_LISTED",
+        "quote": "USDT",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "quote": "USD",
+        "iterations": 1
+      },
+      "USDC": {
+        "status": "NOT_LISTED",
+        "quote": "USDC",
+        "iterations": 1
+      },
+      "best": null
+    },
+    "S": {
+      "quotes_tested": [
+        "USDT"
+      ],
+      "USDT": {
+        "status": "TESTED",
+        "quote": "USDT",
+        "oldest": "2025-01-20",
+        "oldest_ms": 1737388800000,
+        "iterations": 3,
+        "imprecise": false
+      },
+      "best": {
+        "quote": "USDT",
+        "oldest": "2025-01-20",
+        "oldest_ms": 1737388800000
+      }
+    }
+  }
+}
