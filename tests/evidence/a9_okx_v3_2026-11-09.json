@@ -1,0 +1,2938 @@
+{
+  "generated_at": "2026-11-09T14:03:23.296574+00:00",
+  "source_v1": "tests/evidence/a9_okx_2026-11-09.json",
+  "assets": {
+    "BTC": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2017-10-10",
+        "oldest_ms": 1507651200000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2017-10-10",
+      "imprecise": false
+    },
+    "ETH": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2017-10-10",
+        "oldest_ms": 1507651200000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "TESTED",
+        "oldest": "2018-01-10",
+        "oldest_ms": 1515600000000,
+        "iterations": 11,
+        "imprecise": false
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2017-10-10",
+      "imprecise": false
+    },
+    "USDT": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2024-12-06",
+        "oldest_ms": 1733500800000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "TESTED",
+        "oldest": "2024-12-06",
+        "oldest_ms": 1733500800000,
+        "iterations": 3,
+        "imprecise": false
+      },
+      "effective_min": "2024-12-06",
+      "imprecise": false
+    },
+    "BNB": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2022-12-20",
+        "oldest_ms": 1671552000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2022-12-20",
+      "imprecise": false
+    },
+    "XRP": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2018-01-10",
+        "oldest_ms": 1515600000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2018-01-10",
+      "imprecise": false
+    },
+    "USDC": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2018-10-15",
+        "oldest_ms": 1539619200000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2018-10-15",
+      "imprecise": false
+    },
+    "SOL": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2020-09-29",
+        "oldest_ms": 1601395200000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "TESTED",
+        "oldest": "2020-09-29",
+        "oldest_ms": 1601395200000,
+        "iterations": 8,
+        "imprecise": false
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2020-09-29",
+      "imprecise": false
+    },
+    "TRX": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2018-01-10",
+        "oldest_ms": 1515600000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2018-01-10",
+      "imprecise": false
+    },
+    "ZEC": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2025-11-23",
+        "oldest_ms": 1763913600000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2025-11-23",
+      "imprecise": false
+    },
+    "HYPE": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2025-11-03",
+        "oldest_ms": 1762185600000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2025-11-03",
+      "imprecise": false
+    },
+    "XMR": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "DOGE": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2019-07-14",
+        "oldest_ms": 1563120000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2019-07-14",
+      "imprecise": false
+    },
+    "LEO": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2019-06-12",
+        "oldest_ms": 1560355200000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2019-06-12",
+      "imprecise": false
+    },
+    "LINK": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2018-01-10",
+        "oldest_ms": 1515600000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2018-01-10",
+      "imprecise": false
+    },
+    "ADA": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2018-07-22",
+        "oldest_ms": 1532275200000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2018-07-22",
+      "imprecise": false
+    },
+    "XLM": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2018-01-10",
+        "oldest_ms": 1515600000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2018-01-10",
+      "imprecise": false
+    },
+    "USDe": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "BCH": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2018-11-18",
+        "oldest_ms": 1542556800000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "TESTED",
+        "oldest": "2018-11-18",
+        "oldest_ms": 1542556800000,
+        "iterations": 10,
+        "imprecise": false
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2018-11-18",
+      "imprecise": false
+    },
+    "NEAR": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2020-12-02",
+        "oldest_ms": 1606924800000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2020-12-02",
+      "imprecise": false
+    },
+    "DAI": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "UNI": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2020-09-16",
+        "oldest_ms": 1600272000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2020-09-16",
+      "imprecise": false
+    },
+    "LTC": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2018-01-10",
+        "oldest_ms": 1515600000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "TESTED",
+        "oldest": "2018-01-10",
+        "oldest_ms": 1515600000000,
+        "iterations": 11,
+        "imprecise": false
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2018-01-10",
+      "imprecise": false
+    },
+    "CC": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2026-02-11",
+        "oldest_ms": 1770825600000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2026-02-11",
+      "imprecise": false
+    },
+    "AVAX": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2020-09-21",
+        "oldest_ms": 1600704000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2020-09-21",
+      "imprecise": false
+    },
+    "SUI": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2023-05-02",
+        "oldest_ms": 1683043200000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2023-05-02",
+      "imprecise": false
+    },
+    "USD1": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2025-09-01",
+        "oldest_ms": 1756742400000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2025-09-01",
+      "imprecise": false
+    },
+    "XAUt": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "GRAM": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2026-06-16",
+        "oldest_ms": 1781625600000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2026-06-16",
+      "imprecise": false
+    },
+    "HBAR": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2019-09-16",
+        "oldest_ms": 1568649600000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2019-09-16",
+      "imprecise": false
+    },
+    "PYUSD": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2024-10-02",
+        "oldest_ms": 1727884800000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2024-10-02",
+      "imprecise": false
+    },
+    "USDG": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2025-06-10",
+        "oldest_ms": 1749571200000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2025-06-10",
+      "imprecise": false
+    },
+    "RLUSD": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2026-04-28",
+        "oldest_ms": 1777392000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2026-04-28",
+      "imprecise": false
+    },
+    "TAO": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2026-06-29",
+        "oldest_ms": 1782748800000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2026-06-29",
+      "imprecise": false
+    },
+    "SHIB": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2021-05-07",
+        "oldest_ms": 1620403200000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2021-05-07",
+      "imprecise": false
+    },
+    "CRO": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2019-06-25",
+        "oldest_ms": 1561478400000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2019-06-25",
+      "imprecise": false
+    },
+    "QNT": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "OKB": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2018-03-22",
+        "oldest_ms": 1521734400000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "TESTED",
+        "oldest": "2018-03-22",
+        "oldest_ms": 1521734400000,
+        "iterations": 11,
+        "imprecise": false
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2018-03-22",
+      "imprecise": false
+    },
+    "PEPE": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2023-04-30",
+        "oldest_ms": 1682870400000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2023-04-30",
+      "imprecise": false
+    },
+    "ENA": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2025-09-16",
+        "oldest_ms": 1758038400000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2025-09-16",
+      "imprecise": false
+    },
+    "AAVE": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2020-10-21",
+        "oldest_ms": 1603296000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2020-10-21",
+      "imprecise": false
+    },
+    "ASTER": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2025-10-16",
+        "oldest_ms": 1760630400000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2025-10-16",
+      "imprecise": false
+    },
+    "M": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "PAXG": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2025-10-14",
+        "oldest_ms": 1760457600000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "TESTED",
+        "oldest": "2025-10-15",
+        "oldest_ms": 1760544000000,
+        "iterations": 2,
+        "imprecise": false
+      },
+      "effective_min": "2025-10-14",
+      "imprecise": false
+    },
+    "ONDO": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2024-07-28",
+        "oldest_ms": 1722182400000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2024-07-28",
+      "imprecise": false
+    },
+    "PUMP": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2025-07-17",
+        "oldest_ms": 1752768000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2025-07-17",
+      "imprecise": false
+    },
+    "U": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "DOT": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2020-08-21",
+        "oldest_ms": 1598025600000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2020-08-21",
+      "imprecise": false
+    },
+    "USDD": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "SKY": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2025-09-10",
+        "oldest_ms": 1757520000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2025-09-10",
+      "imprecise": false
+    },
+    "MNT": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "WLFI": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2025-08-31",
+        "oldest_ms": 1756656000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2025-08-31",
+      "imprecise": false
+    },
+    "ICP": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2021-05-10",
+        "oldest_ms": 1620662400000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2021-05-10",
+      "imprecise": false
+    },
+    "BGB": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "WLD": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2023-07-23",
+        "oldest_ms": 1690128000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2023-07-23",
+      "imprecise": false
+    },
+    "ARB": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2023-03-22",
+        "oldest_ms": 1679500800000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2023-03-22",
+      "imprecise": false
+    },
+    "JST": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "MORPHO": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2024-11-20",
+        "oldest_ms": 1732118400000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2024-11-20",
+      "imprecise": false
+    },
+    "ETC": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2018-01-10",
+        "oldest_ms": 1515600000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2018-01-10",
+      "imprecise": false
+    },
+    "GT": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "VVV": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2026-09-14",
+        "oldest_ms": 1789401600000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2026-09-14",
+      "imprecise": false
+    },
+    "KCS": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "POL": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2024-09-03",
+        "oldest_ms": 1725379200000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2024-09-03",
+      "imprecise": false
+    },
+    "ALGO": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2019-06-16",
+        "oldest_ms": 1560700800000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2019-06-16",
+      "imprecise": false
+    },
+    "PI": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2025-02-19",
+        "oldest_ms": 1739980800000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2025-02-19",
+      "imprecise": false
+    },
+    "KAS": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "INJ": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2023-11-29",
+        "oldest_ms": 1701273600000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2023-11-29",
+      "imprecise": false
+    },
+    "RENDER": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2024-07-14",
+        "oldest_ms": 1720972800000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2024-07-14",
+      "imprecise": false
+    },
+    "LIT": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2026-01-14",
+        "oldest_ms": 1768406400000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2026-01-14",
+      "imprecise": false
+    },
+    "JUP": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2024-01-30",
+        "oldest_ms": 1706630400000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2024-01-30",
+      "imprecise": false
+    },
+    "ATOM": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2019-04-22",
+        "oldest_ms": 1555948800000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2019-04-22",
+      "imprecise": false
+    },
+    "NIGHT": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2025-12-08",
+        "oldest_ms": 1765209600000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2025-12-08",
+      "imprecise": false
+    },
+    "XDC": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "FIL": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2020-12-02",
+        "oldest_ms": 1606924800000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2020-12-02",
+      "imprecise": false
+    },
+    "ZRO": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2024-06-19",
+        "oldest_ms": 1718812800000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2024-06-19",
+      "imprecise": false
+    },
+    "AERO": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "STX": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2021-03-03",
+        "oldest_ms": 1614787200000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "TESTED",
+        "oldest": "2021-03-03",
+        "oldest_ms": 1614787200000,
+        "iterations": 7,
+        "imprecise": false
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2021-03-03",
+      "imprecise": false
+    },
+    "CAKE": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "DASH": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2025-11-25",
+        "oldest_ms": 1764086400000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2025-11-25",
+      "imprecise": false
+    },
+    "ETHFI": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2024-03-17",
+        "oldest_ms": 1710691200000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2024-03-17",
+      "imprecise": false
+    },
+    "APT": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2022-10-18",
+        "oldest_ms": 1666108800000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2022-10-18",
+      "imprecise": false
+    },
+    "FLR": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2023-01-09",
+        "oldest_ms": 1673280000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2023-01-09",
+      "imprecise": false
+    },
+    "\u5e01\u5b89\u4eba\u751f": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "PYTH": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2023-11-19",
+        "oldest_ms": 1700409600000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2023-11-19",
+      "imprecise": false
+    },
+    "TUSD": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "RAY": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2021-12-16",
+        "oldest_ms": 1639670400000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2021-12-16",
+      "imprecise": false
+    },
+    "NEXO": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "STABLE": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "EURC": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "PIEVERSE": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "VET": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "TIA": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2023-10-31",
+        "oldest_ms": 1698768000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2023-10-31",
+      "imprecise": false
+    },
+    "CRV": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2020-08-13",
+        "oldest_ms": 1597334400000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2020-08-13",
+      "imprecise": false
+    },
+    "PENGU": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2024-12-16",
+        "oldest_ms": 1734364800000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2024-12-16",
+      "imprecise": false
+    },
+    "VIRTUAL": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2025-10-27",
+        "oldest_ms": 1761580800000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2025-10-27",
+      "imprecise": false
+    },
+    "BTT": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "SEI": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2025-11-13",
+        "oldest_ms": 1763049600000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2025-11-13",
+      "imprecise": false
+    },
+    "FET": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2023-11-23",
+        "oldest_ms": 1700755200000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2023-11-23",
+      "imprecise": false
+    },
+    "TRUMP": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2025-01-18",
+        "oldest_ms": 1737216000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2025-01-18",
+      "imprecise": false
+    },
+    "SPX": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "BSV": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "KITE": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2025-11-02",
+        "oldest_ms": 1762099200000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2025-11-02",
+      "imprecise": false
+    },
+    "FF": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "STRK": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2024-02-19",
+        "oldest_ms": 1708358400000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2024-02-19",
+      "imprecise": false
+    },
+    "SUN": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "GNO": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "FDUSD": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "XTZ": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2019-03-21",
+        "oldest_ms": 1553184000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2019-03-21",
+      "imprecise": false
+    },
+    "PENDLE": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2024-09-26",
+        "oldest_ms": 1727366400000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2024-09-26",
+      "imprecise": false
+    },
+    "LDO": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2022-09-01",
+        "oldest_ms": 1662048000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2022-09-01",
+      "imprecise": false
+    },
+    "XPL": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2025-09-24",
+        "oldest_ms": 1758729600000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2025-09-24",
+      "imprecise": false
+    },
+    "BONK": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2024-01-07",
+        "oldest_ms": 1704643200000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2024-01-07",
+      "imprecise": false
+    },
+    "IMX": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2021-11-04",
+        "oldest_ms": 1636041600000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2021-11-04",
+      "imprecise": false
+    },
+    "OP": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2022-05-31",
+        "oldest_ms": 1654012800000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2022-05-31",
+      "imprecise": false
+    },
+    "LUNC": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "DCR": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "CFX": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2021-03-02",
+        "oldest_ms": 1614700800000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2021-03-02",
+      "imprecise": false
+    },
+    "BEAM": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "GRT": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2020-12-17",
+        "oldest_ms": 1608220800000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2020-12-17",
+      "imprecise": false
+    },
+    "AR": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2021-12-23",
+        "oldest_ms": 1640275200000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2021-12-23",
+      "imprecise": false
+    },
+    "FLOKI": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2022-12-15",
+        "oldest_ms": 1671120000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2022-12-15",
+      "imprecise": false
+    },
+    "KAIA": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2024-10-30",
+        "oldest_ms": 1730304000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2024-10-30",
+      "imprecise": false
+    },
+    "COMP": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2020-06-28",
+        "oldest_ms": 1593360000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2020-06-28",
+      "imprecise": false
+    },
+    "KMNO": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2025-05-29",
+        "oldest_ms": 1748534400000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2025-05-29",
+      "imprecise": false
+    },
+    "MON": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2026-03-22",
+        "oldest_ms": 1774195200000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2026-03-22",
+      "imprecise": false
+    },
+    "NFT": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2021-11-10",
+        "oldest_ms": 1636560000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "TESTED",
+        "oldest": "2026-02-25",
+        "oldest_ms": 1772035200000,
+        "iterations": 1,
+        "imprecise": false
+      },
+      "effective_min": "2021-11-10",
+      "imprecise": false
+    },
+    "RUNE": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "ENS": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2021-11-08",
+        "oldest_ms": 1636387200000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2021-11-08",
+      "imprecise": false
+    },
+    "AKT": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "BAT": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2020-03-02",
+        "oldest_ms": 1583164800000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2020-03-02",
+      "imprecise": false
+    },
+    "FLUID": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2025-03-26",
+        "oldest_ms": 1743004800000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2025-03-26",
+      "imprecise": false
+    },
+    "ZBCN": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2024-04-15",
+        "oldest_ms": 1713196800000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2024-04-15",
+      "imprecise": false
+    },
+    "CVX": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2021-11-25",
+        "oldest_ms": 1637856000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2021-11-25",
+      "imprecise": false
+    },
+    "JTO": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2024-01-07",
+        "oldest_ms": 1704643200000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2024-01-07",
+      "imprecise": false
+    },
+    "JASMY": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "TWT": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "TRAC": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "MET": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2025-10-22",
+        "oldest_ms": 1761148800000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "TESTED",
+        "oldest": "2025-10-23",
+        "oldest_ms": 1761235200000,
+        "iterations": 2,
+        "imprecise": false
+      },
+      "effective_min": "2025-10-22",
+      "imprecise": false
+    },
+    "ZAMA": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2026-02-01",
+        "oldest_ms": 1769961600000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2026-02-01",
+      "imprecise": false
+    },
+    "EIGEN": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2024-09-30",
+        "oldest_ms": 1727712000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2024-09-30",
+      "imprecise": false
+    },
+    "IOTA": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2018-01-10",
+        "oldest_ms": 1515600000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2018-01-10",
+      "imprecise": false
+    },
+    "SYRUP": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "CAP": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "WIF": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2024-04-14",
+        "oldest_ms": 1713110400000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2024-04-14",
+      "imprecise": false
+    },
+    "SOON": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "GOMINING": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "TEL": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "AXS": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2021-07-26",
+        "oldest_ms": 1627315200000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2021-07-26",
+      "imprecise": false
+    },
+    "MANA": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2018-01-10",
+        "oldest_ms": 1515600000000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2018-01-10",
+      "imprecise": false
+    },
+    "THETA": {
+      "USDT": {
+        "status": "TESTED",
+        "oldest": "2018-01-16",
+        "oldest_ms": 1516118400000,
+        "source": "v1",
+        "imprecise": null
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": "2018-01-16",
+      "imprecise": false
+    },
+    "XCN": {
+      "USDT": {
+        "status": "NOT_LISTED",
+        "oldest": null,
+        "oldest_ms": null,
+        "source": "v1",
+        "imprecise": false
+      },
+      "BTC": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "USD": {
+        "status": "NOT_LISTED",
+        "iterations": 1
+      },
+      "effective_min": null,
+      "imprecise": false
+    }
+  },
+  "summary": {
+    "improved_via_btc": [],
+    "improved_via_usd": [],
+    "still_not_listed": [
+      "XMR",
+      "USDe",
+      "DAI",
+      "XAUt",
+      "QNT",
+      "M",
+      "U",
+      "USDD",
+      "MNT",
+      "BGB",
+      "JST",
+      "GT",
+      "KCS",
+      "KAS",
+      "XDC",
+      "AERO",
+      "CAKE",
+      "\u5e01\u5b89\u4eba\u751f",
+      "TUSD",
+      "NEXO",
+      "STABLE",
+      "EURC",
+      "PIEVERSE",
+      "VET",
+      "BTT",
+      "SPX",
+      "BSV",
+      "FF",
+      "SUN",
+      "GNO",
+      "FDUSD",
+      "LUNC",
+      "DCR",
+      "BEAM",
+      "RUNE",
+      "AKT",
+      "JASMY",
+      "TWT",
+      "TRAC",
+      "SYRUP",
+      "CAP",
+      "SOON",
+      "GOMINING",
+      "TEL",
+      "XCN"
+    ],
+    "newly_discovered": []
+  }
+}
