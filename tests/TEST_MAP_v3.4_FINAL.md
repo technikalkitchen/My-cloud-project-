@@ -43,7 +43,7 @@ A2 TF Q2 ۰۶، ۱۶ no_commit professional ۷ Nov
 A2.5a OKX/CC Q2 ۰۶ no_commit OKX 1d=2017-10-10
 A3 سقف کندل Q3 ۰۹، ۱۳ no_commit Binance≥1000، OKX/CC/Coinbase=300
 A4 OHLCV Q4 ۰۷، ۱۶ 8c1f4d5 + 6320395 ۵ ناسازگاری — CLOSED
-A5 Supply timeseries Q7 ۱۵، ۱۹، ۲۵ d0fd6dd dict ۱۱۷ کلید، ۱۳.۱۷MB
+A5 Supply timeseries Q7 ۱۵، ۱۹، ۲۵ d0fd6dd dict ۱۱۷ کلید (PROVISIONAL — pending 7 NO_DATA fix)، ۱۳.۱۷MB
 final_125_supply (data) Q7 ۰۳، ۱۵ data_source ۱۱۸ tag FILLED، نقطهٔ اول
 A6_A7 Discovery v4 Q5 ۰۳، ۰۴ 93bfa04 ۳ migration + ۳ delisted + survivor + KMNO
 A6_A7 OKX Correction Q5 ۰۴ 15fccca POL=2024-09-03، RENDER=2024-07-14، S=2025-01-20 — همه CONFIRMED ✅
@@ -96,6 +96,8 @@ NFT 39003 9816 ⚠️ متناقض
 کاوئات targeting (Extractor): این ۷ با cmc_id متناقض، احتمالاً دارایی اشتباه را در final_125_supply تست کرده‌اند. «NO_DATA» ≠ «عدم وجود داده در CMC» — بلکه «عدم داده برای این cmc_id». دارایی اصلی ممکن است داده داشته باشد.
 
 اقدام P2: Extractor /search?keyword=X → تعیین cmc_id واقعی.
+
+منبع A9 cmc_ids: cmc_top150_2026-11-08.json (CMC listing، ۸ Nov) — authoritative. final_125_supply.json با cmc_idهای اشتباه ساخته شده.
 
 ۲.۳ — دورهٔ آماتور (نگه‌داری، ۱۰ تست)
 
@@ -287,7 +289,7 @@ Section 11 — Item_05: ۴ باگ Amendment (LOCKED v1.0 → amendment)
 
 # بخش قبل (v1.0) بعد (Amendment) مرجع
 ۱ §2.1 «USDT واحد مظنه استاندارد اصلی برای تمام ۱۲۵ دارایی Universe است» «برای ۱۵۰ دارایی CMC (نمایش ۱۲۵ خالص پس از حذف Wrapped)» R-29، ۹ Nov
-۲ §3.6 «... منابع جایگزین (مانند Binance)» «Binance BTC-pair دارد (A9 v3.2، 3cd2cf0)، OKX ندارد. Binance به‌عنوان rate source جایگزین معتبر است، مشروط به ثبت rate_source» A9 v3.2
+۲ §3.6 «... منابع جایگزین (مانند Binance)» «Coinbase USDT-USD آنلاین (۱۱ Nov) → same-exchange rate. Binance fallback فقط اگر USDT-USD در صرافی مبدأ نبود» Coinbase Diagnostic t8، ۱۱ Nov
 ۳ §1.3 converted_fiat Direct_USD_Converted — ۴ دسته: Direct_USDT / Direct_BTC / Direct_USD_Converted / Implied Amendment ۳۰ Oct
 ۴ §4 «۵ پارامتر معلق Stage B» «۵ پارامتر در همین سند (LOCKED، نه Stage B)» LOCKED
 
