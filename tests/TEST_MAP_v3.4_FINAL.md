@@ -892,7 +892,7 @@ Section 12 — یافته‌های کلیدی audit (خلاصه)
 | 12 | Bitstamp only BTC verified | ✅ RESOLVED | TD | ۰۱ |
 | 13 | 25 Wrapped assets for 150→125 filter | P2 | Extractor | ۰۳ |
 
-**Note:** Issues 1, 2, 4, 5, 6, 7, 8, 11, 13 are DATA/DESIGN gaps (mostly P2/Owner), NOT test failures. They do not block Phase 1 (writing items).
+**Note:** These issues do not block Item_08 (Data Contract). Resolve before writing: #1(7 NO_DATA)→Item_03/15, #2(KMNO)→Item_03/15, #5(POL Bybit)→Item_04, #7(币安人生)→Item_03.
 
 
 ## Section 14 — Verification Commands
