@@ -13,6 +13,8 @@ TEST_MAP v3.4 FINAL — Purpose-Driven Registry
 منبع: ۸ چک‌پوینت + ۸ دسته بازبینی + TD-01 + audit_2026-11-11 + Coinbase Diagnostic (11 Nov)
 وضعیت: FINAL — ۹ patch TD+Extractor اعمال‌شده
 
+این فایل TEST_MAP است. برای ساختار ۳۰ آیتم → docs/MAP.md v1.1. برای قوانین و CINها → docs/B_items/Cross_Item_Notes.md. برای محتوای هر آیتم → docs/B_items/Item_XX_*.md. برای شواهد تست → tests/evidence/.
+
 ---
 
 Section 0 — Timeline
@@ -68,6 +70,8 @@ asset_universe_master Q1 ۰۳ fe8a1d2 + 64e3540 ۱۹۵ union
 audit_2026-11-11 همه همه uncommitted پاسخ ۷ سؤال باز
 Coinbase Diagnostic (11 Nov) Q1، Q6 ۰۱، ۰۳، ۰۵ uncommitted ۹ تست — READY for full scan
 Coinbase /products (11 Nov) Q1، Q6 ۰۱، ۰۵ uncommitted BTC-USD online · BTC-USDT online · USDT-USD online
+
+تفاوت ۱۱۷ vs ۱۱۸: A5 = ۱۱۷ کلید (USD1 با ۵۰۲ error شکست خورد)؛ final_125_supply = ۱۱۸ FILLED. تفاوت فقط USD1 است.
 
 Reproduction note: A1-A3 اسکریپت در Repo ندارند (no_commit). خروجی‌ها در TEST_MAP v2.1 ثبت شده. برای بازتولید → TD باید بازنویسی کند (R-12b).
 
@@ -148,6 +152,26 @@ A10 = audit step ۱۰ (بررسی وجود app/market/test001/adapters.py) — �
 
 قانون: TEST001 پیش از R-11 و A2 است. Item_01/06/16 نباید از TEST001 مشتق شوند.
 
+Section 2.10 — File Paths Reference
+
+فایل | مسیر
+A5 Supply | results/supply_timeseries/supply_timeseries_2026-11-07.json
+final_125_supply | results/final_supply_harvest/run_40351779336/final-125-supply-results/final_125_supply.json
+asset_universe_master | tests/evidence/asset_universe_master_2026-11-08.json
+cmc_top150 | tests/evidence/cmc_top150_2026-11-08.json
+A6_A7 Discovery | tests/evidence/A6_A7_discovery_2026-11-08.json
+A6_A7 OKX Correction | tests/evidence/A6_A7_okx_correction_2026-11-09.json
+A9 OKX | tests/evidence/a9_okx_2026-11-09.json
+A9 OKX v3.2 | tests/evidence/a9_okx_v3_2026-11-09.json
+A9 OKX USDC retry | tests/evidence/a9_okx_usdc_retry_2026-11-09.json
+POL Bybit Test | tests/evidence/pol_bybit_test_2026-11-08.json
+A4 OHLCV Format | tests/evidence/2026-11-07_A4_OHLCV_Format.md
+audit_2026-11-11 | tests/evidence/audit_2026-11-11.json + .md
+Coinbase Diagnostic | tests/evidence/scripts/coinbase_btc_diagnostic.py
+Cross_Item_Notes | docs/B_items/Cross_Item_Notes.md
+MAP | docs/MAP.md
+TEST_MAP v2.1 | tests/TEST_MAP.md — SUPERSEDED با v3.4
+
 Section 3 — وضعیت هر آیتم
 
 # آیتم status PENDING
@@ -222,6 +246,20 @@ R-32 — RNDR UI: دو تاریخ یا effective_at تنها؟
 · USDC-USD از Coinbase scope حذف (NOT_FOUND)
 · Coinbase quotes = USD + USDT فقط
 · POL/Bybit Policy A (strict 2024-09-04) + ثبت test_date=2023-10-25
+
+R-12a، R-12b، R-26، R-27، R-28 — Protocol rules (Patcher HOLD)
+
+توجه: این ۵ R در Cross_Item_Notes v1.0 (R-01..R-25) نیستند. در TEST_MAP ثبت موقت می‌شوند تا Patcher در Cross_Item_Notes ثبت کند.
+
+R-12a — شواهد بزرگ | متن: فایل‌های >۱۰MB در results/ با git add -f؛ <۱۰MB در tests/evidence/ | دلیل: A5 (۱۳MB) نیازمند -f بود | وضعیت: RESOLVED
+
+R-12b — اسکریپت‌ها در repo | متن: اسکریپت‌های تست در tests/evidence/scripts/ — نه /tmp | دلیل: /tmp سه بار پاک شد | وضعیت: RESOLVED
+
+R-26 — Diagnostic First | متن: قبل از هر اجرای multi-exchange، ۵-۱۰ تست BTC per-exchange | دلیل: A9 v2 (بدون diagnostic) → ۰/۱۵۰ → ۴۰ دقیقه اتلاف | وضعیت: RESOLVED
+
+R-27 — Save تدریجی | متن: اسکریپت‌های >۵ دقیقه، save per-10-asset | دلیل: A9 v2 (۴۰ دقیقه) — ریسک از دست دادن با قطع VPN | وضعیت: RESOLVED
+
+R-28 — Return-type sync | متن: تغییر return type تابع → همه callerها آپدیت | دلیل: A9 OKX v3.1 (walk_back_quote tuple→dict) → diagnostic خطا | وضعیت: RESOLVED
 
 Section 6 — فایل‌های منتظر
 
@@ -775,3 +813,51 @@ Section 12 — یافته‌های کلیدی audit (خلاصه)
 **جمع:** 150 asset
 
 ---
+
+### Appendix D — A6 Migration/Delisted Per-Item
+
+**منبع:** `A6_A7_discovery_2026-11-08.json` + `A6_A7_okx_correction_2026-11-09.json` + `a9_asset_start_dates_2026-11-08.json`
+
+**کاوئات:**
+- **MATIC/RNDR/FTM (source):** OKX pair را rename کرده — sourceها NOT_LISTED، فقط target
+- **Binance/Bybit:** هر دو source و target (dual-listing)
+- **POL Bybit:** از 2023-10-25 (test_date)، launchTime=null — pre-migration alias
+
+| Asset | Role | OKX | Binance | Bybit | Bitstamp | Coinbase |
+|---|---|---|---|---|---|---|
+| MATIC | migration_source (→POL) | NOT_LISTED | - | - | - | - |
+| POL | migration_target (MATIC→) | TESTED 2024-09-03 | TESTED 2024-09-13 | TESTED 2023-10-25 | NOT_FOUND | NOT_FOUND |
+| RNDR | migration_source (→RENDER، rename) | NOT_LISTED | - | - | - | - |
+| RENDER | migration_target (RNDR→، rename) | TESTED 2024-07-14 | TESTED 2024-07-26 | TESTED 2024-07-31 | NOT_FOUND | NOT_FOUND |
+| FTM | migration_source (→S) | NOT_LISTED | - | - | - | - |
+| S | migration_target (FTM→) | TESTED 2025-01-20 | - | - | - | - |
+| FTT | delisted | - | - | - | - | - |
+| LUNA | delisted | - | - | - | - | - |
+| UST | delisted | - | - | - | - | - |
+| LUNC | survivor | NOT_FOUND | TESTED 2022-09-09 | TESTED 2021-10-27 | NOT_FOUND | NOT_FOUND |
+
+**جمع:** ۱۰ asset (۶ migration + ۳ delisted + ۱ survivor)
+
+### Appendix E — ExchangeCandleSchema (A4 CLOSED)
+
+**منبع:** `tests/evidence/2026-11-07_A4_OHLCV_Format.md` (A4، ۷ Nov، commit 8c1f4d5 + 6320395)
+
+**۵ ناسازگاری حیاتی:**
+1. **Field order:** Coinbase `[ts, low, high, open, close, vol]` — معکوس
+2. **۴ timestamp format:** ms+int / ms+str / s+int / s+str
+3. **Coinbase price = float** (بقیه str)
+4. **Direction:** asc (Binance/Bitstamp/CC) vs desc (OKX/Coinbase/Bybit)
+5. **Field counts:** ۱۲/۹/۷/۶
+
+**جدول کامل:**
+
+| Exchange | field_order | ts_unit | ts_type | price_type | direction | field_count |
+|---|---|---|---|---|---|---|
+| Binance | [ts,o,h,l,c,v,...] | ms | int | str | asc | 12 |
+| OKX | [ts,o,h,l,c,v,...] | ms | str | str | desc | 9 |
+| Coinbase | [ts,**l**,**h**,**o**,c,v] | s | int | **num** | desc | 6 |
+| Bitstamp | {timestamp,open,high,low,close,volume} | s | str | str | asc | 6 |
+| Crypto.com | {t,o,h,l,c,v} | ms | int | str | asc | 6 |
+| Bybit | [ts,o,h,l,c,v,turnover] | ms | str | str | desc | 7 |
+
+**پیامد Item_16:** Adapter باید per-exchange parse کند. ExchangeCandleSchema مرجع اجباری است.
