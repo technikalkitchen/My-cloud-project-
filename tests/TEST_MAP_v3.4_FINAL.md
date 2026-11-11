@@ -206,7 +206,7 @@ Section 4 — PENDING واقعی (۶)
 # تست P مالک وضعیت دقیق
 ۱ Coinbase full scan P0 TD Script in TD hands (pending AM approval). JSON نه تولید شده.
 ۲ Bitstamp diagnostic P0 TD Script not yet written.
-۳ Coinbase BTC-USDT pair date P1 TD (در full scan پوشش)
+۳ Coinbase BTC-USDT pair date P1 TD تاریخ دقیق نامشخص (قطعاً بعد از June 2020، شاهد: t4=0)
 ۴ WS Binance/Bybit P2 TD Script not written
 ۵ ۷ CMC ID P2 Extractor /search endpoint patch لازم
 ۶ USD1 DefiLlama P3 Extractor Script not written
@@ -217,6 +217,7 @@ R-29 — Universe نهایی
 
 · متن: CMC Top 150 → حذف Wrapped → نمایش ۱۲۵ خالص
 · اثر: Item_03 §۲.۱، Item_27 | تصمیم: Owner | تاریخ: ۹ Nov | وضعیت: APPROVED
+- **لیست ۲۵ دارایی حذف‌شده (Wrapped):** PENDING (Extractor در سشن بعد لیست ۲۵تایی را استخراج و ثبت می‌کند).
 
 R-30 — ۳۰m ذخیره یا on-demand
 
