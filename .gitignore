@@ -35,3 +35,4 @@ all_logs.txt
 run_ids.txt
 summary.txt
 results/
+*.md.bak-*

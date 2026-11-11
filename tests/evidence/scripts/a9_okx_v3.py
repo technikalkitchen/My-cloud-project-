@@ -17,6 +17,7 @@ MAX_RETRIES = 2
 MAX_ITER = 20
 NOW_MS = int(datetime.now(timezone.utc).timestamp() * 1000)
 
+
 def http_get(url, max_retries=MAX_RETRIES):
     for attempt in range(max_retries + 1):
         try:
@@ -33,10 +34,12 @@ def http_get(url, max_retries=MAX_RETRIES):
                 continue
             raise
 
+
 def fmt_date(ms):
     if not ms:
         return None
     return datetime.fromtimestamp(int(ms) / 1000, tz=timezone.utc).strftime('%Y-%m-%d')
+
 
 def fetch_okx(endpoint, params):
     qs = '&'.join(f'{k}={v}' for k, v in params.items())
@@ -48,6 +51,7 @@ def fetch_okx(endpoint, params):
         return {'status': 'EMPTY', 'count': 0, 'data': []}
     except Exception as e:
         return {'status': 'ERROR', 'error': str(e)[:100], 'count': 0, 'data': []}
+
 
 def walk_back_quote(symbol, quote, max_iter=MAX_ITER, limit=300):
     instId = f'{symbol}-{quote}'
@@ -78,6 +82,7 @@ def walk_back_quote(symbol, quote, max_iter=MAX_ITER, limit=300):
         }
     return {'status': 'NOT_LISTED', 'iterations': iterations}
 
+
 def run_diagnostic():
     print('=== Phase 1: Diagnostic ===')
     critical_pass = []
@@ -92,23 +97,24 @@ def run_diagnostic():
 
     # [2] BTC-USDT (critical)
     print('\n[2] BTC-USDT (CRITICAL: baseline)')
-    ts2, _, _ = walk_back_quote('BTC', 'USDT', max_iter=15)
-    date2 = fmt_date(ts2) if ts2 else None
+    r2 = walk_back_quote('BTC', 'USDT', max_iter=15)
+    date2 = r2.get('oldest') if r2.get('status') == 'TESTED' else None
     ok2 = date2 is not None and date2.startswith('2017-')
     print(f'    oldest={date2} | matches_expected(2017-*)={ok2}')
     critical_pass.append(ok2)
 
     # [3] BTC-USD (informational)
     print('\n[3] BTC-USD (informational)')
-    ts3, _, _ = walk_back_quote('BTC', 'USD', max_iter=15)
-    print(f'    oldest={fmt_date(ts3) if ts3 else "NOT_LISTED"}')
+    r3 = walk_back_quote('BTC', 'USD', max_iter=15)
+    date3 = r3.get('oldest') if r3.get('status') == 'TESTED' else None
+    print(f'    oldest={date3 if date3 else "NOT_LISTED"}')
 
     # [4-7] BTC-quote for older assets (INFORMATIONAL)
     btc_tests = []
     for sym in ['ZEC', 'DASH', 'SEI', 'TAO']:
         print(f'\n[{len(btc_tests)+4}] {sym}-BTC (informational)')
-        ts, _, _ = walk_back_quote(sym, 'BTC', max_iter=15)
-        d = fmt_date(ts) if ts else None
+        r_btc = walk_back_quote(sym, 'BTC', max_iter=15)
+        d = r_btc.get('oldest') if r_btc.get('status') == 'TESTED' else None
         ok = d is not None
         print(f'    oldest={d} | TESTED={ok}')
         btc_tests.append(ok)
@@ -126,10 +132,10 @@ def run_diagnostic():
         print('         Continuing anyway (BTC-quote is informational in this diagnostic).')
     return True
 
+
 def scan_asset(symbol, v1_data):
     result = {}
 
-    # USDT from v1 (imprecise = null, since v1 didn't track it)
     v1_entry = v1_data.get(symbol, {}).get('okx', {})
     usdt_status = v1_entry.get('status', 'NOT_LISTED')
     result['USDT'] = {
@@ -140,16 +146,13 @@ def scan_asset(symbol, v1_data):
         'imprecise': None if usdt_status == 'TESTED' else False,
     }
 
-    # BTC (new)
     btc = walk_back_quote(symbol, 'BTC')
     result['BTC'] = btc
     time.sleep(SLEEP)
 
-    # USD (new — always test, even if USDT TESTED)
     usd = walk_back_quote(symbol, 'USD')
     result['USD'] = usd
 
-    # effective_min
     dates = []
     for q in ['USDT', 'BTC', 'USD']:
         if result[q].get('status') == 'TESTED' and result[q].get('oldest'):
@@ -161,8 +164,9 @@ def scan_asset(symbol, v1_data):
     )
     return result
 
+
 def main():
-    print('=== A9 OKX v3.1: USDT(v1) + BTC + USD ===')
+    print('=== A9 OKX v3.2: USDT(v1) + BTC + USD ===')
     print()
 
     if not run_diagnostic():
@@ -190,7 +194,12 @@ def main():
             existing = saved.get('assets', {})
         print(f'Resume: {len(existing)} done')
 
-    summary = {'improved_via_btc': [], 'improved_via_usd': [], 'still_not_listed': [], 'newly_discovered': []}
+    summary = {
+        'improved_via_btc': [],
+        'improved_via_usd': [],
+        'still_not_listed': [],
+        'newly_discovered': [],
+    }
     t0 = time.time()
 
     for i, a in enumerate(assets, 1):
@@ -210,21 +219,17 @@ def main():
         btc_d = result['BTC'].get('oldest')
         usd_d = result['USD'].get('oldest')
 
-        # Fix 3: use `if`, not `elif` (an asset can be in both lists)
         if btc_d and (not usdt_d or btc_d < usdt_d):
             summary['improved_via_btc'].append(sym)
         if usd_d and (not usdt_d or usd_d < usdt_d):
             summary['improved_via_usd'].append(sym)
 
-        # Newly discovered (USDT missing, BTC or USD works)
         if usdt_s == 'NOT_LISTED' and (btc_s == 'TESTED' or usd_s == 'TESTED'):
             summary['newly_discovered'].append(sym)
 
-        # Still NOT_LISTED (all three missing)
         if usdt_s == 'NOT_LISTED' and btc_s == 'NOT_LISTED' and usd_s == 'NOT_LISTED':
             summary['still_not_listed'].append(sym)
 
-        # R-27 incremental
         if i % 10 == 0:
             os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
             with open(OUTPUT_FILE, 'w') as f:
@@ -252,7 +257,8 @@ def main():
     print(f'Still NOT_LISTED: {len(summary["still_not_listed"])}')
     print(f'Output: {OUTPUT_FILE}')
     print(f'Elapsed: {time.time()-t0:.0f}s')
-    print('=== A9 OKX v3.1 COMPLETE ===')
+    print('=== A9 OKX v3.2 COMPLETE ===')
+
 
 if __name__ == '__main__':
     main()
