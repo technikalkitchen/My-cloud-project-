@@ -363,8 +363,9 @@ Section 12 — یافته‌های کلیدی audit (خلاصه)
 **کاوئات‌ها:**
 
 - **OKX:** ۱۰۵/۱۵۰ TESTED (نسخه a9_okx، جایگزین باگ a9_asset_start_dates). ۴۵ NOT_LISTED با USDT+USD+USDC هر سه تأیید شد.
-- **Bitstamp:** فقط BTC=TESTED (۱/۱۵۰)؛ بقیه `NOT_FOUND` = باگ pair A9 v2 (`btcusdt` vs `btcusd`). نیازمند retest (P0).
-- **Binance/Bybit `NOT_FOUND`:** فقط USDT/USD تست شد؛ A9 v3 (BTC/USD) اجرا نشد. NOT_FOUND ≠ «کلاً نیست».
+- **Bitstamp:** ۸۵/۱۵۰ TESTED (پس از اجرای A9 Bitstamp full در ۱۱ Nov). ۶۵ NOT_LISTED واقعی (در USDT/USD/BTC چک شد).
+- **Binance/Bybit:** ۱۱۴/۱۵۰ و ۱۲۱/۱۵۰ TESTED. مقادیر NOT_FOUND با کوئوت‌های محدود (USDT/USD) تست شده‌اند.
+- **Coinbase:** ۹۹/۱۵۰ TESTED (22 Direct USDT, 77 Converted USD از USDT-USD 2021-05-04). ۵۱ NOT_LISTED.
 
 - **TESTED:** داده تأیید شد.
 - **NOT_LISTED:** صرافی ندارد (همه quoteها تست شدند).
@@ -880,7 +881,7 @@ Section 12 — یافته‌های کلیدی audit (خلاصه)
 | 1 | 7 NO_DATA wrong cmc_id | P2 | Extractor | ۰۳، ۱۵ |
 | 2 | KMNO 32415 vs 30986 | P2 | patch | ۰۳، ۱۵ |
 | 3 | Bitstamp pair bug (A9 v2) | ✅ RESOLVED | TD | ۰۱، ۰۳ |
-| 4 | Coinbase BTC-USDT date unknown | P1 | TD | ۰۵ |
+| 4 | Coinbase BTC-USDT date unknown (قطعاً بعد از 2020) | P1 | TD | ۰۵ |
 | 5 | RNDR two dates (policy vs listing) | Owner | — | ۰۴ |
 | 6 | POL Bybit 11-month gap | Owner | — | ۰۴ |
 | 7 | A1-A3 no_commit | R-12b | — | ۰۱، ۰۳، ۱۳ |
@@ -890,6 +891,8 @@ Section 12 — یافته‌های کلیدی audit (خلاصه)
 | 11 | 7 assets missing from Appendix B | P2 | Extractor | ۱۵ |
 | 12 | Bitstamp only BTC verified | ✅ RESOLVED | TD | ۰۱ |
 | 13 | 25 Wrapped assets for 150→125 filter | P2 | Extractor | ۰۳ |
+
+**Note:** Issues 1, 2, 4, 5, 6, 7, 8, 11, 13 are DATA/DESIGN gaps (mostly P2/Owner), NOT test failures. They do not block Phase 1 (writing items).
 
 
 ## Section 14 — Verification Commands
