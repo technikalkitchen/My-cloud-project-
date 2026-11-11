@@ -1,0 +1,14 @@
+{
+  "resolution_date": "2026-11-11",
+  "issue": "Symbol Collision caused by incorrect CMC IDs in final_125_supply.json",
+  "resolved_assets": {
+    "SPX": {"id_in_final_125": 33203, "correct_cmc_id": 28081, "status_2017": "NO_DATA"},
+    "XPL": {"id_in_final_125": 37535, "correct_cmc_id": 36645, "status_2017": "NO_DATA"},
+    "FF": {"id_in_final_125": 39273, "correct_cmc_id": 38482, "status_2017": "NO_DATA"},
+    "PIEVERSE": {"id_in_final_125": 38543, "correct_cmc_id": 38849, "status_2017": "NO_DATA"},
+    "KITE": {"id_in_final_125": 39275, "correct_cmc_id": 38828, "status_2017": "NO_DATA"},
+    "MON": {"id_in_final_125": 38320, "correct_cmc_id": 30495, "status_2017": "NO_DATA"},
+    "NFT": {"id_in_final_125": 39003, "correct_cmc_id": 9816, "status_2017": "NO_DATA"}
+  },
+  "conclusion": "All 7 are new assets. CMC historical API has no data for them in 2017. This is expected."
+}
