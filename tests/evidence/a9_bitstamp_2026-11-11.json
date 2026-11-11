@@ -1,0 +1,2900 @@
+{
+  "generated_at": "2026-11-11T15:02:04.984386+00:00",
+  "assets": {
+    "BTC": {
+      "rank": 1,
+      "cmc_id": 1,
+      "quotes": {
+        "usdt": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "ETH": {
+      "rank": 2,
+      "cmc_id": 1027,
+      "quotes": {
+        "usdt": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "USDT": {
+      "rank": 3,
+      "cmc_id": 825,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "BNB": {
+      "rank": 4,
+      "cmc_id": 1839,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "XRP": {
+      "rank": 5,
+      "cmc_id": 52,
+      "quotes": {
+        "usdt": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "USDC": {
+      "rank": 6,
+      "cmc_id": 3408,
+      "quotes": {
+        "usdt": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "SOL": {
+      "rank": 7,
+      "cmc_id": 5426,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "TRX": {
+      "rank": 8,
+      "cmc_id": 1958,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "ZEC": {
+      "rank": 9,
+      "cmc_id": 1437,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "HYPE": {
+      "rank": 10,
+      "cmc_id": 32196,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "XMR": {
+      "rank": 11,
+      "cmc_id": 328,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "DOGE": {
+      "rank": 12,
+      "cmc_id": 74,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "LEO": {
+      "rank": 13,
+      "cmc_id": 3957,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "LINK": {
+      "rank": 14,
+      "cmc_id": 1975,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2021-05-21",
+          "oldest_ms": 1621555200000,
+          "iterations": 3,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2021-05-21",
+      "imprecise": false
+    },
+    "ADA": {
+      "rank": 15,
+      "cmc_id": 2010,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "XLM": {
+      "rank": 16,
+      "cmc_id": 512,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2021-05-21",
+          "oldest_ms": 1621555200000,
+          "iterations": 3,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2021-05-21",
+      "imprecise": false
+    },
+    "USDe": {
+      "rank": 17,
+      "cmc_id": 29470,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "BCH": {
+      "rank": 18,
+      "cmc_id": 1831,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2018-08-25",
+          "oldest_ms": 1535155200000,
+          "iterations": 4,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2018-08-25",
+      "imprecise": false
+    },
+    "NEAR": {
+      "rank": 19,
+      "cmc_id": 6535,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "DAI": {
+      "rank": 20,
+      "cmc_id": 4943,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "UNI": {
+      "rank": 21,
+      "cmc_id": 7083,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2021-05-21",
+          "oldest_ms": 1621555200000,
+          "iterations": 3,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2021-05-21",
+      "imprecise": false
+    },
+    "LTC": {
+      "rank": 22,
+      "cmc_id": 2,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2018-08-25",
+          "oldest_ms": 1535155200000,
+          "iterations": 4,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2018-08-25",
+      "imprecise": false
+    },
+    "CC": {
+      "rank": 23,
+      "cmc_id": 37263,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "AVAX": {
+      "rank": 24,
+      "cmc_id": 5805,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "SUI": {
+      "rank": 25,
+      "cmc_id": 20947,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "USD1": {
+      "rank": 26,
+      "cmc_id": 36148,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "XAUt": {
+      "rank": 27,
+      "cmc_id": 5176,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "GRAM": {
+      "rank": 28,
+      "cmc_id": 11419,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "HBAR": {
+      "rank": 29,
+      "cmc_id": 4642,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "PYUSD": {
+      "rank": 30,
+      "cmc_id": 27772,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "USDG": {
+      "rank": 31,
+      "cmc_id": 33793,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "RLUSD": {
+      "rank": 32,
+      "cmc_id": 34387,
+      "quotes": {
+        "usdt": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "TAO": {
+      "rank": 33,
+      "cmc_id": 22974,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "SHIB": {
+      "rank": 34,
+      "cmc_id": 5994,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "CRO": {
+      "rank": 35,
+      "cmc_id": 3635,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "QNT": {
+      "rank": 36,
+      "cmc_id": 3155,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "OKB": {
+      "rank": 37,
+      "cmc_id": 3897,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "PEPE": {
+      "rank": 38,
+      "cmc_id": 24478,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "ENA": {
+      "rank": 39,
+      "cmc_id": 30171,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "AAVE": {
+      "rank": 40,
+      "cmc_id": 7278,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2021-05-21",
+          "oldest_ms": 1621555200000,
+          "iterations": 3,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2021-05-21",
+      "imprecise": false
+    },
+    "ASTER": {
+      "rank": 41,
+      "cmc_id": 36341,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "M": {
+      "rank": 42,
+      "cmc_id": 35491,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "PAXG": {
+      "rank": 43,
+      "cmc_id": 4705,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "ONDO": {
+      "rank": 44,
+      "cmc_id": 21159,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "PUMP": {
+      "rank": 45,
+      "cmc_id": 36507,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "U": {
+      "rank": 46,
+      "cmc_id": 39120,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "DOT": {
+      "rank": 47,
+      "cmc_id": 6636,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "USDD": {
+      "rank": 48,
+      "cmc_id": 19891,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "SKY": {
+      "rank": 49,
+      "cmc_id": 33038,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "MNT": {
+      "rank": 50,
+      "cmc_id": 27075,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "WLFI": {
+      "rank": 51,
+      "cmc_id": 33251,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "ICP": {
+      "rank": 52,
+      "cmc_id": 8916,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "BGB": {
+      "rank": 53,
+      "cmc_id": 11092,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "WLD": {
+      "rank": 54,
+      "cmc_id": 13502,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "ARB": {
+      "rank": 55,
+      "cmc_id": 11841,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "JST": {
+      "rank": 56,
+      "cmc_id": 5488,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "MORPHO": {
+      "rank": 57,
+      "cmc_id": 34104,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "ETC": {
+      "rank": 58,
+      "cmc_id": 1321,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "GT": {
+      "rank": 59,
+      "cmc_id": 4269,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "VVV": {
+      "rank": 60,
+      "cmc_id": 35509,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "KCS": {
+      "rank": 61,
+      "cmc_id": 2087,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "POL": {
+      "rank": 62,
+      "cmc_id": 28321,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "ALGO": {
+      "rank": 63,
+      "cmc_id": 4030,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2021-05-21",
+          "oldest_ms": 1621555200000,
+          "iterations": 3,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2021-05-21",
+      "imprecise": false
+    },
+    "PI": {
+      "rank": 64,
+      "cmc_id": 35697,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "KAS": {
+      "rank": 65,
+      "cmc_id": 20396,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "INJ": {
+      "rank": 66,
+      "cmc_id": 7226,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "RENDER": {
+      "rank": 67,
+      "cmc_id": 5690,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "LIT": {
+      "rank": 68,
+      "cmc_id": 39125,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "JUP": {
+      "rank": 69,
+      "cmc_id": 29210,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "ATOM": {
+      "rank": 70,
+      "cmc_id": 3794,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "NIGHT": {
+      "rank": 71,
+      "cmc_id": 39064,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "XDC": {
+      "rank": 72,
+      "cmc_id": 2634,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "FIL": {
+      "rank": 73,
+      "cmc_id": 2280,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "ZRO": {
+      "rank": 74,
+      "cmc_id": 26997,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "AERO": {
+      "rank": 75,
+      "cmc_id": 29270,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "STX": {
+      "rank": 76,
+      "cmc_id": 4847,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "CAKE": {
+      "rank": 77,
+      "cmc_id": 7186,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "DASH": {
+      "rank": 78,
+      "cmc_id": 131,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "ETHFI": {
+      "rank": 79,
+      "cmc_id": 29814,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "APT": {
+      "rank": 80,
+      "cmc_id": 21794,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "FLR": {
+      "rank": 81,
+      "cmc_id": 7950,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "\u5e01\u5b89\u4eba\u751f": {
+      "rank": 82,
+      "cmc_id": 38590,
+      "quotes": {
+        "usdt": {
+          "status": "ERROR",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "ERROR",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "ERROR",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "PYTH": {
+      "rank": 83,
+      "cmc_id": 28177,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "TUSD": {
+      "rank": 84,
+      "cmc_id": 2563,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "RAY": {
+      "rank": 85,
+      "cmc_id": 8526,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "NEXO": {
+      "rank": 86,
+      "cmc_id": 2694,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "STABLE": {
+      "rank": 87,
+      "cmc_id": 38892,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "EURC": {
+      "rank": 88,
+      "cmc_id": 20641,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "PIEVERSE": {
+      "rank": 89,
+      "cmc_id": 38849,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "VET": {
+      "rank": 90,
+      "cmc_id": 3077,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "TIA": {
+      "rank": 91,
+      "cmc_id": 22861,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "CRV": {
+      "rank": 92,
+      "cmc_id": 6538,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2021-05-21",
+          "oldest_ms": 1621555200000,
+          "iterations": 3,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2021-05-21",
+      "imprecise": false
+    },
+    "PENGU": {
+      "rank": 93,
+      "cmc_id": 34466,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "VIRTUAL": {
+      "rank": 94,
+      "cmc_id": 29420,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "BTT": {
+      "rank": 95,
+      "cmc_id": 16086,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "SEI": {
+      "rank": 96,
+      "cmc_id": 23149,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "FET": {
+      "rank": 97,
+      "cmc_id": 3773,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "TRUMP": {
+      "rank": 98,
+      "cmc_id": 35336,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "SPX": {
+      "rank": 99,
+      "cmc_id": 28081,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "BSV": {
+      "rank": 100,
+      "cmc_id": 3602,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "KITE": {
+      "rank": 101,
+      "cmc_id": 38828,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "FF": {
+      "rank": 102,
+      "cmc_id": 38482,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "STRK": {
+      "rank": 103,
+      "cmc_id": 22691,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "SUN": {
+      "rank": 104,
+      "cmc_id": 10529,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "GNO": {
+      "rank": 105,
+      "cmc_id": 1659,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "FDUSD": {
+      "rank": 106,
+      "cmc_id": 26081,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "XTZ": {
+      "rank": 107,
+      "cmc_id": 2011,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "PENDLE": {
+      "rank": 108,
+      "cmc_id": 9481,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "LDO": {
+      "rank": 109,
+      "cmc_id": 8000,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "XPL": {
+      "rank": 110,
+      "cmc_id": 36645,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "BONK": {
+      "rank": 111,
+      "cmc_id": 23095,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "IMX": {
+      "rank": 112,
+      "cmc_id": 10603,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "OP": {
+      "rank": 113,
+      "cmc_id": 11840,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "LUNC": {
+      "rank": 114,
+      "cmc_id": 4172,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "DCR": {
+      "rank": 115,
+      "cmc_id": 1168,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "CFX": {
+      "rank": 116,
+      "cmc_id": 7334,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "BEAM": {
+      "rank": 117,
+      "cmc_id": 28298,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "GRT": {
+      "rank": 118,
+      "cmc_id": 6719,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "AR": {
+      "rank": 119,
+      "cmc_id": 5632,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "FLOKI": {
+      "rank": 120,
+      "cmc_id": 10804,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "KAIA": {
+      "rank": 121,
+      "cmc_id": 32880,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "COMP": {
+      "rank": 122,
+      "cmc_id": 5692,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "KMNO": {
+      "rank": 123,
+      "cmc_id": 30986,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "MON": {
+      "rank": 124,
+      "cmc_id": 30495,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "NFT": {
+      "rank": 125,
+      "cmc_id": 9816,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "RUNE": {
+      "rank": 127,
+      "cmc_id": 4157,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "ENS": {
+      "rank": 126,
+      "cmc_id": 13855,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "AKT": {
+      "rank": 128,
+      "cmc_id": 7431,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "BAT": {
+      "rank": 129,
+      "cmc_id": 1697,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2021-05-21",
+          "oldest_ms": 1621555200000,
+          "iterations": 3,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2021-05-21",
+      "imprecise": false
+    },
+    "FLUID": {
+      "rank": 130,
+      "cmc_id": 10508,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "ZBCN": {
+      "rank": 131,
+      "cmc_id": 30636,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "CVX": {
+      "rank": 132,
+      "cmc_id": 9903,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "JTO": {
+      "rank": 133,
+      "cmc_id": 28541,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "JASMY": {
+      "rank": 134,
+      "cmc_id": 8425,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "TWT": {
+      "rank": 135,
+      "cmc_id": 5964,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "TRAC": {
+      "rank": 136,
+      "cmc_id": 2467,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "MET": {
+      "rank": 137,
+      "cmc_id": 38353,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "ZAMA": {
+      "rank": 138,
+      "cmc_id": 39332,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "EIGEN": {
+      "rank": 139,
+      "cmc_id": 30494,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "IOTA": {
+      "rank": 140,
+      "cmc_id": 1720,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "SYRUP": {
+      "rank": 141,
+      "cmc_id": 33824,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "CAP": {
+      "rank": 142,
+      "cmc_id": 40531,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "WIF": {
+      "rank": 143,
+      "cmc_id": 28752,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    },
+    "SOON": {
+      "rank": 144,
+      "cmc_id": 36542,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "GOMINING": {
+      "rank": 145,
+      "cmc_id": 10180,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "TEL": {
+      "rank": 146,
+      "cmc_id": 2394,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "AXS": {
+      "rank": 147,
+      "cmc_id": 6783,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "MANA": {
+      "rank": 148,
+      "cmc_id": 1966,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2024-02-15",
+          "oldest_ms": 1707955200000,
+          "iterations": 2,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2024-02-15",
+      "imprecise": false
+    },
+    "THETA": {
+      "rank": 149,
+      "cmc_id": 2416,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "btc": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        }
+      },
+      "effective_min": null,
+      "imprecise": false
+    },
+    "XCN": {
+      "rank": 150,
+      "cmc_id": 18679,
+      "quotes": {
+        "usdt": {
+          "status": "NOT_LISTED",
+          "iterations": 1
+        },
+        "usd": {
+          "status": "TESTED",
+          "oldest": "2026-11-11",
+          "oldest_ms": 1794355200000,
+          "iterations": 1,
+          "imprecise": false
+        }
+      },
+      "effective_min": "2026-11-11",
+      "imprecise": false
+    }
+  }
+}
