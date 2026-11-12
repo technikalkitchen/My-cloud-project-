@@ -115,7 +115,7 @@ Cross_Item_Notes یا Resolution ثبت می‌شود. Item_09 دست‌نخور
 ## Item_11 — Cache
 
 ### [Legacy] هرم کش (Cache Pyramid)
-- 5m: ۳۰ روز (~۱۷۰MB)، 15m: ۹۰ روز (~۱۷۰MB)، 1h: از ۲۰۱۷ (~۱.۸GB)، 1d: از ۲۰۱۱ (~۵۰MB). (منبع: B75 بخش ۸)
+**اصلاح‌شده طبق R-30 (TEST_MAP):** 15m پایه اصلی است (نه 5m). 5m فقط ۱ روز اخیر در RAM. 15m/1h/1d در Persistent Storage. (منبع: B75 + R-30)
 
 ---
 
@@ -190,7 +190,7 @@ Cross_Item_Notes یا Resolution ثبت می‌شود. Item_09 دست‌نخور
 ## Item_15 — Supply
 
 ### [Legacy] قانون منبع ساپلای
-- ساپلای روزانه از CoinGecko. یک منبع واحد برای همه صرافی‌ها. (منبع: B75 بخش ۱۲)
+**اصلاح‌شده طبق TEST_MAP:** ساپلای روزانه از CMC (منبع اصلی) و CoinGecko (Fallback). یک منبع واحد برای همه صرافی‌ها. (منبع: B75 بخش ۱۲)
 
 ---
 - **R-31a:** تست DefiLlama برای USD1.
