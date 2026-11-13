@@ -1,4 +1,4 @@
-# filename	Tier	Items	Note_override
+# filename	Tier	Items	Note
 2026-11-07_A4_OHLCV_Format.md	T1	07,08,10,16	5 ناسازگاری OHLCV (field order، 4 ts format، float، direction، count)
 A6_A7_discovery_2026-11-08.json	T1	03,04	3 migration + 3 delisted + KMNO
 A6_A7_okx_correction_2026-11-09.json	T1	04	POL=2024-09-03 RENDER=2024-07-14 S=2025-01-20 (CONFIRMED)
@@ -6,11 +6,11 @@ pol_bybit_test_2026-11-08.json	T1	04	same_asset close diff 0.14% launchTime=null
 a9_okx_2026-11-09.json	T1	01,03	105/150 TESTED USDT+USD+USDC
 a9_okx_v3_2026-11-09.json	T1	05,18	BTC-pair PENDING USD PENDING USDT 105/150
 a9_okx_usdc_retry_2026-11-09.json	T1	01	106/150 (+EURC) 600-day partial
-a9_asset_start_dates_2026-11-08.json	T1	01,03	Binance 114/150 + Bybit 121/150 + Bitstamp 1/150 (composite)
+a9_asset_start_dates_2026-11-08.json	T1-core	01,03,04,18	+04 (migration), +18 (price start)
 a9_bitstamp_2026-11-11.json	T1	01	85/150 TESTED (full run)
 a9_coinbase_2026-11-11.json	T1	01,03,05	99/150 usdt_usd_start=2021-05-04 22 Direct + 77 Converted
-coinbase_btc_diagnostic.py	T1	01,05	9 tests — t2+t3 PASS — Full scan READY
-bitstamp_diagnostic.py	T1	01	Bitstamp pair bug diagnostic
+coinbase_btc_diagnostic.py	T1-driver	01,05	script (was T1-core)
+bitstamp_diagnostic.py	T1-driver	01	script (was T1-core)
 cmc_top150_2026-11-08.json	T1	03	150 CMC authoritative
 asset_universe_master_2026-11-08.json	T1	03	195 union
 audit_2026-11-11.json	T1	all	7 open questions answered — commit 8998ecf
@@ -38,38 +38,20 @@ final_supply_harvest.yml	T2	15	data_source workflow (118 records)
 adapters.py	T4-helper	-	TEST001 adapter — infra, not evidence
 config.py	T4-helper	-	TEST001 config — infra, not evidence
 runner.py	T4-helper	-	TEST001 runner — infra, not evidence
-# ─── M2: ۱۳ T1-driver items ───
-a6_a7_discovery.pyT1-driver03,04produces A6_A7_discovery.json
-a6_a7_okx_correction.pyT1-driver04produces A6_A7_okx_correction.json
-a9_asset_start_dates.pyT1-driver01,03,04,18produces a9_asset_start_dates.json
-a9_bitstamp_full.pyT1-driver01produces a9_bitstamp_11.json
-a9_coinbase_full.pyT1-driver01,03,05produces a9_coinbase_11.json
-a9_okx_only.pyT1-driver01,03produces a9_okx_2026-11-09.json
-a9_okx_usdc_retry.pyT1-driver01produces a9_okx_usdc_retry.json
-a9_okx_v3.pyT1-driver05,18produces a9_okx_v3.json
-asset_master_builder.pyT1-driver03produces asset_universe_master.json
-audit_2026-11-11.pyT1-driverallproduces audit_2026-11-11.json
-check_7_no_data_supply.pyT1-driver03,15produces 7_no_data_resolved.json
-cmc_top150_fetch.pyT1-driver03produces cmc_top150.json
-pol_bybit_test.pyT1-driver04produces pol_bybit_test.json
-# ─── M3: ۲ py reclassify ───
-bitstamp_diagnostic.pyT1-driver01script (was T1-core)
-coinbase_btc_diagnostic.pyT1-driver01,05script (was T1-core)
-# ─── M1: ۳ workflow reclassify ───
-cmc_internal_extended.ymlT4-obsolete-workflow (was T2)
-final_supply_harvest.ymlT4-obsolete-workflow (was T2)
-test003_manual.ymlT4-obsolete-workflow (was T2)
-# ─── OKX WS v1 → T3 ───
-2026-10-30_okx_websocket_test.txtT3-amateur11superseded by v2
-# ─── M4: ۳ summary note-only ───
-A6_A7_discovery_2026-11-08_summary.mdT2-mirror of T1 (JSON authoritative)
-a9_asset_start_dates_2026-11-08_summary.mdT2-mirror of T1 (JSON authoritative)
-audit_2026-11-11.mdT2-mirror of T1 (JSON authoritative)
-# ─── M6: ۳ coverage note-only ───
-2026-10-28_5m_since_2017.tsvT3-amateur-historical — superseded by A2 (7 Nov)
-2026-10-28_coverage_matrix.tsvT3-amateur-historical — superseded by A9 composite
-2026-10-30_1h_1d_coverage.txtT3-amateur-historical — superseded by A2.5a
-# ─── M7: errors.json note-only ───
-supply_timeseries_2026-11-07_errors.jsonT4-output-Item_15 USD1 502 error — reference for P3
-# ─── M2: تصحیح a9_asset_start_dates.json ───
-a9_asset_start_dates_2026-11-08.jsonT1-core01,03,04,18+04 (migration dates), +18 (price start)
+a6_a7_discovery.py	T1-driver	03,04	produces A6_A7_discovery.json
+a6_a7_okx_correction.py	T1-driver	04	produces A6_A7_okx_correction.json
+a9_asset_start_dates.py	T1-driver	01,03,04,18	produces a9_asset_start_dates.json
+a9_bitstamp_full.py	T1-driver	01	produces a9_bitstamp_11.json
+a9_coinbase_full.py	T1-driver	01,03,05	produces a9_coinbase_11.json
+a9_okx_only.py	T1-driver	01,03	produces a9_okx_2026-11-09.json
+a9_okx_usdc_retry.py	T1-driver	01	produces a9_okx_usdc_retry.json
+a9_okx_v3.py	T1-driver	05,18	produces a9_okx_v3.json
+asset_master_builder.py	T1-driver	03	produces asset_universe_master.json
+audit_2026-11-11.py	T1-driver	all	produces audit_2026-11-11.json
+check_7_no_data_supply.py	T1-driver	03,15	produces 7_no_data_resolved.json
+cmc_top150_fetch.py	T1-driver	03	produces cmc_top150.json
+pol_bybit_test.py	T1-driver	04	produces pol_bybit_test.json
+2026-10-28_5m_since_2017.tsv	T3-amateur	-	historical — superseded by A2 (7 Nov)
+2026-10-28_coverage_matrix.tsv	T3-amateur	-	historical — superseded by A9 composite
+2026-10-30_1h_1d_coverage.txt	T3-amateur	-	historical — superseded by A2.5a
+supply_timeseries_2026-11-07_errors.json	T4-output	-	Item_15 USD1 502 error — reference
