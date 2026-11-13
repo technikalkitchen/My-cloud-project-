@@ -35,3 +35,6 @@ a9_asset_start_dates_2026-11-08_summary.md	T2	01,03	summary
 cmc_internal_extended.yml	T2	03	CMC extended workflow
 test003_manual.yml	T2	13,16	test003 workflow
 final_supply_harvest.yml	T2	15	data_source workflow (118 records)
+adapters.py	T4-helper	-	TEST001 adapter — infra, not evidence
+config.py	T4-helper	-	TEST001 config — infra, not evidence
+runner.py	T4-helper	-	TEST001 runner — infra, not evidence

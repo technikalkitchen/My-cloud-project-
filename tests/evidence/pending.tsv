@@ -1,6 +1,6 @@
-# TestItemPriorityWhy
-Bitstamp candle cap01,09P0سقف 300 تأیید نشده
-Coinbase REST rate09P0GAP — هرگز تست نشد
-C-019b (5-conn WS)09,11P0R-03 تصویب، تست نشده
-WS Binance/Bybit11P1Part 2 v1.5 PROVISIONAL
-USD1 DefiLlama15P3کم‌اولویت
+# Test	Item	Priority	Why
+Bitstamp candle cap	01,09	P0	سقف 300 تأیید نشده
+Coinbase REST rate	09	P0	GAP — هرگز تست نشد
+C-019b (5-conn WS)	09,11	P0	R-03 تصویب، تست نشده
+WS Binance/Bybit	11	P1	Part 2 v1.5 PROVISIONAL
+USD1 DefiLlama	15	P3	کم‌اولویت

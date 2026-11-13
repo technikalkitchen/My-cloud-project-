@@ -1,6 +1,6 @@
 # MANIFEST.md — Self-Sufficient Test Registry
 
-**Generated:** 2026-11-13T17:37:28Z
+**Generated:** 2026-11-13T20:17:52Z
 **Total files:** 133 | **PENDING (هنوز نگرفته):** 5
 
 **Regenerate:** `bash tests/evidence/scan_repo.sh && python3 tests/evidence/gen_manifest.py`
@@ -17,7 +17,7 @@
 | Archive | v3.4_FINAL · v3.4.4_preview · v3.4.2_appendices · v2.1 · *.bak |
 
 
-## §1 — T1-Core: In TEST_MAP (شاهد قطعی) (23 فایل)
+## §1 — T1-Core: In TEST_MAP (شاهد قطعی) (20 فایل)
 
 | File | Item | Date | Summary |
 |---|---|---|---|
@@ -32,17 +32,14 @@
 | a9_okx_2026-11-09.json | 01,03 | 2026-11-09 | 105/150 TESTED USDT+USD+USDC |
 | a9_okx_usdc_retry_2026-11-09.json | 01 | 2026-11-09 | 106/150 (+EURC) 600-day partial |
 | a9_okx_v3_2026-11-09.json | 05,18 | 2026-11-09 | BTC-pair PENDING USD PENDING USDT 105/150 |
-| adapters.py | — | no-date | Minimal public-API adapters for TEST001. |
 | asset_universe_master_2026-11-08.json | 03 | 2026-11-08 | 195 union |
 | audit_2026-11-11.json | all | 2026-11-11 | 7 open questions answered — commit 8998ecf |
 | bitstamp_diagnostic.py | 01 | no-date | Bitstamp pair bug diagnostic |
 | cmc_top150_2026-11-08.json | 03 | 2026-11-08 | 150 CMC authoritative |
 | coinbase_btc_diagnostic.py | 01,05 | no-date | 9 tests — t2+t3 PASS — Full scan READY |
-| config.py | — | no-date | Small, explicit configuration for the TEST001 market-history MVP. |
 | final_125_supply.json | 03,15 | no-date | 118 tag FILLED |
-| final_125_supply.json | 03,15 | no-date | 118 tag FILLED |
+| final_125_supply.json#2 | 03,15 | no-date | 118 tag FILLED |
 | pol_bybit_test_2026-11-08.json | 04 | 2026-11-08 | same_asset close diff 0.14% launchTime=null test_date=2023-10-25 |
-| runner.py | — | no-date | Simple TEST001 runner: discover listed pairs and their first/last candles. |
 | supply_timeseries_2026-11-07.json | 12,15 | 2026-11-07 | 117 keys 13.17MB |
 
 ## §3 — T1-Driver Scripts (تولیدکننده شواهد) (13 فایل)
@@ -85,11 +82,14 @@
 | final_supply_harvest.yml | no-date | data_source workflow (118 records) |
 | test003_manual.yml | no-date | test003 workflow |
 
-## §4 — T4 Helper Scripts (21 فایل)
+## §4 — T4 Helper Scripts (25 فایل)
 
 | File | Date | Summary |
 |---|---|---|
+| __init__.py | no-date | TEST001 market-history MVP package. |
+| adapters.py | no-date | TEST001 adapter — infra, not evidence |
 | clean_legacy_registry.py | no-date | — |
+| config.py | no-date | TEST001 config — infra, not evidence |
 | create_item_registry.py | no-date | # Item_Registry.md — یادداشت‌های اختصاصی آیتم‌ها |
 | final_clean_registry.py | no-date | — |
 | fix_tmap_caveats.py | no-date | — |
@@ -106,6 +106,7 @@
 | patch_v34_session2.py | no-date | v3.4 FINAL — Session 2 patches (3 TD #13 + 5 R + 3 appends). |
 | r07_patch_item12.py | no-date | — |
 | remove_junk_exchanges.py | no-date | — |
+| runner.py | no-date | TEST001 runner — infra, not evidence |
 | update_tmap_bitstamp.py | no-date | — |
 | update_tmap_coinbase.py | no-date | !/usr/bin/env python3 |
 | validate_tmap.py | no-date | — |
@@ -142,28 +143,28 @@
 | earliest_dates.json | no-date | 0G{3} · 1INCH{3} · 2Z{3} · A{3} · AAVE{3} · ADA{3} |
 | fill_gaps_results.json | no-date | FIGR_HELOC{6} · HYPE{6} · USDS{6} · WBT{6} · RAIN{6} · CC{6} |
 | latest_run.log | no-date | — |
-| latest_run.log | no-date | — |
-| latest_run.log | no-date | — |
-| latest_run.log | no-date | — |
-| latest_run.log | no-date | — |
-| latest_run.log | no-date | — |
-| latest_run.log | no-date | — |
-| latest_run.log | no-date | — |
-| latest_run.log | no-date | — |
-| latest_run.log | no-date | — |
-| latest_run.log | no-date | — |
-| latest_run.log | no-date | — |
-| latest_run.log | no-date | — |
-| latest_run.log | no-date | — |
-| latest_run.log | no-date | — |
-| latest_run.log | no-date | — |
-| latest_run.log | no-date | — |
-| latest_run.log | no-date | — |
+| latest_run.log#10 | no-date | — |
+| latest_run.log#11 | no-date | — |
+| latest_run.log#12 | no-date | — |
+| latest_run.log#13 | no-date | — |
+| latest_run.log#14 | no-date | — |
+| latest_run.log#15 | no-date | — |
+| latest_run.log#16 | no-date | — |
+| latest_run.log#17 | no-date | — |
+| latest_run.log#18 | no-date | — |
+| latest_run.log#2 | no-date | — |
+| latest_run.log#3 | no-date | — |
+| latest_run.log#4 | no-date | — |
+| latest_run.log#5 | no-date | — |
+| latest_run.log#6 | no-date | — |
+| latest_run.log#7 | no-date | — |
+| latest_run.log#8 | no-date | — |
+| latest_run.log#9 | no-date | — |
 | results.json | no-date | run_id=a0908f5c-5cec-4f36-83d6-3d07f0a5c744 · generated_at_utc=2026-10-17T16:47:20.978016Z · status=FAILED · assets_requ |
-| results.json | no-date | run_id=469a782f-fb10-48ff-a8fa-e42dcca1c5be · generated_at_utc=2026-10-17T17:05:34.092028Z · status=COMPLETED · assets_r |
-| results.json | no-date | run_id=b8edcf10-30fe-4bcd-8ca1-c8c5cd9c38f1 · generated_at_utc=2026-10-17T17:08:55.043110Z · status=PARTIAL · assets_req |
-| results.json | no-date | run_id=63a36de9-70c0-4ee7-8235-fe7d1f324078 · generated_at_utc=2026-10-17T21:15:13.392485Z · status=PARTIAL · assets_req |
-| results.json | no-date | run_id=f1bb1ec6-fe57-495f-b923-d7d5f9f4a292 · generated_at_utc=2026-10-17T22:08:21.322402Z · status=COMPLETED · assets_r |
+| results.json#2 | no-date | run_id=469a782f-fb10-48ff-a8fa-e42dcca1c5be · generated_at_utc=2026-10-17T17:05:34.092028Z · status=COMPLETED · assets_r |
+| results.json#3 | no-date | run_id=b8edcf10-30fe-4bcd-8ca1-c8c5cd9c38f1 · generated_at_utc=2026-10-17T17:08:55.043110Z · status=PARTIAL · assets_req |
+| results.json#4 | no-date | run_id=63a36de9-70c0-4ee7-8235-fe7d1f324078 · generated_at_utc=2026-10-17T21:15:13.392485Z · status=PARTIAL · assets_req |
+| results.json#5 | no-date | run_id=f1bb1ec6-fe57-495f-b923-d7d5f9f4a292 · generated_at_utc=2026-10-17T22:08:21.322402Z · status=COMPLETED · assets_r |
 | summary.txt | no-date | cmc_aggressive_fill.yml : OK cmc_earliest_dates.yml : OK cmc_fill_40.yml : OK cmc_internal_extended.yml : OK combined_su |
 | supply_timeseries_2026-11-07_errors.json | 2026-11-07 | USD1{3} |
 | top125.json | no-date | list[125] |
@@ -183,19 +184,18 @@
 | 2026-10-28_test_real_check.txt | 2026-10-28 | === 1. Binance BTCUSDT 5m — از 2017-08-17؟ === ✅ اولین کندل: 2017-08-17 04:00 UTC === 2. Binance ZECUSDT 5m — از 2021-01 |
 | 2026-10-30_1h_1d_coverage.txt | 2026-10-30 | === Checking 1h and 1d coverage (Oldest Data) === Binance: 1h: 1502942400000 1d: 1502928000000 OKX: 1h: 1793376000000 1d |
 
-## §9 — Real Uncategorized (2 فایل)
+## §9 — Real Uncategorized (1 فایل)
 
 | File | Date | Summary |
 |---|---|---|
-| __init__.py | no-date | TEST001 market-history MVP package. |
 | test_map_audit_2026-11-13.txt | 2026-11-13 | === TEST_MAP Audit — Fri Nov 13 15:36:30 UTC 2026 === |
 
 ## §10 — PENDING Tests (هنوز گرفته نشده) (5)
 
 | Test | Item | P | Why |
 |---|---|---|---|
-| Bitstamp candle cap01,09P0سقف 300 تأیید نشده |  |  |  |
-| Coinbase REST rate09P0GAP — هرگز تست نشد |  |  |  |
-| C-019b (5-conn WS)09,11P0R-03 تصویب، تست نشده |  |  |  |
-| WS Binance/Bybit11P1Part 2 v1.5 PROVISIONAL |  |  |  |
-| USD1 DefiLlama15P3کم‌اولویت |  |  |  |
+| Bitstamp candle cap | 01,09 | P0 | سقف 300 تأیید نشده |
+| Coinbase REST rate | 09 | P0 | GAP — هرگز تست نشد |
+| C-019b (5-conn WS) | 09,11 | P0 | R-03 تصویب، تست نشده |
+| WS Binance/Bybit | 11 | P1 | Part 2 v1.5 PROVISIONAL |
+| USD1 DefiLlama | 15 | P3 | کم‌اولویت |

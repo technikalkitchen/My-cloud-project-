@@ -42,6 +42,7 @@ def auto_tier(path):
         return "T3-amateur"
     if ".bak-" in path or path.endswith(".bak"): return "T4-archive"
     if path.startswith("tests/stages/"):     return "T4-obsolete"
+    if path.startswith("app/market/test001/"): return "T4-helper"
     if path.startswith("tests/evidence/scripts/"):
         fn = path.lower()
         PATCH = ("patch","fix_","update_tmap","migrate_archive","park_legacy",
@@ -91,6 +92,7 @@ def main():
     triage = load_tsv(TRIAGE)
     pending = load_pending()
     rows = []
+    seen_fnames = {}
     with open(RAW, encoding="utf-8") as f:
         for line in f:
             if line.startswith(("#", "path\t", "filename\t")): continue
@@ -98,7 +100,13 @@ def main():
             if len(parts) < 5: continue
             path, fname, date, size, in_tm = parts[:5]
             if fname in META: continue
-            t = triage.get(fname, {})
+            # باگ ۱: تمایز duplicate basenames
+            if fname in seen_fnames:
+                seen_fnames[fname] += 1
+                fname = fname + "#" + str(seen_fnames[fname])
+            else:
+                seen_fnames[fname] = 1
+            t = triage.get(fname.split("#")[0], {})
             tier = t.get("tier") or auto_tier(path)
             if tier is None:
                 if in_tm == "YES": tier = "T1-core"
