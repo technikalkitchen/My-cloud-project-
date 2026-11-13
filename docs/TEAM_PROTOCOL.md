@@ -165,3 +165,65 @@ Coinbase قیمت را Float می‌فرستد و ترتیب فیلدهایش م
 | v1.1 | ۱۱ Nov 2026 | +roles, +source of truth, +R-registry |
 | v1.2 | ۱۱ Nov 2026 | حذف DAG/roadmap |
 | **v2.0** | **۱۳ Nov 2026** | **افزودن قالب اجباری هدر، اصلاح منابع حقیقت (Registry)، افزودن تله‌های جدید (Coinbase, /tmp) — آماده برای بسته مهاجرتی** |
+
+
+---
+
+## بخش ۱۰ — MANIFEST: منبع حقیقت تست‌ها (Amendment — ۱۳ Nov 2026)
+
+**زمینه:** تا قبل از این Amendment، هیچ دستیار جدید نمی‌توانست بدون باز کردن فایل‌های JSON/MD بفهمد «چه تستی داریم، به کدام آیتم می‌خورد». سه بار چرخه باطل تکرار شد. این Amendment آن را می‌بندد.
+
+### ۱۰.۱ — قاعده «MANIFEST اول»
+
+هر دستیاری قبل از باز کردن **هر فایل تست** در tests/evidence/ یا results/:
+
+۱. اول docs/MANIFEST.md را می‌خواند
+۲. اگر تست در §1 (T1-Core) یا §3b (T2-Caveat) بود → با Summary خودکار، نیازی به باز کردن فایل نیست
+۳. اگر Summary کافی نبود (نادر — فقط برای T1) → تازه فایل باز می‌شود
+
+هدف: هیچ دستیاری برای نوشتن آیتم، فایل JSON باز نمی‌کند.
+
+### ۱۰.۲ — فایل‌های مرجع
+
+| فایل | نقش | دستی/خودکار |
+|---|---|---|
+| docs/MANIFEST.md | همه فایل‌ها با Tier + Summary + Item | خودکار |
+| tests/evidence/triage.tsv | tier override + items | دستی |
+| tests/evidence/pending.tsv | تست‌های هنوز نگرفته | دستی |
+| tests/evidence/gen_manifest.py | بازسازی از repo | خودکار |
+| tests/evidence/scan_repo.sh | لیست فایل‌ها | خودکار |
+
+### ۱۰.۳ — چرخه تست جدید (اجباری — R-25)
+
+هر بار تست جدید گرفته می‌شود، در همان commit:
+
+۱. bash tests/evidence/scan_repo.sh (۲ ثانیه)
+۲. یک خط به tests/evidence/triage.tsv اضافه کن: filename + tab + tier + tab + items
+۳. python3 tests/evidence/gen_manifest.py (۱ ثانیه)
+
+تست بدون ردیف در triage.tsv = تست گم‌شده در §9 (Real Uncategorized) — نقض R-16.
+
+### ۱۰.۴ — Validation Gate
+
+gen_manifest.py باید همیشه این را تضمین کند:
+
+assert sum(sections) == len(rows) == len(raw_tests.tsv) - len(META)
+
+اگر شکست خورد → کامیت ممنوع تا باگ رفع شود.
+
+### ۱۰.۵ — وقتی تست گرفته می‌شود (PENDING → T1)
+
+۱. ردیف از pending.tsv حذف می‌شود
+۲. ردیف به triage.tsv اضافه می‌شود
+۳. gen_manifest.py اجرا می‌شود
+۴. کامیت با پیام test(evidence): <name> — Item_XX (R-25)
+
+### ۱۰.۶ — قاعده «بدون حافظه»
+
+Summary در MANIFEST همیشه از محتوای فایل یا از note در triage.tsv می‌آید. هیچ Summary از حافظه دستیار نوشته نمی‌شود.
+
+### ۱۰.۷ — فرایند اصلاح این Amendment
+
+طبق بخش ۹: TD + AM تأیید، Owner APPROVED، commit با پیام docs(TEAM_PROTOCOL): amendment — section 10 MANIFEST workflow.
+
+---
