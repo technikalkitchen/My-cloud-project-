@@ -38,3 +38,38 @@ final_supply_harvest.yml	T2	15	data_source workflow (118 records)
 adapters.py	T4-helper	-	TEST001 adapter — infra, not evidence
 config.py	T4-helper	-	TEST001 config — infra, not evidence
 runner.py	T4-helper	-	TEST001 runner — infra, not evidence
+# ─── M2: ۱۳ T1-driver items ───
+a6_a7_discovery.pyT1-driver03,04produces A6_A7_discovery.json
+a6_a7_okx_correction.pyT1-driver04produces A6_A7_okx_correction.json
+a9_asset_start_dates.pyT1-driver01,03,04,18produces a9_asset_start_dates.json
+a9_bitstamp_full.pyT1-driver01produces a9_bitstamp_11.json
+a9_coinbase_full.pyT1-driver01,03,05produces a9_coinbase_11.json
+a9_okx_only.pyT1-driver01,03produces a9_okx_2026-11-09.json
+a9_okx_usdc_retry.pyT1-driver01produces a9_okx_usdc_retry.json
+a9_okx_v3.pyT1-driver05,18produces a9_okx_v3.json
+asset_master_builder.pyT1-driver03produces asset_universe_master.json
+audit_2026-11-11.pyT1-driverallproduces audit_2026-11-11.json
+check_7_no_data_supply.pyT1-driver03,15produces 7_no_data_resolved.json
+cmc_top150_fetch.pyT1-driver03produces cmc_top150.json
+pol_bybit_test.pyT1-driver04produces pol_bybit_test.json
+# ─── M3: ۲ py reclassify ───
+bitstamp_diagnostic.pyT1-driver01script (was T1-core)
+coinbase_btc_diagnostic.pyT1-driver01,05script (was T1-core)
+# ─── M1: ۳ workflow reclassify ───
+cmc_internal_extended.ymlT4-obsolete-workflow (was T2)
+final_supply_harvest.ymlT4-obsolete-workflow (was T2)
+test003_manual.ymlT4-obsolete-workflow (was T2)
+# ─── OKX WS v1 → T3 ───
+2026-10-30_okx_websocket_test.txtT3-amateur11superseded by v2
+# ─── M4: ۳ summary note-only ───
+A6_A7_discovery_2026-11-08_summary.mdT2-mirror of T1 (JSON authoritative)
+a9_asset_start_dates_2026-11-08_summary.mdT2-mirror of T1 (JSON authoritative)
+audit_2026-11-11.mdT2-mirror of T1 (JSON authoritative)
+# ─── M6: ۳ coverage note-only ───
+2026-10-28_5m_since_2017.tsvT3-amateur-historical — superseded by A2 (7 Nov)
+2026-10-28_coverage_matrix.tsvT3-amateur-historical — superseded by A9 composite
+2026-10-30_1h_1d_coverage.txtT3-amateur-historical — superseded by A2.5a
+# ─── M7: errors.json note-only ───
+supply_timeseries_2026-11-07_errors.jsonT4-output-Item_15 USD1 502 error — reference for P3
+# ─── M2: تصحیح a9_asset_start_dates.json ───
+a9_asset_start_dates_2026-11-08.jsonT1-core01,03,04,18+04 (migration dates), +18 (price start)

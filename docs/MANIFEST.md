@@ -1,7 +1,7 @@
 # MANIFEST.md — Self-Sufficient Test Registry
 
-**Generated:** 2026-11-13T20:17:52Z
-**Total files:** 133 | **PENDING (هنوز نگرفته):** 5
+**Generated:** 2026-11-13T20:46:12Z
+**Total files:** 130 | **PENDING (هنوز نگرفته):** 5
 
 **Regenerate:** `bash tests/evidence/scan_repo.sh && python3 tests/evidence/gen_manifest.py`
 **Manual edits فقط:** `triage.tsv` (tier/items) + `pending.tsv` (تست‌های نگرفته)
@@ -82,13 +82,12 @@
 | final_supply_harvest.yml | no-date | data_source workflow (118 records) |
 | test003_manual.yml | no-date | test003 workflow |
 
-## §4 — T4 Helper Scripts (25 فایل)
+## §4 — T4 Helper Scripts (23 فایل)
 
 | File | Date | Summary |
 |---|---|---|
 | __init__.py | no-date | TEST001 market-history MVP package. |
 | adapters.py | no-date | TEST001 adapter — infra, not evidence |
-| clean_legacy_registry.py | no-date | — |
 | config.py | no-date | TEST001 config — infra, not evidence |
 | create_item_registry.py | no-date | # Item_Registry.md — یادداشت‌های اختصاصی آیتم‌ها |
 | final_clean_registry.py | no-date | — |
@@ -110,7 +109,6 @@
 | update_tmap_bitstamp.py | no-date | — |
 | update_tmap_coinbase.py | no-date | !/usr/bin/env python3 |
 | validate_tmap.py | no-date | — |
-| verify_test_map.sh | no-date | — |
 
 ## §5 — T4 Obsolete Workflows (15 فایل)
 
@@ -184,11 +182,9 @@
 | 2026-10-28_test_real_check.txt | 2026-10-28 | === 1. Binance BTCUSDT 5m — از 2017-08-17؟ === ✅ اولین کندل: 2017-08-17 04:00 UTC === 2. Binance ZECUSDT 5m — از 2021-01 |
 | 2026-10-30_1h_1d_coverage.txt | 2026-10-30 | === Checking 1h and 1d coverage (Oldest Data) === Binance: 1h: 1502942400000 1d: 1502928000000 OKX: 1h: 1793376000000 1d |
 
-## §9 — Real Uncategorized (1 فایل)
+## §9 — Real Uncategorized (0 فایل)
 
-| File | Date | Summary |
-|---|---|---|
-| test_map_audit_2026-11-13.txt | 2026-11-13 | === TEST_MAP Audit — Fri Nov 13 15:36:30 UTC 2026 === |
+_هیچ فایلی بدون طبقه‌بندی نیست_ ✅
 
 ## §10 — PENDING Tests (هنوز گرفته نشده) (5)
 
