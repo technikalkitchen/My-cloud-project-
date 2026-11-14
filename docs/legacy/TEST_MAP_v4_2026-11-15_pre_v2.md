@@ -1,17 +1,16 @@
 # TEST_MAP_v4.md — Item-Centric Test Registry
 
-**Generated:** auto from `docs/MANIFEST.md` + `tests/evidence/triage.tsv` + `pending.tsv`
+**Generated:** auto from MANIFEST + triage + pending
 **Regenerate:** `python3 tests/evidence/gen_test_map_v4.py`
 
-**Complement:** `docs/MANIFEST.md` = File → Items · This file = Item → Files
+**Complement:** MANIFEST = File→Items · This = Item→Files
 
 ---
 
-## §0 — Cross-Cutting Files (apply to all items)
+## §0 — Cross-Cutting Files
 
-| File | Tier | Date | Summary |
+| File | Tier | Date | Description |
 |---|---|---|---|
-| audit_2026-11-11.json | T1-core | 2026-11-11 | 7 open questions answered — commit 8998ecf |
 | audit_2026-11-11.md | T2 | 2026-11-11 | summary mirror |
 | audit_2026-11-11.py | T1-driver | 2026-11-11 | produces audit_2026-11-11.json |
 
@@ -21,13 +20,9 @@
 
 ### Tests
 
-| Tier | File | Date | Summary |
+| Tier | File | Date | Description |
 |---|---|---|---|
-| T1-core | a9_asset_start_dates_2026-11-08.json | 2026-11-08 | +04 (migration), +18 (price start) |
 | T1-core | a9_bitstamp_2026-11-11.json | 2026-11-11 | 85/150 TESTED (full run) |
-| T1-core | a9_coinbase_2026-11-11.json | 2026-11-11 | 99/150 usdt_usd_start=2021-05-04 22 Direct + 77 Converted |
-| T1-core | a9_okx_2026-11-09.json | 2026-11-09 | 105/150 TESTED USDT+USD+USDC |
-| T1-core | a9_okx_usdc_retry_2026-11-09.json | 2026-11-09 | 106/150 (+EURC) 600-day partial |
 | T1-driver | a9_asset_start_dates.py | no-date | produces a9_asset_start_dates.json |
 | T1-driver | a9_bitstamp_full.py | no-date | produces a9_bitstamp_11.json |
 | T1-driver | a9_coinbase_full.py | no-date | produces a9_coinbase_11.json |
@@ -57,15 +52,8 @@ _هیچ تستی ندارد_
 
 ### Tests
 
-| Tier | File | Date | Summary |
+| Tier | File | Date | Description |
 |---|---|---|---|
-| T1-core | 7_no_data_resolved_2026-11-11.json | 2026-11-11 | 7 NO_DATA RESOLVED — all new assets no 2017 data |
-| T1-core | A6_A7_discovery_2026-11-08.json | 2026-11-08 | 3 migration + 3 delisted + KMNO |
-| T1-core | a9_asset_start_dates_2026-11-08.json | 2026-11-08 | +04 (migration), +18 (price start) |
-| T1-core | a9_coinbase_2026-11-11.json | 2026-11-11 | 99/150 usdt_usd_start=2021-05-04 22 Direct + 77 Converted |
-| T1-core | a9_okx_2026-11-09.json | 2026-11-09 | 105/150 TESTED USDT+USD+USDC |
-| T1-core | asset_universe_master_2026-11-08.json | 2026-11-08 | 195 union |
-| T1-core | cmc_top150_2026-11-08.json | 2026-11-08 | 150 CMC authoritative |
 | T1-core | final_125_supply.json | no-date | 118 tag FILLED |
 | T1-driver | a6_a7_discovery.py | no-date | produces A6_A7_discovery.json |
 | T1-driver | a9_asset_start_dates.py | no-date | produces a9_asset_start_dates.json |
@@ -84,13 +72,9 @@ _هیچ تستی ندارد_
 
 ### Tests
 
-| Tier | File | Date | Summary |
+| Tier | File | Date | Description |
 |---|---|---|---|
 | T1-core | 2026-11-07_migration_extract.md | 2026-11-07 | migration extract text |
-| T1-core | A6_A7_discovery_2026-11-08.json | 2026-11-08 | 3 migration + 3 delisted + KMNO |
-| T1-core | A6_A7_okx_correction_2026-11-09.json | 2026-11-09 | POL=2024-09-03 RENDER=2024-07-14 S=2025-01-20 (CONFIRMED) |
-| T1-core | a9_asset_start_dates_2026-11-08.json | 2026-11-08 | +04 (migration), +18 (price start) |
-| T1-core | pol_bybit_test_2026-11-08.json | 2026-11-08 | same_asset close diff 0.14% launchTime=null test_date=2023-10-25 |
 | T1-driver | a6_a7_discovery.py | no-date | produces A6_A7_discovery.json |
 | T1-driver | a6_a7_okx_correction.py | no-date | produces A6_A7_okx_correction.json |
 | T1-driver | a9_asset_start_dates.py | no-date | produces a9_asset_start_dates.json |
@@ -103,10 +87,8 @@ _هیچ تستی ندارد_
 
 ### Tests
 
-| Tier | File | Date | Summary |
+| Tier | File | Date | Description |
 |---|---|---|---|
-| T1-core | a9_coinbase_2026-11-11.json | 2026-11-11 | 99/150 usdt_usd_start=2021-05-04 22 Direct + 77 Converted |
-| T1-core | a9_okx_v3_2026-11-09.json | 2026-11-09 | BTC-pair PENDING USD PENDING USDT 105/150 |
 | T1-driver | a9_coinbase_full.py | no-date | produces a9_coinbase_11.json |
 | T1-driver | a9_okx_v3.py | no-date | produces a9_okx_v3.json |
 | T1-driver | coinbase_btc_diagnostic.py | no-date | script (was T1-core) |
@@ -123,7 +105,7 @@ _هیچ تستی ندارد_
 
 ### Tests
 
-| Tier | File | Date | Summary |
+| Tier | File | Date | Description |
 |---|---|---|---|
 | T1-core | 2026-11-07_A4_OHLCV_Format.md | 2026-11-07 | 5 ناسازگاری OHLCV (field order، 4 ts format، float، direction، count) |
 
@@ -133,7 +115,7 @@ _هیچ تستی ندارد_
 
 ### Tests
 
-| Tier | File | Date | Summary |
+| Tier | File | Date | Description |
 |---|---|---|---|
 | T1-core | 2026-11-07_A4_OHLCV_Format.md | 2026-11-07 | 5 ناسازگاری OHLCV (field order، 4 ts format، float، direction، count) |
 
@@ -143,7 +125,7 @@ _هیچ تستی ندارد_
 
 ### Tests
 
-| Tier | File | Date | Summary |
+| Tier | File | Date | Description |
 |---|---|---|---|
 | T2 | 2026-10-29_binance_klines_weight.txt | 2026-10-29 | weight=2 reset at minute boundary |
 | T2 | 2026-10-29_binance_limit1000.txt | 2026-10-29 | Binance cap 1000 |
@@ -171,7 +153,7 @@ _هیچ تستی ندارد_
 
 ### Tests
 
-| Tier | File | Date | Summary |
+| Tier | File | Date | Description |
 |---|---|---|---|
 | T1-core | 2026-11-07_A4_OHLCV_Format.md | 2026-11-07 | 5 ناسازگاری OHLCV (field order، 4 ts format، float، direction، count) |
 
@@ -181,7 +163,7 @@ _هیچ تستی ندارد_
 
 ### Tests
 
-| Tier | File | Date | Summary |
+| Tier | File | Date | Description |
 |---|---|---|---|
 | T2 | 2026-10-29_binance_klines_weight.txt | 2026-10-29 | weight=2 reset at minute boundary |
 | T2 | 2026-10-30_coinbase_websocket_all.txt | 2026-10-30 | 103 pairs 9659 msg/60s |
@@ -200,19 +182,13 @@ _هیچ تستی ندارد_
 
 ## Item_12 — Storage
 
-### Tests
-
-| Tier | File | Date | Summary |
-|---|---|---|---|
-| T1-core | supply_timeseries_2026-11-07.json | 2026-11-07 | 117 keys 13.17MB |
-
 ---
 
 ## Item_13 — Bootstrap
 
 ### Tests
 
-| Tier | File | Date | Summary |
+| Tier | File | Date | Description |
 |---|---|---|---|
 | T2 | test003_manual.yml | no-date | test003 workflow |
 
@@ -228,11 +204,9 @@ _هیچ تستی ندارد_
 
 ### Tests
 
-| Tier | File | Date | Summary |
+| Tier | File | Date | Description |
 |---|---|---|---|
-| T1-core | 7_no_data_resolved_2026-11-11.json | 2026-11-11 | 7 NO_DATA RESOLVED — all new assets no 2017 data |
 | T1-core | final_125_supply.json | no-date | 118 tag FILLED |
-| T1-core | supply_timeseries_2026-11-07.json | 2026-11-07 | 117 keys 13.17MB |
 | T1-driver | check_7_no_data_supply.py | no-date | produces 7_no_data_resolved.json |
 | T2 | final_supply_harvest.yml | no-date | data_source workflow (118 records) |
 
@@ -248,7 +222,7 @@ _هیچ تستی ندارد_
 
 ### Tests
 
-| Tier | File | Date | Summary |
+| Tier | File | Date | Description |
 |---|---|---|---|
 | T1-core | 2026-11-07_A4_OHLCV_Format.md | 2026-11-07 | 5 ناسازگاری OHLCV (field order، 4 ts format، float، direction، count) |
 | T2 | test003_manual.yml | no-date | test003 workflow |
@@ -265,10 +239,8 @@ _هیچ تستی ندارد_
 
 ### Tests
 
-| Tier | File | Date | Summary |
+| Tier | File | Date | Description |
 |---|---|---|---|
-| T1-core | a9_asset_start_dates_2026-11-08.json | 2026-11-08 | +04 (migration), +18 (price start) |
-| T1-core | a9_okx_v3_2026-11-09.json | 2026-11-09 | BTC-pair PENDING USD PENDING USDT 105/150 |
 | T1-driver | a9_asset_start_dates.py | no-date | produces a9_asset_start_dates.json |
 | T1-driver | a9_okx_v3.py | no-date | produces a9_okx_v3.json |
 
