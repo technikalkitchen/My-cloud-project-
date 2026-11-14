@@ -17,10 +17,6 @@ tests/evidence/audit_2026-11-11.json	audit_2026-11-11.json	2026-11-11	12	YES
 tests/evidence/audit_2026-11-11.md	audit_2026-11-11.md	2026-11-11	8	NO
 tests/evidence/cmc_top150_2026-11-08.json	cmc_top150_2026-11-08.json	2026-11-08	24	YES
 tests/evidence/gen_manifest.py	gen_manifest.py	no-date	12	NO
-tests/evidence/gen_manifest_v2.py	gen_manifest_v2.py	no-date	4	NO
-tests/evidence/gen_manifest_v3.py	gen_manifest_v3.py	no-date	8	NO
-tests/evidence/gen_manifest_v4.py	gen_manifest_v4.py	no-date	8	NO
-tests/evidence/items.tsv	items.tsv	no-date	4	NO
 tests/evidence/pending.tsv	pending.tsv	no-date	4	NO
 tests/evidence/pol_bybit_test_2026-11-08.json	pol_bybit_test_2026-11-08.json	2026-11-08	4	YES
 tests/evidence/raw_tests.tsv	raw_tests.tsv	no-date	4	NO
@@ -37,7 +33,6 @@ tests/evidence/scripts/asset_master_builder.py	asset_master_builder.py	no-date	4
 tests/evidence/scripts/audit_2026-11-11.py	audit_2026-11-11.py	2026-11-11	8	NO
 tests/evidence/scripts/bitstamp_diagnostic.py	bitstamp_diagnostic.py	no-date	4	NO
 tests/evidence/scripts/check_7_no_data_supply.py	check_7_no_data_supply.py	no-date	4	NO
-tests/evidence/scripts/clean_legacy_registry.py	clean_legacy_registry.py	no-date	4	NO
 tests/evidence/scripts/cmc_top150_fetch.py	cmc_top150_fetch.py	no-date	4	NO
 tests/evidence/scripts/coinbase_btc_diagnostic.py	coinbase_btc_diagnostic.py	no-date	8	YES
 tests/evidence/scripts/create_item_registry.py	create_item_registry.py	no-date	8	NO
@@ -60,8 +55,6 @@ tests/evidence/scripts/remove_junk_exchanges.py	remove_junk_exchanges.py	no-date
 tests/evidence/scripts/update_tmap_bitstamp.py	update_tmap_bitstamp.py	no-date	4	NO
 tests/evidence/scripts/update_tmap_coinbase.py	update_tmap_coinbase.py	no-date	4	NO
 tests/evidence/scripts/validate_tmap.py	validate_tmap.py	no-date	4	NO
-tests/evidence/scripts/verify_test_map.sh	verify_test_map.sh	no-date	4	NO
-tests/evidence/test_map_audit_2026-11-13.txt	test_map_audit_2026-11-13.txt	2026-11-13	4	NO
 tests/evidence/triage.tsv	triage.tsv	no-date	4	NO
 tests/rate_limit/2026-10-29_binance_klines_weight.txt	2026-10-29_binance_klines_weight.txt	2026-10-29	4	NO
 tests/rate_limit/2026-10-29_binance_limit1000.txt	2026-10-29_binance_limit1000.txt	2026-10-29	4	NO
