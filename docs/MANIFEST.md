@@ -1,8 +1,8 @@
 # MANIFEST.md — Approved Tests Registry (v2)
 
-**Generated:** 2026-11-15T15:22:48Z
-**Approved tests:** 0 | **Errors:** 0
-**Items with tests:** 0/30
+**Generated:** 2026-11-15T15:39:57Z
+**Approved tests:** 1 | **Errors:** 0
+**Items with tests:** 1/30
 
 ## Workflow
 
@@ -22,7 +22,7 @@
 |---|---|---|
 | 01 | Exchanges | ⬜ 0 |
 | 02 | Aggregators | ⬜ 0 |
-| 03 | Universe | ⬜ 0 |
+| 03 | Universe | ✅ 1 |
 | 04 | Migration Map | ⬜ 0 |
 | 05 | Canonical Pairs | ⬜ 0 |
 | 06 | Timeframes | ⬜ 0 |
@@ -63,7 +63,9 @@ _هیچ تستی تأیید نشده_
 
 ## Item_03 — Universe
 
-_هیچ تستی تأیید نشده_
+| File | Date | Description | Key Numbers |
+|---|---|---|---|
+| cmc_top125_fetch_2026-11-15.json | 2026-11-15 | Universe selection: top 125 from CMC 150 (excludes 25 lowest ranks) | universe_count=125 | excluded_count=25 | stablecoin_count=13 | wrapped_count=0 | highest_rank_included=1 | lowest_rank_included=125 |
 
 ## Item_04 — Migration Map
 
