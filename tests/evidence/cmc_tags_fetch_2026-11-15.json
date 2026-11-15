@@ -1,0 +1,3027 @@
+{
+  "test_name": "cmc_tags_fetch",
+  "item_ref": [
+    "03"
+  ],
+  "description": "Tags for 150 CMC assets — wrapped/stablecoin classification source",
+  "key_numbers": {
+    "fetched": 150,
+    "missing": 0,
+    "wrapped_tagged": 0,
+    "stablecoin_tagged": 13,
+    "remaining_after_wrapped": 150
+  },
+  "executed_at": "2026-11-15T13:33:22.579576+00:00",
+  "script_path": "tests/evidence/scripts/cmc_tags_fetch.py",
+  "data": {
+    "tags_by_symbol": {
+      "BTC": {
+        "cmc_id": 1,
+        "name": "Bitcoin",
+        "slug": "bitcoin",
+        "tags": [
+          "mineable",
+          "pow",
+          "sha-256",
+          "store-of-value",
+          "state-channel",
+          "coinbase-ventures-portfolio",
+          "three-arrows-capital-portfolio",
+          "polychain-capital-portfolio",
+          "binance-labs-portfolio",
+          "blockchain-capital-portfolio",
+          "boostvc-portfolio",
+          "cms-holdings-portfolio",
+          "dcg-portfolio",
+          "dragonfly-capital-portfolio",
+          "electric-capital-portfolio",
+          "fabric-ventures-portfolio",
+          "framework-ventures-portfolio",
+          "galaxy-digital-portfolio",
+          "huobi-capital-portfolio",
+          "alameda-research-portfolio",
+          "a16z-portfolio",
+          "1confirmation-portfolio",
+          "winklevoss-capital-portfolio",
+          "usv-portfolio",
+          "placeholder-ventures-portfolio",
+          "pantera-capital-portfolio",
+          "multicoin-capital-portfolio",
+          "paradigm-portfolio",
+          "bitcoin-ecosystem",
+          "layer-1",
+          "ftx-bankruptcy-estate",
+          "2017-2018-alt-season",
+          "us-strategic-crypto-reserve",
+          "binance-ecosystem",
+          "binance-listing",
+          "sec-cftc-token-taxonomy",
+          "sec-cftc-digital-commodities"
+        ]
+      },
+      "ETH": {
+        "cmc_id": 1027,
+        "name": "Ethereum",
+        "slug": "ethereum",
+        "tags": [
+          "pos",
+          "smart-contracts",
+          "ethereum-ecosystem",
+          "coinbase-ventures-portfolio",
+          "three-arrows-capital-portfolio",
+          "polychain-capital-portfolio",
+          "binance-labs-portfolio",
+          "blockchain-capital-portfolio",
+          "boostvc-portfolio",
+          "cms-holdings-portfolio",
+          "dcg-portfolio",
+          "dragonfly-capital-portfolio",
+          "electric-capital-portfolio",
+          "fabric-ventures-portfolio",
+          "framework-ventures-portfolio",
+          "hashkey-capital-portfolio",
+          "kenetic-capital-portfolio",
+          "huobi-capital-portfolio",
+          "alameda-research-portfolio",
+          "a16z-portfolio",
+          "1confirmation-portfolio",
+          "winklevoss-capital-portfolio",
+          "usv-portfolio",
+          "placeholder-ventures-portfolio",
+          "pantera-capital-portfolio",
+          "multicoin-capital-portfolio",
+          "paradigm-portfolio",
+          "ethereum-pow-ecosystem",
+          "layer-1",
+          "ftx-bankruptcy-estate",
+          "sora-ecosystem",
+          "rsk-rbtc-ecosystem",
+          "world-liberty-financial-portfolio",
+          "us-strategic-crypto-reserve",
+          "binance-ecosystem",
+          "binance-listing",
+          "abstract-chain-ecosystem",
+          "unichain-ecosystem",
+          "soneium-ecosystem",
+          "sophon-ecosystem",
+          "sec-cftc-token-taxonomy",
+          "sec-cftc-digital-commodities",
+          "anubis-ecosystem",
+          "robinhood-ecosystem"
+        ]
+      },
+      "USDT": {
+        "cmc_id": 825,
+        "name": "Tether USDt",
+        "slug": "tether",
+        "tags": [
+          "stablecoin",
+          "asset-backed-stablecoin",
+          "usd-stablecoin",
+          "ethereum-pow-ecosystem",
+          "fiat-stablecoin",
+          "tron20-ecosystem",
+          "rsk-rbtc-ecosystem",
+          "venom-ecosystem",
+          "world-liberty-financial-portfolio",
+          "binance-ecosystem",
+          "binance-listing",
+          "peaq-ecosystem",
+          "etherlink-ecosystem",
+          "duckchain-ecosystem",
+          "onus-ecosystem",
+          "sophon-ecosystem",
+          "xlayer-ecosystem"
+        ]
+      },
+      "BNB": {
+        "cmc_id": 1839,
+        "name": "BNB",
+        "slug": "bnb",
+        "tags": [
+          "marketplace",
+          "centralized-exchange",
+          "payments",
+          "smart-contracts",
+          "alameda-research-portfolio",
+          "multicoin-capital-portfolio",
+          "bnb-chain-ecosystem",
+          "layer-1",
+          "alleged-sec-securities",
+          "celsius-bankruptcy-estate",
+          "binance-ecosystem",
+          "binance-listing",
+          "etherlink-ecosystem",
+          "made-in-china"
+        ]
+      },
+      "XRP": {
+        "cmc_id": 52,
+        "name": "XRP",
+        "slug": "xrp",
+        "tags": [
+          "medium-of-exchange",
+          "enterprise-solutions",
+          "xrp-ecosystem",
+          "solana-ecosystem",
+          "arrington-xrp-capital-portfolio",
+          "galaxy-digital-portfolio",
+          "a16z-portfolio",
+          "pantera-capital-portfolio",
+          "ftx-bankruptcy-estate",
+          "2017-2018-alt-season",
+          "klaytn-ecosystem",
+          "made-in-america",
+          "us-strategic-crypto-reserve",
+          "binance-ecosystem",
+          "binance-listing",
+          "iso-20022",
+          "sec-cftc-token-taxonomy",
+          "sec-cftc-digital-commodities"
+        ]
+      },
+      "USDC": {
+        "cmc_id": 3408,
+        "name": "USDC",
+        "slug": "usd-coin",
+        "tags": [
+          "medium-of-exchange",
+          "stablecoin",
+          "asset-backed-stablecoin",
+          "stellar-ecosystem",
+          "coinbase-ventures-portfolio",
+          "usd-stablecoin",
+          "xdc-ecosystem",
+          "ethereum-pow-ecosystem",
+          "fiat-stablecoin",
+          "tron20-ecosystem",
+          "venom-ecosystem",
+          "made-in-america",
+          "world-liberty-financial-portfolio",
+          "sonic-ecosystem",
+          "binance-ecosystem",
+          "binance-listing",
+          "hyperevm-ecosystem",
+          "etherlink-ecosystem",
+          "unichain-ecosystem",
+          "vector-smart-chain-ecosystem",
+          "sophon-ecosystem",
+          "monad-ecosystem",
+          "xlayer-ecosystem",
+          "arc-ecosystem",
+          "elysium-ecosystem"
+        ]
+      },
+      "SOL": {
+        "cmc_id": 5426,
+        "name": "Solana",
+        "slug": "solana",
+        "tags": [
+          "pos",
+          "platform",
+          "solana-ecosystem",
+          "cms-holdings-portfolio",
+          "kenetic-capital-portfolio",
+          "alameda-research-portfolio",
+          "multicoin-capital-portfolio",
+          "okx-ventures-portfolio",
+          "layer-1",
+          "ftx-bankruptcy-estate",
+          "alleged-sec-securities",
+          "cmc-crypto-awards-2024",
+          "made-in-america",
+          "us-strategic-crypto-reserve",
+          "binance-ecosystem",
+          "binance-listing",
+          "sec-cftc-token-taxonomy",
+          "sec-cftc-digital-commodities",
+          "coinlist-launchpad"
+        ]
+      },
+      "TRX": {
+        "cmc_id": 1958,
+        "name": "TRON",
+        "slug": "tron",
+        "tags": [
+          "media",
+          "payments",
+          "tron-ecosystem",
+          "layer-1",
+          "dwf-labs-portfolio",
+          "alleged-sec-securities",
+          "2017-2018-alt-season",
+          "tron20-ecosystem",
+          "world-liberty-financial-portfolio",
+          "binance-ecosystem",
+          "binance-listing",
+          "made-in-china"
+        ]
+      },
+      "ZEC": {
+        "cmc_id": 1437,
+        "name": "Zcash",
+        "slug": "zcash",
+        "tags": [
+          "mineable",
+          "pow",
+          "equihash",
+          "medium-of-exchange",
+          "privacy",
+          "zero-knowledge-proofs",
+          "quantum-resistant",
+          "binance-chain",
+          "boostvc-portfolio",
+          "dcg-portfolio",
+          "electric-capital-portfolio",
+          "fenbushi-capital-portfolio",
+          "hashkey-capital-portfolio",
+          "winklevoss-capital-portfolio",
+          "placeholder-ventures-portfolio",
+          "pantera-capital-portfolio",
+          "layer-1",
+          "standard-crypto-portfolio",
+          "2017-2018-alt-season",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing",
+          "privacy-coins"
+        ]
+      },
+      "HYPE": {
+        "cmc_id": 32196,
+        "name": "Hyperliquid",
+        "slug": "hyperliquid",
+        "tags": [
+          "decentralized-exchange-dex-token",
+          "defi",
+          "derivatives",
+          "layer-1",
+          "hyperliquid-ecosystem",
+          "binance-ecosystem",
+          "binance-listing",
+          "perpetuals"
+        ]
+      },
+      "XMR": {
+        "cmc_id": 328,
+        "name": "Monero",
+        "slug": "monero",
+        "tags": [
+          "mineable",
+          "pow",
+          "medium-of-exchange",
+          "privacy",
+          "ringct",
+          "boostvc-portfolio",
+          "electric-capital-portfolio",
+          "galaxy-digital-portfolio",
+          "layer-1",
+          "2017-2018-alt-season",
+          "binance-ecosystem",
+          "binance-listing",
+          "privacy-coins"
+        ]
+      },
+      "DOGE": {
+        "cmc_id": 74,
+        "name": "Dogecoin",
+        "slug": "dogecoin",
+        "tags": [
+          "mineable",
+          "pow",
+          "scrypt",
+          "medium-of-exchange",
+          "memes",
+          "payments",
+          "solana-ecosystem",
+          "doggone-doggerel",
+          "doge-chain-ecosystem",
+          "osmosis-ecosystem",
+          "ftx-bankruptcy-estate",
+          "animal-memes",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing",
+          "sec-cftc-token-taxonomy",
+          "sec-cftc-digital-commodities"
+        ]
+      },
+      "LEO": {
+        "cmc_id": 3957,
+        "name": "UNUS SED LEO",
+        "slug": "unus-sed-leo",
+        "tags": [
+          "marketplace",
+          "centralized-exchange",
+          "discount-token",
+          "payments",
+          "ethereum-ecosystem",
+          "kenetic-capital-portfolio",
+          "alameda-research-portfolio"
+        ]
+      },
+      "LINK": {
+        "cmc_id": 1975,
+        "name": "Chainlink",
+        "slug": "chainlink",
+        "tags": [
+          "platform",
+          "cosmos-ecosystem",
+          "defi",
+          "privacy",
+          "interoperability",
+          "iot",
+          "oracles",
+          "smart-contracts",
+          "ethereum-ecosystem",
+          "tron-ecosystem",
+          "polkadot",
+          "polkadot-ecosystem",
+          "heco-ecosystem",
+          "avalanche-ecosystem",
+          "solana-ecosystem",
+          "framework-ventures-portfolio",
+          "hedera-hashgraph-ecosystem",
+          "polygon-ecosystem",
+          "fantom-ecosystem",
+          "cardano-ecosystem",
+          "terra-ecosystem",
+          "web3",
+          "near-protocol-ecosystem",
+          "arbitrum-ecosystem",
+          "celo-ecosystem",
+          "defi-2",
+          "cross-chain",
+          "moonriver-ecosystem",
+          "cronos-ecosystem",
+          "cardano",
+          "injective-ecosystem",
+          "bnb-chain-ecosystem",
+          "oasis-ecosystem",
+          "moonbeam-ecosystem",
+          "xdc-ecosystem",
+          "metisdao-ecosystem",
+          "velas-ecosystem",
+          "doge-chain-ecosystem",
+          "aptos-ecosystem",
+          "sui-ecosystem",
+          "optimism-ecosystem",
+          "bitcoin-ecosystem",
+          "real-world-assets-protocols",
+          "zksync-era-ecosystem",
+          "treasure-ecosystem",
+          "kadena-ecosystem",
+          "base-ecosystem",
+          "linea-ecosystem",
+          "sei-ecosystem",
+          "toncoin-ecosystem",
+          "paal-ecosystem",
+          "blast-ecosystem",
+          "atomicals-ecosystem",
+          "move-vm",
+          "eigenlayer-ecosystem",
+          "hyperliquid-ecosystem",
+          "gnosis-chain-ecosystem",
+          "ronin-ecosystem",
+          "rootstock-rsk-ecosystem",
+          "astar-ecosystem",
+          "wemix-ecosystem",
+          "core-ecosystem",
+          "starknet-ecosystem",
+          "mantle-ecosystem",
+          "opbnb-ecosystem",
+          "shibarium-ecosystem",
+          "scroll-ecosystem",
+          "merlin-ecosystem",
+          "b²-network-ecosystem",
+          "mode-ecosystem",
+          "taiko-ecosystem",
+          "metal-ecosystem",
+          "world-chain-mainnet-ecosystem",
+          "made-in-america",
+          "btcfi",
+          "world-liberty-financial-portfolio",
+          "corn-ecosystem",
+          "bonk-fun-ecosystem",
+          "sonic-ecosystem",
+          "binance-ecosystem",
+          "binance-listing",
+          "bittensor-ecosystem",
+          "hyperevm-ecosystem",
+          "etherlink-ecosystem",
+          "bera-chain-ecosystem",
+          "abstract-chain-ecosystem",
+          "unichain-ecosystem",
+          "soneium-ecosystem",
+          "fraxtal-ecosystem",
+          "monad-ecosystem",
+          "hashkey-chain-ecosystem",
+          "wlfi-ecosystem",
+          "plasma-ecosystem",
+          "x402-ecosystem",
+          "iso-20022",
+          "megaeth-ecosystem",
+          "sec-cftc-token-taxonomy",
+          "sec-cftc-digital-commodities",
+          "robinhood-ecosystem",
+          "arc-ecosystem"
+        ]
+      },
+      "ADA": {
+        "cmc_id": 2010,
+        "name": "Cardano",
+        "slug": "cardano",
+        "tags": [
+          "dpos",
+          "pos",
+          "platform",
+          "research",
+          "smart-contracts",
+          "staking",
+          "cardano-ecosystem",
+          "cardano",
+          "layer-1",
+          "alleged-sec-securities",
+          "2017-2018-alt-season",
+          "made-in-america",
+          "us-strategic-crypto-reserve",
+          "binance-ecosystem",
+          "binance-listing",
+          "iso-20022",
+          "sec-cftc-token-taxonomy",
+          "sec-cftc-digital-commodities"
+        ]
+      },
+      "XLM": {
+        "cmc_id": 512,
+        "name": "Stellar",
+        "slug": "stellar",
+        "tags": [
+          "medium-of-exchange",
+          "enterprise-solutions",
+          "decentralized-exchange-dex-token",
+          "defi",
+          "smart-contracts",
+          "hashkey-capital-portfolio",
+          "real-world-assets-protocols",
+          "2017-2018-alt-season",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing",
+          "iso-20022",
+          "sec-cftc-token-taxonomy",
+          "sec-cftc-digital-commodities"
+        ]
+      },
+      "USDe": {
+        "cmc_id": 29470,
+        "name": "Ethena USDe",
+        "slug": "ethena-usde",
+        "tags": [
+          "stablecoin",
+          "asset-backed-stablecoin",
+          "binance-labs-portfolio",
+          "dragonfly-capital-portfolio",
+          "usd-stablecoin",
+          "eigenlayer-ecosystem",
+          "binance-ecosystem",
+          "binance-listing",
+          "xlayer-ecosystem",
+          "plasma-ecosystem",
+          "megaeth-ecosystem",
+          "robinhood-ecosystem"
+        ]
+      },
+      "BCH": {
+        "cmc_id": 1831,
+        "name": "Bitcoin Cash",
+        "slug": "bitcoin-cash",
+        "tags": [
+          "mineable",
+          "pow",
+          "sha-256",
+          "marketplace",
+          "medium-of-exchange",
+          "store-of-value",
+          "enterprise-solutions",
+          "payments",
+          "layer-1",
+          "2017-2018-alt-season",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing",
+          "sec-cftc-token-taxonomy",
+          "sec-cftc-digital-commodities"
+        ]
+      },
+      "NEAR": {
+        "cmc_id": 6535,
+        "name": "NEAR Protocol",
+        "slug": "near-protocol",
+        "tags": [
+          "platform",
+          "ai-big-data",
+          "staking",
+          "coinbase-ventures-portfolio",
+          "three-arrows-capital-portfolio",
+          "arrington-xrp-capital-portfolio",
+          "coinfund-portfolio",
+          "electric-capital-portfolio",
+          "fabric-ventures-portfolio",
+          "kenetic-capital-portfolio",
+          "near-protocol-ecosystem",
+          "cross-chain",
+          "circle-ventures-portfolio",
+          "layer-1",
+          "alleged-sec-securities",
+          "modular-blockchain",
+          "account-abstraction",
+          "data-availability",
+          "cmc-crypto-yearbook-2024-2025",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing",
+          "coinlist-launchpad",
+          "amber-group-portfolio"
+        ]
+      },
+      "DAI": {
+        "cmc_id": 4943,
+        "name": "Dai",
+        "slug": "multi-collateral-dai",
+        "tags": [
+          "defi",
+          "stablecoin",
+          "asset-backed-stablecoin",
+          "usd-stablecoin",
+          "xlayer-ecosystem",
+          "anubis-ecosystem"
+        ]
+      },
+      "UNI": {
+        "cmc_id": 7083,
+        "name": "Uniswap",
+        "slug": "uniswap",
+        "tags": [
+          "decentralized-exchange-dex-token",
+          "defi",
+          "dao",
+          "ethereum-ecosystem",
+          "yield-farming",
+          "amm",
+          "coinbase-ventures-portfolio",
+          "three-arrows-capital-portfolio",
+          "governance",
+          "heco-ecosystem",
+          "avalanche-ecosystem",
+          "solana-ecosystem",
+          "blockchain-capital-portfolio",
+          "defiance-capital-portfolio",
+          "alameda-research-portfolio",
+          "a16z-portfolio",
+          "pantera-capital-portfolio",
+          "parafi-capital",
+          "paradigm-portfolio",
+          "polygon-ecosystem",
+          "terra-ecosystem",
+          "near-protocol-ecosystem",
+          "arbitrum-ecosystem",
+          "cmc-crypto-awards-2024",
+          "gnosis-chain-ecosystem",
+          "sora-ecosystem",
+          "hoo-smart-chain-ecosystem",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing",
+          "etherlink-ecosystem",
+          "unichain-ecosystem"
+        ]
+      },
+      "LTC": {
+        "cmc_id": 2,
+        "name": "Litecoin",
+        "slug": "litecoin",
+        "tags": [
+          "mineable",
+          "pow",
+          "scrypt",
+          "medium-of-exchange",
+          "privacy",
+          "layer-1",
+          "2017-2018-alt-season",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing",
+          "sec-cftc-token-taxonomy",
+          "sec-cftc-digital-commodities"
+        ]
+      },
+      "CC": {
+        "cmc_id": 37263,
+        "name": "Canton",
+        "slug": "canton-network",
+        "tags": [
+          "proof-of-authority",
+          "store-of-value",
+          "enterprise-solutions",
+          "privacy",
+          "interoperability",
+          "scaling",
+          "smart-contracts",
+          "layer-1",
+          "binance-ecosystem",
+          "binance-listing",
+          "privacy-blockchain"
+        ]
+      },
+      "AVAX": {
+        "cmc_id": 5805,
+        "name": "Avalanche",
+        "slug": "avalanche",
+        "tags": [
+          "smart-contracts",
+          "three-arrows-capital-portfolio",
+          "polychain-capital-portfolio",
+          "avalanche-ecosystem",
+          "cms-holdings-portfolio",
+          "dragonfly-capital-portfolio",
+          "real-world-assets-protocols",
+          "layer-1",
+          "made-in-america",
+          "world-liberty-financial-portfolio",
+          "binance-ecosystem",
+          "binance-listing",
+          "sec-cftc-token-taxonomy",
+          "sec-cftc-digital-commodities"
+        ]
+      },
+      "SUI": {
+        "cmc_id": 20947,
+        "name": "Sui",
+        "slug": "sui",
+        "tags": [
+          "binance-launchpool",
+          "coinbase-ventures-portfolio",
+          "binance-labs-portfolio",
+          "electric-capital-portfolio",
+          "a16z-portfolio",
+          "sui-ecosystem",
+          "layer-1",
+          "move-vm",
+          "cmc-crypto-yearbook-2024-2025",
+          "made-in-america",
+          "world-liberty-financial-portfolio",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "USD1": {
+        "cmc_id": 36148,
+        "name": "World Liberty Financial USD",
+        "slug": "usd1",
+        "tags": [
+          "stablecoin",
+          "asset-backed-stablecoin",
+          "usd-stablecoin",
+          "tron20-ecosystem",
+          "made-in-america",
+          "world-liberty-financial-portfolio",
+          "binance-ecosystem",
+          "binance-listing",
+          "wlfi-ecosystem"
+        ]
+      },
+      "XAUt": {
+        "cmc_id": 5176,
+        "name": "Tether Gold",
+        "slug": "tether-gold",
+        "tags": [
+          "ethereum-ecosystem",
+          "bnb-chain-ecosystem",
+          "tokenized-gold",
+          "real-world-assets-protocols",
+          "binance-ecosystem",
+          "binance-listing",
+          "tokenized-assets",
+          "tokenized-commodities",
+          "binance-liquidity-enhancement-program"
+        ]
+      },
+      "GRAM": {
+        "cmc_id": 11419,
+        "name": "Gram (prev. Toncoin)",
+        "slug": "gram",
+        "tags": [
+          "pos",
+          "layer-1",
+          "ftx-bankruptcy-estate",
+          "dwf-labs-portfolio",
+          "toncoin-ecosystem",
+          "cmc-crypto-yearbook-2024-2025",
+          "binance-ecosystem",
+          "binance-listing",
+          "binance-liquidity-enhancement-program"
+        ]
+      },
+      "HBAR": {
+        "cmc_id": 4642,
+        "name": "Hedera",
+        "slug": "hedera",
+        "tags": [
+          "dag",
+          "marketplace",
+          "enterprise-solutions",
+          "payments",
+          "dcg-portfolio",
+          "hedera-hashgraph-ecosystem",
+          "real-world-assets-protocols",
+          "layer-1",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing",
+          "iso-20022",
+          "sec-cftc-token-taxonomy",
+          "sec-cftc-digital-commodities"
+        ]
+      },
+      "PYUSD": {
+        "cmc_id": 27772,
+        "name": "PayPal USD",
+        "slug": "paypal-usd",
+        "tags": [
+          "stablecoin",
+          "asset-backed-stablecoin",
+          "stellar-ecosystem",
+          "usd-stablecoin",
+          "fiat-stablecoin"
+        ]
+      },
+      "USDG": {
+        "cmc_id": 33793,
+        "name": "Global Dollar",
+        "slug": "global-dollar-usdg",
+        "tags": [
+          "stablecoin",
+          "asset-backed-stablecoin",
+          "usd-stablecoin",
+          "robinhood-ecosystem"
+        ]
+      },
+      "RLUSD": {
+        "cmc_id": 34387,
+        "name": "Ripple USD",
+        "slug": "ripple-usd",
+        "tags": [
+          "stablecoin",
+          "asset-backed-stablecoin",
+          "usd-stablecoin",
+          "fiat-stablecoin",
+          "binance-ecosystem",
+          "binance-listing",
+          "unichain-ecosystem"
+        ]
+      },
+      "TAO": {
+        "cmc_id": 22974,
+        "name": "Bittensor",
+        "slug": "bittensor",
+        "tags": [
+          "ai-big-data",
+          "distributed-computing",
+          "oracles",
+          "dao",
+          "polychain-capital-portfolio",
+          "dcg-portfolio",
+          "open-source",
+          "generative-ai",
+          "layer-1",
+          "depin",
+          "cmc-crypto-yearbook-2024-2025",
+          "binance-ecosystem",
+          "binance-listing",
+          "bittensor-ecosystem",
+          "robotics",
+          "robinhood-ecosystem"
+        ]
+      },
+      "SHIB": {
+        "cmc_id": 5994,
+        "name": "Shiba Inu",
+        "slug": "shiba-inu",
+        "tags": [
+          "memes",
+          "ethereum-ecosystem",
+          "solana-ecosystem",
+          "doggone-doggerel",
+          "bnb-chain-ecosystem",
+          "base-ecosystem",
+          "animal-memes",
+          "binance-ecosystem",
+          "binance-listing",
+          "etherlink-ecosystem",
+          "sec-cftc-token-taxonomy",
+          "sec-cftc-digital-commodities"
+        ]
+      },
+      "CRO": {
+        "cmc_id": 3635,
+        "name": "Cronos",
+        "slug": "cronos",
+        "tags": [
+          "medium-of-exchange",
+          "centralized-exchange",
+          "mobile",
+          "payments",
+          "layer-1"
+        ]
+      },
+      "QNT": {
+        "cmc_id": 3155,
+        "name": "Quant",
+        "slug": "quant",
+        "tags": [
+          "platform",
+          "defi",
+          "interoperability",
+          "ethereum-ecosystem",
+          "solana-ecosystem",
+          "real-world-assets-protocols",
+          "binance-ecosystem",
+          "binance-listing",
+          "iso-20022"
+        ]
+      },
+      "OKB": {
+        "cmc_id": 3897,
+        "name": "OKB",
+        "slug": "okb",
+        "tags": [
+          "layer-2",
+          "alameda-research-portfolio",
+          "x-layer-ecosystem",
+          "xlayer-ecosystem",
+          "made-in-china"
+        ]
+      },
+      "PEPE": {
+        "cmc_id": 24478,
+        "name": "Pepe",
+        "slug": "pepe",
+        "tags": [
+          "memes",
+          "ethereum-ecosystem",
+          "solana-ecosystem",
+          "binance-ecosystem",
+          "binance-listing",
+          "etherlink-ecosystem"
+        ]
+      },
+      "ENA": {
+        "cmc_id": 30171,
+        "name": "Ethena",
+        "slug": "ethena",
+        "tags": [
+          "defi",
+          "ethereum-ecosystem",
+          "binance-labs-portfolio",
+          "okx-ventures-portfolio",
+          "cmc-crypto-yearbook-2024-2025",
+          "world-liberty-financial-portfolio",
+          "binance-ecosystem",
+          "binance-listing",
+          "amber-group-portfolio"
+        ]
+      },
+      "AAVE": {
+        "cmc_id": 7278,
+        "name": "Aave",
+        "slug": "aave",
+        "tags": [
+          "defi",
+          "dao",
+          "ethereum-ecosystem",
+          "yield-farming",
+          "three-arrows-capital-portfolio",
+          "governance",
+          "heco-ecosystem",
+          "avalanche-ecosystem",
+          "solana-ecosystem",
+          "lending-borowing",
+          "blockchain-capital-portfolio",
+          "defiance-capital-portfolio",
+          "framework-ventures-portfolio",
+          "alameda-research-portfolio",
+          "pantera-capital-portfolio",
+          "parafi-capital",
+          "polygon-ecosystem",
+          "fantom-ecosystem",
+          "near-protocol-ecosystem",
+          "arbitrum-ecosystem",
+          "optimism-ecosystem",
+          "standard-crypto-portfolio",
+          "gnosis-chain-ecosystem",
+          "sora-ecosystem",
+          "made-in-america",
+          "world-liberty-financial-portfolio",
+          "binance-ecosystem",
+          "binance-listing",
+          "binance-liquidity-enhancement-program"
+        ]
+      },
+      "ASTER": {
+        "cmc_id": 36341,
+        "name": "Aster",
+        "slug": "aster",
+        "tags": [
+          "decentralized-exchange-dex-token",
+          "defi",
+          "derivatives",
+          "dex",
+          "solana-ecosystem",
+          "bnb-chain-ecosystem",
+          "binance-ecosystem",
+          "binance-listing",
+          "perpetuals",
+          "made-in-china"
+        ]
+      },
+      "M": {
+        "cmc_id": 35491,
+        "name": "MemeCore",
+        "slug": "memecore",
+        "tags": [
+          "memes",
+          "bnb-chain-ecosystem",
+          "layer-1",
+          "binance-alpha",
+          "binance-alpha-airdrops",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "PAXG": {
+        "cmc_id": 4705,
+        "name": "PAX Gold",
+        "slug": "pax-gold",
+        "tags": [
+          "ethereum-ecosystem",
+          "tokenized-gold",
+          "real-world-assets-protocols",
+          "binance-ecosystem",
+          "binance-listing",
+          "tokenized-assets",
+          "tokenized-commodities"
+        ]
+      },
+      "ONDO": {
+        "cmc_id": 21159,
+        "name": "Ondo",
+        "slug": "ondo-finance",
+        "tags": [
+          "ethereum-ecosystem",
+          "real-world-assets-protocols",
+          "cmc-crypto-yearbook-2024-2025",
+          "made-in-america",
+          "world-liberty-financial-portfolio",
+          "binance-ecosystem",
+          "binance-listing",
+          "coinlist-launchpad"
+        ]
+      },
+      "PUMP": {
+        "cmc_id": 36507,
+        "name": "Pump.fun",
+        "slug": "pump-fun",
+        "tags": [
+          "launchpad",
+          "solana-ecosystem",
+          "pump-fun-ecosystem",
+          "binance-ecosystem",
+          "binance-listing",
+          "coinlist-launchpad"
+        ]
+      },
+      "U": {
+        "cmc_id": 39120,
+        "name": "United Stables",
+        "slug": "united-stables",
+        "tags": [
+          "stablecoin",
+          "asset-backed-stablecoin",
+          "tron20-ecosystem",
+          "binance-ecosystem",
+          "binance-listing",
+          "robinhood-ecosystem"
+        ]
+      },
+      "DOT": {
+        "cmc_id": 6636,
+        "name": "Polkadot",
+        "slug": "polkadot-new",
+        "tags": [
+          "defi",
+          "ethereum-ecosystem",
+          "substrate",
+          "polkadot",
+          "polkadot-ecosystem",
+          "three-arrows-capital-portfolio",
+          "polychain-capital-portfolio",
+          "heco-ecosystem",
+          "arrington-xrp-capital-portfolio",
+          "blockchain-capital-portfolio",
+          "boostvc-portfolio",
+          "cms-holdings-portfolio",
+          "coinfund-portfolio",
+          "fabric-ventures-portfolio",
+          "fenbushi-capital-portfolio",
+          "hashkey-capital-portfolio",
+          "kenetic-capital-portfolio",
+          "1confirmation-portfolio",
+          "placeholder-ventures-portfolio",
+          "pantera-capital-portfolio",
+          "exnetwork-capital-portfolio",
+          "web3",
+          "arbitrum-ecosystem",
+          "spartan-group",
+          "optimism-ecosystem",
+          "osmosis-ecosystem",
+          "base-ecosystem",
+          "gnosis-chain-ecosystem",
+          "binance-ecosystem",
+          "binance-listing",
+          "sec-cftc-token-taxonomy",
+          "sec-cftc-digital-commodities"
+        ]
+      },
+      "USDD": {
+        "cmc_id": 19891,
+        "name": "USDD",
+        "slug": "usdd",
+        "tags": [
+          "stablecoin",
+          "algorithmic-stablecoin",
+          "asset-backed-stablecoin",
+          "usd-stablecoin",
+          "tron20-ecosystem",
+          "made-in-china"
+        ]
+      },
+      "SKY": {
+        "cmc_id": 33038,
+        "name": "Sky",
+        "slug": "sky",
+        "tags": [
+          "store-of-value",
+          "defi",
+          "dao",
+          "ethereum-ecosystem",
+          "polychain-capital-portfolio",
+          "governance",
+          "lending-borowing",
+          "dragonfly-capital-portfolio",
+          "electric-capital-portfolio",
+          "a16z-portfolio",
+          "1confirmation-portfolio",
+          "placeholder-ventures-portfolio",
+          "pantera-capital-portfolio",
+          "paradigm-portfolio",
+          "near-protocol-ecosystem",
+          "arbitrum-ecosystem",
+          "spartan-group",
+          "bnb-chain-ecosystem",
+          "bitcoin-ecosystem",
+          "real-world-assets-protocols",
+          "standard-crypto-portfolio",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "MNT": {
+        "cmc_id": 27075,
+        "name": "Mantle",
+        "slug": "mantle",
+        "tags": [
+          "ethereum-ecosystem",
+          "layer-2",
+          "dwf-labs-portfolio",
+          "mantle-ecosystem",
+          "made-in-china",
+          "neobank"
+        ]
+      },
+      "WLFI": {
+        "cmc_id": 33251,
+        "name": "World Liberty Financial",
+        "slug": "world-liberty-financial-wlfi",
+        "tags": [
+          "defi",
+          "ethereum-ecosystem",
+          "solana-ecosystem",
+          "bnb-chain-ecosystem",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing",
+          "wlfi-ecosystem"
+        ]
+      },
+      "ICP": {
+        "cmc_id": 8916,
+        "name": "Internet Computer",
+        "slug": "internet-computer",
+        "tags": [
+          "platform",
+          "ai-big-data",
+          "distributed-computing",
+          "smart-contracts",
+          "polychain-capital-portfolio",
+          "electric-capital-portfolio",
+          "fenbushi-capital-portfolio",
+          "hashkey-capital-portfolio",
+          "a16z-portfolio",
+          "multicoin-capital-portfolio",
+          "exnetwork-capital-portfolio",
+          "icp-ecosystem",
+          "internet-computer-ecosystem",
+          "layer-1",
+          "alleged-sec-securities",
+          "depin",
+          "binance-ecosystem",
+          "binance-listing",
+          "binance-liquidity-enhancement-program"
+        ]
+      },
+      "BGB": {
+        "cmc_id": 11092,
+        "name": "Bitget Token",
+        "slug": "bitget-token-new",
+        "tags": [
+          "centralized-exchange",
+          "ethereum-ecosystem",
+          "made-in-china"
+        ]
+      },
+      "WLD": {
+        "cmc_id": 13502,
+        "name": "Worldcoin",
+        "slug": "worldcoin-org",
+        "tags": [
+          "defi",
+          "zero-knowledge-proofs",
+          "identity",
+          "ethereum-ecosystem",
+          "governance",
+          "blockchain-capital-portfolio",
+          "a16z-portfolio",
+          "token",
+          "optimism-ecosystem",
+          "world-chain-mainnet-ecosystem",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "ARB": {
+        "cmc_id": 11841,
+        "name": "Arbitrum",
+        "slug": "arbitrum",
+        "tags": [
+          "scaling",
+          "dao",
+          "dapp",
+          "ethereum-ecosystem",
+          "polychain-capital-portfolio",
+          "layer-2",
+          "rollups",
+          "pantera-capital-portfolio",
+          "arbitrum-ecosystem",
+          "modular-blockchain",
+          "egirl-capital-portfolio",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "JST": {
+        "cmc_id": 5488,
+        "name": "JUST",
+        "slug": "just",
+        "tags": [
+          "defi",
+          "tron-ecosystem",
+          "tron20-ecosystem",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "MORPHO": {
+        "cmc_id": 34104,
+        "name": "Morpho",
+        "slug": "morpho",
+        "tags": [
+          "defi",
+          "ethereum-ecosystem",
+          "coinbase-ventures-portfolio",
+          "solana-ecosystem",
+          "lending-borowing",
+          "fenbushi-capital-portfolio",
+          "pantera-capital-portfolio",
+          "arbitrum-ecosystem",
+          "base-ecosystem",
+          "binance-ecosystem",
+          "binance-listing",
+          "binance-liquidity-enhancement-program"
+        ]
+      },
+      "ETC": {
+        "cmc_id": 1321,
+        "name": "Ethereum Classic",
+        "slug": "ethereum-classic",
+        "tags": [
+          "mineable",
+          "pow",
+          "ethash",
+          "platform",
+          "smart-contracts",
+          "dcg-portfolio",
+          "layer-1",
+          "2017-2018-alt-season",
+          "ethereum-classic-ecosystem",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "GT": {
+        "cmc_id": 4269,
+        "name": "GateToken",
+        "slug": "gatetoken",
+        "tags": [
+          "marketplace",
+          "centralized-exchange",
+          "discount-token",
+          "ethereum-ecosystem",
+          "solana-ecosystem",
+          "ftx-bankruptcy-estate",
+          "made-in-china"
+        ]
+      },
+      "VVV": {
+        "cmc_id": 35509,
+        "name": "Venice Token",
+        "slug": "venice-token",
+        "tags": [
+          "ai-big-data",
+          "base-ecosystem",
+          "binance-alpha",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing",
+          "ai-applications"
+        ]
+      },
+      "KCS": {
+        "cmc_id": 2087,
+        "name": "KuCoin Token",
+        "slug": "kucoin-token",
+        "tags": [
+          "marketplace",
+          "centralized-exchange",
+          "discount-token",
+          "ethereum-ecosystem",
+          "kcc-ecosystem",
+          "made-in-china"
+        ]
+      },
+      "POL": {
+        "cmc_id": 28321,
+        "name": "Polygon (prev. MATIC)",
+        "slug": "polygon-ecosystem-token",
+        "tags": [
+          "ethereum-ecosystem",
+          "layer-2",
+          "polygon-ecosystem",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "ALGO": {
+        "cmc_id": 4030,
+        "name": "Algorand",
+        "slug": "algorand",
+        "tags": [
+          "pos",
+          "platform",
+          "research",
+          "smart-contracts",
+          "algorand-ecosystem",
+          "arrington-xrp-capital-portfolio",
+          "kenetic-capital-portfolio",
+          "usv-portfolio",
+          "multicoin-capital-portfolio",
+          "exnetwork-capital-portfolio",
+          "real-world-assets-protocols",
+          "layer-1",
+          "dwf-labs-portfolio",
+          "alleged-sec-securities",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing",
+          "iso-20022",
+          "binance-liquidity-enhancement-program",
+          "coinlist-launchpad"
+        ]
+      },
+      "PI": {
+        "cmc_id": 35697,
+        "name": "Pi",
+        "slug": "pi",
+        "tags": [
+          "layer-1",
+          "mobile-mining"
+        ]
+      },
+      "KAS": {
+        "cmc_id": 20396,
+        "name": "Kaspa",
+        "slug": "kaspa",
+        "tags": [
+          "mineable",
+          "dag",
+          "pow",
+          "store-of-value",
+          "polychain-capital-portfolio",
+          "layer-1",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "INJ": {
+        "cmc_id": 7226,
+        "name": "Injective",
+        "slug": "injective",
+        "tags": [
+          "pos",
+          "platform",
+          "ai-big-data",
+          "privacy",
+          "quantum-resistant",
+          "smart-contracts",
+          "binance-smart-chain",
+          "binance-launchpad",
+          "binance-labs-portfolio",
+          "cms-holdings-portfolio",
+          "pantera-capital-portfolio",
+          "web3",
+          "injective-ecosystem",
+          "real-world-assets-protocols",
+          "layer-1",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing",
+          "privacy-blockchain",
+          "privacy-coins"
+        ]
+      },
+      "RENDER": {
+        "cmc_id": 5690,
+        "name": "Render",
+        "slug": "render",
+        "tags": [
+          "art",
+          "media",
+          "vr-ar",
+          "ai-big-data",
+          "distributed-computing",
+          "collectibles-nfts",
+          "defi",
+          "gaming",
+          "scaling",
+          "video",
+          "ethereum-ecosystem",
+          "solana-ecosystem",
+          "metaverse",
+          "alameda-research-portfolio",
+          "multicoin-capital-portfolio",
+          "polygon-ecosystem",
+          "web3",
+          "generative-ai",
+          "depin",
+          "cmc-crypto-yearbook-2024-2025",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "LIT": {
+        "cmc_id": 39125,
+        "name": "Lighter",
+        "slug": "lighter",
+        "tags": [
+          "decentralized-exchange-dex-token",
+          "defi",
+          "derivatives",
+          "zero-knowledge-proofs",
+          "ethereum-ecosystem",
+          "dex",
+          "coinbase-ventures-portfolio",
+          "dragonfly-capital-portfolio",
+          "a16z-portfolio",
+          "binance-ecosystem",
+          "binance-listing",
+          "perpetuals"
+        ]
+      },
+      "JUP": {
+        "cmc_id": 29210,
+        "name": "Jupiter",
+        "slug": "jupiter-ag",
+        "tags": [
+          "decentralized-exchange-dex-token",
+          "defi",
+          "derivatives",
+          "amm",
+          "solana-ecosystem",
+          "cross-chain",
+          "moonshot",
+          "binance-ecosystem",
+          "binance-listing",
+          "perpetuals",
+          "binance-liquidity-enhancement-program"
+        ]
+      },
+      "ATOM": {
+        "cmc_id": 3794,
+        "name": "Cosmos",
+        "slug": "cosmos",
+        "tags": [
+          "platform",
+          "cosmos-ecosystem",
+          "communications-social-media",
+          "content-creation",
+          "defi",
+          "interoperability",
+          "ethereum-ecosystem",
+          "polychain-capital-portfolio",
+          "dragonfly-capital-portfolio",
+          "hashkey-capital-portfolio",
+          "1confirmation-portfolio",
+          "paradigm-portfolio",
+          "exnetwork-capital-portfolio",
+          "polygon-ecosystem",
+          "cronos-ecosystem",
+          "injective-ecosystem",
+          "canto-ecosystem",
+          "osmosis-ecosystem",
+          "alleged-sec-securities",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "NIGHT": {
+        "cmc_id": 39064,
+        "name": "Midnight",
+        "slug": "midnight-network",
+        "tags": [
+          "privacy",
+          "zero-knowledge-proofs",
+          "cardano-ecosystem",
+          "bnb-chain-ecosystem",
+          "binance-alpha-airdrops",
+          "binance-ecosystem",
+          "binance-listing",
+          "privacy-blockchain"
+        ]
+      },
+      "XDC": {
+        "cmc_id": 2634,
+        "name": "XDC Network",
+        "slug": "xdc-network",
+        "tags": [
+          "pos",
+          "enterprise-solutions",
+          "masternodes",
+          "smart-contracts",
+          "xdc-ecosystem",
+          "real-world-assets-protocols",
+          "layer-1",
+          "iso-20022"
+        ]
+      },
+      "FIL": {
+        "cmc_id": 2280,
+        "name": "Filecoin",
+        "slug": "filecoin",
+        "tags": [
+          "mineable",
+          "ai-big-data",
+          "distributed-computing",
+          "filesharing",
+          "storage",
+          "polychain-capital-portfolio",
+          "blockchain-capital-portfolio",
+          "boostvc-portfolio",
+          "dcg-portfolio",
+          "hashkey-capital-portfolio",
+          "a16z-portfolio",
+          "winklevoss-capital-portfolio",
+          "pantera-capital-portfolio",
+          "web3",
+          "filecoin-ecosystem",
+          "layer-1",
+          "alleged-sec-securities",
+          "depin",
+          "2017-2018-alt-season",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing",
+          "binance-liquidity-enhancement-program",
+          "coinlist-launchpad"
+        ]
+      },
+      "ZRO": {
+        "cmc_id": 26997,
+        "name": "LayerZero",
+        "slug": "layerzero",
+        "tags": [
+          "defi",
+          "interoperability",
+          "ethereum-ecosystem",
+          "coinbase-ventures-portfolio",
+          "binance-labs-portfolio",
+          "avalanche-ecosystem",
+          "a16z-portfolio",
+          "multicoin-capital-portfolio",
+          "polygon-ecosystem",
+          "arbitrum-ecosystem",
+          "cross-chain",
+          "optimism-ecosystem",
+          "sino-global-capital",
+          "base-ecosystem",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "AERO": {
+        "cmc_id": 29270,
+        "name": "Aero",
+        "slug": "aerodrome-finance",
+        "tags": [
+          "decentralized-exchange-dex-token",
+          "defi",
+          "amm",
+          "base-ecosystem",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "STX": {
+        "cmc_id": 4847,
+        "name": "Stacks",
+        "slug": "stacks",
+        "tags": [
+          "mineable",
+          "platform",
+          "collectibles-nfts",
+          "gaming",
+          "smart-contracts",
+          "layer-2",
+          "metaverse",
+          "arrington-xrp-capital-portfolio",
+          "blockchain-capital-portfolio",
+          "dcg-portfolio",
+          "fabric-ventures-portfolio",
+          "hashkey-capital-portfolio",
+          "huobi-capital-portfolio",
+          "usv-portfolio",
+          "web3",
+          "injective-ecosystem",
+          "bitcoin-ecosystem",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing",
+          "coinlist-launchpad"
+        ]
+      },
+      "CAKE": {
+        "cmc_id": 7186,
+        "name": "PancakeSwap",
+        "slug": "pancakeswap",
+        "tags": [
+          "collectibles-nfts",
+          "decentralized-exchange-dex-token",
+          "defi",
+          "derivatives",
+          "smart-contracts",
+          "ethereum-ecosystem",
+          "yield-farming",
+          "amm",
+          "dex",
+          "governance",
+          "solana-ecosystem",
+          "arbitrum-ecosystem",
+          "bnb-chain-ecosystem",
+          "aptos-ecosystem",
+          "zksync-era-ecosystem",
+          "base-ecosystem",
+          "linea-ecosystem",
+          "move-vm",
+          "polygon-zkevm-ecosystem",
+          "opbnb-ecosystem",
+          "binance-ecosystem",
+          "binance-listing",
+          "perpetuals"
+        ]
+      },
+      "DASH": {
+        "cmc_id": 131,
+        "name": "Dash",
+        "slug": "dash",
+        "tags": [
+          "mineable",
+          "hybrid-pow-pos",
+          "x11",
+          "medium-of-exchange",
+          "privacy",
+          "masternodes",
+          "dao",
+          "governance",
+          "near-protocol-ecosystem",
+          "alleged-sec-securities",
+          "2017-2018-alt-season",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing",
+          "privacy-coins"
+        ]
+      },
+      "ETHFI": {
+        "cmc_id": 29814,
+        "name": "ether.fi",
+        "slug": "ether-fi-ethfi",
+        "tags": [
+          "defi",
+          "staking",
+          "ethereum-ecosystem",
+          "binance-launchpool",
+          "arbitrum-ecosystem",
+          "optimism-ecosystem",
+          "base-ecosystem",
+          "cmc-crypto-yearbook-2024-2025",
+          "binance-ecosystem",
+          "binance-listing",
+          "neobank",
+          "amber-group-portfolio"
+        ]
+      },
+      "APT": {
+        "cmc_id": 21794,
+        "name": "Aptos",
+        "slug": "aptos",
+        "tags": [
+          "binance-labs-portfolio",
+          "circle-ventures-portfolio",
+          "layer-1",
+          "ftx-bankruptcy-estate",
+          "move-vm",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing",
+          "sec-cftc-token-taxonomy",
+          "sec-cftc-digital-commodities"
+        ]
+      },
+      "FLR": {
+        "cmc_id": 7950,
+        "name": "Flare",
+        "slug": "flare",
+        "tags": [
+          "layer-1",
+          "dwf-labs-portfolio",
+          "iso-20022"
+        ]
+      },
+      "币安人生": {
+        "cmc_id": 38590,
+        "name": "币安人生",
+        "slug": "bianrensheng",
+        "tags": [
+          "memes",
+          "bnb-chain-ecosystem",
+          "four-meme-ecosystem",
+          "binance-ecosystem",
+          "binance-listing",
+          "chinese-meme"
+        ]
+      },
+      "PYTH": {
+        "cmc_id": 28177,
+        "name": "Pyth Network",
+        "slug": "pyth-network",
+        "tags": [
+          "defi",
+          "oracles",
+          "solana-ecosystem",
+          "cross-chain",
+          "cmc-crypto-yearbook-2024-2025",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "TUSD": {
+        "cmc_id": 2563,
+        "name": "TrueUSD",
+        "slug": "trueusd",
+        "tags": [
+          "store-of-value",
+          "stablecoin",
+          "asset-backed-stablecoin",
+          "usd-stablecoin",
+          "fiat-stablecoin",
+          "tron20-ecosystem",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "RAY": {
+        "cmc_id": 8526,
+        "name": "Raydium",
+        "slug": "raydium",
+        "tags": [
+          "decentralized-exchange-dex-token",
+          "defi",
+          "derivatives",
+          "amm",
+          "dex",
+          "solana-ecosystem",
+          "petrock-capital-portfolio",
+          "binance-ecosystem",
+          "binance-listing",
+          "perpetuals"
+        ]
+      },
+      "NEXO": {
+        "cmc_id": 2694,
+        "name": "Nexo",
+        "slug": "nexo",
+        "tags": [
+          "services",
+          "payments",
+          "ethereum-ecosystem",
+          "polygon-ecosystem",
+          "cardano-ecosystem",
+          "alleged-sec-securities",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "STABLE": {
+        "cmc_id": 38892,
+        "name": "Stable",
+        "slug": "stable",
+        "tags": [
+          "enterprise-solutions",
+          "payments",
+          "staking",
+          "governance",
+          "layer-1",
+          "binance-alpha",
+          "binance-alpha-airdrops",
+          "binance-ecosystem",
+          "binance-listing",
+          "stablecoin-protocol"
+        ]
+      },
+      "EURC": {
+        "cmc_id": 20641,
+        "name": "EURC",
+        "slug": "euro-coin",
+        "tags": [
+          "stablecoin",
+          "asset-backed-stablecoin",
+          "stellar-ecosystem",
+          "eur-stablecoin",
+          "fiat-stablecoin",
+          "sonic-ecosystem",
+          "arc-ecosystem"
+        ]
+      },
+      "PIEVERSE": {
+        "cmc_id": 38849,
+        "name": "Pieverse",
+        "slug": "pieverse",
+        "tags": [
+          "payments",
+          "timestamping",
+          "ethereum-ecosystem",
+          "bnb-chain-ecosystem",
+          "binance-alpha",
+          "binance-wallet-ido",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "VET": {
+        "cmc_id": 3077,
+        "name": "VeChain",
+        "slug": "vechain",
+        "tags": [
+          "logistics",
+          "data-provenance",
+          "iot",
+          "smart-contracts",
+          "fenbushi-capital-portfolio",
+          "real-world-assets-protocols",
+          "layer-1",
+          "binance-ecosystem",
+          "binance-listing",
+          "made-in-china"
+        ]
+      },
+      "TIA": {
+        "cmc_id": 22861,
+        "name": "Celestia",
+        "slug": "celestia",
+        "tags": [
+          "platform",
+          "cosmos-ecosystem",
+          "layer-1",
+          "modular-blockchain",
+          "egirl-capital-portfolio",
+          "data-availability",
+          "cmc-crypto-awards-2024",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "CRV": {
+        "cmc_id": 6538,
+        "name": "Curve DAO Token",
+        "slug": "curve-dao-token",
+        "tags": [
+          "decentralized-exchange-dex-token",
+          "defi",
+          "dao",
+          "ethereum-ecosystem",
+          "yield-farming",
+          "amm",
+          "governance",
+          "framework-ventures-portfolio",
+          "alameda-research-portfolio",
+          "polygon-ecosystem",
+          "fantom-ecosystem",
+          "arbitrum-ecosystem",
+          "optimism-ecosystem",
+          "dwf-labs-portfolio",
+          "base-ecosystem",
+          "gnosis-chain-ecosystem",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "PENGU": {
+        "cmc_id": 34466,
+        "name": "Pudgy Penguins",
+        "slug": "pudgy-penguins",
+        "tags": [
+          "collectibles-nfts",
+          "memes",
+          "ethereum-ecosystem",
+          "solana-ecosystem",
+          "bnb-chain-ecosystem",
+          "animal-memes",
+          "ip-memes",
+          "made-in-america",
+          "binance-hodler-airdrops",
+          "binance-ecosystem",
+          "binance-listing",
+          "hyperevm-ecosystem",
+          "abstract-chain-ecosystem",
+          "robinhood-ecosystem"
+        ]
+      },
+      "VIRTUAL": {
+        "cmc_id": 29420,
+        "name": "Virtuals Protocol",
+        "slug": "virtual-protocol",
+        "tags": [
+          "ai-big-data",
+          "gaming",
+          "ethereum-ecosystem",
+          "solana-ecosystem",
+          "metaverse",
+          "generative-ai",
+          "base-ecosystem",
+          "ai-agents",
+          "virtuals-protocol-ecosystem",
+          "ai-agent-launchpad",
+          "binance-ecosystem",
+          "binance-listing",
+          "robotics",
+          "robinhood-ecosystem"
+        ]
+      },
+      "BTT": {
+        "cmc_id": 16086,
+        "name": "BitTorrent [New]",
+        "slug": "bittorrent-new",
+        "tags": [
+          "platform",
+          "distributed-computing",
+          "defi",
+          "filesharing",
+          "interoperability",
+          "staking",
+          "ethereum-ecosystem",
+          "tron-ecosystem",
+          "storage",
+          "binance-launchpad",
+          "binance-labs-portfolio",
+          "web3",
+          "alleged-sec-securities",
+          "depin",
+          "tron20-ecosystem",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "SEI": {
+        "cmc_id": 23149,
+        "name": "Sei",
+        "slug": "sei",
+        "tags": [
+          "coinbase-ventures-portfolio",
+          "multicoin-capital-portfolio",
+          "layer-1",
+          "jump-crypto",
+          "sei-ecosystem",
+          "parallel-evm",
+          "made-in-america",
+          "world-liberty-financial-portfolio",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "FET": {
+        "cmc_id": 3773,
+        "name": "Artificial Superintelligence Alliance",
+        "slug": "artificial-superintelligence-alliance",
+        "tags": [
+          "cosmos-ecosystem",
+          "ai-big-data",
+          "collectibles-nfts",
+          "iot",
+          "ethereum-ecosystem",
+          "binance-launchpad",
+          "web3",
+          "injective-ecosystem",
+          "osmosis-ecosystem",
+          "generative-ai",
+          "dwf-labs-portfolio",
+          "ai-agents",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "TRUMP": {
+        "cmc_id": 35336,
+        "name": "OFFICIAL TRUMP",
+        "slug": "official-trump",
+        "tags": [
+          "memes",
+          "solana-ecosystem",
+          "political-memes",
+          "celebrity-memes",
+          "made-in-america",
+          "moonshot",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "SPX": {
+        "cmc_id": 28081,
+        "name": "SPX6900",
+        "slug": "spx6900",
+        "tags": [
+          "memes",
+          "ethereum-ecosystem",
+          "solana-ecosystem",
+          "base-ecosystem",
+          "binance-alpha",
+          "binance-ecosystem",
+          "binance-listing",
+          "stock-memes"
+        ]
+      },
+      "BSV": {
+        "cmc_id": 3602,
+        "name": "Bitcoin SV",
+        "slug": "bitcoin-sv",
+        "tags": [
+          "mineable",
+          "pow",
+          "sha-256",
+          "medium-of-exchange",
+          "store-of-value",
+          "state-channel",
+          "bitcoin-ecosystem",
+          "2017-2018-alt-season",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "KITE": {
+        "cmc_id": 38828,
+        "name": "Kite",
+        "slug": "kite",
+        "tags": [
+          "ai-big-data",
+          "dapp",
+          "avalanche-ecosystem",
+          "hashkey-capital-portfolio",
+          "animoca-brands-portfolio",
+          "layer-1",
+          "ai-agents",
+          "hyperliquid-ecosystem",
+          "binance-alpha-airdrops",
+          "binance-ecosystem",
+          "binance-listing",
+          "hyperevm-ecosystem"
+        ]
+      },
+      "FF": {
+        "cmc_id": 38482,
+        "name": "Falcon Finance",
+        "slug": "falcon-finance-ff",
+        "tags": [
+          "government",
+          "ethereum-ecosystem",
+          "bnb-chain-ecosystem",
+          "binance-hodler-airdrops",
+          "binance-alpha-airdrops",
+          "binance-ecosystem",
+          "binance-listing",
+          "stablecoin-protocol"
+        ]
+      },
+      "STRK": {
+        "cmc_id": 22691,
+        "name": "Starknet",
+        "slug": "starknet-token",
+        "tags": [
+          "privacy",
+          "zero-knowledge-proofs",
+          "quantum-resistant",
+          "smart-contracts",
+          "dapp",
+          "ethereum-ecosystem",
+          "layer-2",
+          "rollups",
+          "modular-blockchain",
+          "starknet-ecosystem",
+          "btcfi",
+          "binance-ecosystem",
+          "binance-listing",
+          "privacy-blockchain"
+        ]
+      },
+      "SUN": {
+        "cmc_id": 10529,
+        "name": "Sun [New]",
+        "slug": "sun-token",
+        "tags": [
+          "tron-ecosystem",
+          "tron20-ecosystem",
+          "binance-ecosystem",
+          "binance-listing",
+          "made-in-china"
+        ]
+      },
+      "GNO": {
+        "cmc_id": 1659,
+        "name": "Gnosis",
+        "slug": "gnosis-gno",
+        "tags": [
+          "services",
+          "decentralized-exchange-dex-token",
+          "prediction-markets",
+          "kenetic-capital-portfolio",
+          "layer-1",
+          "gnosis-chain-ecosystem",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "FDUSD": {
+        "cmc_id": 26081,
+        "name": "First Digital USD",
+        "slug": "first-digital-usd",
+        "tags": [
+          "stablecoin",
+          "asset-backed-stablecoin",
+          "binance-smart-chain",
+          "usd-stablecoin",
+          "fiat-stablecoin",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "XTZ": {
+        "cmc_id": 2011,
+        "name": "Tezos",
+        "slug": "tezos",
+        "tags": [
+          "pos",
+          "platform",
+          "enterprise-solutions",
+          "collectibles-nfts",
+          "privacy",
+          "smart-contracts",
+          "polychain-capital-portfolio",
+          "boostvc-portfolio",
+          "winklevoss-capital-portfolio",
+          "tezos-ecosystem",
+          "layer-1",
+          "2017-2018-alt-season",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing",
+          "etherlink-ecosystem",
+          "privacy-blockchain",
+          "sec-cftc-token-taxonomy",
+          "sec-cftc-digital-commodities",
+          "binance-liquidity-enhancement-program"
+        ]
+      },
+      "PENDLE": {
+        "cmc_id": 9481,
+        "name": "Pendle",
+        "slug": "pendle",
+        "tags": [
+          "defi",
+          "ethereum-ecosystem",
+          "olympus-pro-ecosystem",
+          "arbitrum-ecosystem",
+          "spartan-group",
+          "bitcoin-ecosystem",
+          "real-world-assets-protocols",
+          "restaking",
+          "eigenlayer-ecosystem",
+          "cmc-crypto-yearbook-2024-2025",
+          "btcfi",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "LDO": {
+        "cmc_id": 8000,
+        "name": "Lido DAO",
+        "slug": "lido-dao",
+        "tags": [
+          "defi",
+          "dao",
+          "ethereum-ecosystem",
+          "three-arrows-capital-portfolio",
+          "solana-ecosystem",
+          "paradigm-portfolio",
+          "terra-ecosystem",
+          "arbitrum-ecosystem",
+          "liquid-staking-derivatives",
+          "optimism-ecosystem",
+          "standard-crypto-portfolio",
+          "egirl-capital-portfolio",
+          "cmc-crypto-yearbook-2024-2025",
+          "binance-ecosystem",
+          "binance-listing",
+          "binance-liquidity-enhancement-program"
+        ]
+      },
+      "XPL": {
+        "cmc_id": 36645,
+        "name": "Plasma",
+        "slug": "plasma-xpl",
+        "tags": [
+          "payments",
+          "bitcoin-ecosystem",
+          "layer-1",
+          "binance-hodler-airdrops",
+          "binance-alpha-airdrops",
+          "binance-ecosystem",
+          "binance-listing",
+          "stablecoin-protocol",
+          "plasma-ecosystem",
+          "neobank"
+        ]
+      },
+      "BONK": {
+        "cmc_id": 23095,
+        "name": "Bonk",
+        "slug": "bonk1",
+        "tags": [
+          "memes",
+          "ethereum-ecosystem",
+          "solana-ecosystem",
+          "polygon-ecosystem",
+          "doggone-doggerel",
+          "arbitrum-ecosystem",
+          "injective-ecosystem",
+          "aptos-ecosystem",
+          "dwf-labs-portfolio",
+          "base-ecosystem",
+          "cmc-crypto-awards-2024",
+          "move-vm",
+          "animal-memes",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "IMX": {
+        "cmc_id": 10603,
+        "name": "Immutable",
+        "slug": "immutable-x",
+        "tags": [
+          "collectibles-nfts",
+          "zero-knowledge-proofs",
+          "gaming",
+          "scaling",
+          "ethereum-ecosystem",
+          "layer-2",
+          "rollups",
+          "arrington-xrp-capital-portfolio",
+          "alameda-research-portfolio",
+          "modular-blockchain",
+          "binance-ecosystem",
+          "binance-listing",
+          "coinlist-launchpad"
+        ]
+      },
+      "OP": {
+        "cmc_id": 11840,
+        "name": "Optimism",
+        "slug": "optimism-ethereum",
+        "tags": [
+          "layer-2",
+          "optimism-ecosystem",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "LUNC": {
+        "cmc_id": 4172,
+        "name": "Terra Classic",
+        "slug": "terra-luna",
+        "tags": [
+          "cosmos-ecosystem",
+          "store-of-value",
+          "defi",
+          "payments",
+          "ethereum-ecosystem",
+          "coinbase-ventures-portfolio",
+          "binance-labs-portfolio",
+          "avalanche-ecosystem",
+          "solana-ecosystem",
+          "arrington-xrp-capital-portfolio",
+          "hashkey-capital-portfolio",
+          "kenetic-capital-portfolio",
+          "huobi-capital-portfolio",
+          "pantera-capital-portfolio",
+          "polygon-ecosystem",
+          "terra-ecosystem",
+          "injective-ecosystem",
+          "osmosis-ecosystem",
+          "alleged-sec-securities",
+          "secret-ecosystem",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "DCR": {
+        "cmc_id": 1168,
+        "name": "Decred",
+        "slug": "decred",
+        "tags": [
+          "mineable",
+          "hybrid-pow-pos",
+          "medium-of-exchange",
+          "store-of-value",
+          "privacy",
+          "dao",
+          "placeholder-ventures-portfolio",
+          "bitcoin-ecosystem",
+          "layer-1",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing",
+          "privacy-coins"
+        ]
+      },
+      "CFX": {
+        "cmc_id": 7334,
+        "name": "Conflux",
+        "slug": "conflux-network",
+        "tags": [
+          "mineable",
+          "pow",
+          "platform",
+          "collectibles-nfts",
+          "defi",
+          "payments",
+          "research",
+          "smart-contracts",
+          "staking",
+          "hybrid-pow-dpos",
+          "huobi-capital-portfolio",
+          "web3",
+          "injective-ecosystem",
+          "layer-1",
+          "dwf-labs-portfolio",
+          "conflux-ecosystem",
+          "binance-ecosystem",
+          "binance-listing",
+          "made-in-china"
+        ]
+      },
+      "BEAM": {
+        "cmc_id": 28298,
+        "name": "Beam",
+        "slug": "onbeam",
+        "tags": [
+          "gaming",
+          "ethereum-ecosystem",
+          "binance-chain",
+          "binance-launchpool",
+          "governance",
+          "play-to-earn",
+          "token",
+          "gaming-guild",
+          "spartan-group",
+          "bnb-chain-ecosystem",
+          "dwf-labs-portfolio",
+          "base-ecosystem",
+          "beam-ecosystem",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "GRT": {
+        "cmc_id": 6719,
+        "name": "The Graph",
+        "slug": "the-graph",
+        "tags": [
+          "ai-big-data",
+          "enterprise-solutions",
+          "defi",
+          "ethereum-ecosystem",
+          "coinbase-ventures-portfolio",
+          "avalanche-ecosystem",
+          "solana-ecosystem",
+          "analytics",
+          "coinfund-portfolio",
+          "dcg-portfolio",
+          "fabric-ventures-portfolio",
+          "framework-ventures-portfolio",
+          "ledgerprime-portfolio",
+          "multicoin-capital-portfolio",
+          "parafi-capital",
+          "polygon-ecosystem",
+          "fantom-ecosystem",
+          "web3",
+          "near-protocol-ecosystem",
+          "arbitrum-ecosystem",
+          "spartan-group",
+          "injective-ecosystem",
+          "sora-ecosystem",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "AR": {
+        "cmc_id": 5632,
+        "name": "Arweave",
+        "slug": "arweave",
+        "tags": [
+          "distributed-computing",
+          "filesharing",
+          "storage",
+          "coinbase-ventures-portfolio",
+          "solana-ecosystem",
+          "arrington-xrp-capital-portfolio",
+          "blockchain-capital-portfolio",
+          "a16z-portfolio",
+          "multicoin-capital-portfolio",
+          "web3",
+          "layer-1",
+          "egirl-capital-portfolio",
+          "depin",
+          "cmc-crypto-yearbook-2024-2025",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "FLOKI": {
+        "cmc_id": 10804,
+        "name": "FLOKI",
+        "slug": "floki-inu",
+        "tags": [
+          "defi",
+          "gaming",
+          "memes",
+          "ethereum-ecosystem",
+          "metaverse",
+          "doggone-doggerel",
+          "play-to-earn",
+          "bnb-chain-ecosystem",
+          "dwf-labs-portfolio",
+          "paal-ecosystem",
+          "tokenfi-launchpad",
+          "animal-memes",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "KAIA": {
+        "cmc_id": 32880,
+        "name": "Kaia",
+        "slug": "kaia",
+        "tags": [
+          "platform",
+          "enterprise-solutions",
+          "layer-1",
+          "klaytn-ecosystem",
+          "binance-ecosystem",
+          "binance-listing",
+          "binance-liquidity-enhancement-program"
+        ]
+      },
+      "COMP": {
+        "cmc_id": 5692,
+        "name": "Compound",
+        "slug": "compound",
+        "tags": [
+          "defi",
+          "dao",
+          "ethereum-ecosystem",
+          "yield-farming",
+          "coinbase-ventures-portfolio",
+          "three-arrows-capital-portfolio",
+          "polychain-capital-portfolio",
+          "avalanche-ecosystem",
+          "solana-ecosystem",
+          "lending-borowing",
+          "dragonfly-capital-portfolio",
+          "alameda-research-portfolio",
+          "a16z-portfolio",
+          "pantera-capital-portfolio",
+          "paradigm-portfolio",
+          "near-protocol-ecosystem",
+          "arbitrum-ecosystem",
+          "gnosis-chain-ecosystem",
+          "sora-ecosystem",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "KMNO": {
+        "cmc_id": 30986,
+        "name": "Kamino",
+        "slug": "kamino-finance",
+        "tags": [
+          "defi",
+          "solana-ecosystem",
+          "lending-borowing",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "MON": {
+        "cmc_id": 30495,
+        "name": "Monad",
+        "slug": "monad",
+        "tags": [
+          "platform",
+          "defi",
+          "smart-contracts",
+          "coinbase-ventures-portfolio",
+          "cms-holdings-portfolio",
+          "electric-capital-portfolio",
+          "galaxy-digital-portfolio",
+          "paradigm-portfolio",
+          "animoca-brands-portfolio",
+          "layer-1",
+          "egirl-capital-portfolio",
+          "parallel-evm",
+          "cmc-crypto-yearbook-2024-2025",
+          "binance-ecosystem",
+          "binance-listing",
+          "monad-ecosystem"
+        ]
+      },
+      "NFT": {
+        "cmc_id": 9816,
+        "name": "AINFT",
+        "slug": "apenft",
+        "tags": [
+          "art",
+          "collectibles-nfts",
+          "ethereum-ecosystem",
+          "tron-ecosystem",
+          "binance-alpha",
+          "tron20-ecosystem",
+          "binance-ecosystem"
+        ]
+      },
+      "RUNE": {
+        "cmc_id": 4157,
+        "name": "THORChain",
+        "slug": "thorchain",
+        "tags": [
+          "cosmos-ecosystem",
+          "decentralized-exchange-dex-token",
+          "defi",
+          "dex",
+          "multicoin-capital-portfolio",
+          "exnetwork-capital-portfolio",
+          "injective-ecosystem",
+          "thorchain-ecosystem",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "ENS": {
+        "cmc_id": 13855,
+        "name": "Ethereum Name Service",
+        "slug": "ethereum-name-service",
+        "tags": [
+          "dao",
+          "ethereum-ecosystem",
+          "governance",
+          "solana-ecosystem",
+          "web3",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "AKT": {
+        "cmc_id": 7431,
+        "name": "Akash Network",
+        "slug": "akash-network",
+        "tags": [
+          "cosmos-ecosystem",
+          "ai-big-data",
+          "distributed-computing",
+          "solana-ecosystem",
+          "web3",
+          "injective-ecosystem",
+          "osmosis-ecosystem",
+          "generative-ai",
+          "depin",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "BAT": {
+        "cmc_id": 1697,
+        "name": "Basic Attention Token",
+        "slug": "basic-attention-token",
+        "tags": [
+          "marketing",
+          "communications-social-media",
+          "ai-big-data",
+          "content-creation",
+          "defi",
+          "interoperability",
+          "payments",
+          "smart-contracts",
+          "staking",
+          "ethereum-ecosystem",
+          "governance",
+          "avalanche-ecosystem",
+          "solana-ecosystem",
+          "dcg-portfolio",
+          "1confirmation-portfolio",
+          "pantera-capital-portfolio",
+          "web3",
+          "near-protocol-ecosystem",
+          "gnosis-chain-ecosystem",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "FLUID": {
+        "cmc_id": 10508,
+        "name": "Fluid",
+        "slug": "instadapp",
+        "tags": [
+          "defi",
+          "dao",
+          "ethereum-ecosystem",
+          "coinbase-ventures-portfolio",
+          "arbitrum-ecosystem",
+          "base-ecosystem",
+          "standard-crypto-portfolio",
+          "binance-alpha",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "ZBCN": {
+        "cmc_id": 30636,
+        "name": "Zebec Network",
+        "slug": "zebec-network",
+        "tags": [
+          "defi",
+          "payments",
+          "solana-ecosystem",
+          "real-world-assets-protocols",
+          "depin",
+          "made-in-america",
+          "iso-20022"
+        ]
+      },
+      "CVX": {
+        "cmc_id": 9903,
+        "name": "Convex Finance",
+        "slug": "convex-finance",
+        "tags": [
+          "defi",
+          "ethereum-ecosystem",
+          "yield-aggregator",
+          "solana-ecosystem",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "JTO": {
+        "cmc_id": 28541,
+        "name": "Jito",
+        "slug": "jito",
+        "tags": [
+          "defi",
+          "staking",
+          "dao",
+          "solana-ecosystem",
+          "liquid-staking-derivatives",
+          "cmc-crypto-yearbook-2024-2025",
+          "binance-ecosystem",
+          "binance-listing",
+          "binance-liquidity-enhancement-program"
+        ]
+      },
+      "JASMY": {
+        "cmc_id": 8425,
+        "name": "JasmyCoin",
+        "slug": "jasmy",
+        "tags": [
+          "iot",
+          "ethereum-ecosystem",
+          "dwf-labs-portfolio",
+          "binance-ecosystem",
+          "binance-listing",
+          "robotics"
+        ]
+      },
+      "TWT": {
+        "cmc_id": 5964,
+        "name": "Trust Wallet Token",
+        "slug": "trust-wallet-token",
+        "tags": [
+          "wallet",
+          "solana-ecosystem",
+          "polygon-ecosystem",
+          "bnb-chain-ecosystem",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "TRAC": {
+        "cmc_id": 2467,
+        "name": "OriginTrail",
+        "slug": "origintrail",
+        "tags": [
+          "marketplace",
+          "logistics",
+          "ai-big-data",
+          "enterprise-solutions",
+          "distributed-computing",
+          "data-provenance",
+          "defi",
+          "privacy",
+          "interoperability",
+          "smart-contracts",
+          "ethereum-ecosystem",
+          "web3",
+          "open-source",
+          "desci",
+          "generative-ai",
+          "real-world-assets-protocols",
+          "base-ecosystem",
+          "depin",
+          "ai-agents",
+          "gnosis-chain-ecosystem"
+        ]
+      },
+      "MET": {
+        "cmc_id": 38353,
+        "name": "Meteora",
+        "slug": "meteora",
+        "tags": [
+          "decentralized-exchange-dex-token",
+          "defi",
+          "dapp",
+          "amm",
+          "dex",
+          "solana-ecosystem",
+          "binance-alpha-airdrops",
+          "binance-ecosystem",
+          "binance-listing",
+          "binance-liquidity-enhancement-program"
+        ]
+      },
+      "ZAMA": {
+        "cmc_id": 39332,
+        "name": "Zama",
+        "slug": "zama",
+        "tags": [
+          "privacy",
+          "ethereum-ecosystem",
+          "solana-ecosystem",
+          "pantera-capital-portfolio",
+          "multicoin-capital-portfolio",
+          "cross-chain",
+          "bnb-chain-ecosystem",
+          "binance-wallet-ido",
+          "binance-ecosystem",
+          "binance-listing",
+          "coinlist-launchpad"
+        ]
+      },
+      "EIGEN": {
+        "cmc_id": 30494,
+        "name": "EigenCloud",
+        "slug": "eigencloud",
+        "tags": [
+          "defi",
+          "ethereum-ecosystem",
+          "restaking",
+          "cmc-crypto-yearbook-2024-2025",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing",
+          "x402-ecosystem"
+        ]
+      },
+      "IOTA": {
+        "cmc_id": 1720,
+        "name": "IOTA",
+        "slug": "iota",
+        "tags": [
+          "dag",
+          "real-world-assets-protocols",
+          "layer-1",
+          "dwf-labs-portfolio",
+          "move-vm",
+          "2017-2018-alt-season",
+          "iota-evm-ecosystem",
+          "binance-ecosystem",
+          "binance-listing",
+          "iso-20022"
+        ]
+      },
+      "SYRUP": {
+        "cmc_id": 33824,
+        "name": "Maple Finance",
+        "slug": "maple-finance",
+        "tags": [
+          "defi",
+          "dao",
+          "ethereum-ecosystem",
+          "framework-ventures-portfolio",
+          "real-world-assets-protocols",
+          "circle-ventures-portfolio",
+          "base-ecosystem",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "CAP": {
+        "cmc_id": 40531,
+        "name": "Cap",
+        "slug": "cap-app",
+        "tags": [
+          "defi",
+          "ethereum-ecosystem",
+          "bnb-chain-ecosystem",
+          "binance-alpha",
+          "binance-wallet-ido",
+          "binance-ecosystem",
+          "binance-listing",
+          "megaeth-ecosystem"
+        ]
+      },
+      "WIF": {
+        "cmc_id": 28752,
+        "name": "dogwifhat",
+        "slug": "dogwifhat",
+        "tags": [
+          "memes",
+          "solana-ecosystem",
+          "doggone-doggerel",
+          "animal-memes",
+          "cmc-crypto-yearbook-2024-2025",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "SOON": {
+        "cmc_id": 36542,
+        "name": "SOON",
+        "slug": "soon",
+        "tags": [
+          "layer-2",
+          "cross-chain",
+          "binance-alpha",
+          "binance-alpha-airdrops",
+          "binance-ecosystem",
+          "binance-listing",
+          "amber-group-portfolio"
+        ]
+      },
+      "GOMINING": {
+        "cmc_id": 10180,
+        "name": "GoМining",
+        "slug": "gomining-token",
+        "tags": [
+          "collectibles-nfts",
+          "gaming",
+          "ethereum-ecosystem",
+          "solana-ecosystem",
+          "bnb-chain-ecosystem",
+          "toncoin-ecosystem"
+        ]
+      },
+      "TEL": {
+        "cmc_id": 2394,
+        "name": "Telcoin",
+        "slug": "telcoin",
+        "tags": [
+          "pos",
+          "medium-of-exchange",
+          "defi",
+          "identity",
+          "payments",
+          "wallet",
+          "mobile-payment",
+          "polygon-ecosystem",
+          "real-world-assets-protocols",
+          "layer-1",
+          "made-in-america",
+          "stablecoin-protocol",
+          "neobank"
+        ]
+      },
+      "AXS": {
+        "cmc_id": 6783,
+        "name": "Axie Infinity",
+        "slug": "axie-infinity",
+        "tags": [
+          "collectibles-nfts",
+          "gaming",
+          "ethereum-ecosystem",
+          "binance-launchpad",
+          "solana-ecosystem",
+          "metaverse",
+          "defiance-capital-portfolio",
+          "play-to-earn",
+          "animoca-brands-portfolio",
+          "harmony-ecosystem",
+          "alleged-sec-securities",
+          "ronin-ecosystem",
+          "binance-ecosystem",
+          "binance-listing",
+          "trading-card-game"
+        ]
+      },
+      "MANA": {
+        "cmc_id": 1966,
+        "name": "Decentraland",
+        "slug": "decentraland",
+        "tags": [
+          "platform",
+          "collectibles-nfts",
+          "gaming",
+          "payments",
+          "ethereum-ecosystem",
+          "solana-ecosystem",
+          "metaverse",
+          "boostvc-portfolio",
+          "dcg-portfolio",
+          "fabric-ventures-portfolio",
+          "kenetic-capital-portfolio",
+          "polygon-ecosystem",
+          "play-to-earn",
+          "alleged-sec-securities",
+          "gnosis-chain-ecosystem",
+          "fusion-network-ecosystem",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "THETA": {
+        "cmc_id": 2416,
+        "name": "Theta Network",
+        "slug": "theta-network",
+        "tags": [
+          "media",
+          "vr-ar",
+          "communications-social-media",
+          "ai-big-data",
+          "distributed-computing",
+          "content-creation",
+          "entertainment",
+          "sharing-economy",
+          "smart-contracts",
+          "video",
+          "huobi-capital-portfolio",
+          "web3",
+          "layer-1",
+          "depin",
+          "2017-2018-alt-season",
+          "made-in-america",
+          "binance-ecosystem",
+          "binance-listing"
+        ]
+      },
+      "XCN": {
+        "cmc_id": 18679,
+        "name": "Onyxcoin",
+        "slug": "onyxcoin",
+        "tags": [
+          "layer-1",
+          "made-in-america"
+        ]
+      }
+    },
+    "missing": [],
+    "wrapped": [],
+    "stablecoin": [
+      "DAI",
+      "EURC",
+      "FDUSD",
+      "PYUSD",
+      "RLUSD",
+      "TUSD",
+      "U",
+      "USD1",
+      "USDC",
+      "USDD",
+      "USDG",
+      "USDT",
+      "USDe"
+    ]
+  }
+}
