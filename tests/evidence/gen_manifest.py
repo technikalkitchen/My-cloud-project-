@@ -8,6 +8,7 @@ import os
 import sys
 import json
 import datetime
+import os
 
 EVIDENCE = "tests/evidence"
 APPROVED = "tests/evidence/approved_tests.tsv"
@@ -33,6 +34,47 @@ REQUIRED = [
     "executed_at", "script_path", "data",
 ]
 
+
+
+ITEM_DATA_DIR = "docs/B_items"
+
+def render_data_md(data):
+    md = ""
+    for k, v in data.items():
+        md += f"### `{k}`\n\n"
+        if isinstance(v, list):
+            if not v:
+                md += "_empty list_\n\n"
+            elif isinstance(v[0], dict):
+                keys = list(v[0].keys())
+                md += "| " + " | ".join(keys) + " |\n"
+                md += "|" + "|".join(["---"] * len(keys)) + "|\n"
+                for row in v:
+                    md += "| " + " | ".join(str(row.get(c, "")) for c in keys) + " |\n"
+                md += "\n"
+            else:
+                md += ", ".join(str(x) for x in v) + "\n\n"
+        elif isinstance(v, dict):
+            for dk, dv in v.items():
+                md += f"- **{dk}**: {dv}\n"
+            md += "\n"
+        else:
+            md += f"{v}\n\n"
+    return md
+
+def generate_item_data_files(by_item):
+    os.makedirs(ITEM_DATA_DIR, exist_ok=True)
+    for item_num, tests in by_item.items():
+        if not tests:
+            continue
+        md_path = os.path.join(ITEM_DATA_DIR, f"Item_{item_num}_data.md")
+        with open(md_path, "w", encoding="utf-8") as f:
+            f.write(f"# Item_{item_num} — Test Data\n\n")
+            for t in tests:
+                f.write(f"## Source: `{t['file']}`\n")
+                f.write(f"**Description:** {t['description']}\n\n")
+                f.write(render_data_md(t.get("data", {})))
+                f.write("\n---\n\n")
 
 def load_approved():
     """Return list of filenames from approved_tests.tsv."""
@@ -151,6 +193,7 @@ def main():
                 "date": str(d.get("executed_at", "-"))[:10],
                 "description": str(d.get("description", "-")),
                 "key_numbers": fmt_kn(d["key_numbers"]),
+                "data": d.get("data", {}),
             })
 
     items_covered = sum(1 for v in by_item.values() if v)
@@ -208,6 +251,8 @@ def main():
                 out.write(f"- `{e}`\n")
 
     print(f"OK: approved={valid_count} errors={len(errors)} items_covered={items_covered}/30")
+
+    generate_item_data_files(by_item)
 
     if errors:
         print(f"\nERRORS ({len(errors)}):")

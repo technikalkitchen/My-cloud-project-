@@ -252,3 +252,18 @@ Summary در MANIFEST همیشه از محتوای فایل یا از note در 
 
 ### قانون ۵ — (منسوخ شد)
 این قانون (Grandfathering) حذف شد. تمام تست‌ها موظف به رعایت کامل قوانین ۱ تا ۴ هستند (بدون استثنا).
+
+---
+
+## بخش ۱۲ — معماری Data Files
+**تاریخ تصویب:** ۱۵ نوامبر ۲۰۲۶ | **وضعیت:** LOCKED
+
+### فایل‌های داده
+- `MANIFEST.md` = خلاصه ۳۰ آیتم (تست‌ها، counts)
+- `docs/B_items/Item_XX_data.md` = داده تست‌های Item_XX (لیست‌ها، جداول)
+- `tests/evidence/*.json` = داده خام برای Runtime ربات
+
+### قاعده
+- دستیار AI فقط MANIFEST + Item_XX_data.md را می‌بیند.
+- JSON هرگز به دستیار AI نمی‌رسد (حجم زیاد).
+- gen_manifest.py دو خروجی می‌سازد: MANIFEST + Item_XX_data.
