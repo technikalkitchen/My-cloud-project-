@@ -1,5 +1,8 @@
 # Item_03 — Test Data
 
+> **Note:** `available_from` and `presence_status` are NOT in this file.
+> They are calculated in **Item_13 (Bootstrap)** using `effective_start = max(exchange_start, listing_date)`.
+
 ## Source: `cmc_top125_fetch_2026-11-15.json`
 **Description:** Universe selection: top 125 from CMC 150 (excludes 25 lowest ranks)
 

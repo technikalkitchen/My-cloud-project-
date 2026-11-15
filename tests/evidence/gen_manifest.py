@@ -70,6 +70,9 @@ def generate_item_data_files(by_item):
         md_path = os.path.join(ITEM_DATA_DIR, f"Item_{item_num}_data.md")
         with open(md_path, "w", encoding="utf-8") as f:
             f.write(f"# Item_{item_num} — Test Data\n\n")
+            if item_num == "03":
+                f.write("> **Note:** `available_from` and `presence_status` are NOT in this file.\n")
+                f.write("> They are calculated in **Item_13 (Bootstrap)** using `effective_start = max(exchange_start, listing_date)`.\n\n")
             for t in tests:
                 f.write(f"## Source: `{t['file']}`\n")
                 f.write(f"**Description:** {t['description']}\n\n")
