@@ -5,18 +5,18 @@
   ],
   "description": "Universe selection: top 125 from CMC 150 (excludes 25 lowest ranks)",
   "key_numbers": {
-    "total_universe": 125,
+    "universe_count": 125,
     "excluded_count": 25,
-    "stablecoins_in_universe": 13,
-    "wrapped_in_universe": 0,
+    "stablecoin_count": 13,
+    "wrapped_count": 0,
     "highest_rank_included": 1,
     "lowest_rank_included": 125,
     "highest_rank_excluded": 126
   },
-  "executed_at": "2026-11-15T14:35:19.827061+00:00",
+  "executed_at": "2026-11-15T15:27:19.394194+00:00",
   "script_path": "tests/evidence/scripts/cmc_top125_fetch.py",
   "data": {
-    "universe_125": [
+    "universe_symbols_list": [
       {
         "rank": 1,
         "symbol": "BTC",
@@ -768,7 +768,7 @@
         "name": "AINFT"
       }
     ],
-    "excluded_25": [
+    "excluded_symbols_list": [
       {
         "rank": 126,
         "symbol": "ENS",
@@ -920,7 +920,7 @@
         "name": "Onyxcoin"
       }
     ],
-    "stablecoins": [
+    "stablecoins_list": [
       "USDT",
       "USDC",
       "USDe",
@@ -935,6 +935,7 @@
       "EURC",
       "FDUSD"
     ],
+    "wrapped_symbols_list": [],
     "source_file": "tests/evidence/cmc_top150_2026-11-08.json"
   }
 }
