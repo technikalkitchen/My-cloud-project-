@@ -1,6 +1,6 @@
 # MANIFEST.md — Approved Tests Registry (v2)
 
-**Generated:** 2026-11-15T15:50:25Z
+**Generated:** 2026-11-15T15:59:01Z
 **Approved tests:** 2 | **Errors:** 0
 **Items with tests:** 1/30
 
@@ -65,7 +65,7 @@ _هیچ تستی تأیید نشده_
 
 | File | Date | Description | Key Numbers |
 |---|---|---|---|
-| cmc_top125_fetch_2026-11-15.json | 2026-11-15 | Universe selection: top 125 from CMC 150 (excludes 25 lowest ranks) | universe_count=125 | excluded_count=25 | stablecoin_count=13 | wrapped_count=0 | highest_rank_included=1 | lowest_rank_included=125 |
+| cmc_classify_2026-11-15.json | 2026-11-15 | Classification of 125 universe assets based on CMC tags | total_count=125 | stablecoin_count=13 | regular_count=112 | wrapped_count=0 | support_count=1 |
 | cmc_top125_fetch_2026-11-15.json | 2026-11-15 | Universe selection: top 125 from CMC 150 (excludes 25 lowest ranks) | universe_count=125 | excluded_count=25 | stablecoin_count=13 | wrapped_count=0 | highest_rank_included=1 | lowest_rank_included=125 |
 
 ## Item_04 — Migration Map
