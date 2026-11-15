@@ -166,14 +166,6 @@
 | 149 | THETA | 2416 | Theta Network |
 | 150 | XCN | 18679 | Onyxcoin |
 
-### `stablecoins_list`
-
-USDT, USDC, USDe, DAI, USD1, PYUSD, USDG, RLUSD, U, USDD, TUSD, EURC, FDUSD
-
-### `wrapped_symbols_list`
-
-_empty list_
-
 ### `source_file`
 
 tests/evidence/cmc_top150_2026-11-08.json

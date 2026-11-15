@@ -7,13 +7,11 @@
   "key_numbers": {
     "universe_count": 125,
     "excluded_count": 25,
-    "stablecoin_count": 13,
-    "wrapped_count": 0,
     "highest_rank_included": 1,
     "lowest_rank_included": 125,
     "highest_rank_excluded": 126
   },
-  "executed_at": "2026-11-15T15:27:19.394194+00:00",
+  "executed_at": "2026-11-15T21:13:14.101888+00:00",
   "script_path": "tests/evidence/scripts/cmc_top125_fetch.py",
   "data": {
     "universe_symbols_list": [
@@ -920,22 +918,6 @@
         "name": "Onyxcoin"
       }
     ],
-    "stablecoins_list": [
-      "USDT",
-      "USDC",
-      "USDe",
-      "DAI",
-      "USD1",
-      "PYUSD",
-      "USDG",
-      "RLUSD",
-      "U",
-      "USDD",
-      "TUSD",
-      "EURC",
-      "FDUSD"
-    ],
-    "wrapped_symbols_list": [],
     "source_file": "tests/evidence/cmc_top150_2026-11-08.json"
   }
 }
