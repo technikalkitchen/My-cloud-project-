@@ -64,6 +64,23 @@ def render_data_md(data):
 
 def generate_item_data_files(by_item):
     os.makedirs(ITEM_DATA_DIR, exist_ok=True)
+    
+    # Load tags for Item_03 (from the earlier JSON, no API call)
+    tags_map = {}
+    tags_file = "tests/evidence/cmc_tags_fetch_2026-11-15.json"
+    if os.path.exists(tags_file):
+        try:
+            td = json.load(open(tags_file, encoding="utf-8"))
+            tags_map = td.get("data", {}).get("tags_by_symbol", {})
+        except Exception:
+            pass
+
+    # Whitelist for meaningful tags (since public API doesn't give tag-groups)
+    KEEP_TAGS = {
+        "stablecoin", "defi", "layer-1", "layer-2", "memes", 
+        "wrapped", "pow", "pos", "smart-contracts", "privacy"
+    }
+
     for item_num, tests in by_item.items():
         if not tests:
             continue
@@ -73,10 +90,30 @@ def generate_item_data_files(by_item):
             if item_num == "03":
                 f.write("> **Note:** `available_from` and `presence_status` are NOT in this file.\n")
                 f.write("> They are calculated in **Item_13 (Bootstrap)** using `effective_start = max(exchange_start, listing_date)`.\n\n")
+            
             for t in tests:
+                # Skip cmc_tags_fetch data in markdown (it's huge and tags are already in universe_symbols_list)
+                if "cmc_tags_fetch" in t['file']:
+                    continue
                 f.write(f"## Source: `{t['file']}`\n")
                 f.write(f"**Description:** {t['description']}\n\n")
-                f.write(render_data_md(t.get("data", {})))
+                
+                data_to_render = t.get("data", {})
+                
+                # Inject filtered tags only for Item_03 universe_symbols_list
+                if item_num == "03" and "universe_symbols_list" in data_to_render:
+                    data_to_render = dict(data_to_render)
+                    new_list = []
+                    for row in data_to_render["universe_symbols_list"]:
+                        row_copy = dict(row)
+                        sym = row_copy.get("symbol")
+                        raw_tags = tags_map.get(sym, {}).get("tags", [])
+                        filtered_tags = [t for t in raw_tags if t in KEEP_TAGS]
+                        row_copy["tags"] = ", ".join(filtered_tags) if filtered_tags else "-"
+                        new_list.append(row_copy)
+                    data_to_render["universe_symbols_list"] = new_list
+                    
+                f.write(render_data_md(data_to_render))
                 f.write("\n---\n\n")
 
 def load_approved():

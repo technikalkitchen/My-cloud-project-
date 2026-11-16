@@ -267,3 +267,19 @@ Summary در MANIFEST همیشه از محتوای فایل یا از note در 
 - دستیار AI فقط MANIFEST + Item_XX_data.md را می‌بیند.
 - JSON هرگز به دستیار AI نمی‌رسد (حجم زیاد).
 - gen_manifest.py دو خروجی می‌سازد: MANIFEST + Item_XX_data.
+
+---
+
+### §12.1 — Tag Filter Whitelist (موقت)
+**تاریخ:** ۱۷ نوامبر ۲۰۲۶ | **وضعیت:** PROVISIONAL
+
+`gen_manifest.py` برای ساخت `Item_03_data.md` از یک whitelist ثابت (`KEEP_TAGS`) برای فیلتر tags استفاده می‌کند:
+`stablecoin, defi, layer-1, layer-2, memes, wrapped, pow, pos, smart-contracts, privacy`
+
+**چرا whitelist و نه tag-groups CMC:**
+- endpoint Keyless (`/public-api/v2/cryptocurrency/info?aux=tags`) فیلد `tag-groups` را برنمی‌گرداند
+- endpoint با API key فیلد `tag-groups` دارد، ولی re-fetch ۱۵۰ دارایی نیازمند زمان و هزینه است
+
+**قاعده گسترش:**
+- اگر Item_28 (Grouping) یا آیتم دیگری به tag جدید (مثل `ai-agents`، `real-world-assets`، `gaming`) نیاز داشت → `KEEP_TAGS` با Amendment گسترش می‌یابد
+- این تصمیم موقت است تا زمانی که tag-groups از CMC در دسترس باشد
