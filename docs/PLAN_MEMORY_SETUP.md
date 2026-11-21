@@ -7,7 +7,7 @@
 - [x] ۱) ساختن پوشه‌ها: docs/memory/, docs/archive/, docs/reports/ + کپی‌بکاپ START_HERE و WORK_STATE به archive
 - [x] ۱ب) کوتاه‌کردن 00_START_HERE.md به ~۱۵۰ خط در docs/Agents/ (حفظ شماره بخش‌ها)
 - [x] ۲) استخراج درس‌ها از TEST_MAP_v3.4_FINAL.md به docs/memory/lessons.md + انتقال سند به docs/archive/
-- [ ] ۳) خلاصه‌ی همه‌ی Itemهای دارای محتوا به‌عنوان پیش‌نویس تأییدنشده (docs/memory/draft/item_XX.md)
+- [x] ۳) خلاصه‌ی همه‌ی Itemهای دارای محتوا به‌عنوان پیش‌نویس تأییدنشده (docs/memory/draft/item_XX.md)
 - [ ] ۴) فهرست یکپارچه‌ی تناقض‌ها (X-01, X-02, ...) + حل با Owner
 - [ ] ۵) بازنویسی دقیق هر Item
 - [ ] ۶) AGENTS.md و STATE.md
