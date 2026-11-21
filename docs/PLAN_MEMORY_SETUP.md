@@ -9,7 +9,7 @@
 - [x] ۲) استخراج درس‌ها از TEST_MAP_v3.4_FINAL.md به docs/memory/lessons.md + انتقال سند به docs/archive/
 - [x] ۳) خلاصه‌ی همه‌ی Itemهای دارای محتوا به‌عنوان پیش‌نویس تأییدنشده (docs/memory/draft/item_XX.md)
 - [x] ۴) فهرست یکپارچه‌ی تناقض‌ها (X-01, X-02, ...) + حل با Owner
-- [ ] ۵) بازنویسی دقیق هر Item
+- [x] ۵) بازنویسی دقیق هر Item
 - [ ] ۶) AGENTS.md و STATE.md
 - [ ] ۷) تست با session تازه
 ## فهرست انتقال به قدم‌های بعد
