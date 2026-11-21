@@ -7,11 +7,11 @@
 - [x] ۱) ساختن پوشه‌ها: docs/memory/, docs/archive/, docs/reports/ + کپی‌بکاپ START_HERE و WORK_STATE به archive
 - [x] ۱ب) کوتاه‌کردن 00_START_HERE.md به ~۱۵۰ خط در docs/Agents/ (حفظ شماره بخش‌ها)
 - [x] ۲) استخراج درس‌ها از TEST_MAP_v3.4_FINAL.md به docs/memory/lessons.md + انتقال سند به docs/archive/
-- [ ] ۳) ساختن خلاصه‌برگه برای هر Item در docs/memory/ (قواعد معتبر / چیزهایی که قرار است عوض شود)
-- [ ] ۴) ساختن registry.md از تصمیم‌های موجود در docs/memory/registry.md
-- [ ] ۵) نوشتن AGENTS.md ریشه با جدول راهنما + قانون گزارش پایین
-- [ ] ۶) نوشتن STATE.md ریشه (وضعیت فعلی + قدم بعدی، کوتاه)
-- [ ] ۷) تست: یک session تازه با فقط AGENTS.md و STATE.md راه را پیدا کند
+- [ ] ۳) خلاصه‌ی همه‌ی Itemهای دارای محتوا به‌عنوان پیش‌نویس تأییدنشده (docs/memory/draft/item_XX.md)
+- [ ] ۴) فهرست یکپارچه‌ی تناقض‌ها (X-01, X-02, ...) + حل با Owner
+- [ ] ۵) بازنویسی دقیق هر Item
+- [ ] ۶) AGENTS.md و STATE.md
+- [ ] ۷) تست با session تازه
 ## فهرست انتقال به قدم‌های بعد
 
 ### برای AGENTS.md (قدم ۵)
