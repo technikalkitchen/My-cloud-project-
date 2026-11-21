@@ -1,4 +1,4 @@
-# AGENTS — Kitchen Assistant Bot V4 (keep <90 lines)
+# AGENTS — Kitchen Assistant Bot V4 (keep <90 lines)FIRST ACTION, before answering anything (even a one-word message): run `cat docs/Agents/STATE.md`.If Owner says only "continue" / "ادامه بده" / "next": read STATE, state its "Next step" in max 5 lines, then WAIT for Owner's go. Do not start big work on your own.
 
 Owner = the human. Owner decides, you execute. Memory lives in files, not in chat.
 
@@ -28,7 +28,7 @@ NOT rules, raw material only: docs/memory/draft/*, docs/B_items/* (old), docs/ar
 
 ## Map (use this; do not scan)
 
-- docs/Agents/: AGENTS.md (this), STATE.md (live status), LEDGER.md (append-only log), 00_START_HERE.md (operating rules)
+- docs/Agents/: AGENTS.md (root, this file), STATE.md (live status), LEDGER.md (append-only log), 00_START_HERE.md (operating rules)
 - docs/memory/: registry.md (confirmed decisions), lessons.md, CONFLICTS.md (X-xx by Item), OPEN_QUESTIONS.md (Q-xx), TEST_QUEUE.md (T-xx), draft/ (+INDEX.md)
 - docs/B_items/: old Item docs (Items 13,14,16-30 are empty; write fresh)
 - docs/PLAN_MEMORY_SETUP.md: setup plan with ticks
