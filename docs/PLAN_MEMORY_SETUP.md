@@ -12,6 +12,13 @@
 - [x] ۵) بازنویسی دقیق هر Item
 - [ ] ۶) AGENTS.md و STATE.md
 - [ ] ۷) تست با session تازه
+## قدم ۵ — زیرمرحله‌های A تا E
+- [x] A) پشتیبان AGENTS.md ریشه + D-03 در registry
+- [ ] B) ساختن docs/Agents/AGENTS.md
+- [ ] C) ساختن docs/Agents/STATE.md + انتقال WORK_STATE به archive
+- [ ] D) جایگزینی AGENTS.md ریشه
+- [ ] E) بررسی و گزارش
+
 ## فهرست انتقال به قدم‌های بعد
 
 ### برای AGENTS.md (قدم ۵)
