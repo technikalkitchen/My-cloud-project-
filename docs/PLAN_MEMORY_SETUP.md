@@ -14,7 +14,7 @@
 - [ ] ۷) تست با session تازه
 ## قدم ۵ — زیرمرحله‌های A تا E
 - [x] A) پشتیبان AGENTS.md ریشه + D-03 در registry
-- [ ] B) ساختن docs/Agents/AGENTS.md
+- [x] B) ساختن docs/Agents/AGENTS.md
 - [ ] C) ساختن docs/Agents/STATE.md + انتقال WORK_STATE به archive
 - [ ] D) جایگزینی AGENTS.md ریشه
 - [ ] E) بررسی و گزارش
