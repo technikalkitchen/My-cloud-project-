@@ -10,14 +10,14 @@
 - [x] ۳) خلاصه‌ی همه‌ی Itemهای دارای محتوا به‌عنوان پیش‌نویس تأییدنشده (docs/memory/draft/item_XX.md)
 - [x] ۴) فهرست یکپارچه‌ی تناقض‌ها (X-01, X-02, ...) + حل با Owner
 - [x] ۵) بازنویسی دقیق هر Item
-- [ ] ۶) AGENTS.md و STATE.md
+- [x] ۶) AGENTS.md و STATE.md
 - [ ] ۷) تست با session تازه
 ## قدم ۵ — زیرمرحله‌های A تا E
 - [x] A) پشتیبان AGENTS.md ریشه + D-03 در registry
 - [x] B) ساختن docs/Agents/AGENTS.md
 - [x] C) ساختن docs/Agents/STATE.md + انتقال WORK_STATE به archive
 - [x] D) جایگزینی AGENTS.md ریشه
-- [ ] E) بررسی و گزارش
+- [x] E) بررسی و گزارش
 
 ## فهرست انتقال به قدم‌های بعد
 

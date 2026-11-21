@@ -1,26 +1,28 @@
-# گزارش جستجو — یونیورس هر صرافی (کار ۴ از قدم ۳)
+# گزارش بررسی — قدم ۵ (فقط بررسی)
 
-نتیجه: تست «یونیورس هر صرافی» (کدام دارایی در کدام صرافی) به Item_13 و Item_20 تعلق دارد؛ متن تعریف در Item_03 §9 است. به Item_01 تعلق ندارد.
+## ۱) تعداد خطوط
+- docs/Agents/AGENTS.md: ۶۷ خط (هدف <۹۰) ✅
+- docs/Agents/STATE.md: ۲۰ خط (هدف <۴۰) ✅
+- AGENTS.md ریشه: ۶ خط (هدف <۸) ✅
 
-## فهرست ۳۰ Item (MAP.md خط ۵۶–۸۵)
-۰۱ صرافی‌ها · ۰۲ اگریگیتورها · ۰۳ دنیای دارایی‌ها · ۰۴ جدول مهاجرت · ۰۵ جفت‌ارزها · ۰۶ بازه و تایم‌فریم · ۰۷ دقت و زمان · ۰۸ قرارداد داده · ۰۹ محدودیت نرخ · ۱۰ خطا · ۱۱ کش · ۱۲ ذخیره‌سازی · ۱۳ دریافت اولیه · ۱۴ به‌روزرسانی روزانه · ۱۵ ساپلای
-۱۶ کندل · ۱۷ حجم صرافی · ۱۸ قیمت صرافی · ۱۹ مارکت‌کپ صرافی · ۲۰ اعتبار صرافی · ۲۱ اعتبار داده · ۲۲ دامیننس صرافی · ۲۳ قیمت کیچن · ۲۴ حجم کیچن · ۲۵ مارکت‌کپ کیچن · ۲۶ پوشش کیچن · ۲۷ رتبه‌بندی کیچن · ۲۸ گروه‌بندی · ۲۹ دامیننس کیچن · ۳۰ اسنپ‌شات
+## ۲) مسیرهای Map
+همه موجودند: docs/Agents/{AGENTS,STATE,LEDGER,00_START_HERE}.md، docs/memory/{registry,lessons,CONFLICTS,OPEN_QUESTIONS,TEST_QUEUE}.md، docs/memory/draft/ و INDEX.md، docs/B_items/، docs/PLAN_MEMORY_SETUP.md، docs/reports/LAST_REPORT.md، docs/archive/، docs/legacy/، docs/MAP.md، docs/TEAM_PROTOCOL.md، tests/evidence/، tests/evidence/gen_manifest.py.
+مسیر ناموجود: ندارد.
 
-مرتبط با «داده‌ی صرافی‌ها»: ۰۱، ۰۳، ۱۳، ۱۷، ۱۸، ۱۹، ۲۰، ۲۱، ۲۲، ۲۶.
+## ۳) Placeholderها
+هیچ {…} خالی نماند. تعداد: ۹ نام (۱۰ جایگزینی): {BRANCH} دوبار، {PATH_MAP}، {PATH_TEAM_PROTOCOL}، {PATH_EVIDENCE}، {PATH_STORAGE_SCRIPT}، {S_ITEM_DOCS}، {S_STORAGE}، {S_TEST_FLOW}، {S_CHANGE_CONTROL}.
 
-## شواهد (متن دقیق + شماره خط)
-- Item_03_Universe.md خط ۱۹۶: «زیرمجموعه ۹ — ارتباط با پوشش صرافی».
-- Item_03_Universe.md خط ۱۹۸: «پوشش یونیورس در هر صرافی، یک معیار برای اعتبار صرافی است.»
-- Item_03_Universe.md خط ۱۹۹: «برای هر صرافی، چند دارایی از ۱۲۵ دارایی، در آن صرافی، برای بازه موردنظر داده دارند.»
-- Item_03_Universe.md خط ۲۰۱: «جزئیات طراحی: در آیتم ۲۰ (اعتبار صرافی). اینجا فقط ارجاع.»
-- Item_Registry.md خط ۲۲: «Item_13 (Bootstrap): تاریخ شروع داده‌ها را برای هر دارایی در هر صرافی فراهم می‌کند.»
-- Item_Registry.md خط ۲۳: «Item_20 (Exchange Reliability): پوشش هر صرافی از این ۱۲۵ دارایی (Per-Exchange Coverage) را محاسبه می‌کند.»
-- Item_Registry.md خط ۲۴: Item_26 (Kitchen Coverage) = پوشش تاریخی.
-- Item_03_data.md خط ۳–۴: «available_from و presence_status در این فایل نیستند ... در Item_13 محاسبه می‌شوند.»
-- MAP.md خط ۶۸: Item_13 «دریافت اولیه ۱۲۵ دارایی از ۲۰۱۷ تا امروز».
-- MAP.md خط ۷۵: Item_20 «امتیاز اعتبار صرافی. بر اساس پوشش Universe...».
-- TEST_MAP_v3.4_FINAL.md خط ۲۰: «Q1 هر صرافی چند کوین و از چه تاریخی؟ ۰۱، ۰۳، ۱۳».
-- TEST_MAP_v3.4_FINAL.md خط ۹۹: coverage_matrix.tsv (دوره آماتور، نگه‌داری).
-- فایل‌های Item_13_Bootstrap.md، Item_20_Exchange_Reliability.md و Item_26_Kitchen_Coverage.md خالی‌اند (۰ خط).
+## ۴) خطوط AGENTS.md قدیمی که در فایل‌های جدید نیامد
+- «Main protocol: docs/Agents/00_START_HERE.md» → در Map هست.
+- «Persistent state: WORK_STATE.md» → با STATE.md جایگزین شد.
+- «Action log: LEDGER.md» → در Map هست.
+- «LEDGER.md (tail 30)» → در فایل جدید tail -20 شد.
+- سه قاعده‌ی مهاجرت (۱: PLAN، ۲: LEDGER، ۳: عدم گزارش کار انجام‌نشده) → هر سه در فایل جدید پوشش داده شده.
+نتیجه: قاعده‌ای گم نشده؛ فقط اشاره‌ها به‌روز شده.
 
-نتیجه: طراحی و محاسبه در Item_20؛ محاسبه‌ی available_from/presence_status در Item_13؛ تعریف و ارجاع در Item_03 §9. تست «یونیورس هر صرافی» باید در Item_20 ثبت شود و داده‌اش از Item_13 بیاید.
+## ۵) ناهماهنگی START_HERE بخش ۶ با «registry اول»
+بخش ۶ این ترتیب را دارد: ۱ Approved test Manifest، ۲ Item Registry، ۳ MAP.md، ۴ Item docs، ۵ Item data، ۶ evidence، ۷ checkpoint.
+ناهماهنگی: (الف) در فایل جدید، docs/memory/registry.md (تصمیم‌های تأییدشده Owner) رتبه ۱ است و دستور Owner رتبه ۲؛ (ب) بخش ۶ واژه «Item Registry» را دارد که به Item_Registry.md قدیمی اشاره دارد، نه registry.md جدید؛ (ج) بخش ۶ Manifest را بالاتر از همه می‌گذارد، ولی Manifest هنوز ساخته نشده و منبع تصمیم نیست. تغییر ندادم.
+
+## ۶) تخمین توکن شروع session
+مجموع ۹۳ خط / ۵۷۰۹ کاراکتر → حدود ۱۴۰۰ تا ۱۶۰۰ توکن.

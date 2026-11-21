@@ -21,3 +21,4 @@
 --:-- | TODO  | Verify storage script path in `tests/evidence/` (read-only)
 21:18 | FIND  | Storage script verification | -> PARTIALLY PRESENT: gen_manifest.py + scan_repo.sh + docs/MANIFEST.md found; triage.tsv + pending.tsv missing (pending_tests.tsv exists but not pending.tsv)
 20:45 | WRITE | `docs/memory/registry.md`, `TEST_QUEUE.md`, `CONFLICTS.md`, `docs/reports/LAST_REPORT.md`, `PLAN_MEMORY_SETUP.md` | -> step 3: R-30/D-01/D-02 ثبت شد، صف T-01..T-07، وضعیت تناقض‌ها، گزارش جستجوی یونیورس هر صرافی
+21:10 | WRITE | `docs/Agents/AGENTS.md`، `docs/Agents/STATE.md`، `AGENTS.md` ریشه، `docs/archive/`، `docs/reports/LAST_REPORT.md` | -> step 5: سیستم حافظه ساخته شد (A..E)، D-03 ثبت شد، WORK_STATE به archive رفت
