@@ -19,3 +19,4 @@
 --:-- | DEC   | Owner: create AGENTS.md + WORK_STATE.md + LEDGER.md (this action)
 --:-- | WRITE | `AGENTS.md` (root), `docs/Agents/WORK_STATE.md`, `docs/Agents/LEDGER.md` | -> 3 files created, 0 modified, 0 deleted
 --:-- | TODO  | Verify storage script path in `tests/evidence/` (read-only)
+21:18 | FIND  | Storage script verification | -> PARTIALLY PRESENT: gen_manifest.py + scan_repo.sh + docs/MANIFEST.md found; triage.tsv + pending.tsv missing (pending_tests.tsv exists but not pending.tsv)

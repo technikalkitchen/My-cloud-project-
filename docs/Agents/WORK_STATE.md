@@ -8,14 +8,11 @@ Nothing else until both phases are complete.
 
 ## Current Task
 
-Verify storage automation script path.
-TEAM_PROTOCOL §10.2 references `tests/evidence/gen_manifest.py`, `scan_repo.sh`, `triage.tsv`, `pending.tsv` — not yet confirmed on disk.
-Owner confirms automation exists but path unknown.
+Storage automation verified — PARTIALLY PRESENT: gen_manifest.py, scan_repo.sh, docs/MANIFEST.md present; triage.tsv + pending.tsv missing (pending_tests.tsv exists but not pending.tsv).
 
 ## Next Actions
 
-1. Confirm storage script path (read-only inspection of `tests/evidence/` and any `*.py` / `*.sh` referencing "MANIFEST")
-2. Begin Phase 2 — extract test requirements per Item (start with Item_08, Item_10, Item_01)
+1. Begin Phase 2 — extract test requirements per Item (start with Item_08, Item_10, Item_01)
 
 ## Files In Scope (this task only)
 
@@ -49,9 +46,9 @@ Owner confirms automation exists but path unknown.
 
 ## Blockers
 
-- Storage script path unknown.
-- No WORK_STATE.md or LEDGER.md existed before this task (being created now).
+- triage.tsv missing (referenced by TEAM_PROTOCOL §10.2)
+- pending.tsv missing (referenced by TEAM_PROTOCOL §10.2; pending_tests.tsv exists but not pending.tsv)
 
 ## Last Update
 
-2026-11-21 — initial creation.
+2026-11-21 — storage script verified (PARTIALLY PRESENT).
