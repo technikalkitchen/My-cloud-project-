@@ -16,7 +16,7 @@
 - [x] A) پشتیبان AGENTS.md ریشه + D-03 در registry
 - [x] B) ساختن docs/Agents/AGENTS.md
 - [x] C) ساختن docs/Agents/STATE.md + انتقال WORK_STATE به archive
-- [ ] D) جایگزینی AGENTS.md ریشه
+- [x] D) جایگزینی AGENTS.md ریشه
 - [ ] E) بررسی و گزارش
 
 ## فهرست انتقال به قدم‌های بعد
