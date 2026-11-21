@@ -2,11 +2,11 @@
 
 Phases: A memory system -> B master test list -> C storage script (3b) -> D run tests -> E resolve conflicts per Item -> F rewrite Items.
 
-Done: folders+backups; START_HERE shortened (134 lines); lessons.md (20); draft digests+INDEX; CONFLICTS (15) + OPEN_QUESTIONS (30); registry (R-30, D-01, D-02, D-03); TEST_QUEUE (T-01..T-07); AGENTS.md + STATE.md.
+Done: folders+backups; START_HERE shortened (134 lines); lessons.md (20); draft digests+INDEX; CONFLICTS (15) + OPEN_QUESTIONS (30); registry (R-30, D-01, D-02, D-03); TEST_QUEUE (T-01..T-07); AGENTS.md + STATE.md; fresh-session test #1 failed: pointer not followed; rules moved to root AGENTS.md (5F).
 
 Current task: Phase A finished only after the fresh-session test passes.
 
-Next step: (1) fresh-session test: new session, ask "what is the next step?"; must answer from AGENTS.md + STATE.md only. (2) Then build the master test list in docs/memory/TEST_QUEUE.md; Owner adds tests as they come to mind.
+Next step: Step 7: master test list in docs/memory/TEST_QUEUE.md (all tests incl. T-08..T-12 ideas). Needs Owner approval of the approach BEFORE any prompt/work. Not started.
 
 Blockers/unknown: triage.tsv and pending.tsv missing; storage script unverified (plan step 8); START_HERE s6 (source of truth) vs registry-first not reconciled.
 
